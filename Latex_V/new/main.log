@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.7.28)  28 JUL 2025 19:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.7.28)  28 JUL 2025 20:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"d:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/documentacao/Versoes Latex/20250728/main.tex"
-(d:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/documentacao/Versoes Latex/20250728/main.tex
+**"d:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Versoes Latex/20250728/main.tex"
+(d:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Versoes Latex/20250728/main.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (libs/coppe.cls
@@ -1291,7 +1291,7 @@ l.49   \include{Preliminar/Abstract}
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.30 ...^encias Bibliogr\'aficas}{29}{chapter*.29}
+l.30 ...^encias Bibliogr\'aficas}{28}{chapter*.29}
                                                   % [2
 
 
@@ -1347,18 +1347,18 @@ Underfull \hbox (badness 1490) in paragraph at lines 195--197
 []\OT1/cmr/bx/n/12 Precis~ao Du-pla\OT1/cmr/m/n/12 : usada em aplica^^Xc~oes ci-ent^^S^^Pficas, c^^Salculos de en-ge-nha-ria,
  []
 
-[5] [6]
-Underfull \hbox (badness 3078) in paragraph at lines 204--204
+[5]
+Underfull \hbox (badness 3078) in paragraph at lines 199--199
 []\OT1/cmr/bx/n/14.4 Representa^^Xc~ao de N^^Sumeros em Sis-te-mas de Ponto
  []
 
 
-Underfull \hbox (badness 1675) in paragraph at lines 206--207
+Underfull \hbox (badness 1675) in paragraph at lines 201--202
 []\OT1/cmr/m/n/12 Em m^^Saquinas que ope-ram em sis-te-mas de ponto flu-tu-ante, ape-nas um
  []
 
-[7] [8]
-Underfull \hbox (badness 1365) in paragraph at lines 298--299
+[6] [7] [8]
+Underfull \hbox (badness 1365) in paragraph at lines 293--294
 []\OT1/cmr/m/n/12 Vejamos a se-guir uma com-para^^Xc~ao da t^^Secnicas de ar-re-don-da-mento e de
  []
 
@@ -1366,74 +1366,77 @@ Underfull \hbox (badness 1365) in paragraph at lines 298--299
 <Imagens/catastrofic_cancelation.png, id=263, 1572.87625pt x 451.6875pt>
 File: Imagens/catastrofic_cancelation.png Graphic file (type png)
 <use Imagens/catastrofic_cancelation.png>
-Package pdftex.def Info: Imagens/catastrofic_cancelation.png  used on input line 468.
+Package pdftex.def Info: Imagens/catastrofic_cancelation.png  used on input line 463.
 (pdftex.def)             Requested size: 455.24408pt x 130.731pt.
- [14]
-<Imagens/zoom.png, id=268, 1572.87625pt x 451.6875pt>
+<Imagens/zoom.png, id=264, 1572.87625pt x 451.6875pt>
 File: Imagens/zoom.png Graphic file (type png)
 <use Imagens/zoom.png>
-Package pdftex.def Info: Imagens/zoom.png  used on input line 474.
+Package pdftex.def Info: Imagens/zoom.png  used on input line 469.
 (pdftex.def)             Requested size: 455.24408pt x 130.731pt.
-<Imagens/literal79.png, id=269, 1512.65125pt x 451.6875pt>
+<Imagens/literal79.png, id=265, 1512.65125pt x 451.6875pt>
 File: Imagens/literal79.png Graphic file (type png)
 <use Imagens/literal79.png>
-Package pdftex.def Info: Imagens/literal79.png  used on input line 485.
+Package pdftex.def Info: Imagens/literal79.png  used on input line 480.
 (pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
 
-Underfull \hbox (badness 1297) in paragraph at lines 490--493
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 485--488
 []\OT1/cmr/m/n/12 Na fi-gura [][]1.3[][]. ^^Se poss^^S^^Pvel ob-ser-var que a fun^^Xc~ao as-sume mais de dois
  []
 
-[15 <./Imagens/catastrofic_cancelation.png> <./Imagens/zoom.png> <./Imagens/literal79.png>]
-<Imagens/32x64_full.png, id=281, 1512.65125pt x 451.6875pt>
+<Imagens/32x64_full.png, id=267, 1512.65125pt x 451.6875pt>
 File: Imagens/32x64_full.png Graphic file (type png)
 <use Imagens/32x64_full.png>
-Package pdftex.def Info: Imagens/32x64_full.png  used on input line 499.
+Package pdftex.def Info: Imagens/32x64_full.png  used on input line 494.
 (pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
-<Imagens/32x64.png, id=282, 1512.65125pt x 451.6875pt>
+<Imagens/32x64.png, id=268, 1512.65125pt x 451.6875pt>
 File: Imagens/32x64.png Graphic file (type png)
 <use Imagens/32x64.png>
-Package pdftex.def Info: Imagens/32x64.png  used on input line 505.
+Package pdftex.def Info: Imagens/32x64.png  used on input line 500.
 (pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
-<Imagens/timesXpot_literal0.png, id=285, 1512.65125pt x 451.6875pt>
+[14 <./Imagens/catastrofic_cancelation.png> <./Imagens/zoom.png>]
+<Imagens/timesXpot_literal0.png, id=280, 1512.65125pt x 451.6875pt>
 File: Imagens/timesXpot_literal0.png Graphic file (type png)
 <use Imagens/timesXpot_literal0.png>
-Package pdftex.def Info: Imagens/timesXpot_literal0.png  used on input line 514.
+Package pdftex.def Info: Imagens/timesXpot_literal0.png  used on input line 509.
 (pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
-<Imagens/timesXpot_literal0_1.png, id=286, 1512.65125pt x 451.6875pt>
+<Imagens/timesXpot_literal0_1.png, id=281, 1512.65125pt x 451.6875pt>
 File: Imagens/timesXpot_literal0_1.png Graphic file (type png)
 <use Imagens/timesXpot_literal0_1.png>
-Package pdftex.def Info: Imagens/timesXpot_literal0_1.png  used on input line 520.
+Package pdftex.def Info: Imagens/timesXpot_literal0_1.png  used on input line 515.
 (pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
- [16 <./Imagens/32x64_full.png> <./Imagens/32x64.png>]
-<Imagens/error2.png, id=298, 1512.65125pt x 451.6875pt>
+ [15 <./Imagens/literal79.png> <./Imagens/32x64_full.png> <./Imagens/32x64.png>]
+<Imagens/error2.png, id=293, 1512.65125pt x 451.6875pt>
 File: Imagens/error2.png Graphic file (type png)
 <use Imagens/error2.png>
-Package pdftex.def Info: Imagens/error2.png  used on input line 530.
+Package pdftex.def Info: Imagens/error2.png  used on input line 525.
 (pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
- [17 <./Imagens/timesXpot_literal0.png> <./Imagens/timesXpot_literal0_1.png>]) [18 <./Imagens/error2.png>]
+ [16 <./Imagens/timesXpot_literal0.png> <./Imagens/timesXpot_literal0_1.png>]) [17 <./Imagens/error2.png>]
 \openout2 = `Capitulos/Cap2.aux'.
 
  (Capitulos/Cap2.tex
 Cap\'{\i }tulo 2.
-[19
+[18
 
 
 
 
 ]
-<Imagens/corolário.png, id=318, 539.76656pt x 492.33937pt>
+<Imagens/corolário.png, id=314, 539.76656pt x 492.33937pt>
 File: Imagens/corolário.png Graphic file (type png)
 <use Imagens/corolário.png>
 Package pdftex.def Info: Imagens/corolário.png  used on input line 27.
 (pdftex.def)             Requested size: 249.54753pt x 227.62204pt.
- [20 <./Imagens/corolário.png>]
-<Imagens/interseções.png, id=326, 652.68843pt x 492.33937pt>
+ [19 <./Imagens/corolário.png>]
+<Imagens/interseções.png, id=322, 652.68843pt x 492.33937pt>
 File: Imagens/interseções.png Graphic file (type png)
 <use Imagens/interseções.png>
 Package pdftex.def Info: Imagens/interseções.png  used on input line 39.
 (pdftex.def)             Requested size: 301.75412pt x 227.62204pt.
- [21 <./Imagens/interseções.png>] Excluding 'comment' comment. [22]
+ [20 <./Imagens/interseções.png>] Excluding 'comment' comment. [21]
 Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
  []
@@ -1443,10 +1446,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--131
 
  []
 
-[23] Excluding 'comment' comment. [24] Excluding 'comment' comment. Excluding 'comment' comment. [25] Excluding 'comment' comment. [26]) [27] [28]
+[22] Excluding 'comment' comment. [23] Excluding 'comment' comment. Excluding 'comment' comment. [24] Excluding 'comment' comment. [25]) [26] [27]
 \openout2 = `Capitulos/Referências.aux'.
 
- (Capitulos/Referências.tex (main.bbl)) [29
+ (Capitulos/Referências.tex (main.bbl)) [28
 
 
 
@@ -1463,17 +1466,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 722636D3498C16C6566D6DB176576F04;4685.
  ) 
 Here is how much of TeX's memory you used:
- 42247 strings out of 474485
- 825144 string characters out of 5753549
+ 42246 strings out of 474485
+ 824932 string characters out of 5753549
  1938542 words of memory out of 5000000
  63624 multiletter control sequences out of 15000+600000
  572117 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 100i,9n,120p,3371b,651s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 100i,9n,120p,3366b,651s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (38 pages, 926601 bytes).
+Output written on main.pdf (37 pages, 926038 bytes).
 PDF statistics:
- 503 PDF objects out of 1000 (max. 8388607)
- 114 named destinations out of 1000 (max. 500000)
+ 499 PDF objects out of 1000 (max. 8388607)
+ 113 named destinations out of 1000 (max. 500000)
  260 words of extra memory for PDF output out of 10000 (max. 10000000)
 

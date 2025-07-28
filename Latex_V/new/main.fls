@@ -1,6 +1,6 @@
-PWD d:\Users\Enzo HD\Github\Repos\ic-metodos-numericos\documentacao\Versoes Latex\20250728
+PWD d:\Users\Enzo HD\Github\Repos\ic-metodos-numericos\article\Versoes Latex\20250728
 INPUT C:\Users\maria\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT d:\Users\Enzo HD\Github\Repos\ic-metodos-numericos\documentacao\Versoes Latex\20250728\main.tex
+INPUT d:\Users\Enzo HD\Github\Repos\ic-metodos-numericos\article\Versoes Latex\20250728\main.tex
 OUTPUT main.log
 INPUT .\libs\coppe.cls
 INPUT libs\coppe.cls

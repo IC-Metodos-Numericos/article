@@ -1,4 +1,22 @@
-# 🧪 Article: Projeto LaTeX — Ambiente Padronizado
+# IC Métodos Numéricos
+# 📝 Artigo: ???
+
+
+# Contribuição
+
+Padrões de Tags (NO CÓDIGO):
+
+% TODO: Revisar a introdução
+% FIXME: Fórmula incorreta
+% NOTE: Essa parte foi atualizada por Enzo
+% HACK: Gambiarra temporária
+% BUG: Comportamento inesperado
+% @EnzoR: Marca Enzo
+% @LucasM: Marca Lucas
+% @Daniel: Marca Daniel
+% @LuisD: Marca Luis
+
+# 🧪 Article: Setup do Ambiente
 
 Este repositório usa **LaTeX com Visual Studio Code** para garantir uma colaboração fluida entre todos os autores.
 
