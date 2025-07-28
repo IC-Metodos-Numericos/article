@@ -6,51 +6,59 @@ Este projeto utiliza LaTeX no Visual Studio Code. Siga os passos abaixo para con
 
 ## 🧱 1. Instale o compilador LaTeX (MiKTeX)
 
-🔗 Baixe aqui: https://miktex.org/download
-
-Durante a instalação:
-- Marque a opção: **"Install missing packages on-the-fly"**
-- Aceite instalar pacotes automaticamente
+- Baixe em: [https://miktex.org/download](https://miktex.org/download)
+- Durante a instalação:
+  - Marque **"Install missing packages on-the-fly"**
+  - Aceite instalar pacotes automaticamente
 
 ---
 
 ## 🖥️ 2. Instale o Visual Studio Code
 
-🔗 https://code.visualstudio.com/
+- Baixe em: [https://code.visualstudio.com/](https://code.visualstudio.com/)
 
 ---
 
 ## 🔌 3. Instale as extensões no VS Code
 
-Abra o VS Code e instale as extensões:
+No VS Code, instale as seguintes extensões:
 
 - 🧪 **LaTeX Workshop**  
-  ID: `James-Yu.latex-workshop`
+  `James-Yu.latex-workshop`
+- ✂️ **LaTeX Snippets** *(opcional)*  
+  `HaoyunQin.latex-snippets`
+- 📂 **LaTeX**  
+  `Mathematic Inc.latex`
 
-- ✂️ **LaTeX Snippets** *(opcional mas útil)*  
-  ID: `HaoyunQin.latex-snippets`
-
-- 📂 **LaTeX**
- ID: `Mathematic Inc.latex`
-
-### Como instalar rapidamente:
+**Como instalar rapidamente:**
 
 1. Pressione `Ctrl + Shift + X` para abrir o menu de extensões.
-2. Pesquise os nomes e clique em "Instalar".
+2. Pesquise pelo nome e clique em "Instalar".
 
 ---
 
-## 🧪 4. Verifique se o `latexmk` está funcionando
+## 🧪 4. Verifique o `latexmk`
 
-Abra o terminal no VS Code e digite:
+No terminal do VS Code, execute:
 
 ```bash
 latexmk -v
 ```
 
+---
+
 ## ▶️ 5. Compile o projeto
 
-Abra o arquivo .tex principal.
+1. Abra o arquivo `.tex` principal.
+2. Pressione `Ctrl + Alt + B` para compilar. O PDF será gerado.
+3. Ou, no terminal integrado, execute:
 
-1. Pressione Ctrl + Alt + B para compilar.
-  O PDF aparecerá no painel lateral ou na pasta do projeto.
+   ```bash
+   latexmk -pdf main.tex
+   ```
+
+Se necessário, instale o `latexmk` via MiKTeX:
+
+```bash
+mpm --install latexmk
+```

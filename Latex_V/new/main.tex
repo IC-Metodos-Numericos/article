@@ -1,6 +1,9 @@
-\documentclass[bcl,numbers]{libs/coppe}
-%USE bcl PARA BACHARELADO E lic PARA LICENCIATURA
+\makeatletter
+\def\input@path{{libs/}}
+\makeatother
+\documentclass[bcl,numbers]{coppe}
 
+%USE bcl PARA BACHARELADO E lic PARA LICENCIATURA
 
 \input{Preambulo/Pacotes}
 \input{Preambulo/Configurações}
@@ -16,7 +19,6 @@
 \setlength{\textwidth}{16cm}
 \setlength{\textheight}{24.7cm}
 \setlength{\footskip}{1cm}
-\everymath{\displaystyle}
 
 \everymath{\displaystyle}
 
@@ -62,7 +64,19 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 
+  % Example citation to ensure at least one \citation command
+  \chapter*{Referências Citadas}
+  Como exemplo, citamos \cite{ruggiero1998calculo}.
+
   \backmatter
-  \include{Capitulos/Referências}%NO ARQUIVO ref.bib TEM EXEMPLOS DE COMO COLOCAR REFERÊNCIAS.
+  % Bibliography
+  \bibliographystyle{plain} % or another style like abnt, alpha, etc.
+  \bibliography{Capitulos/ref} % adjust path/filename as needed
+
+  % For BibTeX compatibility (if needed by your toolchain)
+  % \bibdata{Capitulos/ref}
+  % \bibstyle{plain}
+
+  %\include{Capitulos/Referências}%NO ARQUIVO ref.bib TEM EXEMPLOS DE COMO COLOCAR REFERÊNCIAS.
   
 \end{document}

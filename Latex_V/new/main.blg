@@ -13,50 +13,48 @@ Reallocating 'name_of_file' (item size: 1) to 19 items.
 A level-1 auxiliary file: Capitulos/Cap1.aux
 Reallocating 'name_of_file' (item size: 1) to 19 items.
 A level-1 auxiliary file: Capitulos/Cap2.aux
-Reallocating 'name_of_file' (item size: 1) to 27 items.
-A level-1 auxiliary file: Capitulos/Referências.aux
-Reallocating 'name_of_file' (item size: 1) to 17 items.
-The style file: libs/coppe-plain.bst
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: plain.bst
 Reallocating 'name_of_file' (item size: 1) to 14 items.
 Database file #1: Capitulos/ref.bib
 You've used 1 entry,
-            2972 wiz_defined-function locations,
-            606 strings with 4728 characters,
-and the built_in function-call counts, 394 in all, are:
-= -- 27
-> -- 19
-< -- 1
-+ -- 7
-- -- 6
-* -- 34
-:= -- 66
-add.period$ -- 2
+            2118 wiz_defined-function locations,
+            509 strings with 4311 characters,
+and the built_in function-call counts, 275 in all, are:
+= -- 23
+> -- 13
+< -- 0
++ -- 5
+- -- 4
+* -- 15
+:= -- 54
+add.period$ -- 3
 call.type$ -- 1
-change.case$ -- 3
-chr.to.int$ -- 1
-cite$ -- 2
-duplicate$ -- 22
-empty$ -- 35
-format.name$ -- 9
-if$ -- 75
-int.to.chr$ -- 1
+change.case$ -- 4
+chr.to.int$ -- 0
+cite$ -- 1
+duplicate$ -- 12
+empty$ -- 23
+format.name$ -- 4
+if$ -- 55
+int.to.chr$ -- 0
 int.to.str$ -- 1
 missing$ -- 2
-newline$ -- 13
-num.names$ -- 4
-pop$ -- 11
+newline$ -- 8
+num.names$ -- 2
+pop$ -- 8
 preamble$ -- 1
-purify$ -- 3
+purify$ -- 4
 quote$ -- 0
-skip$ -- 13
+skip$ -- 7
 stack$ -- 0
-substring$ -- 2
-swap$ -- 4
+substring$ -- 5
+swap$ -- 1
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 6
+type$ -- 2
 warning$ -- 0
-while$ -- 3
-width$ -- 0
-write$ -- 20
+while$ -- 2
+width$ -- 2
+write$ -- 13

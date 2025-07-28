@@ -1,1 +1,24 @@
+% ======= Anotações e marcações ===========
+\usepackage{xcolor}
+\usepackage{todonotes} % para comentários visuais na margem
+
+% Comandos personalizados para comentários
+\newcommand{\TODO}[1]{\todo[color=blue!20!white]{TODO: #1}}          % Azul claro
+\newcommand{\FIXME}[1]{\todo[color=red!30!white]{FIXME: #1}}         % Vermelho claro
+\newcommand{\NOTE}[1]{\todo[color=orange!30!white]{NOTE: #1}}        % Laranja claro
+\newcommand{\HACK}[1]{\todo[color=yellow!40!black]{HACK: #1}}        % Amarelo escuro
+\newcommand{\BUG}[1]{\todo[color=purple!20!white]{BUG: #1}}          % Roxo claro
+
+% Comentários por autor
+\newcommand{\EnzoR}[1]{\todo[color=violet!20!white]{@EnzoR: #1}}
+\newcommand{\LucasM}[1]{\todo[color=cyan!20!white]{@LucasM: #1}}
+\newcommand{\Daniel}[1]{\todo[color=green!20!white]{@Daniel: #1}}
+\newcommand{\LuisD}[1]{\todo[color=gold!30!white]{@LuisD: #1}}
+
+% Uso inline (dentro de texto corrido)
+\newcommand{\TODOinline}[1]{\todo[inline,color=blue!20!white]{TODO: #1}}
+\newcommand{\FIXMEinline}[1]{\todo[inline,color=red!20!white]{FIXME: #1}}
+
+% ======= Comandos personalizados ===========
 \newcommand{\R}{\mathbb{R}}
+\newcommand{\highlight}[1]{\hl{#1}}

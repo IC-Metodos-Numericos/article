@@ -4,7 +4,7 @@
 
 # Contribuição
 
-Padrões de Tags (NO CÓDIGO):
+Padrões de Tags:
 
 % TODO: Revisar a introdução
 % FIXME: Fórmula incorreta
