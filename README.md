@@ -34,8 +34,8 @@ Depois, instale as extensões:
 ### 3. Clone este repositório
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://github.com/IC-Metodos-Numericos/article
+cd article
 ```
 
 ### 4. Compile o projeto
