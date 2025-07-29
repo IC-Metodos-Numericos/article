@@ -17,7 +17,8 @@ jobs:
     - name: Set up TeX Live
       uses: xu-cheng/latex-action@v2
       with:
-        root_file: Latex_V/new/main.tex
+        root_file: main.tex
+        working_directory: Latex_V/new
         latexmk_use_xelatex: true
 
     - name: Upload PDF artifact
