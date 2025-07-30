@@ -267,6 +267,11 @@ $$
 \[
 G = \left\{ x \in \mathbb{R} \mid x\ \text{corresponde a um número representado no sistema}\ \mathcal{F}(\beta,t,L,U) \right\}
 \]
+\LucasM{aqui vale a pena trocar por algo do tipo pontos 
+flutuantes e inclusive inserir uma 
+imagem mostrando que trata-se de um conjunto 
+discreto}
+
 é o conjunto dos números que são representáveis por esse sistema de ponto flutuante. Nesse conjunto \( m \) é a mantissa %\( m = \pm 1d_2...d_t \)%.
 Dado um número real $x$, as seguintes situações podem ocorrer:
 
@@ -335,8 +340,8 @@ em que \( L \) é o menor expoente permitido no sistema. Este tratamento especia
 %\newpage
 
 
-\section{Erros e Limitações}
-\label{subsec:erroselim}
+\section{Erros e Limitações}\label{subsec:erroselim}
+\TODO{adicionar nessa seção uma subseção falando sobre epsilon de maquina, contextualizando para o experimento com as ULPS nos próximos capitulos}
 
 Erros em operações com pontos flutuantes podem se propagar e aumentar em cálculos mais complexos. Por exemplo, pequenos erros de arredondamento em etapas iniciais podem afetar significativamente o resultado final, especialmente em somas repetitivas ou subtrações de números muito próximos. Isso torna importante considerar a ordem das operações e o impacto da precisão em aplicações sensíveis.
 
@@ -433,6 +438,7 @@ Na operação de soma:
 x + y = 0{,}276 \times 10^{-2},
 \]
 como \( x \) é exatamente zero, o resultado mantém integralmente os dígitos significativos de \( y \).
+\EnzoR{@LucasM por favor, verifique se o exemplo ficou bom }
 Se o zero não tivesse uma representação especial e fosse tratado como um número subnormal com expoente mínimo, o alinhamento das mantissas poderia comprometer a precisão de \( y \), deslocando seus dígitos significativos e resultando em perda de informação.
 Nesse sentido, suponha que \( x \) não tivesse uma representação especial e fosse tratado como um número subnormal com o expoente mínimo \( -5 \), com mantissa ajustada para
 \[
@@ -454,6 +460,7 @@ x' + y = 0{,}0000027 \times 10^{-5}.
 Portanto, a representação especial do zero evita esse problema, preservando a precisão e assegurando a estabilidade numérica das operações.
 
 \section{Análise de Instabilidades e Casos Peculiares}
+\EnzoR{@LuisD preciso que verifique se a seção está coerente e se os exemplos estão corretos.}
 
 Na aritmética de ponto flutuante, certos casos resultam em erros devido à limitação da precisão e à maneira como os números são representados. A seguir, descrevemos dois exemplos clássicos que ilustram essas instabilidades.
 
@@ -486,6 +493,7 @@ Vamos manipular essa expressão e ver como ela se comporta em diferentes situaç
 
 Na figura  \ref{fig:literal79}. é possível observar que a função assume mais de dois valores inesperados para $f(x)$, nesse caso, o conjunto imagem no intervalo \([38, 65]\) é \( Im(f)  = \bigl\{ {0{,}64{,}78{,}79{,}80{,}128}\}\). 
 O seguinte conjunto de valores para o literal foi testado \(\{3,12,79,98\}\), e acreditamos que para valores que não podem ser escritos como uma potência de base 2, esse padrão ocorra.
+\TODO{adicionar explicação}
 Explicação: blablabla
 
 
@@ -528,6 +536,7 @@ Uma outra situação é a diferença de como o computador interpreta algumas fun
     \caption{Comparação entre as funções $p(x) = (x - 1)^6$ e $q(x) = x^6 - 6x^5 + 15x^4 - 20x^3 + 15x^2 - 6x + 1$.}
     \label{fig:error2}
 \end{figure}
+\TODO{adicionar explicação}
 Explicação: yada yada yada 
 
 \subsection{Discussão}

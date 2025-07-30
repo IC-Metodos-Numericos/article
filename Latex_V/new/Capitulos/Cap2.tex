@@ -2,6 +2,7 @@
 
 Em muitas aplicações, as soluções buscadas se resumem a encontrar os zeros (ou raízes) de uma função. Entretanto, nem sempre é possível fazê-lo analiticamente, devido à natureza das componentes envolvidas na função como, por exemplo, funções polinomiais a partir do 3º grau, somas de funções trigonométricas e logarítmicas, entre outras. Nesse ínterim, recorremos então a maneiras de obter valores aproximados para tais raízes. 
 
+\EnzoR{acho que devemos adiconar algo falando qual é o critério de parada.}
 Uma classe de métodos utilizados para aproximar raízes de funções são os \textbf{métodos iterativos}. A essência desses métodos está em, partindo de um chute inicial e de uma função apropriada $\varphi$, obter uma sequência $x_k$ onde cada termo é obtido do anterior recursivamente como $x_{k+1} = \varphi(x_k)$. Essa sequência, sob certas hipóteses, converge para a raiz $\xi$ da função.
 
 
@@ -20,6 +21,7 @@ Por exemplo, considere a função $f(x) = x^3 - 9x + 3$. Utilizando a Proposiç�
     \item $f(0)f(1) = -15 < 0$, portanto há raiz no intervalo (0, 1);
     \item $f(2)f(3) = -21 < 0$, portanto há raiz no intervalo (2, 3).
 \end{itemize}
+\EnzoR{acho que vale a pena citar quem é a, b, c e d antes, não? }
 Além disso, a derivada de $f(x)$ é $f'(x) = 3x^2 - 9$, cujas raízes são $\pm \sqrt{3}$, então nos intervalos (-$\infty$, -$\sqrt{3}$), (-$\sqrt{3}$, $\sqrt{3}$) e ($\sqrt{3}$, $\infty$) o sinal da derivada é preservado. Portanto, nos intervalos $(a,b)$ e $(c,d)$ há apenas uma raiz.
 
 \begin{figure}[h]
@@ -42,6 +44,7 @@ Da mesma função, podemos obter, por exemplo, as interseções entre $x$ e $x^3
 \end{figure}
 
 \section{Critério de Parada}
+\FIXME{Completar}
 O processo é repetido até que a diferença entre duas iterações consecutivas seja inferior a uma tolerância pré-estabelecida ou até que um número máximo de iterações seja atingido.
 
 \begin{itemize}
@@ -234,8 +237,16 @@ Como por hipótese $\varphi'(x) < 1$ então $|C| < 1$, portanto, a convergência
 %--------------------------------------------------------------------
 \section{Método de Newton-Raphson}
 
+\TODO{talvez reescrever todas as condições como i) derivada limitada
+ii) f e g continuas , etc...}
+
+\Daniel{conv quadrática}
+
+\EnzoR{escolhendo a func de iter}
+
 O método de Newton é um caso particular do \textbf{Método do Ponto Fixo}, amplamente utilizado para encontrar raízes reais de funções não lineares, cuja ordem de convergência é pelo menos quadrática. A função de iteração específica para este método produz uma sequência em que cada termo $x_{k+1}$ corresponde geometricamente à interseção da reta tangente a $f(x)$ no ponto $(x_k, f(x_k))$ com o eixo x. 
 
+\Daniel{só tem que colocar no lugar certo}
 No método do ponto fixo, vimos que se a função satisfaz o Teorema \ref{teoMPF} a sequência $x_{k+1} = \varphi(x_k)$ converge para $\xi$. Além disso, a desigualdade (\ref{lim0}) na demonstração desse resultado nos diz que quanto menor for $|\varphi'(x)|$, mais rápido a sequência $\{x_k\}$ converge.
 
 Dada uma função \(f(x)\), o processo parte de uma estimativa inicial \(x_0\) e aplica a seguinte fórmula iterativa, a partir da escolha da derivada em (\ref{it})
@@ -245,7 +256,7 @@ Dada uma função \(f(x)\), o processo parte de uma estimativa inicial \(x_0\) e
 onde \(f'(x_k)\) é a derivada da função \(f\) avaliada em \(x_k\).
 Para que o método convirja para a raiz correta, é necessário que \(f(x)\) seja continuamente diferenciável em uma vizinhança da raiz e que \(f'(x) \neq 0\) nessa região. Além disso, a escolha adequada do ponto inicial \(x_0\) é crucial para garantir a convergência do método.
 
-Aplicando a derivada na forma geral de $\varphi$ pela regra da cadeia obtemos $\varphi'(x) = 1 + A'(x)f(x) + A(x)f'(x)$, calculando ela na raiz resta $\varphi'(x) = 1 + A(\xi)f'(\xi)$. Por hipótese, a $\varphi'(\xi) = 0$, pelo que temos $A(x) = \frac{-1}{f'(x)}$. Portanto, a forma da função de iteração do método de Newton-Raphson é 
+Aplicando a derivada na forma geral de $\varphi$ pela regra da cadeia obtemos $\varphi'(x) = 1 + A'(x)f(x) + A(x)f'(x)$, calculando-a na raiz resta $\varphi'(x) = 1 + A(\xi)f'(\xi)$. Por hipótese, a $\varphi'(\xi) = 0$, pelo que temos $A(x) = \frac{-1}{f'(x)}$. Portanto, a forma da função de iteração do método de Newton-Raphson é 
 \begin{equation*}
     \varphi(x) = x - \frac{f(x)}{f'(x)}
 \end{equation*}
@@ -286,6 +297,7 @@ desde que $f'(x) \neq 0$.
 \subsection{Ordem de Convergência}
 No MPF espera-se uma ordem de convergência ao menos linear, entretanto ao escolher uma função de iteração que satisfaça $\varphi'(\xi) = 0$, provaremos que sua ordem de convergência será ao menos quadrática.
 \begin{prop}
+    \LucasM{Antes em Linguagem natural}
     A ordem de convergência do método de Newton é pelo menos quadrática.
 \end{prop}
 \begin{proof}

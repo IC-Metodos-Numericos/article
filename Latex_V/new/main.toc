@@ -25,6 +25,6 @@
 \contentsline {subsection}{\numberline {2.4.1}Demonstração Geométrica}{25}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Convergência}{25}{subsection.2.4.2}%
 \contentsline {subsection}{\numberline {2.4.3}Ordem de Convergência}{25}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Ciladas}{26}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.4}Ciladas}{27}{subsection.2.4.4}%
 \contentsline {subsection}{\numberline {2.4.5}Fractais}{27}{subsection.2.4.5}%
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{29}{chapter*.32}%
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{29}{chapter*.44}%
