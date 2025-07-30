@@ -52,7 +52,7 @@ O processo é repetido até que a diferença entre duas iterações consecutivas
     \item $e_k =  f(x_k) - 0$
 \end{itemize}
 
-\textcolor{blue}{Definir raiz aproximada}
+\LucasM{Definir raiz aproximada}
 
 \section{Método do Ponto Fixo}
 
@@ -110,7 +110,9 @@ Seja $\xi$ uma raiz de uma função $f(x)$ e seja $\varphi(x)$ uma função de i
 \end{proof}
 
 %\newpage
-\textcolor{blue}{Aqui, antes de ir para o resultado principal, dar exemplos de funções de iteração que fazem a sequencia convergir e divergir. Inserir gráficos assim como no livro da Vera.} \textcolor{green}{ok!}\\
+
+\LucasM{Aqui, antes de ir para o resultado principal, dar exemplos de funções de iteração que fazem a sequencia convergir e divergir. Inserir gráficos assim como no livro da Vera.} 
+\Daniel{ok!}
 
 Sob condições a respeito da função de iteração, sua derivada e o dado inicial, a convergência da sequência iterativa é garantida, como pode-se observar a seguir.
 %Enfim é importante verificar se a função de iteração de ponto fixo respeita as condições para convergência.
@@ -181,7 +183,11 @@ Como $x_{k+1} = \varphi(x_k)$, subtraindo $\xi$ de ambos os lados da igualdade e
 
 \subsection{Ordem de convergência}
 
-\textcolor{blue}{Dizer aqui o que significa na prática a ordem de convergência de um método. Perceba que pela definição ele está ligado ao erro cometido no processo iterativo.}
+\LucasM{Dizer aqui o que significa na prática a ordem de convergência de um método. Perceba que pela definição ele está ligado ao erro cometido no processo iterativo.}
+A ordem de convergência de um método iterativo é uma medida de quão
+rapidamente a sequência de iterações converge para a solução desejada. Em termos
+práticos, isso significa que, se um método tem uma ordem de convergência alta, ele
+será capaz de reduzir o erro de aproximação de forma mais eficaz a cada iteração.
 \begin{df}
     Seja $\{x_k\}$ uma sequência que converge para $\xi$ e $e_k = x_k - \xi$ o erro na k-ésima iteração.
     %um num. p e uma cte. C
@@ -237,8 +243,7 @@ Como por hipótese $\varphi'(x) < 1$ então $|C| < 1$, portanto, a convergência
 %--------------------------------------------------------------------
 \section{Método de Newton-Raphson}
 
-\TODO{talvez reescrever todas as condições como i) derivada limitada
-ii) f e g continuas , etc...}
+\TODO{talvez reescrever todas as condições como i) derivada limitada ii) f e g continuas , etc...}
 
 \Daniel{conv quadrática}
 
