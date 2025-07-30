@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.7.28)  30 JUL 2025 15:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.7.28)  30 JUL 2025 16:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1327,7 +1327,7 @@ l.51   \include{Preliminar/Abstract}
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.30 ...^encias Bibliogr\'aficas}{29}{chapter*.30}
+l.30 ...^encias Bibliogr\'aficas}{29}{chapter*.32}
                                                   % [2
 
 
@@ -1394,58 +1394,63 @@ Underfull \hbox (badness 1675) in paragraph at lines 202--203
  []
 
 [6] [7] Excluding 'comment' comment.
-Underfull \hbox (badness 1365) in paragraph at lines 295--296
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 273.
+
+Underfull \hbox (badness 1365) in paragraph at lines 300--301
 []\OT1/cmr/m/n/12 Vejamos a se-guir uma com-para^^Xc~ao da t^^Secnicas de ar-re-don-da-mento e de
  []
 
-[8] [9] [10] [11] [12]
-<Imagens/catastrofic_cancelation.png, id=259, 1572.87625pt x 451.6875pt>
+[8] [9] [10] [11] [12] [13]
+<Imagens/catastrofic_cancelation.png, id=265, 1572.87625pt x 451.6875pt>
 File: Imagens/catastrofic_cancelation.png Graphic file (type png)
 <use Imagens/catastrofic_cancelation.png>
-Package pdftex.def Info: Imagens/catastrofic_cancelation.png  used on input line 465.
+Package pdftex.def Info: Imagens/catastrofic_cancelation.png  used on input line 470.
 (pdftex.def)             Requested size: 455.24408pt x 130.731pt.
- [13]
-<Imagens/zoom.png, id=264, 1572.87625pt x 451.6875pt>
+<Imagens/zoom.png, id=266, 1572.87625pt x 451.6875pt>
 File: Imagens/zoom.png Graphic file (type png)
 <use Imagens/zoom.png>
-Package pdftex.def Info: Imagens/zoom.png  used on input line 471.
+Package pdftex.def Info: Imagens/zoom.png  used on input line 476.
 (pdftex.def)             Requested size: 455.24408pt x 130.731pt.
-<Imagens/literal79.png, id=265, 1512.65125pt x 451.6875pt>
+<Imagens/literal79.png, id=267, 1512.65125pt x 451.6875pt>
 File: Imagens/literal79.png Graphic file (type png)
 <use Imagens/literal79.png>
-Package pdftex.def Info: Imagens/literal79.png  used on input line 482.
+Package pdftex.def Info: Imagens/literal79.png  used on input line 487.
 (pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
 
-Underfull \hbox (badness 1297) in paragraph at lines 487--490
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 492--495
 []\OT1/cmr/m/n/12 Na fi-gura [][]1.3[][]. ^^Se poss^^S^^Pvel ob-ser-var que a fun^^Xc~ao as-sume mais de dois
  []
 
-[14 <./Imagens/catastrofic_cancelation.png> <./Imagens/zoom.png> <./Imagens/literal79.png>]
-<Imagens/32x64_full.png, id=277, 1512.65125pt x 451.6875pt>
+<Imagens/32x64_full.png, id=269, 1512.65125pt x 451.6875pt>
 File: Imagens/32x64_full.png Graphic file (type png)
 <use Imagens/32x64_full.png>
-Package pdftex.def Info: Imagens/32x64_full.png  used on input line 496.
+Package pdftex.def Info: Imagens/32x64_full.png  used on input line 501.
 (pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
-<Imagens/32x64.png, id=278, 1512.65125pt x 451.6875pt>
+<Imagens/32x64.png, id=270, 1512.65125pt x 451.6875pt>
 File: Imagens/32x64.png Graphic file (type png)
 <use Imagens/32x64.png>
-Package pdftex.def Info: Imagens/32x64.png  used on input line 502.
+Package pdftex.def Info: Imagens/32x64.png  used on input line 507.
 (pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
-<Imagens/timesXpot_literal0.png, id=281, 1512.65125pt x 451.6875pt>
+[14 <./Imagens/catastrofic_cancelation.png> <./Imagens/zoom.png>]
+<Imagens/timesXpot_literal0.png, id=282, 1512.65125pt x 451.6875pt>
 File: Imagens/timesXpot_literal0.png Graphic file (type png)
 <use Imagens/timesXpot_literal0.png>
-Package pdftex.def Info: Imagens/timesXpot_literal0.png  used on input line 511.
+Package pdftex.def Info: Imagens/timesXpot_literal0.png  used on input line 516.
 (pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
-<Imagens/timesXpot_literal0_1.png, id=282, 1512.65125pt x 451.6875pt>
+<Imagens/timesXpot_literal0_1.png, id=283, 1512.65125pt x 451.6875pt>
 File: Imagens/timesXpot_literal0_1.png Graphic file (type png)
 <use Imagens/timesXpot_literal0_1.png>
-Package pdftex.def Info: Imagens/timesXpot_literal0_1.png  used on input line 517.
+Package pdftex.def Info: Imagens/timesXpot_literal0_1.png  used on input line 522.
 (pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
- [15 <./Imagens/32x64_full.png> <./Imagens/32x64.png>]
-<Imagens/error2.png, id=293, 1512.65125pt x 451.6875pt>
+ [15 <./Imagens/literal79.png> <./Imagens/32x64_full.png> <./Imagens/32x64.png>]
+<Imagens/error2.png, id=295, 1512.65125pt x 451.6875pt>
 File: Imagens/error2.png Graphic file (type png)
 <use Imagens/error2.png>
-Package pdftex.def Info: Imagens/error2.png  used on input line 527.
+Package pdftex.def Info: Imagens/error2.png  used on input line 532.
 (pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
  [16 <./Imagens/timesXpot_literal0.png> <./Imagens/timesXpot_literal0_1.png>]) [17 <./Imagens/error2.png>]
 \openout2 = `Capitulos/Cap2.aux'.
@@ -1458,13 +1463,13 @@ Cap\'{\i }tulo 2.
 
 
 ]
-<Imagens/corolário.png, id=314, 539.76656pt x 492.33937pt>
+<Imagens/corolário.png, id=316, 539.76656pt x 492.33937pt>
 File: Imagens/corolário.png Graphic file (type png)
 <use Imagens/corolário.png>
 Package pdftex.def Info: Imagens/corolário.png  used on input line 27.
 (pdftex.def)             Requested size: 249.54753pt x 227.62204pt.
  [19 <./Imagens/corolário.png>]
-<Imagens/interseções.png, id=322, 652.68843pt x 492.33937pt>
+<Imagens/interseções.png, id=324, 652.68843pt x 492.33937pt>
 File: Imagens/interseções.png Graphic file (type png)
 <use Imagens/interseções.png>
 Package pdftex.def Info: Imagens/interseções.png  used on input line 39.
@@ -1494,20 +1499,20 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3EFB0F18CCBF2E1762AF33D444C74DD3;4685.
+(rerunfilecheck)             Checksum: 10D958E5C769F4BE2B11FD7A4814B339;4685.
  ) 
 Here is how much of TeX's memory you used:
- 42786 strings out of 474485
- 835355 string characters out of 5753549
+ 42854 strings out of 474485
+ 837131 string characters out of 5753549
  1938542 words of memory out of 5000000
- 64150 multiletter control sequences out of 15000+600000
+ 64216 multiletter control sequences out of 15000+600000
  572430 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 100i,9n,120p,3355b,651s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 100i,9n,120p,3355b,878s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (38 pages, 925711 bytes).
+Output written on main.pdf (38 pages, 926984 bytes).
 PDF statistics:
- 505 PDF objects out of 1000 (max. 8388607)
- 115 named destinations out of 1000 (max. 500000)
+ 507 PDF objects out of 1000 (max. 8388607)
+ 117 named destinations out of 1000 (max. 500000)
  260 words of extra memory for PDF output out of 10000 (max. 10000000)
 
