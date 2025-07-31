@@ -112,11 +112,11 @@ Seja $\xi$ uma raiz de uma função $f(x)$ e seja $\varphi(x)$ uma função de i
 %\newpage
 
 \LucasM{Aqui, antes de ir para o resultado principal, dar exemplos de funções de iteração que fazem a sequencia convergir e divergir. Inserir gráficos assim como no livro da Vera.} 
-\Daniel{ok!}
+\DanielP{ok!}
 
 Sob condições a respeito da função de iteração, sua derivada e o dado inicial, a convergência da sequência iterativa é garantida, como pode-se observar a seguir.
 %Enfim é importante verificar se a função de iteração de ponto fixo respeita as condições para convergência.
-
+\EnzoR{Vale a pena dar nome aos teoremas? Por exemplo: Ao invés de "Teorema 2.3.1" ser "Teorema 2.3.1 - Convergência de Funções de Iteração" ou algo assim. Acho que se fizermos isso, fica melhor de referenciar depois, pois assim o leitor não precisa ficar procurando o teorema pelo número.}
 \begin{teo}
     Seja $\xi$ uma raiz de f(x), isolada num intervalo I centrado nessa raiz. Considere uma função de iteração $\varphi(x)$ associada a f(x). Sob as seguintes hipóteses:
     \begin{itemize}\label{teoMPF}
@@ -239,19 +239,20 @@ ou seja,
 %é necessário, mostrar que \varphi'(\lim_{k \to \infty} c_k) = \varphi'(\xi)? uma vez que o que importa é que \varphi'(x) < 1 independente do x
 Como por hipótese $\varphi'(x) < 1$ então $|C| < 1$, portanto, a convergência do MPF é pelo menos linear.
 \end{proof}
+\newpage
     
 %--------------------------------------------------------------------
 \section{Método de Newton-Raphson}
 
 \TODO{talvez reescrever todas as condições como i) derivada limitada ii) f e g continuas , etc...}
 
-\Daniel{conv quadrática}
+\DanielP{conv quadrática}
 
 \EnzoR{escolhendo a func de iter}
 
-O método de Newton é um caso particular do \textbf{Método do Ponto Fixo}, amplamente utilizado para encontrar raízes reais de funções não lineares, cuja ordem de convergência é pelo menos quadrática. A função de iteração específica para este método produz uma sequência em que cada termo $x_{k+1}$ corresponde geometricamente à interseção da reta tangente a $f(x)$ no ponto $(x_k, f(x_k))$ com o eixo x. 
+O método de Newton é um caso particular do \textbf{Método do Ponto Fixo} amplamente utilizado para encontrar raízes \EnzoR{seria raízes complexas, não?} reais de funções não lineares, cuja ordem de convergência é pelo menos quadrática. A função de iteração específica para este método produz uma sequência em que cada termo $x_{k+1}$ corresponde, geometricamente, à \textbf{interseção da reta tangente} a $f(x)$ no ponto $(x_k, f(x_k))$ com o eixo x. 
 
-\Daniel{só tem que colocar no lugar certo}
+\DanielP{só tem que colocar no lugar certo}
 No método do ponto fixo, vimos que se a função satisfaz o Teorema \ref{teoMPF} a sequência $x_{k+1} = \varphi(x_k)$ converge para $\xi$. Além disso, a desigualdade (\ref{lim0}) na demonstração desse resultado nos diz que quanto menor for $|\varphi'(x)|$, mais rápido a sequência $\{x_k\}$ converge.
 
 Dada uma função \(f(x)\), o processo parte de uma estimativa inicial \(x_0\) e aplica a seguinte fórmula iterativa, a partir da escolha da derivada em (\ref{it})
@@ -261,9 +262,9 @@ Dada uma função \(f(x)\), o processo parte de uma estimativa inicial \(x_0\) e
 onde \(f'(x_k)\) é a derivada da função \(f\) avaliada em \(x_k\).
 Para que o método convirja para a raiz correta, é necessário que \(f(x)\) seja continuamente diferenciável em uma vizinhança da raiz e que \(f'(x) \neq 0\) nessa região. Além disso, a escolha adequada do ponto inicial \(x_0\) é crucial para garantir a convergência do método.
 
-Aplicando a derivada na forma geral de $\varphi$ pela regra da cadeia obtemos $\varphi'(x) = 1 + A'(x)f(x) + A(x)f'(x)$, calculando-a na raiz resta $\varphi'(x) = 1 + A(\xi)f'(\xi)$. Por hipótese, a $\varphi'(\xi) = 0$, pelo que temos $A(x) = \frac{-1}{f'(x)}$. Portanto, a forma da função de iteração do método de Newton-Raphson é 
+Aplicando a derivada na forma geral de $\varphi$ pela regra da cadeia obtemos $\varphi'(x) = 1 + A'(x)f(x) + A(x)f'(x)$ e, calculando-a na raiz, resta $\varphi'(\xi) = 1 + A(\xi)f'(\xi)$. Impomos que $\varphi'(\xi) = 0$, o que nos leva a $A(\xi) = \frac{-1}{f'(\xi)}$. Generalizando, temos $A(x) = \frac{-1}{f'(x)}$. Portanto, desde que $f'(x) \neq 0$, a forma da função de iteração do método de Newton-Raphson é 
 \begin{equation*}
-    \varphi(x) = x - \frac{f(x)}{f'(x)}
+    \varphi(x) = x - \frac{f(x)}{f'(x)}.
 \end{equation*}
 \begin{comment}
 \begin{align*}
@@ -283,7 +284,6 @@ Aplicando a derivada na forma geral de $\varphi$ pela regra da cadeia obtemos $\
      &= 0
 \end{align*}
 \end{comment}
-desde que $f'(x) \neq 0$.
 
 \subsection{Demonstração Geométrica}
 \subsection{Convergência}
@@ -306,6 +306,7 @@ No MPF espera-se uma ordem de convergência ao menos linear, entretanto ao escol
     A ordem de convergência do método de Newton é pelo menos quadrática.
 \end{prop}
 \begin{proof}
+    \BUG{Ele está chamando de "Teorema 2.4.2", mas está se referenciando a uma demonstração.}
     Suporemos todas as hipóteses do Teorema \ref{teoNR}. %(de Convergência do Método de Newton-Raphson), temos
     Partindo de $x_{k+1} = x_k - \frac{f(x_k)}{f'(x_k)}$, subtraindo $\xi$ em ambos os lados da igualdade, obtemos
 \begin{equation} \label{eMNR}
@@ -328,11 +329,12 @@ tomando $x = \xi$, dado que $f(\xi) = 0$, dividindo a equação pela derivada de
     \lim_{k \to \infty} \frac{e_{k+1}}{e_k^2} &= \lim_{k \to \infty} \frac{1}{2} \frac{f''(c_k)}{f'(x_k)} \\
      &= \frac{1}{2} \frac{f''[\lim_{k \to \infty} (c_k)]}{f'[\lim_{k \to \infty} (x_k)]} \\
      &= \frac{1}{2} \frac{f''(\xi)}{f'(\xi)} \\
-     &= \frac{1}{2} \varphi''(\xi) \\ %mostrar que é \varphi''
+     &= \frac{1}{2} \varphi''(\xi) \\
      &= C
 \end{align*}
 %\frac{f(x_k)}{f'(x_k)} &= e_k - \frac{f''(c_k)}{2f'(x_k)}e_k^2
 \end{proof}
 \subsection{Ciladas}
-O Método de Newton é amplamente utilizado na prática devido à sua rapidez e precisão em condições ideais. Contudo, ele pode falhar ou convergir para raízes incorretas se essas condições não forem satisfeitas. 
+O Método de Newton é amplamente utilizado na prática devido à sua rapidez e precisão em condições ideais. Contudo, ele pode falhar ou convergir para raízes incorretas se essas condições não forem satisfeitas.
+
 \subsection{Fractais}
