@@ -335,7 +335,46 @@ tomando $x = \xi$, dado que $f(\xi) = 0$, dividindo a equação pela derivada de
 %\frac{f(x_k)}{f'(x_k)} &= e_k - \frac{f''(c_k)}{2f'(x_k)}e_k^2
 \end{proof}
 \subsection{Ciladas}
-O Método de Newton é amplamente utilizado na prática devido à sua rapidez e precisão em condições ideais. Contudo, em algumas situações ele pode falhar ou convergir para raízes incorretas se essas condições não forem satisfeitas. Estes problemas geralmente estão associados a fatores como: pontos de máximo e mínimo, pontos de inflexão, multiplicidade da raiz e escolha inadequada de \(x_0\).
+O Método de Newton é amplamente utilizado na prática devido à sua rapidez e precisão em condições ideais. Contudo, em algumas situações ele pode falhar ou convergir para raízes incorretas se essas condições não forem satisfeitas. Estes problemas geralmente estão associados a fatores como: pontos de máximo e mínimo, pontos de inflexão, multiplicidade da raiz e escolha inadequada do chute inicial.
+
+Polinômios de grau elevado tendem a ter alta multiplicidade nas raizes, como no caso do polinômio $x^{10} - 1$.
+A convergencia lenta é causada pela multiplicidade da raiz. Quando uma raiz tem multiplicidade $m > 1$ — neste caso $m = 10$ — a derivada próxima a raiz se aproxima de zero, aumentando o número de iterações necessárias para convergir para a raiz.
+Isso faz com que a taxa de convergência do metodo de Newton reduza-se para linear em vez da esperada taxa quadrática.
+\begin{figure}[H]
+    \centering 
+    \includegraphics[width=1\textwidth]{Imagens/pitfalls/x_10-1.png}
+    \caption{Cilada relacionada a multiplicidade da raiz.}
+    \label{fig:ciladaMultRaiz}
+\end{figure}
+Ao analisar a função geometricamente, é possível observar que a inclinação da tangente à curva em torno da raiz é muito próxima de zero, o que resulta em saltos minúsculos a cada iteração, causando uma convergencia lenta.
+
+\begin{center}
+\small
+\begin{tabular}{|c|c|c|c|}
+\hline
+Iteração & Valor de $x_k$ & $f(x)$ & Erro $e_k$ \\
+\hline
+1 & $x = 0.50000000000000000$ & $f(x) = -0.99902343750000000$ & $0.50000000000000000$ \\
+\hline
+2 & $x = 51.64999999999999858$ & $f(x) = 135114904483913696$ & $50.64999999999999858$ \\
+\hline
+3 & $x = 46.48499999999999943$ & $f(x) = 47111654129711536$ & $45.48499999999999943$ \\
+\hline
+4 & $x = 41.83650000000000091$ & $f(x) = 16426818072478544$ & $40.83650000000000091$ \\
+\hline
+5 & $x = 37.65285000000000082$ & $f(x) = 5727677301318307$ & $36.65285000000000082$ \\
+\hline
+$\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ \\
+\hline
+43 & $x = 1.00000000257760013$ & $f(x) = 0.00000002577600156$ & $0.00000000257760013$ \\
+\hline
+44 & $x = 1.00000000000000000$ & $f(x) = 0.0$ & $0.00000000000000000$ \\
+\hline
+\end{tabular}
+\label{tab:ciladaNR}
+\end{center}
+
+
 
 \begin{comment}
 {Derivada nula:} Se a derivada \(f'(x_k)\) for zero ou muito próxima de zero, a iteração pode divergir ou levar a resultados imprecisos. Isso ocorre porque a divisão por zero ou por um número muito pequeno pode resultar em saltos grandes na iteração, afastando-a da raiz.
