@@ -347,7 +347,6 @@ Isso faz com que a taxa de convergência do metodo de Newton reduza-se para line
     \label{fig:ciladaMultRaiz}
 \end{figure}
 Ao analisar a função geometricamente, é possível observar que a inclinação da tangente à curva em torno da raiz é muito próxima de zero, o que resulta em saltos minúsculos a cada iteração, causando uma convergencia lenta.
-
 \begin{center}
 \small
 \begin{tabular}{|c|c|c|c|}
@@ -381,7 +380,6 @@ Outro fator que é um problema quando se trata de taxa de convergência são os 
     \caption{Cilada de ponto de Mínimo diminuindo a taxa de convergência.}
     \label{fig:ciladaMinMax_A}
 \end{figure}
-
 \begin{center}
 \small
 \begin{tabular}{|c|c|c|c|}
@@ -418,7 +416,6 @@ Em casos extremos, na vizinhança de um ponto de máximo ou mínimo, a intercess
     \caption{Cilada de ponto de Mínimo presa.}
     \label{fig:ciladaMinMax_B}
 \end{figure}
-
 \begin{center}
 \small
 \begin{tabular}{|c|c|c|c|}
@@ -447,6 +444,65 @@ $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ \\
 \label{tab:ciladaNR}
 \end{center}
 
+Pontos de inflexão também podem causar problemas no método de Newton. Se a raiz estiver próxima de um ponto de inflexão da função \(f(x)\), onde a derivada segunda muda de sinal, o método pode não convergir para a raiz desejada. Isso acontece porque a tangente à curva nesse ponto pode não fornecer uma boa aproximação da raiz, resultando em saltos grandes na iteração e afastando-a da raiz.
+\begin{figure}[H]
+    \centering 
+    \includegraphics[width=1\textwidth]{Imagens/pitfalls/arctg.png}
+    \caption{Cilada de ponto de Inflexão.}
+    \label{fig:ciladaPontoInflexao}
+\end{figure}
+Ao analisar o gráfico é possivel notar que conforme as iterações avançam, a função se afasta da raiz, resultando em saltos cada vez maiores. Isso ocorre porque a tangente à curva no ponto de inflexão não fornece uma boa aproximação da raiz, levando o método a divergir.
+\begin{center}
+\small
+\begin{tabular}{|c|c|c|c|}
+\hline
+Iteração & Valor de $x_k$ & $f(x)$ & Erro $e_k$ \\
+\hline
+1 & $x = 1.44999999999999996$ & $f(x) = 0.96704699339746025$ & $1.44999999999999996$ \\
+\hline
+2 & $x = -1.55026329701562049$ & $f(x) = -0.99790755802460773$ & $1.55026329701562049$ \\
+\hline
+3 & $x = 1.84593175119723552$ & $f(x) = 1.07432318743154331$ & $1.84593175119723552$ \\
+\hline
+4 & $x = -2.88910905408613594$ & $f(x) = -1.23757558204700402$ & $2.88910905408613594$ \\
+\hline
+5 & $x = 8.67844942653632145$ & $f(x) = 1.45607432393228908$ & $8.67844942653632145$ \\
+\hline
+\end{tabular}
+\label{tab:ciladaNR}
+\end{center}
+
+Além disso, quando a derivada de uma iteração é muito próxima de zero, o metodo vai ter dificuldades em convergir. Isso ocorre porque a divisão por zero ou por um número muito pequeno pode resultar em saltos grandes na iteração, afastando-a da raiz.
+\begin{figure}[H]
+    \centering 
+    \includegraphics[width=1\textwidth]{Imagens/pitfalls/slope_near_zero.png}
+    \caption{Cilada de derivada próxima de zero.}
+    \label{fig:ciladaDerivadaProximaZero}
+\end{figure}
+Podemos perceber que a inclinação da tangente à curva em torno da raiz é muito próxima de zero, o que resulta em um salto enorme, levando a iteração para longe da raiz mais próxima.
+\begin{center}
+\small
+\begin{tabular}{|c|c|c|}
+\hline
+Iteração & Valor de $x_k$ & $f(x)$ \\
+\hline
+1 & $x = 4.75000000000000000$ & $f(x) = -0.04736567741932798$ \\
+\hline
+2 & $x = -11.97301255116330410$ & $f(x) = -0.04486365737362013$ \\
+\hline
+3 & $x = -11.77429070649470333$ & $f(x) = 0.00157340920400228$ \\
+\hline
+4 & $x = -11.78097664313937010$ & $f(x) = -0.00000098775893849$ \\
+\hline
+5 & $x = -11.78097245096321544$ & $f(x) = -0.00000000000035126$ \\
+\hline
+6 & $x = -11.78097245096172507$ & $f(x) = -0.00000000000000010$ \\
+\hline
+\end{tabular}
+\label{tab:ciladaNR}
+\end{center}
+
+Em suma, para evitar estes casos, além de analisar o comportamento da função, isto é, analisar pontos de máximo e minimo, derivadas nulas, pontos de inflexão e multiplicidade das raízes, é necessário escolher um bom chute inicial para $x_0$, suficientemente perto da raiz e com uma inclinação da tangente que não seja muito pequena.
 
 \begin{comment}
 {Derivada nula:} Se a derivada \(f'(x_k)\) for zero ou muito próxima de zero, a iteração pode divergir ou levar a resultados imprecisos. Isso ocorre porque a divisão por zero ou por um número muito pequeno pode resultar em saltos grandes na iteração, afastando-a da raiz.
