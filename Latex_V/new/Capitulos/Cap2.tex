@@ -374,6 +374,78 @@ $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ \\
 \label{tab:ciladaNR}
 \end{center}
 
+Outro fator que é um problema quando se trata de taxa de convergência são os pontos de máximo e mínimo da função. Quando uma iteração é iniciada perto de um ponto de máximo ou mínimo um dos problemas que podem ocorrer é a função de iteração convergir para um ponto de máximo ou mínimo ao invés da raiz. Oque pode causar uma diminuição na taxa de convergência.
+\begin{figure}[H]
+    \centering 
+    \includegraphics[width=1\textwidth]{Imagens/pitfalls/max_min.png}
+    \caption{Cilada de ponto de Mínimo diminuindo a taxa de convergência.}
+    \label{fig:ciladaMinMax_A}
+\end{figure}
+
+\begin{center}
+\small
+\begin{tabular}{|c|c|c|c|}
+\hline
+Iteração & Valor de $x_k$ & $f(x)$ & Erro $e_k$ \\
+\hline
+1 & $x = 0.90000000000000002$ & $f(x) = 0.45060996827066446$ & $1.19455148154232660$ \\
+\hline
+2 & $x = 0.20318738327105890$ & $f(x) = 0.78462959591676906$ & $1.89136409827126761$ \\
+\hline
+3 & $x = 0.93108680836493152$ & $f(x) = 0.47305585213356149$ & $1.16346467317739499$ \\
+\hline
+4 & $x = 0.33865524784873213$ & $f(x) = 0.64338650465768399$ & $1.75589623369359438$ \\
+\hline
+5 & $x = 0.98975277280548202$ & $f(x) = 0.52871601875798535$ & $1.10479870873684449$ \\
+\hline
+6 & $x = 0.51038365868141022$ & $f(x) = 0.49512408543110442$ & $1.58416782286091617$ \\
+\hline
+7 & $x = 1.21066335888968579$ & $f(x) = 0.91621158441747408$ & $0.88388812265264072$ \\
+\hline
+8 & $x = 0.83841140043105933$ & $f(x) = 0.41958113044930967$ & $1.25614008111126729$ \\
+\hline
+9 & $x = -0.31043606990472872$ & $f(x) = 1.23271962647527022$ & $2.40498755144705534$ \\
+\hline
+10 & $x = 2.73020451984058488$ & $f(x) = 16.70421900417551697$ & $0.63565303829825837$ \\
+\hline
+\end{tabular}
+\label{tab:ciladaNR}
+\end{center}
+Em casos extremos, na vizinhança de um ponto de máximo ou mínimo, a intercessão da reta tangente de uma iteração pode coincidir com a coordenada da abscissa da iteração anterior, fazendo com que o método fique preso.
+\begin{figure}[H]
+    \centering 
+    \includegraphics[width=1\textwidth]{Imagens/pitfalls/x3_2x_2_10.png}
+    \caption{Cilada de ponto de Mínimo presa.}
+    \label{fig:ciladaMinMax_B}
+\end{figure}
+
+\begin{center}
+\small
+\begin{tabular}{|c|c|c|c|}
+\hline
+Iteração & Valor de $x_k$ & $f(x)$ & Erro $e_k$ \\
+\hline
+1 & $x = 1.0$ & $f(x) = 1.0$ & $1.09455148154232651$ \\
+\hline
+2 & $x = 0.0$ & $f(x) = 2.0$ & $2.09455148154232651$ \\
+\hline
+3 & $x = 1.0$ & $f(x) = 1.0$ & $1.09455148154232651$ \\
+\hline
+4 & $x = 0.0$ & $f(x) = 2.0$ & $2.09455148154232651$ \\
+\hline
+$\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ \\
+\hline
+97 & $x = 1.0$ & $f(x) = 1.0$ & $1.09455148154232651$ \\
+\hline
+98 & $x = 0.0$ & $f(x) = 2.0$ & $2.09455148154232651$ \\
+\hline
+99 & $x = 1.0$ & $f(x) = 1.0$ & $1.09455148154232651$ \\
+\hline
+100 & $x = 0.0$ & $f(x) = 2.0$ & $2.09455148154232651$ \\
+\hline
+\end{tabular}
+\label{tab:ciladaNR}
+\end{center}
 
 
 \begin{comment}
