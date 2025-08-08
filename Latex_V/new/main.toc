@@ -26,5 +26,5 @@
 \contentsline {subsection}{\numberline {2.4.2}Convergência}{26}{subsection.2.4.2}%
 \contentsline {subsection}{\numberline {2.4.3}Ordem de Convergência}{26}{subsection.2.4.3}%
 \contentsline {subsection}{\numberline {2.4.4}Ciladas}{27}{subsection.2.4.4}%
-\contentsline {subsection}{\numberline {2.4.5}Fractais}{33}{subsection.2.4.5}%
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{35}{chapter*.56}%
+\contentsline {subsection}{\numberline {2.4.5}Fractais}{36}{subsection.2.4.5}%
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{38}{chapter*.56}%

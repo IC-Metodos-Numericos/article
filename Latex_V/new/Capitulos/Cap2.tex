@@ -342,11 +342,14 @@ A convergencia lenta é causada pela multiplicidade da raiz. Quando uma raiz tem
 Isso faz com que a taxa de convergência do metodo de Newton reduza-se para linear em vez da esperada taxa quadrática.
 \begin{figure}[H]
     \centering 
-    \includegraphics[width=1\textwidth]{Imagens/pitfalls/x_10-1.png}
-    \caption{Cilada relacionada a multiplicidade da raiz.}
+    \includegraphics[width=1\textwidth]{Imagens/pitfalls/01/x_10-1.png}
+    \includegraphics[width=1\textwidth]{Imagens/pitfalls/01/err_x_10-1.png}
+    \caption{Gráfico daCilada relacionada a multiplicidade da raiz.}
     \label{fig:ciladaMultRaiz}
 \end{figure}
+
 Ao analisar a função geometricamente, é possível observar que a inclinação da tangente à curva em torno da raiz é muito próxima de zero, o que resulta em saltos minúsculos a cada iteração, causando uma convergencia lenta.
+
 \begin{center}
 \small
 \begin{tabular}{|c|c|c|c|}
@@ -367,7 +370,7 @@ $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ \\
 \hline
 43 & $x = 1.00000000257760013$ & $f(x) = 0.00000002577600156$ & $0.00000000257760013$ \\
 \hline
-44 & $x = 1.00000000000000000$ & $f(x) = 0.0$ & $0.00000000000000000$ \\
+44 & $x = 1.0$ & $f(x) = 0.0$ & $0.0$ \\
 \hline
 \end{tabular}
 \label{tab:ciladaNR}
@@ -376,69 +379,74 @@ $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ \\
 Outro fator que é um problema quando se trata de taxa de convergência são os pontos de máximo e mínimo da função. Quando uma iteração é iniciada perto de um ponto de máximo ou mínimo um dos problemas que podem ocorrer é a função de iteração convergir para um ponto de máximo ou mínimo ao invés da raiz. Oque pode causar uma diminuição na taxa de convergência.
 \begin{figure}[H]
     \centering 
-    \includegraphics[width=1\textwidth]{Imagens/pitfalls/max_min.png}
+    \includegraphics[width=1\textwidth]{Imagens/pitfalls/02/max_min.png}
+    \includegraphics[width=1\textwidth]{Imagens/pitfalls/02/err_max_min.png}
     \caption{Cilada de ponto de Mínimo diminuindo a taxa de convergência.}
     \label{fig:ciladaMinMax_A}
 \end{figure}
+
 \begin{center}
 \small
 \begin{tabular}{|c|c|c|c|}
 \hline
 Iteração & Valor de $x_k$ & $f(x)$ & Erro $e_k$ \\
 \hline
-1 & $x = 0.90000000000000002$ & $f(x) = 0.45060996827066446$ & $1.19455148154232660$ \\
+1 & $x = 0.90000000000000002$ & $f(x) = 0.45060996827066446$ & $2.05960580450169983$ \\
 \hline
-2 & $x = 0.20318738327105890$ & $f(x) = 0.78462959591676906$ & $1.89136409827126761$ \\
+2 & $x = 0.20318738327105890$ & $f(x) = 0.78462959591676906$ & $1.36279318777275882$ \\
 \hline
-3 & $x = 0.93108680836493152$ & $f(x) = 0.47305585213356149$ & $1.16346467317739499$ \\
+3 & $x = 0.93108680836493152$ & $f(x) = 0.47305585213356149$ & $2.09069261286663144$ \\
 \hline
-4 & $x = 0.33865524784873213$ & $f(x) = 0.64338650465768399$ & $1.75589623369359438$ \\
+4 & $x = 0.33865524784873213$ & $f(x) = 0.64338650465768399$ & $1.49826105235043205$ \\
 \hline
-5 & $x = 0.98975277280548202$ & $f(x) = 0.52871601875798535$ & $1.10479870873684449$ \\
+5 & $x = 0.98975277280548202$ & $f(x) = 0.52871601875798535$ & $2.14935857730718194$ \\
 \hline
-6 & $x = 0.51038365868141022$ & $f(x) = 0.49512408543110442$ & $1.58416782286091617$ \\
+6 & $x = 0.51038365868141022$ & $f(x) = 0.49512408543110442$ & $1.66998946318311026$ \\
 \hline
-7 & $x = 1.21066335888968579$ & $f(x) = 0.91621158441747408$ & $0.88388812265264072$ \\
+7 & $x = 1.21066335888968579$ & $f(x) = 0.91621158441747408$ & $2.37026916339138571$ \\
 \hline
-8 & $x = 0.83841140043105933$ & $f(x) = 0.41958113044930967$ & $1.25614008111126729$ \\
+8 & $x = 0.83841140043105933$ & $f(x) = 0.41958113044930967$ & $1.99801720493275914$ \\
 \hline
-9 & $x = -0.31043606990472872$ & $f(x) = 1.23271962647527022$ & $2.40498755144705534$ \\
+9 & $x = -0.31043606990472872$ & $f(x) = 1.23271962647527022$ & $0.84916973459697120$ \\
 \hline
-10 & $x = 2.73020451984058488$ & $f(x) = 16.70421900417551697$ & $0.63565303829825837$ \\
+10 & $x = 2.73020451984058488$ & $f(x) = 16.70421900417551697$ & $3.88981032434228480$ \\
+\hline
+11 & $x = 1.93332993606072678$ & $f(x) = 4.93835804267838796$ & $3.09293574056242671$ \\
 \hline
 \end{tabular}
 \label{tab:ciladaNR}
 \end{center}
+
 Em casos extremos, na vizinhança de um ponto de máximo ou mínimo, a intercessão da reta tangente de uma iteração pode coincidir com a coordenada da abscissa da iteração anterior, fazendo com que o método fique preso.
 \begin{figure}[H]
     \centering 
-    \includegraphics[width=1\textwidth]{Imagens/pitfalls/x3_2x_2_10.png}
+    \includegraphics[width=1\textwidth]{Imagens/pitfalls/03/x3_2x_2_10.png}
+    \includegraphics[width=1\textwidth]{Imagens/pitfalls/03/err_x3_2x_2_10.png}
     \caption{Cilada de ponto de Mínimo presa.}
     \label{fig:ciladaMinMax_B}
 \end{figure}
+
 \begin{center}
 \small
 \begin{tabular}{|c|c|c|c|}
 \hline
 Iteração & Valor de $x_k$ & $f(x)$ & Erro $e_k$ \\
 \hline
-1 & $x = 1.0$ & $f(x) = 1.0$ & $1.09455148154232651$ \\
+1 & $x = 1.50000000000000000$ & $f(x) = 2.37500000000000000$ & $0.59455148154232651$ \\
 \hline
-2 & $x = 0.0$ & $f(x) = 2.0$ & $2.09455148154232651$ \\
+2 & $x = 1.00000000000000000$ & $f(x) = 1.00000000000000000$ & $1.09455148154232651$ \\
 \hline
-3 & $x = 1.0$ & $f(x) = 1.0$ & $1.09455148154232651$ \\
+3 & $x = 0.00000000000000000$ & $f(x) = 2.00000000000000000$ & $2.09455148154232651$ \\
 \hline
-4 & $x = 0.0$ & $f(x) = 2.0$ & $2.09455148154232651$ \\
+4 & $x = 1.00000000000000000$ & $f(x) = 1.00000000000000000$ & $1.09455148154232651$ \\
+\hline
+5 & $x = 0.00000000000000000$ & $f(x) = 2.00000000000000000$ & $2.09455148154232651$ \\
 \hline
 $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ \\
 \hline
-97 & $x = 1.0$ & $f(x) = 1.0$ & $1.09455148154232651$ \\
+100 & $x = 1.00000000000000000$ & $f(x) = 1.00000000000000000$ & $1.09455148154232651$ \\
 \hline
-98 & $x = 0.0$ & $f(x) = 2.0$ & $2.09455148154232651$ \\
-\hline
-99 & $x = 1.0$ & $f(x) = 1.0$ & $1.09455148154232651$ \\
-\hline
-100 & $x = 0.0$ & $f(x) = 2.0$ & $2.09455148154232651$ \\
+101 & $x = 0.00000000000000000$ & $f(x) = 2.00000000000000000$ & $2.09455148154232651$ \\
 \hline
 \end{tabular}
 \label{tab:ciladaNR}
@@ -447,11 +455,13 @@ $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ \\
 Pontos de inflexão também podem causar problemas no método de Newton. Se a raiz estiver próxima de um ponto de inflexão da função \(f(x)\), onde a derivada segunda muda de sinal, o método pode não convergir para a raiz desejada. Isso acontece porque a tangente à curva nesse ponto pode não fornecer uma boa aproximação da raiz, resultando em saltos grandes na iteração e afastando-a da raiz.
 \begin{figure}[H]
     \centering 
-    \includegraphics[width=1\textwidth]{Imagens/pitfalls/arctg.png}
+    \includegraphics[width=1\textwidth]{Imagens/pitfalls/04/arctg.png}
+    \includegraphics[width=1\textwidth]{Imagens/pitfalls/04/err_arctg.png}
     \caption{Cilada de ponto de Inflexão.}
     \label{fig:ciladaPontoInflexao}
 \end{figure}
 Ao analisar o gráfico é possivel notar que conforme as iterações avançam, a função se afasta da raiz, resultando em saltos cada vez maiores. Isso ocorre porque a tangente à curva no ponto de inflexão não fornece uma boa aproximação da raiz, levando o método a divergir.
+
 \begin{center}
 \small
 \begin{tabular}{|c|c|c|c|}
@@ -475,11 +485,12 @@ Iteração & Valor de $x_k$ & $f(x)$ & Erro $e_k$ \\
 Além disso, quando a derivada de uma iteração é muito próxima de zero, o metodo vai ter dificuldades em convergir. Isso ocorre porque a divisão por zero ou por um número muito pequeno pode resultar em saltos grandes na iteração, afastando-a da raiz.
 \begin{figure}[H]
     \centering 
-    \includegraphics[width=1\textwidth]{Imagens/pitfalls/slope_near_zero.png}
+    \includegraphics[width=1\textwidth]{Imagens/pitfalls/06/slope_near_zero.png}
     \caption{Cilada de derivada próxima de zero.}
     \label{fig:ciladaDerivadaProximaZero}
 \end{figure}
 Podemos perceber que a inclinação da tangente à curva em torno da raiz é muito próxima de zero, o que resulta em um salto enorme, levando a iteração para longe da raiz mais próxima.
+
 \begin{center}
 \small
 \begin{tabular}{|c|c|c|}
