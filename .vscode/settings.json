@@ -63,6 +63,7 @@
         "-interaction=nonstopmode",
         "-file-line-error",
         "-pdf",
+        "-bibtex-",
         "%DOC%"
       ]
     }
