@@ -44,7 +44,7 @@ Durante a instalação, marque:
 
 #### 2. Instale o VS Code
 
-Depois, instale as extensões:
+Depois, instale as extensões (Aperte Ctrl+Shift+X):
 
 - `Ctrl + Shift + X` → Pesquise e instale:
   - `LaTeX Workshop`
@@ -77,3 +77,4 @@ latexmk -v
 Se aparecer a versão, tudo está certo. ✨
 
 >Se tiver dúvidas, fale com @Enzo 🧠
+
