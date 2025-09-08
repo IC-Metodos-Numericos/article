@@ -16,16 +16,16 @@
 \contentsline {section}{\numberline {1.4}Análise de Instabilidades e Casos Peculiares}{13}{section.1.4}%
 \contentsline {subsection}{\numberline {1.4.1}Units in Last Place (ULP's)}{14}{subsection.1.4.1}%
 \contentsline {subsection}{\numberline {1.4.2}Imprecisão de operações de Ponto flutuante}{14}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3}Discussão}{17}{subsection.1.4.3}%
-\contentsline {chapter}{\numberline {2}Métodos Iterativos para Zeros de Função}{18}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Localização de Raízes}{18}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Critério de Parada}{20}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Método do Ponto Fixo}{21}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Ordem de convergência}{23}{subsection.2.3.1}%
-\contentsline {section}{\numberline {2.4}Método de Newton-Raphson}{25}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Demonstração Geométrica}{26}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Convergência}{26}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Ordem de Convergência}{26}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Ciladas}{27}{subsection.2.4.4}%
-\contentsline {subsection}{\numberline {2.4.5}Fractais}{36}{subsection.2.4.5}%
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{38}{chapter*.56}%
+\contentsline {subsection}{\numberline {1.4.3}Discussão}{18}{subsection.1.4.3}%
+\contentsline {chapter}{\numberline {2}Métodos Iterativos para Zeros de Função}{19}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Localização de Raízes}{19}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Critério de Parada}{21}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Método do Ponto Fixo}{22}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Ordem de convergência}{24}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4}Método de Newton-Raphson}{26}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Demonstração Geométrica}{27}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Convergência}{27}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Ordem de Convergência}{27}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Ciladas}{28}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Fractais}{37}{subsection.2.4.5}%
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{39}{chapter*.56}%

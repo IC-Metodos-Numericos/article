@@ -465,7 +465,10 @@ Portanto, a representação especial do zero evita esse problema, preservando a 
 Na aritmética de ponto flutuante, certos casos resultam em erros devido à limitação da precisão e à maneira como os números são representados. 
 
 \subsection{Units in Last Place (ULP's)} 
-Diferente dos conjuntos matatemáticos comuns (\mathbb{R}, \mathbb{Z}, etc.), todo conjunto de números de um sistema de ponto flutuante é, por natureza, discreto, ou seja, possui uma quantidade finita de números representáveis. Unidades de última posição, as ULP's é o nome dado ao intervalo
+Diferentemente dos conjuntos matatemáticos comuns ($\mathbb{R}, \mathbb{Z}$, etc.), todo conjunto de números de um sistema de ponto flutuante (PF) é, por natureza, discreto, ou seja, possui uma quantidade finita de números representáveis. Para cada numéro real $x$ exite um $X$ que será a sua representação num dado sistema de PF. Definimos $ulp(x)$ pela lacuna entre dois números $X_{1}$ e $X_{2}$ mais próximos de $x$, mesmo que $x$ sejá um deles.
+Tome o sistema $F(\beta = 2, t = 3, L = 3 , U = 5)$. O menor número que pode ser representado nesse sistema é $1{,}00_{2}$ x $2^{3}$ = $8_{10}$, o seu sucessor é $1{,}01_{2}$ = $1{,}25_{10}$ x $2^{3}$ = $10_{10}$.
+Em $x \in [8_{10} , 10_{10}]$ ulp($x$) = 2.
+Para definir para qual PF $x$ o número real $x$ 
 
 A seguir, descrevemos dois exemplos clássicos que ilustram essas instabilidades.
 
