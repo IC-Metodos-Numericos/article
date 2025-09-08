@@ -69,5 +69,9 @@
     }
   ],
   "latex-workshop.synctex.afterBuild.enabled": true,
-  "latex-workshop.message.update.show": false
+  "latex-workshop.message.update.show": false,
+
+  "terminal.integrated.env.windows": {
+  "PATH": "C:\\Strawberry\\perl\\bin;${env:PATH}"
+}
 }

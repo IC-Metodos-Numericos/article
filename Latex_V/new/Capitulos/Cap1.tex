@@ -51,7 +51,7 @@ Um sistema de ponto flutuante $F$ pode ser definido como
 F(\beta, t, L, U)\]
 cuja representação normalizada de um número real N nesse sistema é dada por
 \begin{equation}
-N = \pm (0.d_{1}d_{2} . . . d_{t})_\beta \times \beta^e 
+N = \pm (d_{1}.d_{2} . . . d_{t})_\beta \times \beta^e 
 \end{equation}
 em que
 \begin{itemize}
@@ -278,8 +278,8 @@ Dado um número real $x$, as seguintes situações podem ocorrer:
 \subsubsection{Caso 1: \( x \in G \) (Número representável)}
 Seja $x = 12237,76$. 
 
-Na forma normalizada temos \(x = 0,1223776 \times10^5\).
-Porém, esse número não pode ser representado precisamente no sistema $F$ e, portanto, precisamos aplicar uma das técnicas de aproximação. Utilizando o truncamento o resultado é \( \bar{x} = 0{,}12237 \times 10^5 \). Já com o arredondamento \( \bar{x} = 0{,}12238 \times 10^5 \).
+Na forma normalizada temos \(x = 1,223776 \times10^4\).
+Porém, esse número não pode ser representado precisamente no sistema $F$ e, portanto, precisamos aplicar uma das técnicas de aproximação. Utilizando o truncamento o resultado é \( \bar{x} = 1{,}22377 \times 10^4 \). Já com o arredondamento \( \bar{x} = 1{,}22378 \times 10^4 \).
 
 O número está dentro da faixa de expoente permitida e é representável com perda controlada de precisão.
 
@@ -462,7 +462,12 @@ Portanto, a representação especial do zero evita esse problema, preservando a 
 \section{Análise de Instabilidades e Casos Peculiares}
 \EnzoR{@LuisD preciso que verifique se a seção está coerente e se os exemplos estão corretos.}
 
-Na aritmética de ponto flutuante, certos casos resultam em erros devido à limitação da precisão e à maneira como os números são representados. A seguir, descrevemos dois exemplos clássicos que ilustram essas instabilidades.
+Na aritmética de ponto flutuante, certos casos resultam em erros devido à limitação da precisão e à maneira como os números são representados. 
+
+\subsection{Units in Last Place (ULP's)} 
+Diferente dos conjuntos matatemáticos comuns (\mathbb{R}, \mathbb{Z}, etc.), todo conjunto de números de um sistema de ponto flutuante é, por natureza, discreto, ou seja, possui uma quantidade finita de números representáveis. Unidades de última posição, as ULP's é o nome dado ao intervalo
+
+A seguir, descrevemos dois exemplos clássicos que ilustram essas instabilidades.
 
 \subsection{Imprecisão de operações de Ponto flutuante}
 Considere o cálculo de $f(x) = x^{10} + 1 - x^{10}$ para \(x \in [-60, 60]\). As partes envolvendo $x$ são variáveis e a parte "$1$" é o literal, ou seja, um valor fixo. Analiticamente, o resultado deveria ser exatamente 1. No entanto, em implementações numéricas, pequenas imprecisões na representação de \(x^{10}\) podem levar a resultados instáveis, especialmente para valores de \(|x|\) além de um limiar. Isso ocorre devido ao erro relacionado às operações de ponto flutuante, como mostrado na Figura \ref{fig:catastrofic_cancelation}. 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.3)  3 SEP 2025 19:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.3)  8 SEP 2025 19:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1118,23 +1118,7 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 43.
 ) (Preambulo/Comandos.tex) (C:\Users\lumat\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count458
-) (main.aux
-Package babel Info: 'brazil' activates 'portuges' shorthands.
-(babel)             Reported on input line 12.
- (Preliminar/Agradecimentos.aux) (Preliminar/Resumo.aux) (Preliminar/Abstract.aux) (Preliminar/Introdução.aux) (Capitulos/Cap1.aux) (Capitulos/Cap2.aux
-
-LaTeX Warning: Label `tab:ciladaNR' multiply defined.
-
-
-LaTeX Warning: Label `tab:ciladaNR' multiply defined.
-
-
-LaTeX Warning: Label `tab:ciladaNR' multiply defined.
-
-
-LaTeX Warning: Label `tab:ciladaNR' multiply defined.
-
-))
+) (main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -1155,6 +1139,8 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
+Package babel Info: 'brazil' activates 'portuges' shorthands.
+(babel)             Reported on input line 25.
  (C:\Users\lumat\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count459
@@ -1210,12 +1196,11 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 25.
-(main.out) (main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
- (C:\Users\lumat\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+(C:\Users\lumat\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
@@ -1243,7 +1228,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 
 Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 25.
 
-<libs/cefetmg.png, id=102, 1192.455pt x 1192.455pt>
+<libs/cefetmg.png, id=6, 1192.455pt x 1192.455pt>
 File: libs/cefetmg.png Graphic file (type png)
 <use libs/cefetmg.png>
 Package pdftex.def Info: libs/cefetmg.png  used on input line 46.
@@ -1351,18 +1336,8 @@ l.51   \include{Preliminar/Abstract}
 
 
 
-] (main.toc
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.30 ...^encias Bibliogr\'aficas}{38}{chapter*.56}
-                                                  % [2
-
-
-
-])
+]
+No file main.toc.
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
@@ -1373,7 +1348,11 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has b
 <to be read again> 
                    \relax 
 l.56   \include{Preliminar/Introdução}
-                                         [1]
+                                         [1
+
+
+
+]
 \openout2 = `Preliminar/Introdução.aux'.
 
  (Preliminar/Introdução.tex)
@@ -1452,6 +1431,10 @@ Underfull \hbox (badness 1365) in paragraph at lines 300--301
 
 [8]
 
+LaTeX Warning: Reference `subsec:erroselim' on page 9 undefined on input line 338.
+
+
+
 [9]
 
 [10]
@@ -1461,63 +1444,107 @@ Underfull \hbox (badness 1365) in paragraph at lines 300--301
 [12]
 
 [13]
-<Imagens/catastrofic_cancelation.png, id=267, 1572.87625pt x 451.6875pt>
+
+Capitulos/Cap1.tex:468: LaTeX Error: \mathbb allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.468 ... conjuntos matatemáticos comuns (\mathbb
+                                                  {R}, \mathbb{Z}, etc.), to...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Capitulos/Cap1.tex:468: LaTeX Error: \mathbb allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.468 ...atatemáticos comuns (\mathbb{R}, \mathbb
+                                                  {Z}, etc.), todo conjunto ...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Reference `fig:catastrofic_cancelation' on page 14 undefined on input line 473.
+
+<Imagens/catastrofic_cancelation.png, id=152, 1572.87625pt x 451.6875pt>
 File: Imagens/catastrofic_cancelation.png Graphic file (type png)
 <use Imagens/catastrofic_cancelation.png>
-Package pdftex.def Info: Imagens/catastrofic_cancelation.png  used on input line 472.
+Package pdftex.def Info: Imagens/catastrofic_cancelation.png  used on input line 477.
 (pdftex.def)             Requested size: 455.24408pt x 130.731pt.
-<Imagens/zoom.png, id=268, 1572.87625pt x 451.6875pt>
+<Imagens/zoom.png, id=153, 1572.87625pt x 451.6875pt>
 File: Imagens/zoom.png Graphic file (type png)
 <use Imagens/zoom.png>
-Package pdftex.def Info: Imagens/zoom.png  used on input line 478.
+Package pdftex.def Info: Imagens/zoom.png  used on input line 483.
 (pdftex.def)             Requested size: 455.24408pt x 130.731pt.
-<Imagens/literal79.png, id=269, 1512.65125pt x 451.6875pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Imagens/literal79.png, id=154, 1512.65125pt x 451.6875pt>
 File: Imagens/literal79.png Graphic file (type png)
 <use Imagens/literal79.png>
-Package pdftex.def Info: Imagens/literal79.png  used on input line 489.
+Package pdftex.def Info: Imagens/literal79.png  used on input line 494.
 (pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 1297) in paragraph at lines 494--496
-[]\OT1/cmr/m/n/12 Na fi-gura [][]1.3[][]. ^^Se poss^^S^^Pvel ob-ser-var que a fun^^Xc~ao as-sume mais de dois
+LaTeX Warning: Reference `fig:literal79' on page 14 undefined on input line 499.
+
+
+Underfull \hbox (badness 1442) in paragraph at lines 499--501
+[]\OT1/cmr/m/n/12 Na fi-gura []. ^^Se poss^^S^^Pvel ob-ser-var que a fun^^Xc~ao as-sume mais de dois
  []
 
 
 
-[14 <./Imagens/catastrofic_cancelation.png> <./Imagens/zoom.png>]
-<Imagens/32x64_full.png, id=279, 1512.65125pt x 451.6875pt>
+[14 <./Imagens/catastrofic_cancelation.png>]
+<Imagens/32x64_full.png, id=163, 1512.65125pt x 451.6875pt>
 File: Imagens/32x64_full.png Graphic file (type png)
 <use Imagens/32x64_full.png>
-Package pdftex.def Info: Imagens/32x64_full.png  used on input line 504.
+Package pdftex.def Info: Imagens/32x64_full.png  used on input line 509.
 (pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
-<Imagens/32x64.png, id=280, 1512.65125pt x 451.6875pt>
+<Imagens/32x64.png, id=164, 1512.65125pt x 451.6875pt>
 File: Imagens/32x64.png Graphic file (type png)
 <use Imagens/32x64.png>
-Package pdftex.def Info: Imagens/32x64.png  used on input line 510.
+Package pdftex.def Info: Imagens/32x64.png  used on input line 515.
 (pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
 
 
-[15 <./Imagens/literal79.png> <./Imagens/32x64_full.png>]
-<Imagens/timesXpot_literal0.png, id=292, 1512.65125pt x 451.6875pt>
+[15 <./Imagens/zoom.png> <./Imagens/literal79.png> <./Imagens/32x64_full.png>]
+
+LaTeX Warning: Reference `fig:32x64_full' on page 16 undefined on input line 519.
+
+
+LaTeX Warning: Reference `fig:32x64' on page 16 undefined on input line 519.
+
+<Imagens/timesXpot_literal0.png, id=176, 1512.65125pt x 451.6875pt>
 File: Imagens/timesXpot_literal0.png Graphic file (type png)
 <use Imagens/timesXpot_literal0.png>
-Package pdftex.def Info: Imagens/timesXpot_literal0.png  used on input line 519.
+Package pdftex.def Info: Imagens/timesXpot_literal0.png  used on input line 524.
 (pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
-<Imagens/timesXpot_literal0_1.png, id=293, 1512.65125pt x 451.6875pt>
+<Imagens/timesXpot_literal0_1.png, id=177, 1512.65125pt x 451.6875pt>
 File: Imagens/timesXpot_literal0_1.png Graphic file (type png)
 <use Imagens/timesXpot_literal0_1.png>
-Package pdftex.def Info: Imagens/timesXpot_literal0_1.png  used on input line 525.
+Package pdftex.def Info: Imagens/timesXpot_literal0_1.png  used on input line 530.
 (pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
+
+LaTeX Warning: Reference `fig:timesXpot_literal0_1' on page 16 undefined on input line 534.
+
+
+LaTeX Warning: Reference `fig:timesXpot_literal0' on page 16 undefined on input line 534.
+
 
 
 [16 <./Imagens/32x64.png> <./Imagens/timesXpot_literal0.png> <./Imagens/timesXpot_literal0_1.png>]
-<Imagens/error2.png, id=307, 1512.65125pt x 451.6875pt>
+<Imagens/error2.png, id=188, 1512.65125pt x 451.6875pt>
 File: Imagens/error2.png Graphic file (type png)
 <use Imagens/error2.png>
-Package pdftex.def Info: Imagens/error2.png  used on input line 535.
+Package pdftex.def Info: Imagens/error2.png  used on input line 540.
 (pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
 )
 
@@ -1534,7 +1561,10 @@ Cap\'{\i }tulo 2.
 
 
 ]
-<Imagens/corolário.png, id=321, 539.76656pt x 492.33937pt>
+
+LaTeX Warning: Reference `c_tvi' on page 19 undefined on input line 19.
+
+<Imagens/corolário.png, id=205, 539.76656pt x 492.33937pt>
 File: Imagens/corolário.png Graphic file (type png)
 <use Imagens/corolário.png>
 Package pdftex.def Info: Imagens/corolário.png  used on input line 29.
@@ -1542,7 +1572,7 @@ Package pdftex.def Info: Imagens/corolário.png  used on input line 29.
 
 
 [19 <./Imagens/corolário.png>]
-<Imagens/interseções.png, id=330, 652.68843pt x 492.33937pt>
+<Imagens/interseções.png, id=214, 652.68843pt x 492.33937pt>
 File: Imagens/interseções.png Graphic file (type png)
 <use Imagens/interseções.png>
 Package pdftex.def Info: Imagens/interseções.png  used on input line 41.
@@ -1563,22 +1593,68 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--136
  []
 
 
+LaTeX Warning: Reference `tvm' on page 22 undefined on input line 139.
+
+
+LaTeX Warning: Reference `difIt' on page 22 undefined on input line 139.
+
+
 
 [22]
 
-[23] Excluding 'comment' comment. Excluding 'comment' comment. Excluding 'comment' comment.
+LaTeX Warning: Reference `des' on page 23 undefined on input line 146.
 
-[24] Excluding 'comment' comment.
+
+LaTeX Warning: Reference `lab2' on page 23 undefined on input line 157.
+
+
+LaTeX Warning: Reference `lab2' on page 23 undefined on input line 165.
+
+
+
+[23] Excluding 'comment' comment.
+
+LaTeX Warning: Reference `difIt' on page 24 undefined on input line 213.
+
+
+LaTeX Warning: Reference `tvm' on page 24 undefined on input line 213.
+
+
+LaTeX Warning: Reference `conv' on page 24 undefined on input line 213.
+
+Excluding 'comment' comment. Excluding 'comment' comment.
+
+[24]
+
+LaTeX Warning: Reference `teoMPF' on page 25 undefined on input line 256.
+
+
+LaTeX Warning: Reference `lim0' on page 25 undefined on input line 256.
+
+
+LaTeX Warning: Reference `it' on page 25 undefined on input line 258.
+
+Excluding 'comment' comment.
 
 [25]
 
+LaTeX Warning: Reference `teoMPF' on page 26 undefined on input line 294.
+
+
+LaTeX Warning: Reference `teoMPF' on page 26 undefined on input line 300.
+
+
+LaTeX Warning: Reference `teoNR' on page 26 undefined on input line 310.
+
+
+
 [26]
-<Imagens/pitfalls/01/x_10-1.png, id=406, 1204.5pt x 853.1875pt>
+<Imagens/pitfalls/01/x_10-1.png, id=283, 1204.5pt x 853.1875pt>
 File: Imagens/pitfalls/01/x_10-1.png Graphic file (type png)
 <use Imagens/pitfalls/01/x_10-1.png>
 Package pdftex.def Info: Imagens/pitfalls/01/x_10-1.png  used on input line 345.
 (pdftex.def)             Requested size: 455.24408pt x 322.47012pt.
-<Imagens/pitfalls/01/err_x_10-1.png, id=407, 803.0pt x 501.875pt>
+<Imagens/pitfalls/01/err_x_10-1.png, id=284, 803.0pt x 501.875pt>
 File: Imagens/pitfalls/01/err_x_10-1.png Graphic file (type png)
 <use Imagens/pitfalls/01/err_x_10-1.png>
 Package pdftex.def Info: Imagens/pitfalls/01/err_x_10-1.png  used on input line 346.
@@ -1592,12 +1668,12 @@ Overfull \hbox (14.4302pt too wide) in paragraph at lines 355--377
  [] 
  []
 
-<Imagens/pitfalls/02/max_min.png, id=420, 1204.5pt x 853.1875pt>
+<Imagens/pitfalls/02/max_min.png, id=297, 1204.5pt x 853.1875pt>
 File: Imagens/pitfalls/02/max_min.png Graphic file (type png)
 <use Imagens/pitfalls/02/max_min.png>
 Package pdftex.def Info: Imagens/pitfalls/02/max_min.png  used on input line 382.
 (pdftex.def)             Requested size: 455.24408pt x 322.47012pt.
-<Imagens/pitfalls/02/err_max_min.png, id=421, 803.0pt x 501.875pt>
+<Imagens/pitfalls/02/err_max_min.png, id=298, 803.0pt x 501.875pt>
 File: Imagens/pitfalls/02/err_max_min.png Graphic file (type png)
 <use Imagens/pitfalls/02/err_max_min.png>
 Package pdftex.def Info: Imagens/pitfalls/02/err_max_min.png  used on input line 383.
@@ -1612,12 +1688,12 @@ Overfull \hbox (8.9552pt too wide) in paragraph at lines 390--418
 
 
 [30 <./Imagens/pitfalls/02/max_min.png> <./Imagens/pitfalls/02/err_max_min.png>]
-<Imagens/pitfalls/03/x3_2x_2_10.png, id=433, 1204.5pt x 853.1875pt>
+<Imagens/pitfalls/03/x3_2x_2_10.png, id=311, 1204.5pt x 853.1875pt>
 File: Imagens/pitfalls/03/x3_2x_2_10.png Graphic file (type png)
 <use Imagens/pitfalls/03/x3_2x_2_10.png>
 Package pdftex.def Info: Imagens/pitfalls/03/x3_2x_2_10.png  used on input line 423.
 (pdftex.def)             Requested size: 455.24408pt x 322.47012pt.
-<Imagens/pitfalls/03/err_x3_2x_2_10.png, id=434, 803.0pt x 501.875pt>
+<Imagens/pitfalls/03/err_x3_2x_2_10.png, id=312, 803.0pt x 501.875pt>
 File: Imagens/pitfalls/03/err_x3_2x_2_10.png Graphic file (type png)
 <use Imagens/pitfalls/03/err_x3_2x_2_10.png>
 Package pdftex.def Info: Imagens/pitfalls/03/err_x3_2x_2_10.png  used on input line 424.
@@ -1627,12 +1703,12 @@ Package pdftex.def Info: Imagens/pitfalls/03/err_x3_2x_2_10.png  used on input l
 [31]
 
 [32 <./Imagens/pitfalls/03/x3_2x_2_10.png> <./Imagens/pitfalls/03/err_x3_2x_2_10.png>]
-<Imagens/pitfalls/04/arctg.png, id=446, 1204.5pt x 853.1875pt>
+<Imagens/pitfalls/04/arctg.png, id=324, 1204.5pt x 853.1875pt>
 File: Imagens/pitfalls/04/arctg.png Graphic file (type png)
 <use Imagens/pitfalls/04/arctg.png>
 Package pdftex.def Info: Imagens/pitfalls/04/arctg.png  used on input line 458.
 (pdftex.def)             Requested size: 455.24408pt x 322.47012pt.
-<Imagens/pitfalls/04/err_arctg.png, id=447, 803.0pt x 501.875pt>
+<Imagens/pitfalls/04/err_arctg.png, id=325, 803.0pt x 501.875pt>
 File: Imagens/pitfalls/04/err_arctg.png Graphic file (type png)
 <use Imagens/pitfalls/04/err_arctg.png>
 Package pdftex.def Info: Imagens/pitfalls/04/err_arctg.png  used on input line 459.
@@ -1646,7 +1722,7 @@ Overfull \hbox (11.99689pt too wide) in paragraph at lines 467--483
  [] 
  []
 
-<Imagens/pitfalls/06/slope_near_zero.png, id=460, 1204.5pt x 853.1875pt>
+<Imagens/pitfalls/06/slope_near_zero.png, id=337, 1204.5pt x 853.1875pt>
 File: Imagens/pitfalls/06/slope_near_zero.png Graphic file (type png)
 <use Imagens/pitfalls/06/slope_near_zero.png>
 Package pdftex.def Info: Imagens/pitfalls/06/slope_near_zero.png  used on input line 488.
@@ -1657,41 +1733,69 @@ Package pdftex.def Info: Imagens/pitfalls/06/slope_near_zero.png  used on input 
 
 [36]
 
+Package natbib Warning: Citation `ruggiero1998calculo' on page 37 undefined on input line 69.
+
+
+
 [37
 
 
 
 ] (main.bbl)
 
+Package natbib Warning: There were undefined citations.
+
+
+LaTeX Warning: Rerun to correct eqparbox widths.
+
+
+
 [38
 
 
 ] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-(main.aux (Preliminar/Agradecimentos.aux) (Preliminar/Resumo.aux) (Preliminar/Abstract.aux) (Preliminar/Introdução.aux) (Capitulos/Cap1.aux) (Capitulos/Cap2.aux))
+(main.aux (Preliminar/Agradecimentos.aux) (Preliminar/Resumo.aux) (Preliminar/Abstract.aux) (Preliminar/Introdução.aux) (Capitulos/Cap1.aux) (Capitulos/Cap2.aux)
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-20>
  ***********
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: FC1F2D5410C2EA9278DA6CA55D1B93A4;4685.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  AC6B36B118EB2798DE1A7E807162C8FA;4900.
+
+Package lastpage Warning: Rerun to get the references right on input line 82.
+
  ) 
 Here is how much of TeX's memory you used:
- 42994 strings out of 468134
- 847923 string characters out of 5430741
- 1430461 words of memory out of 5000000
- 70662 multiletter control sequences out of 15000+600000
+ 42944 strings out of 468134
+ 846520 string characters out of 5430741
+ 1423037 words of memory out of 5000000
+ 70629 multiletter control sequences out of 15000+600000
  641186 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  100i,9n,120p,3344b,1023s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\lumat\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/lumat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/lumat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/lumat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/lumat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/lumat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/lumat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/lumat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/lumat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Users/lumat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/lumat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/lumat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/lumat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/lumat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/lumat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/lumat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/lumat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Users/lumat/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (47 pages, 1309894 bytes).
+Output written on main.pdf (46 pages, 1290901 bytes).
 PDF statistics:
- 592 PDF objects out of 1000 (max. 8388607)
- 150 named destinations out of 1000 (max. 500000)
- 305 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 471 PDF objects out of 1000 (max. 8388607)
+ 151 named destinations out of 1000 (max. 500000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 
