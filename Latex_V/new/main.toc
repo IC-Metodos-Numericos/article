@@ -28,4 +28,4 @@
 \contentsline {subsection}{\numberline {2.4.3}Ordem de Convergência}{27}{subsection.2.4.3}%
 \contentsline {subsection}{\numberline {2.4.4}Ciladas}{28}{subsection.2.4.4}%
 \contentsline {subsection}{\numberline {2.4.5}Fractais}{37}{subsection.2.4.5}%
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{39}{chapter*.56}%
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{39}{chapter*.57}%
