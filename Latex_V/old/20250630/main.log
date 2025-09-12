@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.25)  12 SEP 2025 17:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.25)  12 SEP 2025 17:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/enzor/Desktop/github/repos/ic_metodos_num/article/Latex_V/new/main.tex
-(/home/enzor/Desktop/github/repos/ic_metodos_num/article/Latex_V/new/main.tex
+**/home/enzor/Desktop/github/repos/ic_metodos_num/article/Latex_V/old/20250630/main.tex
+(/home/enzor/Desktop/github/repos/ic_metodos_num/article/Latex_V/old/20250630/main.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-20>
 (libs/coppe.cls
@@ -161,7 +161,11 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \@examiner=\count293
 \c@keywords=\count294
 \bibindent=\dimen167
-) (Preambulo/Pacotes.tex (/home/enzor/.miktex/texmfs/install/tex/latex/base/inputenc.sty
+)
+
+LaTeX Warning: \include should only be used after \begin{document} on input line 4.
+
+(Preambulo/Pacotes.tex (/home/enzor/.miktex/texmfs/install/tex/latex/base/inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks22
 \inpenc@posthook=\toks23
@@ -1063,110 +1067,78 @@ Package: multicol 2025/05/25 v2.0a multicolumn formatting (FMi)
 \colbreak@box=\box133
 \mc@col@check@num=\count442
 \g__mc_curr_col_int=\count443
-) (/home/enzor/.miktex/texmfs/install/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen412
-\WF@size=\dimen413
-\c@WF@wrappedlines=\count444
-\WF@box=\box134
-\WF@everypar=\toks78
-Package: wrapfig 2003/01/31  v 3.6
-) (/home/enzor/.miktex/texmfs/install/tex/generic/soul/soul.sty
-Package: soul 2023-06-14 v3.1 Permit use of UTF-8 characters in soul (HO)
- (/home/enzor/.miktex/texmfs/install/tex/generic/soul/soul-ori.sty
-Package: soul-ori 2023-06-14 v3.1 letterspacing/underlining (mf)
-\SOUL@word=\toks79
-\SOUL@lasttoken=\toks80
-\SOUL@syllable=\toks81
-\SOUL@cmds=\toks82
-\SOUL@buffer=\toks83
-\SOUL@token=\toks84
-\SOUL@syllgoal=\dimen414
-\SOUL@syllwidth=\dimen415
-\SOUL@charkern=\dimen416
-\SOUL@hyphkern=\dimen417
-\SOUL@dimen=\dimen418
-\SOUL@dimeni=\dimen419
-\SOUL@minus=\count445
-\SOUL@comma=\count446
-\SOUL@apo=\count447
-\SOUL@grave=\count448
-\SOUL@spaceskip=\skip99
-\SOUL@ttwidth=\dimen420
-\SOUL@uldp=\dimen421
-\SOUL@ulht=\dimen422
-) (/home/enzor/.miktex/texmfs/install/tex/generic/etexcmds/etexcmds.sty
-Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-)) (/home/enzor/.miktex/texmfs/install/tex/latex/todonotes/todonotes.sty
-Package: todonotes 2024/01/05 v1.1.7 Todonotes source and documentation.
-Package: todonotes 2024/01/05
- (/home/enzor/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
-File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-\c@@todonotes@numberoftodonotes=\count449
+Package hyperref Info: Option `colorlinks' set `true' on input line 38.
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 43.
-) (Preambulo/Configurações.tex Excluding 'comment' comment.) (Preambulo/Teoremas.tex
-\c@teo=\count450
-\c@lema=\count451
-\c@prop=\count452
-\c@coro=\count453
-\c@afirm=\count454
-\c@df=\count455
-\c@ex=\count456
-\c@prova=\count457
-) (Preambulo/Comandos.tex) (/home/enzor/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
+
+LaTeX Warning: \include should only be used after \begin{document} on input line 5.
+
+(Preambulo/Configurações.tex
+
+Package geometry Warning: Over-specification in `h'-direction.
+    `width' (426.79134pt) is ignored.
+
+
+Package geometry Warning: Over-specification in `v'-direction.
+    `height' (597.50787pt) is ignored.
+
+)
+
+LaTeX Warning: \include should only be used after \begin{document} on input line 6.
+
+(Preambulo/Teoremas.tex
+\c@teo=\count444
+\c@lema=\count445
+\c@prop=\count446
+\c@coro=\count447
+\c@afirm=\count448
+\c@df=\count449
+\c@ex=\count450
+\c@prova=\count451
+)
+
+LaTeX Warning: \include should only be used after \begin{document} on input line 7.
+
+(Preambulo/Comandos.tex) (/home/enzor/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count458
+\l__color_backend_stack_int=\count452
 ) (main.aux
 Package babel Info: 'brazil' activates 'portuges' shorthands.
 (babel)             Reported on input line 12.
- (Preliminar/Agradecimentos.aux) (Preliminar/Resumo.aux) (Preliminar/Abstract.aux) (Preliminar/Introdução.aux) (Capitulos/Cap1.aux) (Capitulos/Cap2.aux
-
-LaTeX Warning: Label `tab:ciladaNR' multiply defined.
-
-
-LaTeX Warning: Label `tab:ciladaNR' multiply defined.
-
-
-LaTeX Warning: Label `tab:ciladaNR' multiply defined.
-
-
-LaTeX Warning: Label `tab:ciladaNR' multiply defined.
-
-))
+ (Preliminar/Agradecimentos.aux) (Preliminar/Resumo.aux) (Preliminar/Abstract.aux) (Preliminar/Introdução.aux) (Capitulos/Cap1.aux) (Capitulos/Cap2.aux) (Capitulos/Referências.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
  (/home/enzor/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count459
-\scratchdimen=\dimen423
-\scratchbox=\box135
-\nofMPsegments=\count460
-\nofMParguments=\count461
-\everyMPshowfont=\toks85
-\MPscratchCnt=\count462
-\MPscratchDim=\dimen424
-\MPnumerator=\count463
-\makeMPintoPDFobject=\count464
-\everyMPtoPDFconversion=\toks86
+\scratchcounter=\count453
+\scratchdimen=\dimen412
+\scratchbox=\box134
+\nofMPsegments=\count454
+\nofMParguments=\count455
+\everyMPshowfont=\toks78
+\MPscratchCnt=\count456
+\MPscratchDim=\dimen413
+\MPnumerator=\count457
+\makeMPintoPDFobject=\count458
+\everyMPtoPDFconversion=\toks79
 ) (/home/enzor/.miktex/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1177,7 +1149,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: a4paper
+* paper: custom
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * vratio: 1:1
@@ -1208,27 +1180,26 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 25.
+Package hyperref Info: Link coloring ON on input line 21.
 (main.out) (main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 21.
  (/home/enzor/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 21.
  (/home/enzor/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 25.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 21.
  (/home/enzor/.miktex/texmfs/install/tex/latex/jknappen/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Package xypdf Info: Line width: 0.47998pt on input line 25.
+Package xypdf Info: Line width: 0.47998pt on input line 21.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
-Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
  (/home/enzor/.miktex/texmfs/install/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
@@ -1239,13 +1210,10 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-
-Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 25.
-
-<libs/cefetmg.png, id=106, 1192.455pt x 1192.455pt>
+<libs/cefetmg.png, id=66, 1192.455pt x 1192.455pt>
 File: libs/cefetmg.png Graphic file (type png)
 <use libs/cefetmg.png>
-Package pdftex.def Info: libs/cefetmg.png  used on input line 46.
+Package pdftex.def Info: libs/cefetmg.png  used on input line 41.
 (pdftex.def)             Requested size: 119.25249pt x 119.25249pt.
 
 
@@ -1271,25 +1239,25 @@ Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
 
 {/home/enzor/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map} <./libs/cefetmg.png>]
-Package hyperref Info: Option `breaklinks' set `true' on input line 46.
-Package hyperref Info: Option `raiselinks' set `true' on input line 46.
-Package hyperref Info: Option `pageanchor' set `true' on input line 46.
+Package hyperref Info: Option `breaklinks' set `true' on input line 41.
+Package hyperref Info: Option `raiselinks' set `true' on input line 41.
+Package hyperref Info: Option `pageanchor' set `true' on input line 41.
 File: libs/cefetmg.png Graphic file (type png)
 <use libs/cefetmg.png>
-Package pdftex.def Info: libs/cefetmg.png  used on input line 46.
+Package pdftex.def Info: libs/cefetmg.png  used on input line 41.
 (pdftex.def)             Requested size: 119.25249pt x 119.25249pt.
 
-Underfull \hbox (badness 1661) in paragraph at lines 46--46
+Underfull \hbox (badness 1661) in paragraph at lines 41--41
 \OT1/cmr/m/n/12 da Universidade Federal Rural do Rio de
  []
 
 
-Underfull \hbox (badness 5050) in paragraph at lines 46--46
+Underfull \hbox (badness 5050) in paragraph at lines 41--41
 \OT1/cmr/m/n/12 Janeiro, como parte dos requisitos para
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
 
  []
 
@@ -1298,12 +1266,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--46
 [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 47--47
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
 \OT1/cmr/m/n/12 e de-fen-dida por NOME SO-BRENOME,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--47
+Underfull \hbox (badness 10000) in paragraph at lines 42--42
 \OT1/cmr/m/n/12 matr^^S^^Pcula 2022019000-0, foi aprovada pela
  []
 
@@ -1329,7 +1297,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--47
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.50   \include{Preliminar/Resumo}
+l.45   \include{Preliminar/Resumo}
                                    [1
 
 
@@ -1344,24 +1312,13 @@ l.50   \include{Preliminar/Resumo}
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.51   \include{Preliminar/Abstract}
+l.46   \include{Preliminar/Abstract}
                                     %OPCIONAL [1
 
 
 
 
-] (main.toc
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.31 ...^encias Bibliogr\'aficas}{40}{chapter*.52}
-                                                  % [2
-
-
-
-])
+] (main.toc)
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
@@ -1371,8 +1328,12 @@ l.31 ...^encias Bibliogr\'aficas}{40}{chapter*.52}
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.56   \include{Preliminar/Introdução}
-                                         [1]
+l.51   \include{Preliminar/Introdução}
+                                         [1
+
+
+
+]
 \openout2 = `Preliminar/Introdução.aux'.
 
  (Preliminar/Introdução.tex)
@@ -1381,7 +1342,7 @@ l.56   \include{Preliminar/Introdução}
 pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.56   \include{Preliminar/Introdução}
+l.51   \include{Preliminar/Introdução}
                                          [2
 
 
@@ -1401,12 +1362,12 @@ Cap\'{\i }tulo 1.
 ]
 
 [2]
-Underfull \hbox (badness 1199) in paragraph at lines 92--93
+Underfull \hbox (badness 1199) in paragraph at lines 91--92
 []\OT1/cmr/m/n/12 Em sis-temas com-puta-cionais, os n^^Sumeros em ponto flu-tu-ante po-dem ser
  []
 
 
-Overfull \hbox (17.90599pt too wide) in paragraph at lines 104--123
+Overfull \hbox (17.90599pt too wide) in paragraph at lines 103--122
  [] 
  []
 
@@ -1415,24 +1376,24 @@ Overfull \hbox (17.90599pt too wide) in paragraph at lines 104--123
 [3]
 
 [4]
-Underfull \hbox (badness 1735) in paragraph at lines 167--168
+Underfull \hbox (badness 1735) in paragraph at lines 163--164
 []\OT1/cmr/bx/n/12 Mantissa (m)\OT1/cmr/m/n/12 : Os bits ap^^Sos o ponto da parte fra-cion^^Saria nor-mal-izada:
  []
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 196--198
+Underfull \hbox (badness 1490) in paragraph at lines 192--194
 []\OT1/cmr/bx/n/12 Precis~ao Du-pla\OT1/cmr/m/n/12 : us-ada em aplica^^Xc~oes cient^^S^^Pficas, c^^Salculos de en-gen-haria,
  []
 
 
 
 [5]
-Underfull \hbox (badness 3078) in paragraph at lines 200--200
+Underfull \hbox (badness 3078) in paragraph at lines 201--201
 []\OT1/cmr/bx/n/14.4 Representa^^Xc~ao de N^^Sumeros em Sis-temas de Ponto
  []
 
 
-Underfull \hbox (badness 1675) in paragraph at lines 202--203
+Underfull \hbox (badness 1675) in paragraph at lines 203--204
 []\OT1/cmr/m/n/12 Em m^^Saquinas que op-eram em sis-temas de ponto flu-tu-ante, ape-nas um
  []
 
@@ -1440,271 +1401,176 @@ Underfull \hbox (badness 1675) in paragraph at lines 202--203
 
 [6]
 
-[7] Excluding 'comment' comment.
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 273.
+[7]
 
-Underfull \hbox (badness 1365) in paragraph at lines 300--301
-[]\OT1/cmr/m/n/12 Vejamos a seguir uma com-para^^Xc~ao da t^^Secnicas de arredonda-mento e de
- []
+LaTeX Warning: Command \textendash invalid in math mode on input line 290.
 
 
 
 [8]
 
 [9]
-
-[10]
-
-[11]
-
-[12]
-
-[13]
-<Imagens/catastrofic_cancelation.png, id=272, 1572.87625pt x 451.6875pt>
-File: Imagens/catastrofic_cancelation.png Graphic file (type png)
-<use Imagens/catastrofic_cancelation.png>
-Package pdftex.def Info: Imagens/catastrofic_cancelation.png  used on input line 484.
-(pdftex.def)             Requested size: 455.24408pt x 130.731pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Imagens/zoom.png, id=273, 1572.87625pt x 451.6875pt>
-File: Imagens/zoom.png Graphic file (type png)
-<use Imagens/zoom.png>
-Package pdftex.def Info: Imagens/zoom.png  used on input line 490.
-(pdftex.def)             Requested size: 455.24408pt x 130.731pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Imagens/literal79.png, id=274, 1512.65125pt x 451.6875pt>
-File: Imagens/literal79.png Graphic file (type png)
-<use Imagens/literal79.png>
-Package pdftex.def Info: Imagens/literal79.png  used on input line 501.
-(pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 1297) in paragraph at lines 506--508
-[]\OT1/cmr/m/n/12 Na figura [][]1.3[][]. ^^Se poss^^S^^Pvel ob-ser-var que a fun^^Xc~ao as-sume mais de dois
+Underfull \hbox (badness 1365) in paragraph at lines 336--337
+[]\OT1/cmr/m/n/12 Vejamos a seguir uma com-para^^Xc~ao da t^^Secnicas de arredonda-mento e de
  []
 
 
 
-[14]
-<Imagens/32x64_full.png, id=282, 1512.65125pt x 451.6875pt>
+[10] Excluding 'comment' comment.
+
+[11]
+<Imagens/catastrofic_cancelation.png, id=201, 1572.87625pt x 451.6875pt>
+File: Imagens/catastrofic_cancelation.png Graphic file (type png)
+<use Imagens/catastrofic_cancelation.png>
+Package pdftex.def Info: Imagens/catastrofic_cancelation.png  used on input line 466.
+(pdftex.def)             Requested size: 455.24408pt x 130.731pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Imagens/zoom.png, id=202, 1572.87625pt x 451.6875pt>
+File: Imagens/zoom.png Graphic file (type png)
+<use Imagens/zoom.png>
+Package pdftex.def Info: Imagens/zoom.png  used on input line 472.
+(pdftex.def)             Requested size: 455.24408pt x 130.731pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Imagens/literal79.png, id=203, 1512.65125pt x 451.6875pt>
+File: Imagens/literal79.png Graphic file (type png)
+<use Imagens/literal79.png>
+Package pdftex.def Info: Imagens/literal79.png  used on input line 483.
+(pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
+
+
+[12]
+<Imagens/32x64_full.png, id=211, 1512.65125pt x 451.6875pt>
 File: Imagens/32x64_full.png Graphic file (type png)
 <use Imagens/32x64_full.png>
-Package pdftex.def Info: Imagens/32x64_full.png  used on input line 516.
+Package pdftex.def Info: Imagens/32x64_full.png  used on input line 496.
 (pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
-<Imagens/32x64.png, id=283, 1512.65125pt x 451.6875pt>
+
+
+[13 <./Imagens/catastrofic_cancelation.png> <./Imagens/zoom.png> <./Imagens/literal79.png>]
+<Imagens/32x64_full_2.png, id=221, 1512.65125pt x 451.6875pt>
+File: Imagens/32x64_full_2.png Graphic file (type png)
+<use Imagens/32x64_full_2.png>
+Package pdftex.def Info: Imagens/32x64_full_2.png  used on input line 503.
+(pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
+<Imagens/32x64_full_diffent_extrems.png, id=224, 1512.65125pt x 451.6875pt>
+File: Imagens/32x64_full_diffent_extrems.png Graphic file (type png)
+<use Imagens/32x64_full_diffent_extrems.png>
+Package pdftex.def Info: Imagens/32x64_full_diffent_extrems.png  used on input line 513.
+(pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
+<Imagens/32x64.png, id=226, 1572.87625pt x 451.6875pt>
 File: Imagens/32x64.png Graphic file (type png)
 <use Imagens/32x64.png>
-Package pdftex.def Info: Imagens/32x64.png  used on input line 522.
-(pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
+Package pdftex.def Info: Imagens/32x64.png  used on input line 523.
+(pdftex.def)             Requested size: 455.24408pt x 130.731pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-[15 <./Imagens/catastrofic_cancelation.png> <./Imagens/zoom.png>]
-<Imagens/timesXpot_literal0.png, id=295, 1512.65125pt x 451.6875pt>
+[14 <./Imagens/32x64_full.png> <./Imagens/32x64_full_2.png> <./Imagens/32x64_full_diffent_extrems.png>]
+<Imagens/timesXpot_literal0.png, id=241, 1512.65125pt x 451.6875pt>
 File: Imagens/timesXpot_literal0.png Graphic file (type png)
 <use Imagens/timesXpot_literal0.png>
-Package pdftex.def Info: Imagens/timesXpot_literal0.png  used on input line 531.
+Package pdftex.def Info: Imagens/timesXpot_literal0.png  used on input line 533.
 (pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
-<Imagens/timesXpot_literal0_1.png, id=296, 1512.65125pt x 451.6875pt>
+<Imagens/timesXpot_literal0_1.png, id=242, 1512.65125pt x 451.6875pt>
 File: Imagens/timesXpot_literal0_1.png Graphic file (type png)
 <use Imagens/timesXpot_literal0_1.png>
-Package pdftex.def Info: Imagens/timesXpot_literal0_1.png  used on input line 537.
+Package pdftex.def Info: Imagens/timesXpot_literal0_1.png  used on input line 540.
 (pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
 
 
-[16 <./Imagens/literal79.png> <./Imagens/32x64_full.png> <./Imagens/32x64.png>]
-<Imagens/error2.png, id=309, 1512.65125pt x 451.6875pt>
+[15 <./Imagens/32x64.png> <./Imagens/timesXpot_literal0.png> <./Imagens/timesXpot_literal0_1.png>]
+<Imagens/error2.png, id=255, 1512.65125pt x 451.6875pt>
 File: Imagens/error2.png Graphic file (type png)
 <use Imagens/error2.png>
-Package pdftex.def Info: Imagens/error2.png  used on input line 547.
+Package pdftex.def Info: Imagens/error2.png  used on input line 551.
 (pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
+)
 
-
-[17 <./Imagens/timesXpot_literal0.png> <./Imagens/timesXpot_literal0_1.png>])
-
-[18 <./Imagens/error2.png>]
+[16 <./Imagens/error2.png>]
 \openout2 = `Capitulos/Cap2.aux'.
 
  (Capitulos/Cap2.tex
 Cap\'{\i }tulo 2.
 
 
-[19
+[17
 
 
 
 
 ]
-<Imagens/corolário.png, id=330, 539.76656pt x 492.33937pt>
-File: Imagens/corolário.png Graphic file (type png)
-<use Imagens/corolário.png>
-Package pdftex.def Info: Imagens/corolário.png  used on input line 27.
-(pdftex.def)             Requested size: 249.54753pt x 227.62204pt.
-
-
-[20 <./Imagens/corolário.png>]
-<Imagens/interseções.png, id=338, 652.68843pt x 492.33937pt>
-File: Imagens/interseções.png Graphic file (type png)
-<use Imagens/interseções.png>
-Package pdftex.def Info: Imagens/interseções.png  used on input line 39.
-(pdftex.def)             Requested size: 301.75412pt x 227.62204pt.
-
-
-[21 <./Imagens/interseções.png>]
 
 
 
 
 
-Excluding 'comment' comment.
 
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 133--135
+
+[18] Excluding 'comment' comment.
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
 
 
-[23]
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
 
-[24] Excluding 'comment' comment. Excluding 'comment' comment. Excluding 'comment' comment.
-
-[25] Excluding 'comment' comment.
-
-[26]
-
-[27]
-
-[28]
-<Imagens/pitfalls/01/x_10-1.png, id=422, 1204.5pt x 853.1875pt>
-File: Imagens/pitfalls/01/x_10-1.png Graphic file (type png)
-<use Imagens/pitfalls/01/x_10-1.png>
-Package pdftex.def Info: Imagens/pitfalls/01/x_10-1.png  used on input line 350.
-(pdftex.def)             Requested size: 455.24408pt x 322.47012pt.
-<Imagens/pitfalls/01/err_x_10-1.png, id=423, 803.0pt x 501.875pt>
-File: Imagens/pitfalls/01/err_x_10-1.png Graphic file (type png)
-<use Imagens/pitfalls/01/err_x_10-1.png>
-Package pdftex.def Info: Imagens/pitfalls/01/err_x_10-1.png  used on input line 351.
-(pdftex.def)             Requested size: 455.24408pt x 284.53246pt.
-
-
-[29]
-
-[30 <./Imagens/pitfalls/01/x_10-1.png> <./Imagens/pitfalls/01/err_x_10-1.png>]
-Overfull \hbox (14.4302pt too wide) in paragraph at lines 360--382
- [] 
- []
-
-<Imagens/pitfalls/02/max_min.png, id=435, 1204.5pt x 853.1875pt>
-File: Imagens/pitfalls/02/max_min.png Graphic file (type png)
-<use Imagens/pitfalls/02/max_min.png>
-Package pdftex.def Info: Imagens/pitfalls/02/max_min.png  used on input line 387.
-(pdftex.def)             Requested size: 455.24408pt x 322.47012pt.
-<Imagens/pitfalls/02/err_max_min.png, id=436, 803.0pt x 501.875pt>
-File: Imagens/pitfalls/02/err_max_min.png Graphic file (type png)
-<use Imagens/pitfalls/02/err_max_min.png>
-Package pdftex.def Info: Imagens/pitfalls/02/err_max_min.png  used on input line 388.
-(pdftex.def)             Requested size: 455.24408pt x 284.53246pt.
-
-
-[31]
-Overfull \hbox (8.9552pt too wide) in paragraph at lines 395--423
- [] 
  []
 
 
 
-[32 <./Imagens/pitfalls/02/max_min.png> <./Imagens/pitfalls/02/err_max_min.png>]
-<Imagens/pitfalls/03/x3_2x_2_10.png, id=448, 1204.5pt x 853.1875pt>
-File: Imagens/pitfalls/03/x3_2x_2_10.png Graphic file (type png)
-<use Imagens/pitfalls/03/x3_2x_2_10.png>
-Package pdftex.def Info: Imagens/pitfalls/03/x3_2x_2_10.png  used on input line 428.
-(pdftex.def)             Requested size: 455.24408pt x 322.47012pt.
-<Imagens/pitfalls/03/err_x3_2x_2_10.png, id=449, 803.0pt x 501.875pt>
-File: Imagens/pitfalls/03/err_x3_2x_2_10.png Graphic file (type png)
-<use Imagens/pitfalls/03/err_x3_2x_2_10.png>
-Package pdftex.def Info: Imagens/pitfalls/03/err_x3_2x_2_10.png  used on input line 429.
-(pdftex.def)             Requested size: 455.24408pt x 284.53246pt.
+[20])
 
+[21]
+\openout2 = `Capitulos/Referências.aux'.
 
-[33]
+ (Capitulos/Referências.tex
+No file main.bbl.
 
-[34 <./Imagens/pitfalls/03/x3_2x_2_10.png> <./Imagens/pitfalls/03/err_x3_2x_2_10.png>]
-<Imagens/pitfalls/04/arctg.png, id=462, 1204.5pt x 853.1875pt>
-File: Imagens/pitfalls/04/arctg.png Graphic file (type png)
-<use Imagens/pitfalls/04/arctg.png>
-Package pdftex.def Info: Imagens/pitfalls/04/arctg.png  used on input line 463.
-(pdftex.def)             Requested size: 455.24408pt x 322.47012pt.
-<Imagens/pitfalls/04/err_arctg.png, id=463, 803.0pt x 501.875pt>
-File: Imagens/pitfalls/04/err_arctg.png Graphic file (type png)
-<use Imagens/pitfalls/04/err_arctg.png>
-Package pdftex.def Info: Imagens/pitfalls/04/err_arctg.png  used on input line 464.
-(pdftex.def)             Requested size: 455.24408pt x 284.53246pt.
+Package natbib Warning: Citation `ruggiero1998calculo' on page 22 undefined on input line 3.
 
+)
 
-[35]
-
-[36 <./Imagens/pitfalls/04/arctg.png> <./Imagens/pitfalls/04/err_arctg.png>]
-Overfull \hbox (11.99689pt too wide) in paragraph at lines 472--488
- [] 
- []
-
-<Imagens/pitfalls/06/slope_near_zero.png, id=475, 1204.5pt x 853.1875pt>
-File: Imagens/pitfalls/06/slope_near_zero.png Graphic file (type png)
-<use Imagens/pitfalls/06/slope_near_zero.png>
-Package pdftex.def Info: Imagens/pitfalls/06/slope_near_zero.png  used on input line 493.
-(pdftex.def)             Requested size: 455.24408pt x 322.47012pt.
-
-
-[37 <./Imagens/pitfalls/06/slope_near_zero.png>] Excluding 'comment' comment.)
-
-[38]
-
-[39
+[22
 
 
 
-] (main.bbl)
 
-[40
+]
+
+Package natbib Warning: There were undefined citations.
 
 
-] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
-(main.aux (Preliminar/Agradecimentos.aux) (Preliminar/Resumo.aux) (Preliminar/Abstract.aux) (Preliminar/Introdução.aux) (Capitulos/Cap1.aux) (Capitulos/Cap2.aux))
+(main.aux (Preliminar/Agradecimentos.aux) (Preliminar/Resumo.aux) (Preliminar/Abstract.aux) (Preliminar/Introdução.aux) (Capitulos/Cap1.aux) (Capitulos/Cap2.aux) (Capitulos/Referências.aux))
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-20>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A3631F0780865A686FE319F95E108DA4;4900.
+(rerunfilecheck)             Checksum: A763EFB40773DB61F3C9577C71483563;3032.
  ) 
 Here is how much of TeX's memory you used:
- 42989 strings out of 470053
- 842327 string characters out of 5482413
- 1424628 words of memory out of 5000000
- 70416 multiletter control sequences out of 15000+600000
- 641545 words of font info for 98 fonts, out of 8000000 for 9000
+ 42095 strings out of 470053
+ 824126 string characters out of 5482413
+ 1407403 words of memory out of 5000000
+ 69613 multiletter control sequences out of 15000+600000
+ 638411 words of font info for 88 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 100i,9n,120p,3350b,883s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/enzor/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmib10.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (49 pages, 1325274 bytes).
+ 102i,9n,122p,3361b,612s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </home/enzor/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti12.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt12.pfb></home/enzor/.miktex/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (30 pages, 828579 bytes).
 PDF statistics:
- 613 PDF objects out of 1000 (max. 8388607)
- 151 named destinations out of 1000 (max. 500000)
- 313 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 391 PDF objects out of 1000 (max. 8388607)
+ 88 named destinations out of 1000 (max. 500000)
+ 188 words of extra memory for PDF output out of 10000 (max. 10000000)
 
