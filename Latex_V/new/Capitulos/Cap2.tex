@@ -21,8 +21,7 @@ Por exemplo, considere a função $f(x) = x^3 - 9x + 3$. Utilizando a Proposiç�
     \item $f(0)f(1) = -15 < 0$, portanto há raiz no intervalo (0, 1);
     \item $f(2)f(3) = -21 < 0$, portanto há raiz no intervalo (2, 3).
 \end{itemize}
-\EnzoR{acho que vale a pena citar quem é a, b, c e d antes, não? }
-Além disso, a derivada de $f(x)$ é $f'(x) = 3x^2 - 9$, cujas raízes são $\pm \sqrt{3}$, então nos intervalos (-$\infty$, -$\sqrt{3}$), (-$\sqrt{3}$, $\sqrt{3}$) e ($\sqrt{3}$, $\infty$) o sinal da derivada é preservado. Portanto, nos intervalos $(a,b)$ e $(c,d)$ há apenas uma raiz.
+Além disso, a derivada de $f(x)$ é $f'(x) = 3x^2 - 9$, cujas raízes são $\pm \sqrt{3}$, então nos intervalos (-$\infty$, -$\sqrt{3}$), (-$\sqrt{3}$, $\sqrt{3}$) e ($\sqrt{3}$, $\infty$) o sinal da derivada é preservado. Portanto, nos intervalos $(0; 1)$ e $(2; 3)$ há apenas uma raiz.
 
 \begin{figure}[h]
     \centering
@@ -45,9 +44,11 @@ Da mesma função, podemos obter, por exemplo, as interseções entre $x$ e $x^3
 
 \section{Critério de Parada}
 \FIXME{Completar}
-O processo é repetido até que a diferença entre duas iterações consecutivas seja inferior a uma tolerância pré-estabelecida ou até que um número máximo de iterações seja atingido.
+\DanielP{gráficos estilo Vera}
+O processo é repetido até que a diferença entre duas iterações consecutivas seja inferior a uma tolerância pré-estabelecida %seja vertical (entre o valor da função e o eixo x) ou horizontal (entre o valor da sequência e $\xi$).
+ou até que um número máximo de iterações seja atingido.
 
-\begin{itemize}
+\begin{itemize} %era pra ficar topificado mesmo?
     \item $e_k = x_k - \xi$
     \item $e_k =  f(x_k) - 0$
 \end{itemize}
@@ -112,12 +113,11 @@ Seja $\xi$ uma raiz de uma função $f(x)$ e seja $\varphi(x)$ uma função de i
 %\newpage
 
 \LucasM{Aqui, antes de ir para o resultado principal, dar exemplos de funções de iteração que fazem a sequencia convergir e divergir. Inserir gráficos assim como no livro da Vera.} 
-\DanielP{ok!}
+\DanielP{ok! uma redemoinho ($\varphi_6$: [$-\sqrt{3}$, $-\sqrt{\frac{7}{3}}$]), uma escadinha($\varphi_1$: [0, $\sqrt{3}$]) e uma divergente($\varphi_4$ e $\varphi_5$; $\varphi_2$ e $\varphi_3$ I)}
 
 Sob condições a respeito da função de iteração, sua derivada e o dado inicial, a convergência da sequência iterativa é garantida, como pode-se observar a seguir.
 %Enfim é importante verificar se a função de iteração de ponto fixo respeita as condições para convergência.
-\EnzoR{Vale a pena dar nome aos teoremas? Por exemplo: Ao invés de "Teorema 2.3.1" ser "Teorema 2.3.1 - Convergência de Funções de Iteração" ou algo assim. Acho que se fizermos isso, fica melhor de referenciar depois, pois assim o leitor não precisa ficar procurando o teorema pelo número.}
-\begin{teo}
+\begin{teo} \textbf{Convergência Iterativa} \\
     Seja $\xi$ uma raiz de f(x), isolada num intervalo I centrado nessa raiz. Considere uma função de iteração $\varphi(x)$ associada a f(x). Sob as seguintes hipóteses:
     \begin{itemize}\label{teoMPF}
         \item[i)] $\varphi(x)$ e $\varphi'(x)$ são contínuas em I,
@@ -183,13 +183,13 @@ Como $x_{k+1} = \varphi(x_k)$, subtraindo $\xi$ de ambos os lados da igualdade e
 
 \subsection{Ordem de convergência}
 
-\LucasM{Dizer aqui o que significa na prática a ordem de convergência de um método. Perceba que pela definição ele está ligado ao erro cometido no processo iterativo.}
-A ordem de convergência de um método iterativo é uma medida de quão
-rapidamente a sequência de iterações converge para a solução desejada. Em termos
-práticos, isso significa que, se um método tem uma ordem de convergência alta, ele
-será capaz de reduzir o erro de aproximação de forma mais eficaz a cada iteração.
+A ordem de convergência de um método iterativo é uma medida de quão rapidamente a sequência de iterações converge para a solução desejada. Em termos práticos, isso significa que, se um método tem uma ordem de convergência alta, ele será capaz de reduzir o erro de aproximação de forma mais eficaz a cada iteração.
 \begin{df}
-    Seja $\{x_k\}$ uma sequência que converge para $\xi$ e $e_k = x_k - \xi$ o erro na k-ésima iteração.
+    Seja $\{x_k\}$ uma sequência que converge para $\xi$ e
+    \begin{equation} \label{erro}
+        e_k = x_k - \xi
+    \end{equation}
+    o erro na k-ésima iteração.
     %um num. p e uma cte. C
     Se existirem $p > 1$ e $C > 0$ tais que $\lim_{k \to \infty} \frac{|e_{k+1}|}{|e_k|^p} = C$, então $p$ é chamada de \emph{ordem de convergência} da sequência e $C$ é a \emph{constante assintótica de erro}.
 \end{df}
@@ -199,9 +199,7 @@ A ordem de convergência $p$ de um método iterativo fornece uma informação so
 
 Uma vez que a sequência {$x_k$} é convergente, $e_k$ tende a 0 quando $k$ tende ao infinito, portanto, quanto maior for $p$ mais próximo de 0 estará $C|e_k|^p$ (independente de C), implicando numa convergência mais rápida da sequência. Assim, se dois processos iterativos resultam em sequências {$x_k^1$} e {$x_k^2$}, ambas convergindo para $\xi$, com suas respectivas ordens de convergência $p_1$ e $p_2$, se $p_1 > p_2 \geq 1$, o processo que gera a sequência {$x_k^1$} converge mais rapidamente.
 \end{comment}
-
-$|e_{k+1}| \approx C |e_k|^p$
-
+%$|e_{k+1}| \approx C |e_k|^p$
 \begin{prop}
     Se 
     \begin{equation}\label{conv}
@@ -250,13 +248,14 @@ Como por hipótese $\varphi'(x) < 1$ então $|C| < 1$, portanto, a convergência
 
 \EnzoR{escolhendo a func de iter}
 
-O método de Newton é um caso particular do \textbf{Método do Ponto Fixo} amplamente utilizado para encontrar raízes \EnzoR{seria raízes complexas, não?} reais de funções não lineares, cuja ordem de convergência é pelo menos quadrática. A função de iteração específica para este método produz uma sequência em que cada termo $x_{k+1}$ corresponde, geometricamente, à \textbf{interseção da reta tangente} a $f(x)$ no ponto $(x_k, f(x_k))$ com o eixo x. 
+O método de Newton é um caso particular do \textbf{Método do Ponto Fixo} amplamente utilizado para encontrar raízes %\EnzoR{seria raízes complexas, não?} 
+reais de funções não lineares, cuja ordem de convergência é pelo menos quadrática. A função de iteração específica para este método produz uma sequência em que cada termo $x_{k+1}$ corresponde, geometricamente, à \textbf{interseção da reta tangente} a $f(x)$ no ponto $(x_k, f(x_k))$ com o eixo x. 
 
 \DanielP{só tem que colocar no lugar certo}
 No método do ponto fixo, vimos que se a função satisfaz o Teorema \ref{teoMPF} a sequência $x_{k+1} = \varphi(x_k)$ converge para $\xi$. Além disso, a desigualdade (\ref{lim0}) na demonstração desse resultado nos diz que quanto menor for $|\varphi'(x)|$, mais rápido a sequência $\{x_k\}$ converge.
 
 Dada uma função \(f(x)\), o processo parte de uma estimativa inicial \(x_0\) e aplica a seguinte fórmula iterativa, a partir da escolha da derivada em (\ref{it})
-\begin{equation}
+\begin{equation} \label{nr}
     x_{k+1} = x_k - \frac{f(x_k)}{f'(x_k)},
 \end{equation}
 onde \(f'(x_k)\) é a derivada da função \(f\) avaliada em \(x_k\).
@@ -267,33 +266,39 @@ Aplicando a derivada na forma geral de $\varphi$ pela regra da cadeia obtemos $\
     \varphi(x) = x - \frac{f(x)}{f'(x)}.
 \end{equation*}
 \begin{comment}
-\begin{align*}
-    \varphi(x) &= x + A(x)f(x) \\
-    \varphi'(x) &= 1 + A'(x)f(x) + A(x)f'(x) \\
-    \varphi'(x) &= 1 + A(\xi)f'(\xi) \\
-    0 &= 1 + A(\xi)f'(\xi) \\
-    -1 &= A(\xi)f'(\xi) \\
-    \frac{-1}{f'(\xi)} &= A(\xi) \\
-    \frac{-1}{f'(x)} &= A(x) 
-\end{align*}
-\begin{align*}
+\begin{align*} %derivada = 0
     \varphi(x) &= x - \frac{f(x)}{f'(x)} \\
-    \varphi'(x) &= 1 - \frac{f'(x)f'(x) - f(x)f''(x)}{[f'(x)]²} \\
-     &= 1 - \frac{[f'(\xi)]² - f(\xi)f''(\xi)}{[f'(\xi)]²} \\
-     &= 1 - \frac{[f'(\xi)]²}{[f'(\xi)]²} \\
+    \varphi'(x) &= 1 - \frac{f'(x)f'(x) - f(x)f''(x)}{[f'(x)]^2}
+\end{align*}
+\begin{equation}
+    \varphi'(x) = \frac{f(x)f''(x)}{[f'(x)]^2}
+\end{equation}
+\begin{align*}
+    \varphi'(\xi) &= \frac{f(\xi)f''(\xi)}{[f'(\xi)]^2} \\
      &= 0
 \end{align*}
 \end{comment}
 
 \subsection{Demonstração Geométrica}
+\DanielP{ficou paia o alinhamento em}
+\begin{align*}
+    f'(x_0)(x - x_k) &= y - y_k \\
+    f'(x_k)(x_{k+1} - x_k) &= -y_k \\
+    x_{k+1} - x_k &= \frac{-y_k}{f'(x_k)} \\
+    x_{k+1} &= x_k - \frac{y_k}{f'(x_k)}
+\end{align*}
 \subsection{Convergência}
-\begin{teo}
+\begin{teo} \label{teoNR}
     Sejam $f(x)$, $f'(x)$ e $f''(x)$ contínuas num intervalo $I$ que contém a raiz $\xi$ de $f$, supondo $f'(\xi) \neq 0$. Então, existe um intervalo $\overline{I} \subset I$, contendo a raiz $\xi$, tal que $x_0 \in \overline{I}$, a sequência ${x_k}$ gerada pela função de iteração $\varphi(x) = x - \frac{f(x_k)}{f'(x_k)}$ convergirá para a raiz.
 \end{teo}
-\begin{proof}\label{teoNR}
+\begin{proof}
     Sendo o método de Newton-Raphson um caso particular do MPF, basta provar que para $\varphi(x) = x - \frac{f(x)}{f'(x)}$ as hipóteses do Teorema \ref{teoMPF} são satisfeitas. 
     
-    Primeiramente, observe que $\varphi'(x) = \frac{f(x)f''(x)}{[f'(x)]^2}$. Como $f'(\xi) \neq 0$ e $f'(x)$ é contínua em I, é possível obter $I_1 \subset I$ tal que $f'(x) \neq 0$ no intervalo $I_1$. Assim, a função $f$ e suas derivadas primeira e segunda são contínuas em $I_1$ e, consequentemente, a função de iteração e sua derivada também.
+    Primeiramente, observe que 
+    \begin{equation} \label{dphiNR}
+        \varphi'(x) = \frac{f(x)f''(x)}{[f'(x)]^2}.
+    \end{equation}
+    Como $f'(\xi) \neq 0$ e $f'(x)$ é contínua em I, é possível obter $I_1 \subset I$ tal que $f'(x) \neq 0$ no intervalo $I_1$. Assim, a função $f$ e suas derivadas primeira e segunda são contínuas em $I_1$ e, consequentemente, a função de iteração e sua derivada também.
     
      Uma vez que a $\varphi'(x)$ é contínua em $I_1$ e $\varphi'(\xi) = 0$, é possível escolher $I_2 \subset I_1$ de modo que $|\varphi'(x)| < 1$ em $I_2$ tendo $\xi$ como centro do novo intervalo.
 
@@ -302,11 +307,9 @@ Aplicando a derivada na forma geral de $\varphi$ pela regra da cadeia obtemos $\
 \subsection{Ordem de Convergência}
 No MPF espera-se uma ordem de convergência ao menos linear, entretanto ao escolher uma função de iteração que satisfaça $\varphi'(\xi) = 0$, provaremos que sua ordem de convergência será ao menos quadrática.
 \begin{prop}
-    \LucasM{Antes em Linguagem natural}
     A ordem de convergência do método de Newton é pelo menos quadrática.
 \end{prop}
 \begin{proof}
-    \BUG{Ele está chamando de "Teorema 2.4.2", mas está se referenciando a uma demonstração.}
     Suporemos todas as hipóteses do Teorema \ref{teoNR}. %(de Convergência do Método de Newton-Raphson), temos
     Partindo de $x_{k+1} = x_k - \frac{f(x_k)}{f'(x_k)}$, subtraindo $\xi$ em ambos os lados da igualdade, obtemos
 \begin{equation} \label{eMNR}
@@ -318,19 +321,22 @@ O polinômio de Taylor de grau 2 para $f(x)$ centrado em $x_k$ é
 \end{equation*}
 com $c_k$ entre $x$ e $x_k$.
 %$-(x-x_k)$
-Assim, $f(\xi) = f(x_k) - f'(x_k)(x_k - \xi) + \frac{f''(c_k)}{2}(x_k-\xi)^2$,
-tomando $x = \xi$, dado que $f(\xi) = 0$, dividindo a equação pela derivada de $f$ temos
+Assim, $f(\xi) = f(x_k) - f'(x_k)(x_k - \xi) + \frac{f''(c_k)}{2}(x_k-\xi)^2$ dado que $f(\xi) = 0$, dividindo a equação pela derivada de $f$ temos, aplicando a fórmula do erro \ref{erro} e a da sequência \ref{nr}
 \begin{align*}
-    \frac{f''(c_k)}{2f'(x_k)}e_k^2 &= e_k - \frac{f(x_k)}{f'(x_k)} \\
-    \frac{f''(c_k)}{2f'(x_k)}e_k^2 &= e_{k+1} \\
+    e_k - \frac{f(x_k)}{f'(x_k)} &= \frac{f''(c_k)}{2f'(x_k)}e_k^2 \\
+    e_{k+1} &= \frac{f''(c_k)}{2f'(x_k)}e_k^2 \\
     \frac{e_{k+1}}{e_k^2} &= \frac{1}{2} \frac{f''(c_k)}{f'(x_k)}
 \end{align*}
+
+Aplicando limite no termo esquerdo da equação acima e, dada a continuidade das funções, nos argumentos à direita, obtemos 
+\begin{equation*}
+    \lim_{k \to \infty} \frac{e_{k+1}}{e_k^2} = \frac{1}{2} \frac{f''(\xi)}{f'(\xi)}
+\end{equation*}
+Calculando a $\varphi''$ a partir de $\varphi'$ \ref{dphiNR} %temos $\frac{[f'(x)f''(x)+f(x)f'''(x)][f'(x)]^2 - 2f'(x)f''(x)f(x)f''(x)}{[f'(x)]^4}$, 
+em $\xi$ obtemos $\frac{[f'(\xi)]^3f''(\xi)}{[f'(\xi)]^4}$, que é um $C$ concluindo então que a convergência do método de Newton Raphson é ao menos quadrática.
 \begin{align*}
-    \lim_{k \to \infty} \frac{e_{k+1}}{e_k^2} &= \lim_{k \to \infty} \frac{1}{2} \frac{f''(c_k)}{f'(x_k)} \\
-     &= \frac{1}{2} \frac{f''[\lim_{k \to \infty} (c_k)]}{f'[\lim_{k \to \infty} (x_k)]} \\
-     &= \frac{1}{2} \frac{f''(\xi)}{f'(\xi)} \\
-     &= \frac{1}{2} \varphi''(\xi) \\
-     &= C
+    \lim_{k \to \infty} \frac{e_{k+1}}{e_k^2} &= \frac{1}{2} \varphi''(\xi) \\
+    &= C
 \end{align*}
 %\frac{f(x_k)}{f'(x_k)} &= e_k - \frac{f''(c_k)}{2f'(x_k)}e_k^2
 \end{proof}
@@ -344,7 +350,7 @@ Isso faz com que a taxa de convergência do metodo de Newton reduza-se para line
     \centering 
     \includegraphics[width=1\textwidth]{Imagens/pitfalls/01/x_10-1.png}
     \includegraphics[width=1\textwidth]{Imagens/pitfalls/01/err_x_10-1.png}
-    \caption{Gráfico da Cilada relacionada a multiplicidade da raiz.}
+    \caption{Gráfico daCilada relacionada a multiplicidade da raiz.}
     \label{fig:ciladaMultRaiz}
 \end{figure}
 
