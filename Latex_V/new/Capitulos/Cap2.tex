@@ -2,7 +2,6 @@
 
 Em muitas aplicações, as soluções buscadas se resumem a encontrar os zeros (ou raízes) de uma função. Entretanto, nem sempre é possível fazê-lo analiticamente, devido à natureza das componentes envolvidas na função como, por exemplo, funções polinomiais a partir do 3º grau, somas de funções trigonométricas e logarítmicas, entre outras. Nesse ínterim, recorremos então a maneiras de obter valores aproximados para tais raízes. 
 
-\EnzoR{acho que devemos adiconar algo falando qual é o critério de parada.}
 Uma classe de métodos utilizados para aproximar raízes de funções são os \textbf{métodos iterativos}. A essência desses métodos está em, partindo de um chute inicial e de uma função apropriada $\varphi$, obter uma sequência $x_k$ onde cada termo é obtido do anterior recursivamente como $x_{k+1} = \varphi(x_k)$. Essa sequência, sob certas hipóteses, converge para a raiz $\xi$ da função.
 
 
@@ -10,7 +9,7 @@ Ao longo do capítulo, reservaremos o símbolo $\xi$ para representar raízes de
 
 \section{Localização de Raízes}
 
-%Mais adiante no capítulo
+%Mais adiante no capítulo 
 Nos métodos que trataremos nesse capítulo, para garantir a convergência da sequência iterativa, é necessário que o primeiro termo esteja suficientemente próximo da raiz e, desse modo, faz-se necessário restringir as funções a intervalos que contenham raízes. Quando as funções envolvidas são contínuas, o resultado a seguir garante a existência de raízes em um intervalo [a,b] desde que as imagens dos extremos tenham sinais opostos.
 
 \begin{prop}\label{c_tvi}%[Corolário do Teorema do Valor Intermediário]
@@ -21,7 +20,7 @@ Por exemplo, considere a função $f(x) = x^3 - 9x + 3$. Utilizando a Proposiç�
     \item $f(0)f(1) = -15 < 0$, portanto há raiz no intervalo (0, 1);
     \item $f(2)f(3) = -21 < 0$, portanto há raiz no intervalo (2, 3).
 \end{itemize}
-Além disso, a derivada de $f(x)$ é $f'(x) = 3x^2 - 9$, cujas raízes são $\pm \sqrt{3}$, então nos intervalos (-$\infty$, -$\sqrt{3}$), (-$\sqrt{3}$, $\sqrt{3}$) e ($\sqrt{3}$, $\infty$) o sinal da derivada é preservado. Portanto, nos intervalos $(0; 1)$ e $(2; 3)$ há apenas uma raiz.
+Além disso, a derivada de $f(x)$ é $f'(x) = 3x^2 - 9$, cujas raízes são $\pm \sqrt{3}$, então nos intervalos (-$\infty$, -$\sqrt{3}$), (-$\sqrt{3}$, $\sqrt{3}$) e ($\sqrt{3}$, $\infty$) o sinal da derivada é preservado. Portanto, nos intervalos $(0, 1)$ e $(2, 3)$ há apenas uma raiz.
 
 \begin{figure}[h]
     \centering
@@ -49,8 +48,8 @@ O processo é repetido até que a diferença entre duas iterações consecutivas
 ou até que um número máximo de iterações seja atingido.
 
 \begin{itemize} %era pra ficar topificado mesmo?
-    \item $e_k = x_k - \xi$
-    \item $e_k =  f(x_k) - 0$
+    \item $|\overline{x} - \xi| < \epsilon$
+    \item $f(\overline{x}) < \epsilon$
 \end{itemize}
 
 \LucasM{Definir raiz aproximada}
