@@ -342,6 +342,7 @@ em $\xi$ obtemos $\frac{[f'(\xi)]^3f''(\xi)}{[f'(\xi)]^4}$, que é um $C$ conclu
 \subsection{Ciladas}
 O Método de Newton é amplamente utilizado na prática devido à sua rapidez e precisão em condições ideais. Contudo, em algumas situações ele pode falhar ou convergir para raízes incorretas se essas condições não forem satisfeitas. Estes problemas geralmente estão associados a fatores como: pontos de máximo e mínimo, pontos de inflexão, multiplicidade da raiz e escolha inadequada do chute inicial.
 
+\subsubsection{Alta multiplicidade}
 Polinômios de grau elevado tendem a ter alta multiplicidade nas raizes, como no caso do polinômio $x^{10} - 1$.
 A convergencia lenta é causada pela multiplicidade da raiz. Quando uma raiz tem multiplicidade $m > 1$ — neste caso $m = 10$ — a derivada próxima a raiz se aproxima de zero, aumentando o número de iterações necessárias para convergir para a raiz.
 Isso faz com que a taxa de convergência do metodo de Newton reduza-se para linear em vez da esperada taxa quadrática.
@@ -381,6 +382,7 @@ $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ \\
 \label{tab:ciladaNR}
 \end{center}
 
+\subsubsection{Pontos de extremo}
 Outro fator que é um problema quando se trata de taxa de convergência são os pontos de máximo e mínimo da função. Quando uma iteração é iniciada perto de um ponto de máximo ou mínimo um dos problemas que podem ocorrer é a função de iteração convergir para um ponto de máximo ou mínimo ao invés da raiz. Oque pode causar uma diminuição na taxa de convergência.
 \begin{figure}[H]
     \centering 
@@ -457,6 +459,7 @@ $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ \\
 \label{tab:ciladaNR}
 \end{center}
 
+\subsubsection{Pontos de Inflexão}
 Pontos de inflexão também podem causar problemas no método de Newton. Se a raiz estiver próxima de um ponto de inflexão da função \(f(x)\), onde a derivada segunda muda de sinal, o método pode não convergir para a raiz desejada. Isso acontece porque a tangente à curva nesse ponto pode não fornecer uma boa aproximação da raiz, resultando em saltos grandes na iteração e afastando-a da raiz.
 \begin{figure}[H]
     \centering 
@@ -487,6 +490,7 @@ Iteração & Valor de $x_k$ & $f(x)$ & Erro $e_k$ \\
 \label{tab:ciladaNR}
 \end{center}
 
+\subsubsection{Derivada próxima de zero}
 Além disso, quando a derivada de uma iteração é muito próxima de zero, o metodo vai ter dificuldades em convergir. Isso ocorre porque a divisão por zero ou por um número muito pequeno pode resultar em saltos grandes na iteração, afastando-a da raiz.
 \begin{figure}[H]
     \centering 

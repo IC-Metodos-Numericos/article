@@ -27,5 +27,9 @@
 \contentsline {subsection}{\numberline {2.4.2}Convergência}{27}{subsection.2.4.2}%
 \contentsline {subsection}{\numberline {2.4.3}Ordem de Convergência}{27}{subsection.2.4.3}%
 \contentsline {subsection}{\numberline {2.4.4}Ciladas}{29}{subsection.2.4.4}%
+\contentsline {subsubsection}{Alta multiplicidade}{29}{section*.46}%
+\contentsline {subsubsection}{Pontos de extremo}{31}{section*.48}%
+\contentsline {subsubsection}{Pontos de Inflexão}{35}{section*.51}%
+\contentsline {subsubsection}{Derivada próxima de zero}{37}{section*.53}%
 \contentsline {subsection}{\numberline {2.4.5}Fractais}{38}{subsection.2.4.5}%
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{40}{chapter*.52}%
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{40}{chapter*.56}%
