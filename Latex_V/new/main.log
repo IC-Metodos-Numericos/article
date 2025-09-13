@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.7.28)  13 SEP 2025 11:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.7.28)  13 SEP 2025 11:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1240,7 +1240,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 
 Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 25.
 
-<libs/cefetmg.png, id=106, 1192.455pt x 1192.455pt>
+<libs/cefetmg.png, id=118, 1192.455pt x 1192.455pt>
 File: libs/cefetmg.png Graphic file (type png)
 <use libs/cefetmg.png>
 Package pdftex.def Info: libs/cefetmg.png  used on input line 46.
@@ -1340,7 +1340,7 @@ l.51   \include{Preliminar/Abstract}
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.35 ...^encias Bibliogr\'aficas}{40}{chapter*.56}
+l.35 ...{2.5.1}Definições}{38}{subsection.2.5.1}
                                                   % [2
 
 
@@ -1414,7 +1414,7 @@ Underfull \hbox (badness 1365) in paragraph at lines 300--301
  []
 
 [8] [9] [10] [11] [12] [13]
-<Imagens/catastrofic_cancelation.png, id=272, 1572.87625pt x 451.6875pt>
+<Imagens/catastrofic_cancelation.png, id=287, 1572.87625pt x 451.6875pt>
 File: Imagens/catastrofic_cancelation.png Graphic file (type png)
 <use Imagens/catastrofic_cancelation.png>
 Package pdftex.def Info: Imagens/catastrofic_cancelation.png  used on input line 484.
@@ -1423,7 +1423,7 @@ Package pdftex.def Info: Imagens/catastrofic_cancelation.png  used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Imagens/zoom.png, id=273, 1572.87625pt x 451.6875pt>
+<Imagens/zoom.png, id=288, 1572.87625pt x 451.6875pt>
 File: Imagens/zoom.png Graphic file (type png)
 <use Imagens/zoom.png>
 Package pdftex.def Info: Imagens/zoom.png  used on input line 490.
@@ -1431,7 +1431,7 @@ Package pdftex.def Info: Imagens/zoom.png  used on input line 490.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Imagens/literal79.png, id=274, 1512.65125pt x 451.6875pt>
+<Imagens/literal79.png, id=289, 1512.65125pt x 451.6875pt>
 File: Imagens/literal79.png Graphic file (type png)
 <use Imagens/literal79.png>
 Package pdftex.def Info: Imagens/literal79.png  used on input line 501.
@@ -1445,12 +1445,12 @@ Underfull \hbox (badness 1297) in paragraph at lines 506--508
  []
 
 [14]
-<Imagens/32x64_full.png, id=282, 1512.65125pt x 451.6875pt>
+<Imagens/32x64_full.png, id=297, 1512.65125pt x 451.6875pt>
 File: Imagens/32x64_full.png Graphic file (type png)
 <use Imagens/32x64_full.png>
 Package pdftex.def Info: Imagens/32x64_full.png  used on input line 516.
 (pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
-<Imagens/32x64.png, id=283, 1512.65125pt x 451.6875pt>
+<Imagens/32x64.png, id=298, 1512.65125pt x 451.6875pt>
 File: Imagens/32x64.png Graphic file (type png)
 <use Imagens/32x64.png>
 Package pdftex.def Info: Imagens/32x64.png  used on input line 522.
@@ -1460,18 +1460,18 @@ Package pdftex.def Info: Imagens/32x64.png  used on input line 522.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [15 <./Imagens/catastrofic_cancelation.png> <./Imagens/zoom.png>]
-<Imagens/timesXpot_literal0.png, id=295, 1512.65125pt x 451.6875pt>
+<Imagens/timesXpot_literal0.png, id=310, 1512.65125pt x 451.6875pt>
 File: Imagens/timesXpot_literal0.png Graphic file (type png)
 <use Imagens/timesXpot_literal0.png>
 Package pdftex.def Info: Imagens/timesXpot_literal0.png  used on input line 531.
 (pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
-<Imagens/timesXpot_literal0_1.png, id=296, 1512.65125pt x 451.6875pt>
+<Imagens/timesXpot_literal0_1.png, id=311, 1512.65125pt x 451.6875pt>
 File: Imagens/timesXpot_literal0_1.png Graphic file (type png)
 <use Imagens/timesXpot_literal0_1.png>
 Package pdftex.def Info: Imagens/timesXpot_literal0_1.png  used on input line 537.
 (pdftex.def)             Requested size: 455.24408pt x 135.9346pt.
  [16 <./Imagens/literal79.png> <./Imagens/32x64_full.png> <./Imagens/32x64.png>]
-<Imagens/error2.png, id=309, 1512.65125pt x 451.6875pt>
+<Imagens/error2.png, id=324, 1512.65125pt x 451.6875pt>
 File: Imagens/error2.png Graphic file (type png)
 <use Imagens/error2.png>
 Package pdftex.def Info: Imagens/error2.png  used on input line 547.
@@ -1487,13 +1487,13 @@ Cap\'{\i }tulo 2.
 
 
 ]
-<Imagens/corolário.png, id=330, 539.76656pt x 492.33937pt>
+<Imagens/corolário.png, id=345, 539.76656pt x 492.33937pt>
 File: Imagens/corolário.png Graphic file (type png)
 <use Imagens/corolário.png>
 Package pdftex.def Info: Imagens/corolário.png  used on input line 27.
 (pdftex.def)             Requested size: 249.54753pt x 227.62204pt.
  [20 <./Imagens/corolário.png>]
-<Imagens/interseções.png, id=338, 652.68843pt x 492.33937pt>
+<Imagens/interseções.png, id=353, 652.68843pt x 492.33937pt>
 File: Imagens/interseções.png Graphic file (type png)
 <use Imagens/interseções.png>
 Package pdftex.def Info: Imagens/interseções.png  used on input line 39.
@@ -1504,12 +1504,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--135
  []
 
 [23] [24] Excluding 'comment' comment. Excluding 'comment' comment. Excluding 'comment' comment. [25] Excluding 'comment' comment. [26] [27] [28]
-<Imagens/pitfalls/01/x_10-1.png, id=422, 1204.5pt x 853.1875pt>
+<Imagens/pitfalls/01/x_10-1.png, id=437, 1204.5pt x 853.1875pt>
 File: Imagens/pitfalls/01/x_10-1.png Graphic file (type png)
 <use Imagens/pitfalls/01/x_10-1.png>
 Package pdftex.def Info: Imagens/pitfalls/01/x_10-1.png  used on input line 351.
 (pdftex.def)             Requested size: 455.24408pt x 322.47012pt.
-<Imagens/pitfalls/01/err_x_10-1.png, id=423, 803.0pt x 501.875pt>
+<Imagens/pitfalls/01/err_x_10-1.png, id=438, 803.0pt x 501.875pt>
 File: Imagens/pitfalls/01/err_x_10-1.png Graphic file (type png)
 <use Imagens/pitfalls/01/err_x_10-1.png>
 Package pdftex.def Info: Imagens/pitfalls/01/err_x_10-1.png  used on input line 352.
@@ -1519,12 +1519,12 @@ Overfull \hbox (14.4302pt too wide) in paragraph at lines 361--383
  [] 
  []
 
-<Imagens/pitfalls/02/max_min.png, id=436, 1204.5pt x 853.1875pt>
+<Imagens/pitfalls/02/max_min.png, id=451, 1204.5pt x 853.1875pt>
 File: Imagens/pitfalls/02/max_min.png Graphic file (type png)
 <use Imagens/pitfalls/02/max_min.png>
 Package pdftex.def Info: Imagens/pitfalls/02/max_min.png  used on input line 389.
 (pdftex.def)             Requested size: 455.24408pt x 322.47012pt.
-<Imagens/pitfalls/02/err_max_min.png, id=437, 803.0pt x 501.875pt>
+<Imagens/pitfalls/02/err_max_min.png, id=452, 803.0pt x 501.875pt>
 File: Imagens/pitfalls/02/err_max_min.png Graphic file (type png)
 <use Imagens/pitfalls/02/err_max_min.png>
 Package pdftex.def Info: Imagens/pitfalls/02/err_max_min.png  used on input line 390.
@@ -1535,23 +1535,23 @@ Overfull \hbox (8.9552pt too wide) in paragraph at lines 397--425
  []
 
 [32 <./Imagens/pitfalls/02/max_min.png> <./Imagens/pitfalls/02/err_max_min.png>]
-<Imagens/pitfalls/03/x3_2x_2_10.png, id=450, 1204.5pt x 853.1875pt>
+<Imagens/pitfalls/03/x3_2x_2_10.png, id=465, 1204.5pt x 853.1875pt>
 File: Imagens/pitfalls/03/x3_2x_2_10.png Graphic file (type png)
 <use Imagens/pitfalls/03/x3_2x_2_10.png>
 Package pdftex.def Info: Imagens/pitfalls/03/x3_2x_2_10.png  used on input line 430.
 (pdftex.def)             Requested size: 455.24408pt x 322.47012pt.
-<Imagens/pitfalls/03/err_x3_2x_2_10.png, id=451, 803.0pt x 501.875pt>
+<Imagens/pitfalls/03/err_x3_2x_2_10.png, id=466, 803.0pt x 501.875pt>
 File: Imagens/pitfalls/03/err_x3_2x_2_10.png Graphic file (type png)
 <use Imagens/pitfalls/03/err_x3_2x_2_10.png>
 Package pdftex.def Info: Imagens/pitfalls/03/err_x3_2x_2_10.png  used on input line 431.
 (pdftex.def)             Requested size: 455.24408pt x 284.53246pt.
  [33] [34 <./Imagens/pitfalls/03/x3_2x_2_10.png> <./Imagens/pitfalls/03/err_x3_2x_2_10.png>]
-<Imagens/pitfalls/04/arctg.png, id=464, 1204.5pt x 853.1875pt>
+<Imagens/pitfalls/04/arctg.png, id=479, 1204.5pt x 853.1875pt>
 File: Imagens/pitfalls/04/arctg.png Graphic file (type png)
 <use Imagens/pitfalls/04/arctg.png>
 Package pdftex.def Info: Imagens/pitfalls/04/arctg.png  used on input line 466.
 (pdftex.def)             Requested size: 455.24408pt x 322.47012pt.
-<Imagens/pitfalls/04/err_arctg.png, id=465, 803.0pt x 501.875pt>
+<Imagens/pitfalls/04/err_arctg.png, id=480, 803.0pt x 501.875pt>
 File: Imagens/pitfalls/04/err_arctg.png Graphic file (type png)
 <use Imagens/pitfalls/04/err_arctg.png>
 Package pdftex.def Info: Imagens/pitfalls/04/err_arctg.png  used on input line 467.
@@ -1561,7 +1561,7 @@ Overfull \hbox (11.99689pt too wide) in paragraph at lines 475--491
  [] 
  []
 
-<Imagens/pitfalls/06/slope_near_zero.png, id=478, 1204.5pt x 853.1875pt>
+<Imagens/pitfalls/06/slope_near_zero.png, id=493, 1204.5pt x 853.1875pt>
 File: Imagens/pitfalls/06/slope_near_zero.png Graphic file (type png)
 <use Imagens/pitfalls/06/slope_near_zero.png>
 Package pdftex.def Info: Imagens/pitfalls/06/slope_near_zero.png  used on input line 497.
@@ -1585,20 +1585,20 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: AC6B36B118EB2798DE1A7E807162C8FA;4900.
+(rerunfilecheck)             Checksum: 90346BDF6AC4491E97C8A57A8A6B75ED;5526.
  ) 
 Here is how much of TeX's memory you used:
- 43003 strings out of 474485
- 841050 string characters out of 5753549
+ 43009 strings out of 474485
+ 841142 string characters out of 5753549
  1939542 words of memory out of 5000000
- 64326 multiletter control sequences out of 15000+600000
+ 64329 multiletter control sequences out of 15000+600000
  572789 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  100i,9n,120p,3355b,883s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (49 pages, 1328099 bytes).
+Output written on main.pdf (49 pages, 1330531 bytes).
 PDF statistics:
- 617 PDF objects out of 1000 (max. 8388607)
- 155 named destinations out of 1000 (max. 500000)
- 313 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 633 PDF objects out of 1000 (max. 8388607)
+ 158 named destinations out of 1000 (max. 500000)
+ 337 words of extra memory for PDF output out of 10000 (max. 10000000)
 
