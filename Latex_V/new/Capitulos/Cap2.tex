@@ -579,6 +579,23 @@ onde cada entrada  \(a_{ij}(x)\) é uma função de   \(\mathbb{R}^n \rightarrow
 
 \subsection{Calculo do Jacobiano}
 
+\newtheorem*{dfNRnd}{Método de Newton-Raphson N-dimensional}
+\begin{dfNRnd}
+    \begin{prop}
+    Seja $\mathbf{p}$ um ponto fixo de \(\mathbb{G}\). Se existe um \(\delta > 0\) tal que
+
+    \begin{itemize}\label{teoMPF}
+        \item[i)] $\frac{\partial g_i}{\partial x_j}$ é contínua em uma vizinhança $N_{\delta} = \{x \in \mathbb{R}^n : ||x - p|| < \delta\}$ para todo $i, j = 1, 2, \ldots, n$
+        \item [ii)] $\frac{\partial^2 \mathbb{G}_i}{\partial x_j \partial x_k}$ é contínua e $|\frac{\partial^2g_i(x)}{\partial x_j \partial x_k}| \leq $M$ $
+        \item [iii)] $\frac{\partial g_i(p)}{\partial x_k} = 0$, para todo $i = 1,2, \ldots, n$
+    \end{itemize}
+    Então existe \(\bar{\delta} \leq \delta\) de tal forma que a sequência gerada por $x_{k+1} = \mathbb{G}(x_{k})$ converge para $\mathbf{p}$ de forma quadrática, para qualquer escolha de $x_{0}$ que satisfaz \(|| x_{0} - \mathbf{p} || \leq \bar{\delta}\)
+    \end{prop}
+
+\end{dfNRnd}
+
+A demonstração é análoga à do Teorema \ref{teoNR}, considerando a norma vetorial em \(\mathbb{R}^n\) e a definição de diferenciabilidade em múltiplas variáveis. E está descrita extensivamente em ref.
+
 O método de Newton-Raphson para sistemas de equações não lineares envolve a utilização do \textbf{Jacobiano} da função \(F\), que é uma matriz composta pelas derivadas parciais das funções em relação às variáveis. O Jacobiano \(J\) é definido como:
 
 \subsection{Fractais}
