@@ -1,12 +1,9 @@
 \chapter{Pontos Flutuantes}
 
 
-Na matemática, %os sistemas numéricos são utilizados para representar quantidades por meio de símbolos. 
-um sistema numérico é um conjunto de regras e símbolos utilizados para representar quantidades através do que chamamos de números. %que definem como escrevemos e entendemos esses números.
-Existem dois tipos de sistemas: os posicionais e os aditivos. 
+Na matemática, um sistema numérico é um conjunto de regras e símbolos utilizados para representar quantidades através do que chamamos de números. Existem dois tipos de sistemas: os posicionais e os aditivos.
 
-O sistema aditivo é aquele em que os números são representados pelas somas dos valores dos símbolos, geralmente agrupados lado a lado em ordem decrescente, como, por exemplo, os sistemas romano e egípcio. Já o sistema posicional leva em conta não só os dígitos mas também a posição que eles ocupam no número. %utiliza a posição de cada dígito como múltiplo de uma potência da base. 
-%A base de um sistema numérico indica quantos 
+O sistema aditivo é aquele em que os números são representados pelas somas dos valores dos símbolos, geralmente agrupados lado a lado em ordem decrescente, como, por exemplo, os sistemas romano e egípcio. Já o sistema posicional leva em conta não só os dígitos mas também a posição que eles ocupam no número. A quantidade de símbolos diferentes que são utilizados para representar os dígitos está ligada à \textbf{base} desse sistema, e cada posição do dígito no número refere-se a uma potência dessa base. Por exemplo, no sistema decimal (base 10), usamos os dígitos de 0 a 9. No sistema binário (base 2), usamos os dígitos 0 e 1. E já no sistema hexadecimal (base 16), usamos de 0 a 9 e as letras A a F (que representam 10 a 15).
 A quantidade de símbolos diferentes que são utilizados para representar os dígitos está ligada à \textbf{base} desse sistema, e cada posição do dígito no número refere-se a uma potência dessa base. Por exemplo, no sistema decimal (base 10), usamos os dígitos de 0 a 9. No sistema binário (base 2), usamos os dígitos 0 e 1. E já no sistema hexadecimal (base 16), usamos de 0 a 9 e as letras A a F (que representam 10 a 15).
 
 Com essas diferentes formas de representar um número, a escolha do sistema depende do contexto e da aplicação. No uso cotidiano, a base decimal é a mais utilizada. Já as bases binária e hexadecimal, são amplamente utilizadas na ciência da computação em operações aritméticas dos processadores e em algumas linguagens de programação para endereçamento de memória.
@@ -83,7 +80,7 @@ onde:
 
 \begin{itemize}
   \item \( S \) é o bit de sinal,
-  \item \( 1.M \) indica que há um bit implícito "1" antes da mantissa nos números normalizados,
+  \item \( 1.M \) indica que há um bit implícito ``1'' antes da mantissa nos números normalizados,
   \item \( \text{bias} \) é um valor constante que depende da precisão (por exemplo, 127 para 32 bits).
 \end{itemize}
 
@@ -465,9 +462,9 @@ Portanto, a representação especial do zero evita esse problema, preservando a 
 Na aritmética de ponto flutuante, certos casos resultam em erros devido à limitação da precisão e à maneira como os números são representados. 
 
 \subsection{Units in Last Place (ULP's)} 
-Diferentemente dos conjuntos matatemáticos comuns ($\mathbb{R}, \mathbb{Z}$, etc.), todo conjunto de números de um sistema de ponto flutuante (PF) é, por natureza, discreto, ou seja, possui uma quantidade finita de números representáveis. Para cada numéro real $x$ exite um $X$ que será a sua representação num dado sistema de PF. Definimos $ulp(x)$ pela lacuna entre dois números $X_{1}$ e $X_{2}$ mais próximos de $x$, mesmo que $x$ sejá um deles.
+Diferentemente dos conjuntos matatemáticos comuns ($\mathbb{R}, \mathbb{Z}$, etc.), todo conjunto de números de um sistema de ponto flutuante (PF) é, por natureza, discreto, ou seja, possui uma quantidade finita de números representáveis. Para cada número real $x$ existe um $X$ que será a sua representação num dado sistema de PF. Definimos $ulp(x)$ pela lacuna entre dois números $X_{1}$ e $X_{2}$ mais próximos de $x$, mesmo que $x$ seja um deles.
 Tome o sistema $F(\beta = 2, t = 3, L = 3 , U = 5)$. O menor número que pode ser representado nesse sistema é $1{,}00_{2}$ x $2^{3}$ = $8_{10}$, o seu sucessor é $1{,}01_{2}$ = $1{,}25_{10}$ x $2^{3}$ = $10_{10}$.
-Em $x \in [8_{10} , 10_{10}]$ ulp($x$) = 2.
+Em $x \in [8_{10} , 10_{10}]$ ulp ($x$) = 2.
 
 Para definir para qual PF $x$ o número real $x$ será aproximado, existem várias estratégias, como o truncamento e o arredondamento. A escolha da estratégia de aproximação pode afetar o valor de ulp($x$). Por exemplo, se $x = 9{,}6_{10}$, no sistema $F(\beta = 2, t = 3, L = 3 , U = 5)$, o valor de ulp($x$) é 2. Se usarmos truncamento, $X = 8_{10}$ e o erro absoluto é $|x - X| = 1{,}6_{10}$, ou seja, $0{,}8 \times ulp(x)$. Se usarmos arredondamento, $X = 10_{10}$ e o erro absoluto é $|x - X| = 0{,}4_{10}$, ou seja, $0{,}2 \times ulp(x)$.
 

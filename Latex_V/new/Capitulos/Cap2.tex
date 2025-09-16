@@ -15,7 +15,7 @@ Nos métodos que trataremos nesse capítulo, para garantir a convergência da se
 \begin{prop}\label{c_tvi}%[Corolário do Teorema do Valor Intermediário]
 Seja $f(x)$ uma função contínua no intervalo $[a, b]$. Se $f(a)f(b) < 0$, então há pelo menos uma raiz $\xi \in (a,b)$. Se, além disso, existir $f'(x)$ e $f'(x)$ preservar o sinal em $(a,b)$, então a raiz é única.
 \end{prop} %para todo d entre f(a) e f(b) existe ao menos um f(c) = d %então para f(a) > 0 e f(b) < 0, existe pelo menos um f(c) = 0
-Por exemplo, considere a função $f(x) = x^3 - 9x + 3$. Utilizando a Proposição \ref{c_tvi}, observamos que
+Por exemplo, considere a função $f(x) = x^3 - 9x + 3$. Utilizando a Proposição~\ref{c_tvi}, observamos que
 \begin{itemize}
     \item $f(0)f(1) = -15 < 0$, portanto há raiz no intervalo (0, 1);
     \item $f(2)f(3) = -21 < 0$, portanto há raiz no intervalo (2, 3).
@@ -239,7 +239,7 @@ Como por hipótese $\varphi'(x) < 1$ então $|C| < 1$, portanto, a convergência
 \newpage
     
 %--------------------------------------------------------------------
-\section{Método de Newton-Raphson Unidimensional}
+\section{Método de Newton-Raphson Unidimensional}\label{sec:NR1d}
 
 \TODO{talvez reescrever todas as condições como i) derivada limitada ii) f e g continuas , etc...}
 
@@ -261,9 +261,9 @@ onde \(f'(x_k)\) é a derivada da função \(f\) avaliada em \(x_k\).
 Para que o método convirja para a raiz correta, é necessário que \(f(x)\) seja continuamente diferenciável em uma vizinhança da raiz e que \(f'(x) \neq 0\) nessa região. Além disso, a escolha adequada do ponto inicial \(x_0\) é crucial para garantir a convergência do método.
 
 Aplicando a derivada na forma geral de $\varphi$ pela regra da cadeia obtemos $\varphi'(x) = 1 + A'(x)f(x) + A(x)f'(x)$ e, calculando-a na raiz, resta $\varphi'(\xi) = 1 + A(\xi)f'(\xi)$. Impomos que $\varphi'(\xi) = 0$, o que nos leva a $A(\xi) = \frac{-1}{f'(\xi)}$. Generalizando, temos $A(x) = \frac{-1}{f'(x)}$. Portanto, desde que $f'(x) \neq 0$, a forma da função de iteração do método de Newton-Raphson é 
-\begin{equation*}
+\begin{equation} \label{phiNR1d}
     \varphi(x) = x - \frac{f(x)}{f'(x)}.
-\end{equation*}
+\end{equation}
 \begin{comment}
 \begin{align*} %derivada = 0
     \varphi(x) &= x - \frac{f(x)}{f'(x)} \\
@@ -533,11 +533,53 @@ Em suma, para evitar estes casos, além de analisar o comportamento da função,
 
 
 \section{Método de Newton-Raphson N-dimensional}
+O método de Newton-Raphson Unidimensional tem o objetivo de encontrar soluções para zeros de funções unidimensionais, mas pode ser estendido para resolver sistemas de equações não lineares em múltiplas variáveis. Um sistema de equações não lineares pode ser representado como:
+\HACK{Espaçamento entre os "..." ficou meio porco, se alguém souber como melhorar}
+\begin{equation*}
+    \begin{cases}
+    f_1(x_1, x_2, \ldots, x_n) = 0 \\
+    f_2(x_1, x_2, \ldots, x_n) = 0 \\
+            \qquad \qquad \vdots \qquad \qquad  \vdots \\
+    f_n(x_1, x_2, \ldots, x_n) = 0
+    \end{cases}
+\end{equation*}
+onde  \(f_i \) são as funções não lineares e \(x_i\) são as variáveis desconhecidas.
+
+Podemos representar esse sistema de \textbf{\(n\)} variáveis como uma função \textbf{\(F : \mathbb{R}^n \rightarrow \mathbb{R}^n\)}' como
+\begin{equation*}
+    F((x_1, x_2, \ldots, x_n)) = (f_1(x_1, x_2, \ldots, x_n), f_2(x_1, x_2, \ldots, x_n), \ldots, f_n(x_1, x_2, \ldots, x_n))^{t}
+\end{equation*}
+Esse sistema, de forma mais compacta, pode ser escrito na forma vetorial como \textbf{\(F(X) = 0\)}, onde \textbf{\(F\)} é um vetor de funções e \(X\) é um vetor de variáveis.
 
 \subsection{Definições}
 
+Durante a construção do método de Newton-Raphson unidimensional~\ref{sec:NR1d}, definimos a função de iteração 
+\begin{equation*}
+\varphi(x) = x - {A(x)}{f'(x)}.
+\end{equation*}
+com isso achamos que a função \(A(x)\) que satisfazia \(\varphi'(\xi) = 0\) é \(A(x) = \frac{-1}{f'(x)}\) desde que \(f'(x) \neq 0\). Portanto, a forma da função de iteração do método de Newton-Raphson é
+\begin{equation*}
+    \varphi(x) = x - \frac{f(x)}{f'(x)}. 
+\end{equation*}
+Similarmente, para o caso n-dimensional, generalizamos a função de iteração como
+\begin{equation*}
+    \mathbb{G}(x) = x - A(x)^{-1} F(x)
+\end{equation*}
+em que \(A(x)\) é a matriz não singular que satisfaz \(\mathbb{G}'(\xi) = 0\). A matriz \(A(x)\) pode ser representada como
+\begin{equation*}
+    A(x) =  
+    \begin{bmatrix}
+        a_{11}(x) & a_{12}(x) & \ldots & a_{1n}(x) \\
+        a_{21}(x) & a_{22}(x) & \ldots & a_{2n}(x) \\
+        \vdots & \vdots & \ddots & \vdots \\
+        a_{n1}(x) & a_{n2}(x) & \ldots & a_{nn}(x)
+    \end{bmatrix}
+\end{equation*}
+onde cada entrada  \(a_{ij}(x)\) é uma função de   \(\mathbb{R}^n \rightarrow  \mathbb{R}\).
+
 \subsection{Calculo do Jacobiano}
 
-\subsection{Fractais}
+O método de Newton-Raphson para sistemas de equações não lineares envolve a utilização do \textbf{Jacobiano} da função \(F\), que é uma matriz composta pelas derivadas parciais das funções em relação às variáveis. O Jacobiano \(J\) é definido como:
 
+\subsection{Fractais}
 

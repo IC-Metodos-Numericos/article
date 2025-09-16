@@ -10,10 +10,10 @@
 \contentsline {subsection}{\numberline {1.1.2}Representação de Números em Sistemas de Ponto Flutuante}{6}{subsection.1.1.2}%
 \contentsline {subsubsection}{Caso 1: \( x \in G \) (Número representável)}{8}{section*.16}%
 \contentsline {subsection}{\numberline {1.1.3}Representação Especial do Zero}{9}{subsection.1.1.3}%
-\contentsline {section}{\numberline {1.2}Erros e Limitações}{9}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Erros e Limitações}{10}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Erro Absoluto e Relativo}{10}{subsection.1.2.1}%
 \contentsline {section}{\numberline {1.3}Perda de Significância em Operações com Pontos Flutuantes}{11}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Análise de Instabilidades e Casos Peculiares}{13}{section.1.4}%
+\contentsline {section}{\numberline {1.4}Análise de Instabilidades e Casos Peculiares}{14}{section.1.4}%
 \contentsline {subsection}{\numberline {1.4.1}Units in Last Place (ULP's)}{14}{subsection.1.4.1}%
 \contentsline {subsection}{\numberline {1.4.2}Imprecisão de operações de Ponto flutuante}{14}{subsection.1.4.2}%
 \contentsline {subsection}{\numberline {1.4.3}Discussão}{18}{subsection.1.4.3}%
@@ -32,7 +32,7 @@
 \contentsline {subsubsection}{Pontos de Inflexão}{35}{section*.51}%
 \contentsline {subsubsection}{Derivada próxima de zero}{37}{section*.53}%
 \contentsline {section}{\numberline {2.5}Método de Newton-Raphson N-dimensional}{38}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Definições}{38}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Calculo do Jacobiano}{38}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}Fractais}{38}{subsection.2.5.3}%
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{40}{chapter*.56}%
+\contentsline {subsection}{\numberline {2.5.1}Definições}{39}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Calculo do Jacobiano}{40}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Fractais}{40}{subsection.2.5.3}%
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{42}{chapter*.57}%
