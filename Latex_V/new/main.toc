@@ -34,5 +34,5 @@
 \contentsline {section}{\numberline {2.5}Método de Newton-Raphson N-dimensional}{38}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}Definições}{39}{subsection.2.5.1}%
 \contentsline {subsection}{\numberline {2.5.2}Calculo do Jacobiano}{39}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}Fractais}{40}{subsection.2.5.3}%
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{42}{chapter*.57}%
+\contentsline {subsection}{\numberline {2.5.3}Fractais}{41}{subsection.2.5.3}%
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{43}{chapter*.57}%

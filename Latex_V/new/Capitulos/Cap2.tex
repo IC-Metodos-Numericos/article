@@ -566,7 +566,7 @@ Similarmente, para o caso n-dimensional, generalizamos a função de iteração 
     \mathbb{G}(x) = x - A(x)^{-1} F(x)
 \end{equation*}
 em que \(A(x)\) é a matriz não singular que satisfaz \(\mathbb{G}'(\xi) = 0\). A matriz \(A(x)\) pode ser representada como
-\begin{equation*}
+\begin{equation}\label{matA}
     A(x) =  
     \begin{bmatrix}
         a_{11}(x) & a_{12}(x) & \ldots & a_{1n}(x) \\
@@ -574,7 +574,7 @@ em que \(A(x)\) é a matriz não singular que satisfaz \(\mathbb{G}'(\xi) = 0\).
         \vdots & \vdots & \ddots & \vdots \\
         a_{n1}(x) & a_{n2}(x) & \ldots & a_{nn}(x)
     \end{bmatrix}
-\end{equation*}
+\end{equation}
 onde cada entrada  \(a_{ij}(x)\) é uma função de   \(\mathbb{R}^n \rightarrow  \mathbb{R}\).
 
 \subsection{Calculo do Jacobiano}
@@ -595,6 +595,28 @@ onde cada entrada  \(a_{ij}(x)\) é uma função de   \(\mathbb{R}^n \rightarrow
 \end{dfNRnd}
 
 A demonstração é análoga à do Teorema \ref{teoNR}, considerando a norma vetorial em \(\mathbb{R}^n\) e a definição de diferenciabilidade em múltiplas variáveis. E está descrita extensivamente em ref.
+
+
+Suponha que \(A(x)\) seja uma matriz \(n \times n\) das funções \(a_{ij}(x)\) como descrita na equação \eqref{matA} e também seja invertível perto de uma solução \(\mathbf{p}\) de $\mathbb{F} = 0$, e seja \(b_{ij}\) as entradas da matriz inversa \(A^{-1}(x)\). Temos que 
+
+\begin{equation}
+    g_{i}(x) = x_i - \sum_{j=1}^{n} b_{ij}(x) f_j(x)
+\end{equation}
+e
+\begin{equation}
+    \frac{\partial g_i(x)}{\partial x_k} = \delta_{ik} - \sum_{j=1}^{n} \left( \frac{\partial b_{ij}(x)}{\partial x_k} f_j(x) + b_{ij}(x) \frac{\partial f_j(x)}{\partial x_k} \right)
+\end{equation}
+onde \(\delta_{ik}\) é o delta de Kronecker, que é 1 se \(i = k\) e 0 caso contrário.
+O teorema implique que \( \frac{\partial g_i(\mathbf{p})}{\partial x_k} = 0 \) para todo $ i = 1,2, \ldots, n$. Portanto, temos que $ i = k $,
+
+Quando \(i = k\), temos
+\begin{equation}
+    0 = 1 - \sum_{j=1}^{n} \left( b_{ij}(\mathbf{p}) \frac{\partial f_j(\mathbf{p})}{\partial x_i} \right)
+\end{equation}
+e quando \(i \neq k\), temos
+\begin{equation}
+    0 = - \sum_{j=1}^{n} \left( b_{ij}(\mathbf{p}) \frac{\partial f_j(\mathbf{p})}{\partial x_k} \right).
+\end{equation}
 
 O método de Newton-Raphson para sistemas de equações não lineares envolve a utilização do \textbf{Jacobiano} da função \(F\), que é uma matriz composta pelas derivadas parciais das funções em relação às variáveis. O Jacobiano \(J\) é definido como:
 
