@@ -35,5 +35,5 @@
 \contentsline {subsection}{\numberline {2.5.1}Definições}{39}{subsection.2.5.1}%
 \contentsline {subsection}{\numberline {2.5.2}Calculo do Jacobiano}{39}{subsection.2.5.2}%
 \contentsline {subsubsection}{Exemplo}{42}{section*.56}%
-\contentsline {subsection}{\numberline {2.5.3}Fractais}{43}{subsection.2.5.3}%
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{45}{chapter*.58}%
+\contentsline {subsection}{\numberline {2.5.3}Fractais de Newton}{43}{subsection.2.5.3}%
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{51}{chapter*.65}%
