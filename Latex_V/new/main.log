@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.7.28)  16 SEP 2025 22:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.7.28)  22 SEP 2025 09:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1562,13 +1562,23 @@ File: Imagens/pitfalls/06/slope_near_zero.png Graphic file (type png)
 <use Imagens/pitfalls/06/slope_near_zero.png>
 Package pdftex.def Info: Imagens/pitfalls/06/slope_near_zero.png  used on input line 497.
 (pdftex.def)             Requested size: 455.24408pt x 322.47012pt.
-[37 <./Imagens/pitfalls/06/slope_near_zero.png>] Excluding 'comment' comment. [38] [39]) [40] [41] [42
+[37 <./Imagens/pitfalls/06/slope_near_zero.png>] Excluding 'comment' comment. [38] [39] [40] [41]
+Underfull \hbox (badness 2020) in paragraph at lines 775--776
+[]\OT1/cmr/m/n/12 Vamos es-co-lher um chute ini-cial $(\OML/cmm/m/it/12 x[]; y[]\OT1/cmr/m/n/12 ) = (2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ e apli-car o m^^Setodo
+ []
+
+[42]
+Underfull \hbox (badness 1558) in paragraph at lines 790--791
+\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 2679491924311228\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 618033988749895)$, que sa-tis-faz o sis-tema de equa^^Xc~oes n~ao
+ []
+
+) [43] [44
 
 
 
 ] (main.bbl) 
 AED: lastpage setting LastPage
-[43
+[45
 
 
 ] (main.aux (Preliminar/Agradecimentos.aux) (Preliminar/Resumo.aux) (Preliminar/Abstract.aux) (Preliminar/Introdução.aux) (Capitulos/Cap1.aux) (Capitulos/Cap2.aux))
@@ -1581,20 +1591,20 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: AB4296881C3BAF9FAFF4C9A6A54C66D2;5526.
+(rerunfilecheck)             Checksum: AFD87288C084038D3496F1CB01F61C83;5526.
  ) 
 Here is how much of TeX's memory you used:
- 43035 strings out of 474485
- 841568 string characters out of 5753549
- 1939542 words of memory out of 5000000
- 64344 multiletter control sequences out of 15000+600000
+ 43043 strings out of 474485
+ 841654 string characters out of 5753549
+ 1941542 words of memory out of 5000000
+ 64346 multiletter control sequences out of 15000+600000
  572789 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 100i,9n,120p,3355b,883s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 100i,14n,120p,3355b,883s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (52 pages, 1344347 bytes).
+Output written on main.pdf (54 pages, 1350936 bytes).
 PDF statistics:
- 658 PDF objects out of 1000 (max. 8388607)
- 169 named destinations out of 1000 (max. 500000)
+ 673 PDF objects out of 1000 (max. 8388607)
+ 175 named destinations out of 1000 (max. 500000)
  337 words of extra memory for PDF output out of 10000 (max. 10000000)
 

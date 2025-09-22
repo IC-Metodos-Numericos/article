@@ -608,17 +608,186 @@ e
 \end{equation}
 onde \(\delta_{ik}\) é o delta de Kronecker, que é 1 se \(i = k\) e 0 caso contrário.
 O teorema implique que \( \frac{\partial g_i(\mathbf{p})}{\partial x_k} = 0 \) para todo $ i = 1,2, \ldots, n$. Portanto, temos que $ i = k $,
-
-Quando \(i = k\), temos
-\begin{equation}
+\begin{equation}\label{aInvs1}
     0 = 1 - \sum_{j=1}^{n} \left( b_{ij}(\mathbf{p}) \frac{\partial f_j(\mathbf{p})}{\partial x_i} \right)
 \end{equation}
 e quando \(i \neq k\), temos
-\begin{equation}
+\begin{equation}\label{aInvs2}
     0 = - \sum_{j=1}^{n} \left( b_{ij}(\mathbf{p}) \frac{\partial f_j(\mathbf{p})}{\partial x_k} \right).
 \end{equation}
+Podemos definir a matriz Jacobiana \(J\) de \(F\) como
+\begin{equation}
+    J(\mathbf{p}) =
+    \begin{bmatrix}
+        \frac{\partial f_1(\mathbf{p})}{\partial x_1} & \frac{\partial f_1(\mathbf{p})}{\partial x_2} & \ldots & \frac{\partial f_1(\mathbf{p})}{\partial x_n} \\
+        \frac{\partial f_2(\mathbf{p})}{\partial x_1} & \frac{\partial f_2(\mathbf{p})}{\partial x_2} & \ldots & \frac{\partial f_2(\mathbf{p})}{\partial x_n} \\
+        \vdots & \vdots & \ddots & \vdots \\
+        \frac{\partial f_n(\mathbf{p})}{\partial x_1} & \frac{\partial f_n(\mathbf{p})}{\partial x_2} & \ldots & \frac{\partial f_n(\mathbf{p})}{\partial x_n}
+    \end{bmatrix}
+\end{equation}
+As condições \ref{aInvs1} e \ref{aInvs2} implicam que
+\begin{align*}
+    A(\mathbf{p})^{-1} J(\mathbf{p}) &= I \\[6pt]
+    A(\mathbf{p}) A(\mathbf{p})^{-1} J(\mathbf{p}) &= A(\mathbf{p}) I \\[6pt]
+    I J(\mathbf{p}) &= A(\mathbf{p}) \\[6pt]
+    J(\mathbf{p}) &= A(\mathbf{p})
+\end{align*}
+Portanto, uma escolha natural para \(A(x)\) é a matriz Jacobiana \(J(x)\) de \(F\). Assim, a função de iteração do método de Newton-Raphson n-dimensional é dada por
+\begin{equation}
+    \mathbb{G}(x) = x - J(x)^{-1} F(x)
+\end{equation}.
+O método de Newton-Raphson n-dimensional (ou \textbf{método de Newton-Raphson para sistemas não lineares}) pode ser implementado iterativamente como
+\begin{equation}
+    x_{k+1} = x_k - J(x_k)^{-1} F(x_k)
+\end{equation}
+onde \(x_k\) é a aproximação atual da solução, \(J(x_k)\) é a matriz Jacobiana avaliada em \(x_k\), e \(F(x_k)\) é o vetor de funções avaliado em \(x_k\). É esperado que a sequência \(\{x_k\}\) convirja, \textbf{quadraticamente}, para a solução do sistema de equações não lineares, desde que o chute inicial \(x_0\) esteja suficientemente próximo da solução e que a matriz Jacobiana avaliada em \(J(x_k)\) seja invertível nesse ponto.
+\subsubsection{Exemplo}
+Considere o sistema de equações não lineares:
+\begin{equation*}
+    \begin{cases}
+    x^2 + y^2 - 4 = 0 \\
+    x^2 - y - 1 = 0
+    \end{cases}
+\end{equation*}
+Podemos definir a função \(F : \mathbb{R}^2 \rightarrow \mathbb{R}^2\) como
+\begin{equation*}
+    F((x, y)) = \begin{bmatrix}
+                    x^2 + y^2 - 4 \\
+                    x^2 - y - 1
+                \end{bmatrix}
+\end{equation*}
+A matriz Jacobiana \(J(x, y)\) de \(F\) é dada por
+\begin{equation*}
+    J((x, y)) = \begin{bmatrix}
+        \frac{\partial ( x^2 + y^2 - 4 )}{\partial x} & \frac{\partial ( x^2 + y^2 - 4 )}{\partial y} \\
+        \frac{\partial ( x^2 - y - 1 )}{\partial x} & \frac{\partial ( x^2 - y - 1 )}{\partial y}
+    \end{bmatrix}
+\end{equation*}
+\begin{equation*}
+    J((x, y)) = \begin{bmatrix}
+        2x & 2y \\
+        2x & -1
+    \end{bmatrix}
+\end{equation*}
+A iteração do método de Newton-Raphson n-dimensional é então dada por
+% COM O CALCULO DO DETERMINANTE E DA INVERSA
+% \begin{align*}
+%     \begin{bmatrix}
+%         x_{k+1} \\[6pt]
+%         y_{k+1}
+%     \end{bmatrix}
+%     &= 
+%     \begin{bmatrix}
+%         x_k \\[6pt]
+%         y_k
+%     \end{bmatrix}
+%     -
+%     J(x_k,y_k)^{-1} \, F(x_k,y_k) \\[12pt]
+%     &=
+%     \begin{bmatrix}
+%         x_k \\[6pt]
+%         y_k
+%     \end{bmatrix}
+%     -
+%     \begin{bmatrix}
+%         2x_k & 2y_k \\[6pt]
+%         2x_k & -1
+%     \end{bmatrix}^{-1}
+%     \begin{bmatrix}
+%         x_k^2 + y_k^2 - 4 \\[6pt]
+%         x_k^2 - y_k - 1
+%     \end{bmatrix}.
+% \end{align*}
 
-O método de Newton-Raphson para sistemas de equações não lineares envolve a utilização do \textbf{Jacobiano} da função \(F\), que é uma matriz composta pelas derivadas parciais das funções em relação às variáveis. O Jacobiano \(J\) é definido como:
+% \[
+% \det(J) = (2x_k)(-1) - (2x_k)(2y_k) = -2x_k - 4x_ky_k
+% \]
+
+% \[
+% J(x_k,y_k)^{-1}
+% = \frac{1}{-2x_k - 4x_k y_k}
+% \begin{bmatrix}
+% -1 & -2y_k \\[6pt]
+% -2x_k & 2x_k
+% \end{bmatrix}.
+% \]
+
+% \begin{align*}
+%     \begin{bmatrix}
+%         x_{k+1} \\[6pt]
+%         y_{k+1}
+%     \end{bmatrix}
+%     &=
+%     \begin{bmatrix}
+%         x_k \\[6pt]
+%         y_k
+%     \end{bmatrix}
+%     -
+%     \frac{1}{-2x_k - 4x_k y_k}
+%     \begin{bmatrix}
+%         -1 & -2y_k \\[6pt]
+%         -2x_k & 2x_k
+%     \end{bmatrix}
+%     \begin{bmatrix}
+%         x_k^2 + y_k^2 - 4 \\[6pt]
+%         x_k^2 - y_k - 1
+%     \end{bmatrix}.
+% \end{align*}
+\begin{align*}
+        \begin{bmatrix}
+            x_{k+1} \\
+            y_{k+1}
+        \end{bmatrix} 
+        &=
+        \begin{bmatrix}
+            x_k \\
+            y_k
+        \end{bmatrix} - J((x_k, y_k))^{-1} F((x_k, y_k)) \\[12pt]
+        &=
+        \begin{bmatrix}
+            x_k \\
+            y_k
+        \end{bmatrix} - 
+        \begin{bmatrix}
+            2x_k & 2y_k \\
+            2x_k & -1
+        \end{bmatrix}^{-1} 
+        \begin{bmatrix}
+            x_k^2 + y_k^2 - 4 \\
+            x_k^2 - y_k - 1
+        \end{bmatrix}\\[12pt]
+        &=
+        \begin{bmatrix}
+            x_k \\
+            y_k
+        \end{bmatrix} - 
+        \frac{1}{-2x_k - 4y_k^2}
+        \begin{bmatrix}
+            -1 & -2y_k \\
+            -2x_k & 2x_k
+        \end{bmatrix} 
+        \begin{bmatrix}
+            x_k^2 + y_k^2 - 4 \\
+            x_k^2 - y_k - 1
+        \end{bmatrix}
+\end{align*}
+
+Vamos escolher um chute inicial \( (x_0, y_0) = (2, 1) \) e aplicar o método iterativamente:
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+Iteração & $x_k$ & $y_k$ \\
+\hline
+0 & 2.0000000000000000 & 1.0000000000000000 \\
+1 & 1.5000000000000000 & 0.2500000000000000 \\
+2 & 1.3095238095238095 & 0.7142857142857143 \\
+3 & 1.2727272727272727 & 0.6181818181818182 \\
+4 & 1.2679491924311228 & 0.6180339887498950 \\
+5 & 1.2679491924311228 & 0.6180339887498950 \\
+\hline
+\end{tabular}
+\end{center}
+Após algumas iterações, o método converge para a solução aproximada \( (x, y) \approx (1.2679491924311228, 0.618033988749895) \), que satisfaz o sistema de equações não lineares.
 
 \subsection{Fractais}
 
