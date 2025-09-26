@@ -33,7 +33,7 @@
 \contentsline {subsubsection}{Derivada próxima de zero}{37}{section*.53}%
 \contentsline {section}{\numberline {2.5}Método de Newton-Raphson N-dimensional}{38}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}Definições}{39}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Calculo do Jacobiano}{39}{subsection.2.5.2}%
-\contentsline {subsubsection}{Exemplo}{42}{section*.56}%
+\contentsline {subsection}{\numberline {2.5.2}Calculo do Jacobiano}{40}{subsection.2.5.2}%
+\contentsline {subsubsection}{Exemplo}{41}{section*.56}%
 \contentsline {subsection}{\numberline {2.5.3}Fractais de Newton}{43}{subsection.2.5.3}%
 \contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{51}{chapter*.65}%

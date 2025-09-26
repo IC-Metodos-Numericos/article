@@ -533,7 +533,7 @@ Em suma, para evitar estes casos, além de analisar o comportamento da função,
 
 
 \section{Método de Newton-Raphson N-dimensional}
-O método de Newton-Raphson Unidimensional tem o objetivo de encontrar soluções para zeros de funções em $$\mathbb{R}$$, mas pode ser estendido para resolver sistemas de equações não lineares em múltiplas variáveis. Um sistema de equações não lineares pode ser representado como:
+O método de Newton-Raphson Unidimensional tem o objetivo de encontrar soluções para zeros de funções em $\mathbb{R}$, mas pode ser estendido para resolver sistemas de equações não lineares em múltiplas variáveis. Um sistema de equações não lineares pode ser representado como:
 \HACK{Espaçamento entre os "..." ficou meio porco, se alguém souber como melhorar}
 \begin{equation*}
     \begin{cases}
@@ -549,13 +549,13 @@ Podemos representar esse sistema de \textbf{\(n\)} variáveis como uma função 
 \begin{equation*}
     F((x_1, x_2, \ldots, x_n)) = (f_1(x_1, x_2, \ldots, x_n), f_2(x_1, x_2, \ldots, x_n), \ldots, f_n(x_1, x_2, \ldots, x_n))^{t}
 \end{equation*}
-Esse sistema, de forma mais compacta, pode ser escrito na forma vetorial como \textbf{\(F(X) = 0\)}, onde \textbf{\(F\)} é um vetor de funções e \(X\) é um vetor de variáveis.
+Esse sistema, de forma mais compacta, pode ser escrito na forma vetorial como \textbf{\(F(X) = 0\)}, onde \textbf{\(F\)} é uma função vetorial e \(X\) é um vetor de variáveis.
 
 \subsection{Definições}
 
-Durante a construção do método de Newton-Raphson unidimensional~\ref{sec:NR1d}, definimos a função de iteração 
+Durante a construção do método de Newton-Raphson unidimensional (\ref{sec:NR1d}), definimos a função de iteração 
 \begin{equation*}
-\varphi(x) = x - {A(x)}{f'(x)}.
+\varphi(x) = x - {A(x)}{f(x)}.
 \end{equation*}
 com isso achamos que a função \(A(x)\) que satisfazia \(\varphi'(\xi) = 0\) é \(A(x) = \frac{-1}{f'(x)}\) desde que \(f'(x) \neq 0\). Portanto, a forma da função de iteração do método de Newton-Raphson é
 \begin{equation*}
@@ -563,9 +563,9 @@ com isso achamos que a função \(A(x)\) que satisfazia \(\varphi'(\xi) = 0\) é
 \end{equation*}
 Similarmente, para o caso n-dimensional, generalizamos a função de iteração como
 \begin{equation*}
-    \mathbb{G}(x) = x - A(x)^{-1} F(x)
+    G(\xb) = x - A(x)^{-1} F(x)
 \end{equation*}
-em que \(A(x)\) é a matriz não singular que satisfaz \(\mathbb{G}'(\xi) = 0\). A matriz \(A(x)\) pode ser representada como
+em que \(A(x)\) é a matriz não singular que satisfaz \(G'(\xi) = 0\). A matriz \(A(x)\) pode ser representada como
 \begin{equation}\label{matA}
     A(x) =  
     \begin{bmatrix}
@@ -575,7 +575,16 @@ em que \(A(x)\) é a matriz não singular que satisfaz \(\mathbb{G}'(\xi) = 0\).
         a_{n1}(x) & a_{n2}(x) & \ldots & a_{nn}(x)
     \end{bmatrix}
 \end{equation}
-onde cada entrada  \(a_{ij}(x)\) é uma função de   \(\mathbb{R}^n \rightarrow  \mathbb{R}\).
+onde cada entrada  \(a_{ij}(x)\) é uma função de   \(\mathbb{R}^n \rightarrow  \mathbb{R}\). Seja \(b_{ij}\) as entradas da matriz inversa \(A^{-1}(x)\). As funções coordenadas  $g_{i}(\xb)$ são da forma
+
+\begin{equation}
+    g_{i}(\xb) = x_i - \sum_{j=1}^{n} b_{ij}(x) f_j(x)
+\end{equation}
+e
+\begin{equation}\label{sumInvA}
+    \frac{\partial g_i(\xb)}{\partial x_k} = \delta_{ik} - \sum_{j=1}^{n} \left( \frac{\partial b_{ij}(x)}{\partial x_k} f_j(x) + b_{ij}(x) \frac{\partial f_j(x)}{\partial x_k} \right)
+\end{equation}
+onde \(\delta_{ik}\) é o delta de Kronecker, que é 1 se \(i = k\) e 0 caso contrário.
 
 \subsection{Calculo do Jacobiano}
 
@@ -596,26 +605,15 @@ onde cada entrada  \(a_{ij}(x)\) é uma função de   \(\mathbb{R}^n \rightarrow
 
 A demonstração é análoga à do Teorema \ref{teoNR}, considerando a norma vetorial em \(\mathbb{R}^n\) e a definição de diferenciabilidade em múltiplas variáveis. E está descrita extensivamente em ref.
 
-
-Suponha que \(A(x)\) seja uma matriz \(n \times n\) das funções \(a_{ij}(x)\) como descrita na equação \eqref{matA} e também seja invertível perto de uma solução \(\mathbf{p}\) de $\mathbb{F} = 0$, e seja \(b_{ij}\) as entradas da matriz inversa \(A^{-1}(x)\). Temos que 
-
-\begin{equation}
-    g_{i}(x) = x_i - \sum_{j=1}^{n} b_{ij}(x) f_j(x)
+A partir de (\ref{sumInvA}) vamos caracterizar a matriz A. Obseve que, de \( \frac{\partial g_i(\mathbf{p})}{\partial x_k} = 0 \) para todo $ i = 1,2, \ldots, n$, temos que
+\begin{equation}\label{aInvs1}
+    0 = 1 - \sum_{j=1}^{n} \left( b_{ij}(\mathbf{p}) \frac{\partial f_j(\mathbf{p})}{\partial x_i} \right) \ \ \text{para i = k}
 \end{equation}
 e
-\begin{equation}
-    \frac{\partial g_i(x)}{\partial x_k} = \delta_{ik} - \sum_{j=1}^{n} \left( \frac{\partial b_{ij}(x)}{\partial x_k} f_j(x) + b_{ij}(x) \frac{\partial f_j(x)}{\partial x_k} \right)
-\end{equation}
-onde \(\delta_{ik}\) é o delta de Kronecker, que é 1 se \(i = k\) e 0 caso contrário.
-O teorema implique que \( \frac{\partial g_i(\mathbf{p})}{\partial x_k} = 0 \) para todo $ i = 1,2, \ldots, n$. Portanto, temos que $ i = k $,
-\begin{equation}\label{aInvs1}
-    0 = 1 - \sum_{j=1}^{n} \left( b_{ij}(\mathbf{p}) \frac{\partial f_j(\mathbf{p})}{\partial x_i} \right)
-\end{equation}
-e quando \(i \neq k\), temos
 \begin{equation}\label{aInvs2}
-    0 = - \sum_{j=1}^{n} \left( b_{ij}(\mathbf{p}) \frac{\partial f_j(\mathbf{p})}{\partial x_k} \right).
+    0 = - \sum_{j=1}^{n} \left( b_{ij}(\mathbf{p}) \frac{\partial f_j(\mathbf{p})}{\partial x_k} \right)\ \ \text{para i $\neq$ k}.
 \end{equation}
-Podemos definir a matriz Jacobiana \(J\) de \(F\) como
+Definimos a matriz Jacobiana \(J\) de \(F\) como
 \begin{equation}
     J(\mathbf{p}) =
     \begin{bmatrix}
@@ -634,13 +632,13 @@ As condições \ref{aInvs1} e \ref{aInvs2} implicam que
 \end{align*}
 Portanto, uma escolha natural para \(A(x)\) é a matriz Jacobiana \(J(x)\) de \(F\). Assim, a função de iteração do método de Newton-Raphson n-dimensional é dada por
 \begin{equation}
-    \mathbb{G}(x) = x - J(x)^{-1} F(x)
-\end{equation}.
+    G(\xb) = x - J(x)^{-1} F(x).
+\end{equation}
 O método de Newton-Raphson n-dimensional (ou \textbf{método de Newton-Raphson para sistemas não lineares}) pode ser implementado iterativamente como
 \begin{equation}
     x_{k+1} = x_k - J(x_k)^{-1} F(x_k)
 \end{equation}
-onde \(x_k\) é a aproximação atual da solução, \(J(x_k)\) é a matriz Jacobiana avaliada em \(x_k\), e \(F(x_k)\) é o vetor de funções avaliado em \(x_k\). É esperado que a sequência \(\{x_k\}\) convirja, \textbf{quadraticamente}, para a solução do sistema de equações não lineares, desde que o chute inicial \(x_0\) esteja suficientemente próximo da solução e que a matriz Jacobiana avaliada em \(J(x_k)\) seja invertível nesse ponto.
+onde \(\xb_k\) é a aproximação atual da solução, \(J(x_k)\) é a matriz Jacobiana avaliada em \(x_k\), e \(F(\xb_k)\) é o vetor de funções avaliado em \(x_k\). É esperado que a sequência \(\{x_k\}\) convirja, \textbf{quadraticamente}, para a solução do sistema de equações não lineares, desde que o chute inicial \(x_0\) esteja suficientemente próximo da solução e que a matriz Jacobiana avaliada em \(J(x_k)\) seja invertível nesse ponto.
 \subsubsection{Exemplo}
 Considere o sistema de equações não lineares:
 \begin{equation*}
@@ -761,13 +759,13 @@ A iteração do método de Newton-Raphson n-dimensional é então dada por
             x_k \\
             y_k
         \end{bmatrix} - 
-        \frac{1}{-2x_k - 4y_k^2}
+        \frac{1}{-2x_k - 4y_k x_k}
         \begin{bmatrix}
             -1 & -2y_k \\
             -2x_k & 2x_k
         \end{bmatrix} 
         \begin{bmatrix}
-            x_k^2 + y_k^2 - 4 \\
+            x_k^2 + y_k - 4 \\
             x_k^2 - y_k - 1
         \end{bmatrix}
 \end{align*}
