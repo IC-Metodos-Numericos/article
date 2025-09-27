@@ -84,9 +84,11 @@ A forma geral da função de iteração é
 com $A(\xi) \ne 0$.
 %É necessário verificar então se as funções de iteração geradas respeitam essa condição de $A(\xi) \neq 0$. 
 Por exemplo, a $\varphi_1 = \frac{x^3}{9} + \frac{1}{3}$ na forma geral ficaria 
+
 \begin{equation*}
     \varphi_1(x) = x + \frac{1}{9}f(x)
 \end{equation*}
+
 \begin{comment}
     \varphi_1(x) &= x + \frac{1}{9}(x^3 - 9x + 3) \\
     \varphi_1(x) &= x + \frac{x^3}{9} - x + \frac{1}{3} \\
@@ -635,7 +637,7 @@ Portanto, uma escolha natural para \(A(x)\) é a matriz Jacobiana \(J(x)\) de \(
     G(\xb) = x - J(x)^{-1} F(x).
 \end{equation}
 O método de Newton-Raphson n-dimensional (ou \textbf{método de Newton-Raphson para sistemas não lineares}) pode ser implementado iterativamente como
-\begin{equation}
+\begin{equation}\label{seqIterNRndim}
     x_{k+1} = x_k - J(x_k)^{-1} F(x_k)
 \end{equation}
 onde \(\xb_k\) é a aproximação atual da solução, \(J(x_k)\) é a matriz Jacobiana avaliada em \(x_k\), e \(F(\xb_k)\) é o vetor de funções avaliado em \(x_k\). É esperado que a sequência \(\{x_k\}\) convirja, \textbf{quadraticamente}, para a solução do sistema de equações não lineares, desde que o chute inicial \(x_0\) esteja suficientemente próximo da solução e que a matriz Jacobiana avaliada em \(J(x_k)\) seja invertível nesse ponto.
@@ -668,69 +670,6 @@ A matriz Jacobiana \(J(x, y)\) de \(F\) é dada por
     \end{bmatrix}
 \end{equation*}
 A iteração do método de Newton-Raphson n-dimensional é então dada por
-% COM O CALCULO DO DETERMINANTE E DA INVERSA
-% \begin{align*}
-%     \begin{bmatrix}
-%         x_{k+1} \\[6pt]
-%         y_{k+1}
-%     \end{bmatrix}
-%     &= 
-%     \begin{bmatrix}
-%         x_k \\[6pt]
-%         y_k
-%     \end{bmatrix}
-%     -
-%     J(x_k,y_k)^{-1} \, F(x_k,y_k) \\[12pt]
-%     &=
-%     \begin{bmatrix}
-%         x_k \\[6pt]
-%         y_k
-%     \end{bmatrix}
-%     -
-%     \begin{bmatrix}
-%         2x_k & 2y_k \\[6pt]
-%         2x_k & -1
-%     \end{bmatrix}^{-1}
-%     \begin{bmatrix}
-%         x_k^2 + y_k^2 - 4 \\[6pt]
-%         x_k^2 - y_k - 1
-%     \end{bmatrix}.
-% \end{align*}
-
-% \[
-% \det(J) = (2x_k)(-1) - (2x_k)(2y_k) = -2x_k - 4x_ky_k
-% \]
-
-% \[
-% J(x_k,y_k)^{-1}
-% = \frac{1}{-2x_k - 4x_k y_k}
-% \begin{bmatrix}
-% -1 & -2y_k \\[6pt]
-% -2x_k & 2x_k
-% \end{bmatrix}.
-% \]
-
-% \begin{align*}
-%     \begin{bmatrix}
-%         x_{k+1} \\[6pt]
-%         y_{k+1}
-%     \end{bmatrix}
-%     &=
-%     \begin{bmatrix}
-%         x_k \\[6pt]
-%         y_k
-%     \end{bmatrix}
-%     -
-%     \frac{1}{-2x_k - 4x_k y_k}
-%     \begin{bmatrix}
-%         -1 & -2y_k \\[6pt]
-%         -2x_k & 2x_k
-%     \end{bmatrix}
-%     \begin{bmatrix}
-%         x_k^2 + y_k^2 - 4 \\[6pt]
-%         x_k^2 - y_k - 1
-%     \end{bmatrix}.
-% \end{align*}
 \begin{align*}
         \begin{bmatrix}
             x_{k+1} \\
@@ -759,7 +698,7 @@ A iteração do método de Newton-Raphson n-dimensional é então dada por
             x_k \\
             y_k
         \end{bmatrix} - 
-        \frac{1}{-2x_k - 4y_k x_k}
+        \frac{1}{-2x_k - 4 x_k y_k }
         \begin{bmatrix}
             -1 & -2y_k \\
             -2x_k & 2x_k
@@ -787,13 +726,59 @@ Iteração & $x_k$ & $y_k$ \\
 \end{center}
 Após algumas iterações, o método converge para a solução aproximada \( (x, y) \approx (1.2679491924311228, 0.618033988749895) \), que satisfaz o sistema de equações não lineares.
 
+\EnzoR{@LucasM, por favor, verifique se era assim que você desejava.}
+Computacionalmente não é interessante fazer o cálculo da inversa da matriz Jacobiana, então podemos reescrever a sequência iterativa (\ref{seqIterNRndim}) criando uma variável auxiliar
+\begin{align*}
+    \gamma &= - J(x_k)^{-1} F(x_k) \\
+    J(x_k) \gamma &= J(x_k) J(x_k)^{-1} F(x_k) \\
+    J(x_k) \gamma &= - F(x_k) \label{auxNRndim}
+\end{align*}
+Subistituindo $\gamma$ em ( \ref{seqIterNRndim} ) temos
+\begin{equation*}
+    x_{k+1} = x_k + \gamma
+\end{equation*}
+
+
 \subsection{Fractais de Newton}
 O método de newton para resolução de sistemas não lineares possui representação geométrica dada por fractais, conhecidos como \textbf{Fractais de Newton}.
 
+\EnzoR{@LuisD, Oque acha dessa introdução do plano complexo?}
 Para representar esses fractais é necessário construir o plano em que um dos eixos é a Reta $\mathbb{R}$ que contém todos os números reais e o segundo eixo ortoganal ao primeiro é a Reta $\mathbb{I}$ que contém todos os numéros imaginários, esse plano é denominado \textbf{Plano Complexo}.
 
-\TODO{Adicionar Imagem do plano complexo}
-*IMAGEM PLANO COMPLEXO*
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{Imagens/complexPlane/complex_plane_axes.png}
+    \caption{Plano Complexo}
+    \label{fig:complexPlane}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Imagens//complexPlane/complex_plane_real_part.png}
+        \caption*{Parte Real}
+    \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Imagens//complexPlane/complex_plane_imaginary_part.png}
+        \caption*{Parte Imaginária}
+    \end{minipage}\\[1em]
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Imagens//complexPlane/complex_plane_argument.png}
+        \caption*{Parte Angular}
+    \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Imagens//complexPlane/complex_plane_magnitude.png}
+        \caption*{Parte Magnitude}
+    \end{minipage}
+    \caption{Propriedades dos Números Complexos}
+    \label{fig:complexPlaneProps}
+\end{figure}
+
+
 
 Ao aplicarmos ao 
 
@@ -844,4 +829,43 @@ Ao aplicarmos ao
     \label{fig:fractaisnr_unitroots20}
 \end{figure}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{Imagens/nr2d_fractals/polinomials/nrfractal_polinomio.png}
+    \caption{Fractais de Newton - Polinomio ABCD.}
+    \label{fig:fractaisnr_polinomials1}
+\end{figure}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{Imagens/nr2d_fractals/polinomials/nrfractal_polinomio2.png}
+    \caption{Fractais de Newton - Polinomio ABCD.}
+    \label{fig:fractaisnr_polinomials1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{Imagens/nr2d_fractals/polinomials/nrfractal_polinomio3.png}
+    \caption{Fractais de Newton - Polinomio ABCD.}
+    \label{fig:fractaisnr_polinomials1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{Imagens/nr2d_fractals/polinomials/nrfractal_polinomio4.png}
+    \caption{Fractais de Newton - Polinomio ABCD.}
+    \label{fig:fractaisnr_polinomials1}
+\end{figure}
+
+
+
+\section{Aplicações}
+O método de Newton-Raphson é amplamente utilizado em diversas áreas da ciência e engenharia devido à sua eficiência e rapidez na convergência para soluções de equações não lineares. Algumas das principais aplicações incluem:    
+\begin{itemize}
+    \item \textbf{Engenharia Elétrica:} Utilizado para análise de fluxo de carga em sistemas de energia elétrica, ajudando a determinar as tensões e correntes em diferentes pontos da rede.
+    \item \textbf{Mecânica Estrutural:} Empregado na análise de estruturas não lineares, como pontes e edifícios, para calcular deformações e tensões sob cargas variadas.
+    \item \textbf{Economia:} Aplicado na resolução de modelos econômicos complexos que envolvem múltiplas variáveis interdependentes, como equilíbrio geral e otimização de recursos.
+    \item \textbf{Ciência da Computação:} Usado em algoritmos de aprendizado de máquina e otimização, especialmente em redes neurais para ajustar pesos e minimizar funções de custo.
+    \item \textbf{Física:} Utilizado na simulação de sistemas físicos não lineares, como dinâmica de fluidos e mecânica quântica, para resolver equações diferenciais complexas.
+    \item \textbf{Química:} Empregado na modelagem de reações químicas e equilíbrio químico, ajudando a prever concentrações de reagentes e produtos.
+\end{itemize}
