@@ -1508,4 +1508,199 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--137
 
  []
 
-[23] [24] Excluding 'comment' comment. Excluding 'comment' comment. Excluding 'comment' comment. [2
+[23] [24] Excluding 'comment' comment. Excluding 'comment' comment. Excluding 'comment' comment. [25] Excluding 'comment' comment. [26] [27] [28]
+<Imagens/pitfalls/01/x_10-1.png, id=444, 1204.5pt x 853.1875pt>
+File: Imagens/pitfalls/01/x_10-1.png Graphic file (type png)
+<use Imagens/pitfalls/01/x_10-1.png>
+Package pdftex.def Info: Imagens/pitfalls/01/x_10-1.png  used on input line 353.
+(pdftex.def)             Requested size: 455.24408pt x 322.47012pt.
+<Imagens/pitfalls/01/err_x_10-1.png, id=445, 803.0pt x 501.875pt>
+File: Imagens/pitfalls/01/err_x_10-1.png Graphic file (type png)
+<use Imagens/pitfalls/01/err_x_10-1.png>
+Package pdftex.def Info: Imagens/pitfalls/01/err_x_10-1.png  used on input line 354.
+(pdftex.def)             Requested size: 455.24408pt x 284.53246pt.
+ [29] [30 <./Imagens/pitfalls/01/x_10-1.png> <./Imagens/pitfalls/01/err_x_10-1.png>]
+Overfull \hbox (14.4302pt too wide) in paragraph at lines 363--385
+ [] 
+ []
+
+<Imagens/pitfalls/02/max_min.png, id=458, 1204.5pt x 853.1875pt>
+File: Imagens/pitfalls/02/max_min.png Graphic file (type png)
+<use Imagens/pitfalls/02/max_min.png>
+Package pdftex.def Info: Imagens/pitfalls/02/max_min.png  used on input line 391.
+(pdftex.def)             Requested size: 455.24408pt x 322.47012pt.
+<Imagens/pitfalls/02/err_max_min.png, id=459, 803.0pt x 501.875pt>
+File: Imagens/pitfalls/02/err_max_min.png Graphic file (type png)
+<use Imagens/pitfalls/02/err_max_min.png>
+Package pdftex.def Info: Imagens/pitfalls/02/err_max_min.png  used on input line 392.
+(pdftex.def)             Requested size: 455.24408pt x 284.53246pt.
+[31]
+Overfull \hbox (8.9552pt too wide) in paragraph at lines 399--427
+ [] 
+ []
+
+[32 <./Imagens/pitfalls/02/max_min.png> <./Imagens/pitfalls/02/err_max_min.png>]
+<Imagens/pitfalls/03/x3_2x_2_10.png, id=472, 1204.5pt x 853.1875pt>
+File: Imagens/pitfalls/03/x3_2x_2_10.png Graphic file (type png)
+<use Imagens/pitfalls/03/x3_2x_2_10.png>
+Package pdftex.def Info: Imagens/pitfalls/03/x3_2x_2_10.png  used on input line 432.
+(pdftex.def)             Requested size: 455.24408pt x 322.47012pt.
+<Imagens/pitfalls/03/err_x3_2x_2_10.png, id=473, 803.0pt x 501.875pt>
+File: Imagens/pitfalls/03/err_x3_2x_2_10.png Graphic file (type png)
+<use Imagens/pitfalls/03/err_x3_2x_2_10.png>
+Package pdftex.def Info: Imagens/pitfalls/03/err_x3_2x_2_10.png  used on input line 433.
+(pdftex.def)             Requested size: 455.24408pt x 284.53246pt.
+ [33] [34 <./Imagens/pitfalls/03/x3_2x_2_10.png> <./Imagens/pitfalls/03/err_x3_2x_2_10.png>]
+<Imagens/pitfalls/04/arctg.png, id=486, 1204.5pt x 853.1875pt>
+File: Imagens/pitfalls/04/arctg.png Graphic file (type png)
+<use Imagens/pitfalls/04/arctg.png>
+Package pdftex.def Info: Imagens/pitfalls/04/arctg.png  used on input line 468.
+(pdftex.def)             Requested size: 455.24408pt x 322.47012pt.
+<Imagens/pitfalls/04/err_arctg.png, id=487, 803.0pt x 501.875pt>
+File: Imagens/pitfalls/04/err_arctg.png Graphic file (type png)
+<use Imagens/pitfalls/04/err_arctg.png>
+Package pdftex.def Info: Imagens/pitfalls/04/err_arctg.png  used on input line 469.
+(pdftex.def)             Requested size: 455.24408pt x 284.53246pt.
+ [35] [36 <./Imagens/pitfalls/04/arctg.png> <./Imagens/pitfalls/04/err_arctg.png>]
+Overfull \hbox (11.99689pt too wide) in paragraph at lines 477--493
+ [] 
+ []
+
+<Imagens/pitfalls/06/slope_near_zero.png, id=500, 1204.5pt x 853.1875pt>
+File: Imagens/pitfalls/06/slope_near_zero.png Graphic file (type png)
+<use Imagens/pitfalls/06/slope_near_zero.png>
+Package pdftex.def Info: Imagens/pitfalls/06/slope_near_zero.png  used on input line 499.
+(pdftex.def)             Requested size: 455.24408pt x 322.47012pt.
+[37 <./Imagens/pitfalls/06/slope_near_zero.png>] Excluding 'comment' comment. [38] [39] [40] [41]
+Underfull \hbox (badness 2020) in paragraph at lines 712--713
+[]\OT1/cmr/m/n/12 Vamos es-co-lher um chute ini-cial $(\OML/cmm/m/it/12 x[]; y[]\OT1/cmr/m/n/12 ) = (2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ e apli-car o m^^Setodo
+ []
+
+
+Underfull \hbox (badness 1558) in paragraph at lines 727--728
+\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 2679491924311228\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 618033988749895)$, que sa-tis-faz o sis-tema de equa^^Xc~oes n~ao
+ []
+
+[42]
+<Imagens/complexPlane/complex_plane_axes.png, id=547, 433.62pt x 433.62pt>
+File: Imagens/complexPlane/complex_plane_axes.png Graphic file (type png)
+<use Imagens/complexPlane/complex_plane_axes.png>
+Package pdftex.def Info: Imagens/complexPlane/complex_plane_axes.png  used on input line 750.
+(pdftex.def)             Requested size: 455.24408pt x 455.26813pt.
+ [43]
+<Imagens//complexPlane/complex_plane_real_part.png, id=553, 433.62pt x 433.62pt>
+File: Imagens//complexPlane/complex_plane_real_part.png Graphic file (type png)
+<use Imagens//complexPlane/complex_plane_real_part.png>
+Package pdftex.def Info: Imagens//complexPlane/complex_plane_real_part.png  used on input line 759.
+(pdftex.def)             Requested size: 218.51521pt x 218.51653pt.
+<Imagens//complexPlane/complex_plane_imaginary_part.png, id=554, 433.62pt x 433.62pt>
+File: Imagens//complexPlane/complex_plane_imaginary_part.png Graphic file (type png)
+<use Imagens//complexPlane/complex_plane_imaginary_part.png>
+Package pdftex.def Info: Imagens//complexPlane/complex_plane_imaginary_part.png  used on input line 764.
+(pdftex.def)             Requested size: 218.51521pt x 218.51653pt.
+<Imagens//complexPlane/complex_plane_argument.png, id=555, 433.62pt x 433.62pt>
+File: Imagens//complexPlane/complex_plane_argument.png Graphic file (type png)
+<use Imagens//complexPlane/complex_plane_argument.png>
+Package pdftex.def Info: Imagens//complexPlane/complex_plane_argument.png  used on input line 769.
+(pdftex.def)             Requested size: 218.51521pt x 218.51653pt.
+<Imagens//complexPlane/complex_plane_magnitude.png, id=556, 433.62pt x 433.62pt>
+File: Imagens//complexPlane/complex_plane_magnitude.png Graphic file (type png)
+<use Imagens//complexPlane/complex_plane_magnitude.png>
+Package pdftex.def Info: Imagens//complexPlane/complex_plane_magnitude.png  used on input line 774.
+(pdftex.def)             Requested size: 218.51521pt x 218.51653pt.
+ [44 <./Imagens/complexPlane/complex_plane_axes.png>]
+<Imagens/nr2d_fractals/unit_roots/unitroot2.png, id=563, 512.3943pt x 506.6127pt>
+File: Imagens/nr2d_fractals/unit_roots/unitroot2.png Graphic file (type png)
+<use Imagens/nr2d_fractals/unit_roots/unitroot2.png>
+Package pdftex.def Info: Imagens/nr2d_fractals/unit_roots/unitroot2.png  used on input line 787.
+(pdftex.def)             Requested size: 455.24408pt x 450.11858pt.
+ [45 <./Imagens//complexPlane/complex_plane_real_part.png> <./Imagens//complexPlane/complex_plane_imaginary_part.png> <./Imagens//complexPlane/complex_plane_argument.png> <./Imagens//complexPlane/complex_plane_magnitude.png>]
+<Imagens/nr2d_fractals/unit_roots/unitroot3.png, id=573, 512.3943pt x 506.6127pt>
+File: Imagens/nr2d_fractals/unit_roots/unitroot3.png Graphic file (type png)
+<use Imagens/nr2d_fractals/unit_roots/unitroot3.png>
+Package pdftex.def Info: Imagens/nr2d_fractals/unit_roots/unitroot3.png  used on input line 795.
+(pdftex.def)             Requested size: 455.24408pt x 450.11858pt.
+ [46 <./Imagens/nr2d_fractals/unit_roots/unitroot2.png>]
+<Imagens/nr2d_fractals/unit_roots/unitroot4.png, id=581, 512.3943pt x 506.6127pt>
+File: Imagens/nr2d_fractals/unit_roots/unitroot4.png Graphic file (type png)
+<use Imagens/nr2d_fractals/unit_roots/unitroot4.png>
+Package pdftex.def Info: Imagens/nr2d_fractals/unit_roots/unitroot4.png  used on input line 803.
+(pdftex.def)             Requested size: 455.24408pt x 450.11858pt.
+ [47 <./Imagens/nr2d_fractals/unit_roots/unitroot3.png>]
+<Imagens/nr2d_fractals/unit_roots/unitroot5.png, id=588, 512.3943pt x 506.6127pt>
+File: Imagens/nr2d_fractals/unit_roots/unitroot5.png Graphic file (type png)
+<use Imagens/nr2d_fractals/unit_roots/unitroot5.png>
+Package pdftex.def Info: Imagens/nr2d_fractals/unit_roots/unitroot5.png  used on input line 811.
+(pdftex.def)             Requested size: 455.24408pt x 450.11858pt.
+ [48 <./Imagens/nr2d_fractals/unit_roots/unitroot4.png>]
+<Imagens/nr2d_fractals/unit_roots/unitroot8.png, id=595, 512.3943pt x 506.6127pt>
+File: Imagens/nr2d_fractals/unit_roots/unitroot8.png Graphic file (type png)
+<use Imagens/nr2d_fractals/unit_roots/unitroot8.png>
+Package pdftex.def Info: Imagens/nr2d_fractals/unit_roots/unitroot8.png  used on input line 819.
+(pdftex.def)             Requested size: 455.24408pt x 450.11858pt.
+ [49 <./Imagens/nr2d_fractals/unit_roots/unitroot5.png>]
+<Imagens/nr2d_fractals/unit_roots/unitroot20.png, id=602, 512.3943pt x 506.6127pt>
+File: Imagens/nr2d_fractals/unit_roots/unitroot20.png Graphic file (type png)
+<use Imagens/nr2d_fractals/unit_roots/unitroot20.png>
+Package pdftex.def Info: Imagens/nr2d_fractals/unit_roots/unitroot20.png  used on input line 827.
+(pdftex.def)             Requested size: 455.24408pt x 450.11858pt.
+ [50 <./Imagens/nr2d_fractals/unit_roots/unitroot8.png>]
+<Imagens/nr2d_fractals/polinomials/nrfractal_polinomio.png, id=609, 512.3943pt x 506.6127pt>
+File: Imagens/nr2d_fractals/polinomials/nrfractal_polinomio.png Graphic file (type png)
+<use Imagens/nr2d_fractals/polinomials/nrfractal_polinomio.png>
+Package pdftex.def Info: Imagens/nr2d_fractals/polinomials/nrfractal_polinomio.png  used on input line 834.
+(pdftex.def)             Requested size: 455.24408pt x 450.11858pt.
+ [51 <./Imagens/nr2d_fractals/unit_roots/unitroot20.png>]
+<Imagens/nr2d_fractals/polinomials/nrfractal_polinomio2.png, id=616, 512.3943pt x 506.6127pt>
+File: Imagens/nr2d_fractals/polinomials/nrfractal_polinomio2.png Graphic file (type png)
+<use Imagens/nr2d_fractals/polinomials/nrfractal_polinomio2.png>
+Package pdftex.def Info: Imagens/nr2d_fractals/polinomials/nrfractal_polinomio2.png  used on input line 841.
+(pdftex.def)             Requested size: 455.24408pt x 450.11858pt.
+ [52 <./Imagens/nr2d_fractals/polinomials/nrfractal_polinomio.png>]
+<Imagens/nr2d_fractals/polinomials/nrfractal_polinomio3.png, id=624, 512.3943pt x 506.6127pt>
+File: Imagens/nr2d_fractals/polinomials/nrfractal_polinomio3.png Graphic file (type png)
+<use Imagens/nr2d_fractals/polinomials/nrfractal_polinomio3.png>
+Package pdftex.def Info: Imagens/nr2d_fractals/polinomials/nrfractal_polinomio3.png  used on input line 848.
+(pdftex.def)             Requested size: 455.24408pt x 450.11858pt.
+ [53 <./Imagens/nr2d_fractals/polinomials/nrfractal_polinomio2.png>]
+<Imagens/nr2d_fractals/polinomials/nrfractal_polinomio4.png, id=631, 512.3943pt x 506.6127pt>
+File: Imagens/nr2d_fractals/polinomials/nrfractal_polinomio4.png Graphic file (type png)
+<use Imagens/nr2d_fractals/polinomials/nrfractal_polinomio4.png>
+Package pdftex.def Info: Imagens/nr2d_fractals/polinomials/nrfractal_polinomio4.png  used on input line 855.
+(pdftex.def)             Requested size: 455.24408pt x 450.11858pt.
+ [54 <./Imagens/nr2d_fractals/polinomials/nrfractal_polinomio3.png>] [55 <./Imagens/nr2d_fractals/polinomials/nrfractal_polinomio4.png>]) [56] [57
+
+
+
+] (main.bbl) 
+AED: lastpage setting LastPage
+[58
+
+
+] (main.aux (Preliminar/Agradecimentos.aux) (Preliminar/Resumo.aux) (Preliminar/Abstract.aux) (Preliminar/Introdução.aux) (Capitulos/Cap1.aux) (Capitulos/Cap2.aux))
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
+ ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 67B8D62EE4BEDA706D9BB29657562DD0;5693.
+ ) 
+Here is how much of TeX's memory you used:
+ 43201 strings out of 474485
+ 848394 string characters out of 5753549
+ 1943542 words of memory out of 5000000
+ 64473 multiletter control sequences out of 15000+600000
+ 573907 words of font info for 99 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 100i,14n,120p,3355b,883s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (67 pages, 3584075 bytes).
+PDF statistics:
+ 784 PDF objects out of 1000 (max. 8388607)
+ 203 named destinations out of 1000 (max. 500000)
+ 420 words of extra memory for PDF output out of 10000 (max. 10000000)
+
