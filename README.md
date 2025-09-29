@@ -2,7 +2,6 @@
 
 ## 📝 Artigo: ???
 
-
 ## Contribuição
 
 Padrões de Tags:
@@ -80,4 +79,3 @@ latexmk -v
 Se aparecer a versão, tudo está certo. ✨
 
 >Se tiver dúvidas, fale com @Enzo 🧠
-

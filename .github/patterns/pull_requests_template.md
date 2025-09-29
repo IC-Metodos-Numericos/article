@@ -1,12 +1,14 @@
-### ✍️ Descrição
+# ✍️ Descrição
 <!-- Descreva brevemente o que foi feito -->
 
-### ✅ Alterações realizadas
+## ✅ Alterações realizadas
+
 - [x] Adicionado contexto histórico na Introdução
 - [x] Corrigida equação da energia potencial
 - [ ] TODO: revisar conclusão
 
 ### 📂 Arquivos modificados
+
 - `capitulos/introducao.tex`
 - `preambulo/comandos.tex`
 
@@ -16,6 +18,7 @@
 - Preciso de revisão do gráfico `energia.pdf` por @LucasM
 
 ### 🔎 Tipo de mudança
+
 - [x] Conteúdo novo
 - [x] Correção
 - [ ] Estilo / Formatação

@@ -5,6 +5,7 @@ This document describes standard commands for code comments using the [`todonote
 ## Required Package
 
 Add the following to your preamble:
+
 ```latex
 \usepackage{todonotes} % For visual margin comments
 ```
@@ -43,4 +44,4 @@ Add these custom commands to your preamble to standardize comment types and auth
 \EnzoR{Check the notation here}
 \Daniel{Is this assumption valid?}
 \LuisD{Add citation for this result}
-```
+``
