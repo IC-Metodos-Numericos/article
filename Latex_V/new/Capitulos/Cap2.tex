@@ -738,20 +738,16 @@ Subistituindo $\gamma$ em ( \ref{seqIterNRndim} ) temos
     x_{k+1} = x_k + \gamma
 \end{equation*}
 
+\newpage
 
 \subsection{Fractais de Newton}
-A aplicacao do metodo de newton no plano complexo gera os \textbf{Fractais de Newton}.
-
-\EnzoR{@LuisD, Oque acha dessa introdução do plano complexo?}
-Para representar esses fractais é necessário utilizar o \textbf{Plano Complexo}.
-
+A aplicação do método de Newton para os pontos do \textit{\textbf{Plano Complexo}} gera os \textbf{Fractais de Newton}.
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{Imagens/complexPlane/complex_plane_axes.png}
     \caption{Plano Complexo}
     \label{fig:complexPlane}
 \end{figure}
-
 \begin{figure}[H]
     \centering
     \begin{minipage}{0.48\textwidth}
@@ -777,10 +773,13 @@ Para representar esses fractais é necessário utilizar o \textbf{Plano Complexo
     \caption{Propriedades dos Números Complexos}
     \label{fig:complexPlaneProps}
 \end{figure}
+O método de Newton-Raphson no plano complexo é aplicado a funções complexas \(f: \mathbb{C} \rightarrow \mathbb{C}\). A fórmula de iteração é semelhante à do caso real, mas agora \(z\) é um número complexo:
+\begin{equation*}
+    z_{n+1} = z_n - \frac{f(z_n)}{f'(z_n)}
+\end{equation*}
+onde \(z_n\) é a aproximação atual, \(f(z_n)\) é o valor da função no ponto \(z_n\), e \(f'(z_n)\) é a derivada da função no ponto \(z_n\).
 
-
-
-Ao aplicarmos ao 
+A ideia básica para gerar um fractal de Newton é aplicar o método de Newton-Raphson a cada ponto em uma região do plano complexo e colorir o ponto com base na raiz para a qual ele converge e o número de iterações que levou para convergir. Se um ponto não convergir para nenhuma raiz dentro da tolerância estabelecida, ele é colorido de uma forma diferente. Nos gráficos utilizados nessa seção, quanto mais escura uma cor, mais tempo levou para convergir, e preto indica que não convergiu.
 
 \begin{figure}[H]
     \centering 
