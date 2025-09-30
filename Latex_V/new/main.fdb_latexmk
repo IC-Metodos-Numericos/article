@@ -1,5 +1,5 @@
 # Fdb version 4
-["bibtex main"] 0 "main.aux" "main.bbl" "main" 1759176009.49014 0
+["bibtex main"] 0 "main.aux" "main.bbl" "main" 1759179407.1713 0
   "./Capitulos/ref.bib" 1754607696.82664 752 75b61dc2957e5d21f60f9a18bab358fd ""
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
   "Capitulos/Cap1.aux" 1759175678.08123 8028 a4b86838c7e9925da1d4b1438716d069 "pdflatex"
@@ -13,7 +13,7 @@
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1759176002.9814 "/home/enzor/Desktop/github/repos/ic_metodos_num/article/Latex_V/new/main.tex" "main.pdf" "main" 1759176009.49098 0
+["pdflatex"] 1759179398.40845 "/home/enzor/Desktop/github/repos/ic_metodos_num/article/Latex_V/new/main.tex" "main.pdf" "main" 1759179407.17242 0
   "/home/enzor/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1756160567.20324 29899 f39c7bf0173a76c1212412b7a93a735b ""
   "/home/enzor/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1756160571.03909 14064 e1ba6979c4a28baf661d9e4e4093f08c ""
   "/home/enzor/.miktex/texmfs/data/fonts/tfm/public/rsfs/rsfs10.tfm" 1756160564.22216 688 37338d6ab346c2f1466b29e195316aa4 ""
@@ -315,10 +315,10 @@
   "/home/enzor/.miktex/texmfs/install/tex/latex/xfor/xfor.sty" 1756160466.46005 2689 44855b72da58344b1c1d9b3087bce6ca ""
   "/home/enzor/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty" 1756160459.68612 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "/home/enzor/Desktop/github/repos/ic_metodos_num/article/Latex_V/new/main.tex" 1754607696.87264 2232 53983b5930a441818ef2f2521b02c260 ""
-  "Capitulos/Cap1.aux" 1759176006.37241 8058 b5a84ea5906da7e773fed76715791fae "pdflatex"
+  "Capitulos/Cap1.aux" 1759179402.62843 8058 b5a84ea5906da7e773fed76715791fae "pdflatex"
   "Capitulos/Cap1.tex" 1758581862.74285 30147 e828360681a41e00fd7f3b5930ab946b ""
-  "Capitulos/Cap2.aux" 1759176009.07305 12644 9164ee9d49a36929a8a0fd6f8009881b "pdflatex"
-  "Capitulos/Cap2.tex" 1759175995.58669 47329 0cd879c46c7801a3b284b2d146a54dde ""
+  "Capitulos/Cap2.aux" 1759179406.6516 12644 9164ee9d49a36929a8a0fd6f8009881b "pdflatex"
+  "Capitulos/Cap2.tex" 1759179397.33221 47037 50cf3fc5655918c48e1b15663615c0f2 ""
   "Imagens//complexPlane/complex_plane_argument.png" 1759175335.75551 80454 0ccbc8047e1fcf7a8bf1f78cb2c227fe ""
   "Imagens//complexPlane/complex_plane_imaginary_part.png" 1759175335.7571 29172 8741fd74ad951e870f2d07b6e3f06e8c ""
   "Imagens//complexPlane/complex_plane_magnitude.png" 1759175335.75751 104480 7f0dbcf77d780fb8ef20b8073110b2e0 ""
@@ -357,21 +357,21 @@
   "Preambulo/Configurações.tex" 1754607696.85464 284 b277cb4e8db9a793e9fb2db4a4e42687 ""
   "Preambulo/Pacotes.tex" 1754607696.85464 1015 7d5d617609fb76f210842293649e7efe ""
   "Preambulo/Teoremas.tex" 1754607696.85464 411 ea933620593b34d1c5f8f897faf2e700 ""
-  "Preliminar/Abstract.aux" 1759176005.34616 1148 9d4089c00b11aa98911661877276e3b8 "pdflatex"
+  "Preliminar/Abstract.aux" 1759179401.44838 1148 9d4089c00b11aa98911661877276e3b8 "pdflatex"
   "Preliminar/Abstract.tex" 1754607696.85607 62 ddefabd0f9f1feaa8fab811569fdcbbf ""
-  "Preliminar/Agradecimentos.aux" 1759176005.33315 1154 1a87629f49622d88fef07e44f049a2f0 "pdflatex"
+  "Preliminar/Agradecimentos.aux" 1759179401.43138 1154 1a87629f49622d88fef07e44f049a2f0 "pdflatex"
   "Preliminar/Agradecimentos.tex" 1754607696.85607 65 e05e515b367bbd977f9c2746d6dcc8a7 ""
-  "Preliminar/Introdução.aux" 1759176005.37016 1324 6b889e413f20ff4ed79905ae14dbdc53 "pdflatex"
+  "Preliminar/Introdução.aux" 1759179401.47338 1324 6b889e413f20ff4ed79905ae14dbdc53 "pdflatex"
   "Preliminar/Introdução.tex" 1754607696.85607 23 e7c9292a192474428bf3d2396d8669c1 ""
-  "Preliminar/Resumo.aux" 1759176005.34016 1146 d4e4496058f06f7cb400abb2c8af98de "pdflatex"
+  "Preliminar/Resumo.aux" 1759179401.44138 1146 d4e4496058f06f7cb400abb2c8af98de "pdflatex"
   "Preliminar/Resumo.tex" 1754607696.85607 50 57d63a36636a20ce9d8066aa0778fa1e ""
   "libs/cefetmg.png" 1754607696.85664 178122 aa067c74216a563b7382347f2ca45d1e ""
   "libs/coppe.cls" 1754607696.85764 21018 807a03d66bd817a2ee46e9a5c12d6a4b ""
-  "main.aux" 1759176009.08205 2206 c35c43dd0b4e59b7cdde37dfaefaf0f4 "pdflatex"
+  "main.aux" 1759179406.6646 2206 26c08e0b814076d432d43c6e5b8db49a "pdflatex"
   "main.bbl" 1756757106.44008 288 e37805617bd68dad4fb79ceb7981b9e9 "bibtex main"
-  "main.out" 1759176009.09306 5693 67b8d62ee4beda706d9bb29657562dd0 "pdflatex"
+  "main.out" 1759179406.6766 5693 67b8d62ee4beda706d9bb29657562dd0 "pdflatex"
   "main.tex" 1754607696.87264 2232 53983b5930a441818ef2f2521b02c260 ""
-  "main.toc" 1759176009.09306 3400 ac7dace766d5ed2ee77d6ee53fde144a "pdflatex"
+  "main.toc" 1759179406.6776 3400 ac7dace766d5ed2ee77d6ee53fde144a "pdflatex"
   (generated)
   "Capitulos/Cap1.aux"
   "Capitulos/Cap2.aux"
