@@ -232,7 +232,8 @@ Como por hipótese $|\varphi'(x)| < 1$ então $|C| < 1$, portanto, a convergênc
 O método de Newton é um caso particular do \textbf{Método do Ponto Fixo} amplamente utilizado para encontrar raízes %\EnzoR{seria raízes complexas, não?} 
 reais de funções não lineares, cuja ordem de convergência é pelo menos quadrática. A função de iteração específica para este método produz uma sequência em que cada termo $x_{k+1}$ corresponde, geometricamente, à \textbf{interseção da reta tangente} a $f(x)$ no ponto $(x_k, f(x_k))$ com o eixo x. 
 
-\DanielP{só tem que colocar no lugar certo}
+\subsection{Sequência Iterativa} 
+\DanielP{Talvez mudar o nome}
 No método do ponto fixo, vimos que se a função satisfaz o Teorema \ref{teoMPF} a sequência $x_{k+1} = \varphi(x_k)$ converge para $\xi$. Além disso, da desigualdade (\ref{lim0}) temos que quanto menor for $|\varphi'(x)|$, mais rápido a sequência $\{x_k\}$ converge.
 
 Aplicando a derivada na forma geral de $\varphi$ pela regra da cadeia obtemos $\varphi'(x) = 1 + A'(x)f(x) + A(x)f'(x)$ e, calculando-a na raiz, obtemos $\varphi'(\xi) = 1 + A(\xi)f'(\xi)$. Usando $\varphi'(\xi) = 0$, concluímos que $A(\xi) = \frac{-1}{f'(\xi)}$. Generalizando, temos $A(x) = \frac{-1}{f'(x)}$. Portanto, desde que $f'(x) \neq 0$, a forma da função de iteração do método de Newton-Raphson é 

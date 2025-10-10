@@ -23,10 +23,11 @@
 \contentsline {section}{\numberline {2.3}Método do Ponto Fixo}{22}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Ordem de convergência}{24}{subsection.2.3.1}%
 \contentsline {section}{\numberline {2.4}Método de Newton-Raphson Unidimensional}{26}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Interpretação Geométrica}{27}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Convergência}{27}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Ordem de Convergência}{27}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Ciladas}{29}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.1}Sequência Iterativa}{26}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Interpretação Geométrica}{27}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Convergência}{27}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Ordem de Convergência}{27}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Ciladas}{29}{subsection.2.4.5}%
 \contentsline {subsubsection}{Alta multiplicidade}{29}{section*.46}%
 \contentsline {subsubsection}{Pontos de extremo}{31}{section*.48}%
 \contentsline {subsubsection}{Pontos de Inflexão}{35}{section*.51}%
