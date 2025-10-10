@@ -48,7 +48,7 @@ O processo é repetido até que a diferença entre duas iterações consecutivas
 ou até que um número máximo de iterações seja atingido.
 
 \begin{itemize} %era pra ficar topificado mesmo?
-    \item $|\overline{x} - \xi| < \epsilon$
+    \item $|\overline{x} - \xi| < \epsilon$ %x_{k+1} - x_k
     \item $f(\overline{x}) < \epsilon$
 \end{itemize}
 
@@ -83,12 +83,10 @@ A forma geral da função de iteração é
 \end{equation}
 com $A(\xi) \ne 0$.
 %É necessário verificar então se as funções de iteração geradas respeitam essa condição de $A(\xi) \neq 0$. 
-Por exemplo, a $\varphi_1 = \frac{x^3}{9} + \frac{1}{3}$ na forma geral ficaria 
-
+Por exemplo, a $\varphi_1(x) = \frac{x^3}{9} + \frac{1}{3}$ na forma geral ficaria 
 \begin{equation*}
     \varphi_1(x) = x + \frac{1}{9}f(x)
 \end{equation*}
-
 \begin{comment}
     \varphi_1(x) &= x + \frac{1}{9}(x^3 - 9x + 3) \\
     \varphi_1(x) &= x + \frac{x^3}{9} - x + \frac{1}{3} \\
@@ -118,9 +116,9 @@ Seja $\xi$ uma raiz de uma função $f(x)$ e seja $\varphi(x)$ uma função de i
 
 Sob condições a respeito da função de iteração, sua derivada e o dado inicial, a convergência da sequência iterativa é garantida, como pode-se observar a seguir.
 %Enfim é importante verificar se a função de iteração de ponto fixo respeita as condições para convergência.
-\begin{teo} \textbf{Convergência Iterativa} \\
+\begin{teo} \textbf{Convergência da Sequência Iterativa} \label{teoMPF}\\
     Seja $\xi$ uma raiz de f(x), isolada num intervalo I centrado nessa raiz. Considere uma função de iteração $\varphi(x)$ associada a f(x). Sob as seguintes hipóteses:
-    \begin{itemize}\label{teoMPF}
+    \begin{itemize}
         \item[i)] $\varphi(x)$ e $\varphi'(x)$ são contínuas em I,
         \item [ii)] $|\varphi'(x)| \leq M < 1$ em I,
         \item [iii)] $x_0 \in I$,
@@ -184,7 +182,7 @@ Como $x_{k+1} = \varphi(x_k)$, subtraindo $\xi$ de ambos os lados da igualdade e
 
 \subsection{Ordem de convergência}
 
-A ordem de convergência de um método iterativo é uma medida de quão rapidamente a sequência de iterações converge para a solução desejada. Em termos práticos, isso significa que, se um método tem uma ordem de convergência alta, ele será capaz de reduzir o erro de aproximação de forma mais eficaz a cada iteração.
+A ordem de convergência de um método iterativo é uma medida de quão rapidamente a sequência de iterações converge para a solução desejada. Em termos práticos, isso significa que, se um método tem uma ordem de convergência alta, ele será capaz de reduzir mais o erro de aproximação a cada iteração.
 \begin{df}
     Seja $\{x_k\}$ uma sequência que converge para $\xi$ e
     \begin{equation} \label{erro}
@@ -201,6 +199,7 @@ A ordem de convergência $p$ de um método iterativo fornece uma informação so
 Uma vez que a sequência {$x_k$} é convergente, $e_k$ tende a 0 quando $k$ tende ao infinito, portanto, quanto maior for $p$ mais próximo de 0 estará $C|e_k|^p$ (independente de C), implicando numa convergência mais rápida da sequência. Assim, se dois processos iterativos resultam em sequências {$x_k^1$} e {$x_k^2$}, ambas convergindo para $\xi$, com suas respectivas ordens de convergência $p_1$ e $p_2$, se $p_1 > p_2 \geq 1$, o processo que gera a sequência {$x_k^1$} converge mais rapidamente.
 \end{comment}
 %$|e_{k+1}| \approx C |e_k|^p$
+No caso do MPF verificaremos que $p = 1$ portanto a ordem de convergência do método é ao menos linear.
 \begin{prop}
     Se 
     \begin{equation}\label{conv}
@@ -210,33 +209,14 @@ Uma vez que a sequência {$x_k$} é convergente, $e_k$ tende a 0 quando $k$ tend
 \end{prop}
 \begin{proof}
 Partindo de (\ref{difIt}) e (\ref{tvm}), e tomando o  limite com k tendendo a infinito, podemos escrever (\ref{conv}) como
-\begin{comment}
-\begin{align*} só pra lembrar o que são as refs
-    x_{k+1} - \xi &= \varphi(x_k) - \varphi(\xi) \\
-    %\varphi(x_k) - \varphi(\xi) &= \varphi'(c_k) (x_k - \xi) \\
-    %x_{k+1} - \xi &= \varphi'(c_k) (x_k - \xi) \\
-    &= \varphi'(c_k) (x_k - \xi)
-\end{align*}
-\end{comment}
 \begin{equation*} %\frac{x_{k+1} - \xi}{x_k - \xi} = \varphi'(c_k)
     \lim_{k \to \infty} \frac{x_{k+1} - \xi}{x_k - \xi} = \lim_{k \to \infty}\varphi'(c_k)
 \end{equation*} %se $x_k$ converge para $\xi$ então $c_k$ também converge para $\xi$.
 com $c_k$ entre $x_k$ e $\xi$
 %, obtendo $C = \varphi'(\xi)$, pois, assim como $x_k$, $c_k$ converge para $\xi$
 . %análogo ao uso de (2.4) antes de (2.5), certo?
-\begin{comment}
-\begin{align*} sem ser inline
-    \lim_{k \to \infty} \frac{x_{k+1} - \xi}{x_k - \xi} &= \lim_{k \to \infty}\varphi'(c_k) \\
-    &= \varphi'(\lim_{k \to \infty} c_k) \\
-    &= \varphi'(\xi),
-\end{align*}
-ou seja,
-\begin{equation*}
-    \lim_{k \to \infty} \frac{e_{k+1}}{e_k} = \varphi'(\xi)
-\end{equation*}
-\end{comment} 
 %é necessário, mostrar que \varphi'(\lim_{k \to \infty} c_k) = \varphi'(\xi)? uma vez que o que importa é que \varphi'(x) < 1 independente do x
-Como por hipótese $\varphi'(x) < 1$ então $|C| < 1$, portanto, a convergência do MPF é pelo menos linear.
+Como por hipótese $|\varphi'(x)| < 1$ então $|C| < 1$, portanto, a convergência do MPF é pelo menos linear.
 \end{proof}
 \newpage
     
@@ -253,7 +233,12 @@ O método de Newton é um caso particular do \textbf{Método do Ponto Fixo} ampl
 reais de funções não lineares, cuja ordem de convergência é pelo menos quadrática. A função de iteração específica para este método produz uma sequência em que cada termo $x_{k+1}$ corresponde, geometricamente, à \textbf{interseção da reta tangente} a $f(x)$ no ponto $(x_k, f(x_k))$ com o eixo x. 
 
 \DanielP{só tem que colocar no lugar certo}
-No método do ponto fixo, vimos que se a função satisfaz o Teorema \ref{teoMPF} a sequência $x_{k+1} = \varphi(x_k)$ converge para $\xi$. Além disso, a desigualdade (\ref{lim0}) na demonstração desse resultado nos diz que quanto menor for $|\varphi'(x)|$, mais rápido a sequência $\{x_k\}$ converge.
+No método do ponto fixo, vimos que se a função satisfaz o Teorema \ref{teoMPF} a sequência $x_{k+1} = \varphi(x_k)$ converge para $\xi$. Além disso, da desigualdade (\ref{lim0}) temos que quanto menor for $|\varphi'(x)|$, mais rápido a sequência $\{x_k\}$ converge.
+
+Aplicando a derivada na forma geral de $\varphi$ pela regra da cadeia obtemos $\varphi'(x) = 1 + A'(x)f(x) + A(x)f'(x)$ e, calculando-a na raiz, obtemos $\varphi'(\xi) = 1 + A(\xi)f'(\xi)$. Usando $\varphi'(\xi) = 0$, concluímos que $A(\xi) = \frac{-1}{f'(\xi)}$. Generalizando, temos $A(x) = \frac{-1}{f'(x)}$. Portanto, desde que $f'(x) \neq 0$, a forma da função de iteração do método de Newton-Raphson é 
+\begin{equation} \label{phiNR1d}
+    \varphi(x) = x - \frac{f(x)}{f'(x)}.
+\end{equation}
 
 Dada uma função \(f(x)\), o processo parte de uma estimativa inicial \(x_0\) e aplica a seguinte fórmula iterativa, a partir da escolha da derivada em (\ref{it})
 \begin{equation} \label{nr}
@@ -261,24 +246,6 @@ Dada uma função \(f(x)\), o processo parte de uma estimativa inicial \(x_0\) e
 \end{equation}
 onde \(f'(x_k)\) é a derivada da função \(f\) avaliada em \(x_k\).
 Para que o método convirja para a raiz correta, é necessário que \(f(x)\) seja continuamente diferenciável em uma vizinhança da raiz e que \(f'(x) \neq 0\) nessa região. Além disso, a escolha adequada do ponto inicial \(x_0\) é crucial para garantir a convergência do método.
-
-Aplicando a derivada na forma geral de $\varphi$ pela regra da cadeia obtemos $\varphi'(x) = 1 + A'(x)f(x) + A(x)f'(x)$ e, calculando-a na raiz, resta $\varphi'(\xi) = 1 + A(\xi)f'(\xi)$. Impomos que $\varphi'(\xi) = 0$, o que nos leva a $A(\xi) = \frac{-1}{f'(\xi)}$. Generalizando, temos $A(x) = \frac{-1}{f'(x)}$. Portanto, desde que $f'(x) \neq 0$, a forma da função de iteração do método de Newton-Raphson é 
-\begin{equation} \label{phiNR1d}
-    \varphi(x) = x - \frac{f(x)}{f'(x)}.
-\end{equation}
-\begin{comment}
-\begin{align*} %derivada = 0
-    \varphi(x) &= x - \frac{f(x)}{f'(x)} \\
-    \varphi'(x) &= 1 - \frac{f'(x)f'(x) - f(x)f''(x)}{[f'(x)]^2}
-\end{align*}
-\begin{equation}
-    \varphi'(x) = \frac{f(x)f''(x)}{[f'(x)]^2}
-\end{equation}
-\begin{align*}
-    \varphi'(\xi) &= \frac{f(\xi)f''(\xi)}{[f'(\xi)]^2} \\
-     &= 0
-\end{align*}
-\end{comment}
 
 \subsection{Interpretação Geométrica}
 \DanielP{ficou paia o alinhamento em}
@@ -311,7 +278,7 @@ No MPF espera-se uma ordem de convergência ao menos linear, entretanto ao escol
     A ordem de convergência do método de Newton é pelo menos quadrática.
 \end{prop}
 \begin{proof}
-    Suporemos todas as hipóteses do Teorema \ref{teoNR}. %(de Convergência do Método de Newton-Raphson), temos
+    Assumiremos todas as hipóteses do Teorema \ref{teoNR}. %(de Convergência do Método de Newton-Raphson), temos
     Partindo de $x_{k+1} = x_k - \frac{f(x_k)}{f'(x_k)}$, subtraindo $\xi$ em ambos os lados da igualdade, obtemos
 \begin{equation} \label{eMNR}
     e_{k+1} = e_k - \frac{f(x_k)}{f'(x_k)} 
@@ -385,7 +352,7 @@ $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ \\
 \end{center}
 
 \subsubsection{Pontos de extremo}
-Outro fator que é um problema quando se trata de taxa de convergência são os pontos de máximo e mínimo da função. Quando uma iteração é iniciada perto de um ponto de máximo ou mínimo um dos problemas que podem ocorrer é a função de iteração convergir para um ponto de máximo ou mínimo ao invés da raiz. Oque pode causar uma diminuição na taxa de convergência.
+Outro fator que é um problema quando se trata de taxa de convergência são os pontos de máximo e mínimo da função. Quando uma iteração é iniciada perto de um ponto de máximo ou mínimo um dos problemas que podem ocorrer é a função de iteração convergir para um ponto de máximo ou mínimo ao invés da raiz. Isso pode causar uma diminuição na taxa de convergência.
 \begin{figure}[H]
     \centering 
     \includegraphics[width=1\textwidth]{Imagens/pitfalls/02/max_min.png}
@@ -426,7 +393,7 @@ Iteração & Valor de $x_k$ & $f(x)$ & Erro $e_k$ \\
 \label{tab:ciladaNR}
 \end{center}
 
-Em casos extremos, na vizinhança de um ponto de máximo ou mínimo, a intercessão da reta tangente de uma iteração pode coincidir com a coordenada da abscissa da iteração anterior, fazendo com que o método fique preso.
+Em casos extremos, na vizinhança de um ponto de máximo ou mínimo, a intercessão da reta tangente de uma iteração pode coincidir com a coordenada da abscissa da iteração anterior, fazendo com que a sequência não convirja.
 \begin{figure}[H]
     \centering 
     \includegraphics[width=1\textwidth]{Imagens/pitfalls/03/x3_2x_2_10.png}
@@ -535,8 +502,7 @@ Em suma, para evitar estes casos, além de analisar o comportamento da função,
 
 
 \section{Método de Newton-Raphson N-dimensional}
-O método de Newton-Raphson Unidimensional tem o objetivo de encontrar soluções para zeros de funções em $\mathbb{R}$, mas pode ser estendido para resolver sistemas de equações não lineares em múltiplas variáveis. Um sistema de equações não lineares pode ser representado como:
-\HACK{Espaçamento entre os "..." ficou meio porco, se alguém souber como melhorar}
+O método de Newton-Raphson pode ser estendido para resolver sistemas de equações não lineares em múltiplas variáveis. Um sistema de equações não lineares ser representado da seguinte maneira:
 \begin{equation*}
     \begin{cases}
     f_1(x_1, x_2, \ldots, x_n) = 0 \\
@@ -547,11 +513,11 @@ O método de Newton-Raphson Unidimensional tem o objetivo de encontrar soluçõe
 \end{equation*}
 onde  \(f_i \) são as funções não lineares e \(x_i\) são as variáveis desconhecidas.
 
-Podemos representar esse sistema de \textbf{\(n\)} variáveis como uma função \textbf{\(F : \mathbb{R}^n \rightarrow \mathbb{R}^n\)}' como
+Podemos escrever esse sistema de \textbf{\(n\)} variáveis como uma função \textbf{\(F : \mathbb{R}^n \rightarrow \mathbb{R}^n\)}' da seguinte forma:
 \begin{equation*}
     F((x_1, x_2, \ldots, x_n)) = (f_1(x_1, x_2, \ldots, x_n), f_2(x_1, x_2, \ldots, x_n), \ldots, f_n(x_1, x_2, \ldots, x_n))^{t}
 \end{equation*}
-Esse sistema, de forma mais compacta, pode ser escrito na forma vetorial como \textbf{\(F(X) = 0\)}, onde \textbf{\(F\)} é uma função vetorial e \(X\) é um vetor de variáveis.
+Portanto, de forma mais compacta, o sistema pode ser escrito na forma vetorial como \textbf{\(F(X) = 0\)}, onde \textbf{\(F\)} é uma função vetorial e \(X\) é um vetor de variáveis.
 
 \subsection{Definições}
 
@@ -559,10 +525,7 @@ Durante a construção do método de Newton-Raphson unidimensional (\ref{sec:NR1
 \begin{equation*}
 \varphi(x) = x - {A(x)}{f(x)}.
 \end{equation*}
-com isso achamos que a função \(A(x)\) que satisfazia \(\varphi'(\xi) = 0\) é \(A(x) = \frac{-1}{f'(x)}\) desde que \(f'(x) \neq 0\). Portanto, a forma da função de iteração do método de Newton-Raphson é
-\begin{equation*}
-    \varphi(x) = x - \frac{f(x)}{f'(x)}. 
-\end{equation*}
+com isso achamos que a função \(A(x)\) que satisfazia \(\varphi'(\xi) = 0\) é \(A(x) = \frac{-1}{f'(x)}\) desde que \(f'(x) \neq 0\). 
 Similarmente, para o caso n-dimensional, generalizamos a função de iteração como
 \begin{equation*}
     G(\xb) = x - A(x)^{-1} F(x)
@@ -595,7 +558,7 @@ onde \(\delta_{ik}\) é o delta de Kronecker, que é 1 se \(i = k\) e 0 caso con
     \begin{prop}
     Seja $\mathbf{p}$ um ponto fixo de \(\mathbb{G}\). Se existe um \(\delta > 0\) tal que
 
-    \begin{itemize}\label{teoMPF}
+    \begin{itemize} %\label{teoMPF}
         \item[i)] $\frac{\partial g_i}{\partial x_j}$ é contínua em uma vizinhança $N_{\delta} = \{x \in \mathbb{R}^n : ||x - p|| < \delta\}$ para todo $i, j = 1, 2, \ldots, n$
         \item [ii)] $\frac{\partial^2 \mathbb{G}_i}{\partial x_j \partial x_k}$ é contínua e $|\frac{\partial^2g_i(x)}{\partial x_j \partial x_k}| \leq $M$ $
         \item [iii)] $\frac{\partial g_i(p)}{\partial x_k} = 0$, para todo $i = 1,2, \ldots, n$
@@ -605,17 +568,17 @@ onde \(\delta_{ik}\) é o delta de Kronecker, que é 1 se \(i = k\) e 0 caso con
 
 \end{dfNRnd}
 
-A demonstração é análoga à do Teorema \ref{teoNR}, considerando a norma vetorial em \(\mathbb{R}^n\) e a definição de diferenciabilidade em múltiplas variáveis. E está descrita extensivamente em ref.
+A demonstração é análoga à do Teorema \ref{teoNR}. E está descrita extensivamente em ref.
 
 A partir de (\ref{sumInvA}) vamos caracterizar a matriz A. Obseve que, de \( \frac{\partial g_i(\mathbf{p})}{\partial x_k} = 0 \) para todo $ i = 1,2, \ldots, n$, temos que
 \begin{equation}\label{aInvs1}
-    0 = 1 - \sum_{j=1}^{n} \left( b_{ij}(\mathbf{p}) \frac{\partial f_j(\mathbf{p})}{\partial x_i} \right) \ \ \text{para i = k}
+    0 = 1 - \sum_{j=1}^{n} \left( b_{ij}(\mathbf{p}) \frac{\partial f_j(\mathbf{p})}{\partial x_i} \right) \ \ \text{para i = j}
 \end{equation}
 e
 \begin{equation}\label{aInvs2}
-    0 = - \sum_{j=1}^{n} \left( b_{ij}(\mathbf{p}) \frac{\partial f_j(\mathbf{p})}{\partial x_k} \right)\ \ \text{para i $\neq$ k}.
+    0 = - \sum_{j=1}^{n} \left( b_{ij}(\mathbf{p}) \frac{\partial f_j(\mathbf{p})}{\partial x_k} \right)\ \ \text{para i $\neq$ j}.
 \end{equation}
-Definimos a matriz Jacobiana \(J\) de \(F\) como
+A matriz Jacobiana \(J\) de \(F\) é a matriz das derivadas dada a seguir:
 \begin{equation}
     J(\mathbf{p}) =
     \begin{bmatrix}
@@ -625,7 +588,7 @@ Definimos a matriz Jacobiana \(J\) de \(F\) como
         \frac{\partial f_n(\mathbf{p})}{\partial x_1} & \frac{\partial f_n(\mathbf{p})}{\partial x_2} & \ldots & \frac{\partial f_n(\mathbf{p})}{\partial x_n}
     \end{bmatrix}
 \end{equation}
-As condições \ref{aInvs1} e \ref{aInvs2} implicam que
+As condições (\ref{aInvs1}) e (\ref{aInvs2}) implicam que
 \begin{align*}
     A(\mathbf{p})^{-1} J(\mathbf{p}) &= I \\[6pt]
     A(\mathbf{p}) A(\mathbf{p})^{-1} J(\mathbf{p}) &= A(\mathbf{p}) I \\[6pt]
@@ -636,13 +599,12 @@ Portanto, uma escolha natural para \(A(x)\) é a matriz Jacobiana \(J(x)\) de \(
 \begin{equation}
     G(\xb) = x - J(x)^{-1} F(x).
 \end{equation}
-O método de Newton-Raphson n-dimensional (ou \textbf{método de Newton-Raphson para sistemas não lineares}) pode ser implementado iterativamente como
+A sequência iterativa d oMNR n-dimensional é
 \begin{equation}\label{seqIterNRndim}
     x_{k+1} = x_k - J(x_k)^{-1} F(x_k)
 \end{equation}
 onde \(\xb_k\) é a aproximação atual da solução, \(J(x_k)\) é a matriz Jacobiana avaliada em \(x_k\), e \(F(\xb_k)\) é o vetor de funções avaliado em \(x_k\). É esperado que a sequência \(\{x_k\}\) convirja, \textbf{quadraticamente}, para a solução do sistema de equações não lineares, desde que o chute inicial \(x_0\) esteja suficientemente próximo da solução e que a matriz Jacobiana avaliada em \(J(x_k)\) seja invertível nesse ponto.
-\subsubsection{Exemplo}
-Considere o sistema de equações não lineares:
+Vejamos um exemplo para n = 2. Considere o sistema de equações não lineares:
 \begin{equation*}
     \begin{cases}
     x^2 + y^2 - 4 = 0 \\
@@ -779,6 +741,7 @@ O método de Newton-Raphson no plano complexo é aplicado a funções complexas 
 \end{equation*}
 onde \(z_n\) é a aproximação atual, \(f(z_n)\) é o valor da função no ponto \(z_n\), e \(f'(z_n)\) é a derivada da função no ponto \(z_n\).
 
+asdklsahdoisahop
 A ideia básica para gerar um fractal de Newton é aplicar o método de Newton-Raphson a cada ponto em uma região do plano complexo e colorir o ponto com base na raiz para a qual ele converge e o número de iterações que levou para convergir. Se um ponto não convergir para nenhuma raiz dentro da tolerância estabelecida, ele é colorido de uma forma diferente. Nos gráficos utilizados nessa seção, quanto mais escura uma cor, mais tempo levou para convergir, e preto indica que não convergiu.
 
 \begin{figure}[H]
