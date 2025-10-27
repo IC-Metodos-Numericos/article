@@ -1,4 +1,4 @@
-name: Build LaTeX Document
+name: Build LaTeX Document For Texto
 
 on:
   pull_request:
@@ -26,4 +26,5 @@ jobs:
       with:
         name: PDF
         path: Latex_V/new/main.pdf
+
 
