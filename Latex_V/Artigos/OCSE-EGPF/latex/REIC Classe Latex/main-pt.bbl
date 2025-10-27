@@ -1,0 +1,24 @@
+\begin{thebibliography}{}
+
+\bibitem[Lutz and Ascher, 1999]{Lutz1999}
+Lutz, M. and Ascher, D. (1999).
+\newblock {\em Learning Python}.
+\newblock O'Reilly Media.
+
+\bibitem[Mendez {\em et~al}., 2020]{ref5}
+Mendez, D., Graziotin, D., Wagner, S., and Seibold, H. (2020).
+\newblock Open science in software engineering.
+\newblock In {\em Contemporary empirical methods in software engineering},
+  pages 477--501. Springer. DOI: 10.1007/978-3-030-32489-6\_17.
+
+\bibitem[Schildt, 2019]{Schildt2019}
+Schildt, H. (2019).
+\newblock {\em Java: The Complete Reference, Eleventh Edition}.
+\newblock McGraw-Hill Education.
+
+\bibitem[Szeliski, 2022]{Szeliski2022}
+Szeliski, R. (2022).
+\newblock {\em Computer Vision: Algorithms and Applications 2nd Edition}.
+\newblock Springer.
+
+\end{thebibliography}

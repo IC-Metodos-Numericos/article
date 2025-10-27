@@ -1,0 +1,31 @@
+
+\section{Introdução}
+\label{sec:intro}
+
+Observações iniciais do Prof. Ralha:
+\begin{itemize}
+    \item Este arquivo faz uso ``implícito"\ de texto em latim que é provido por um certo pacote---não vou citar o nome---que desenvolvedores de classes \LaTeX\ usam para facilitar testes. Vi que esse pacote não está incluido no preâmbulo deste documento. Ainda bem!
+    \item por gentileza, entendam que publicar em jornais científicos está relacionado a tipografia profissional. Então deixem este aspecto para o \LaTeX. Seria aconselhável a leitura de textos em typografia para que entendam que ``editoração de textos'' feita por produtos comerciais tipo eh ... vocês sabem quais! não é nem de perto algo que se aproxime da tipografia!
+    \item Por óbvio, deve-se sempre iniciar a criação de um arquivo \TeX\ pelo seu preâmbulo. Deve-se evitar \textit{tomar emprestado} templates de outras pessoas. Tenho observado que muitos ``usuários'' não observam este fato levando a casos em que o arquivo inclui o mesmo pacote duas, três e até quatro vezes.
+\end{itemize}
+
+A classe \textsl{sbc2025} é projetada para trabalhar com os \textit{engines} pdftex e luatex. Dessa forma, deve-se compilar o documento 
+\begin{enumerate}
+    \item no Overleaf, ajustando no menu opção de compilação para \textbf{xelatex} ou \textbf{lualatex}.\footnote{Os engines são denominados xetex e luatex. Já os comandos de compilação são \textsl{xelatex} e \textsl{lualatex}.}
+    \item se compilando localmente, na sua IDE faça o ajuste do compilador. Se usuário raiz, no terminal de comando, digite \textsl{xelatex filename} ou \textsl{lualatex filename}. Não é necessário digitar a extensão \textsl{tex}.
+\end{enumerate}
+
+A classe \textsl{sbc2025} inclui internamente os seguintes pacotes:
+\begin{itemize}
+    \item xcolor
+    \item graphicx
+    \item amsmath amssymb
+    \item hyperref
+    \item babel
+\end{itemize}
+\noindent consequentemente, não há necessidade de incluí-los no preâmbulo.
+
+{\bfseries Quem tentar compilar usando a opção \texttt{pdflatex} no Overleaf vai receber uma mensagem de erro solicitando o usuário a ajustar a opção de compilação.}
+
+Para a pergunta \textit{Por que não funciona com o \texttt{pdflatex}}?  A resposta é: \textbf{fontes!} Pdflatex usa um esquema de codificação de fontes complexo. 
+O fonte \texttt{academicons}\footnote{Do fonte em questão usa-se apenas o glifo associado ao Orchid.} não tem as definições necessárias para uso com o \texttt{pdflatex}. Enquanto isso não for realizado, \texttt{pdflatex} não pode ser usado. 
