@@ -18,7 +18,7 @@ jobs:
       uses: xu-cheng/latex-action@v2
       with:
         root_file: main.tex
-        working_directory: Latex_V/Artigos/OCSE=EGPF
+        working_directory: Latex_V/Artigos/OCSE-EGPF/latex/REIC
         latexmk_use_xelatex: true
 
     - name: Upload PDF artifact
