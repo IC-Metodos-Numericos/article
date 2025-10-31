@@ -26,15 +26,14 @@
 \contentsline {subsection}{\numberline {2.4.1}Sequência Iterativa}{26}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Interpretação Geométrica}{27}{subsection.2.4.2}%
 \contentsline {subsection}{\numberline {2.4.3}Convergência}{27}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Ordem de Convergência}{27}{subsection.2.4.4}%
-\contentsline {subsection}{\numberline {2.4.5}Ciladas}{29}{subsection.2.4.5}%
-\contentsline {subsubsection}{Alta multiplicidade}{29}{section*.46}%
-\contentsline {subsubsection}{Pontos de extremo}{31}{section*.48}%
-\contentsline {subsubsection}{Pontos de Inflexão}{35}{section*.51}%
-\contentsline {subsubsection}{Derivada próxima de zero}{37}{section*.53}%
+\contentsline {subsection}{\numberline {2.4.4}Ordem de Convergência}{28}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Casos Atípicos/ Peculiaridades / Singularidades }{29}{subsection.2.4.5}%
+\contentsline {subsubsection}{Caso 1: Alta multiplicidade de raízes}{29}{section*.49}%
+\contentsline {subsubsection}{Caso 2: Proximidade a extremos de função}{31}{section*.51}%
+\contentsline {subsubsection}{Caso 3: Proximidade a Pontos de Inflexão}{35}{section*.54}%
+\contentsline {subsubsection}{Caso 4: Derivada próxima de zero}{37}{section*.56}%
 \contentsline {section}{\numberline {2.5}Método de Newton-Raphson N-dimensional}{38}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}Definições}{39}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Calculo do Jacobiano}{39}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.2}Calculo do Jacobiano}{40}{subsection.2.5.2}%
 \contentsline {subsection}{\numberline {2.5.3}Fractais de Newton}{44}{subsection.2.5.3}%
-\contentsline {section}{\numberline {2.6}Aplicações}{55}{section.2.6}%
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{58}{chapter*.69}%
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{57}{chapter*.73}%
