@@ -36,4 +36,7 @@
 \contentsline {subsection}{\numberline {2.5.1}Definições}{39}{subsection.2.5.1}%
 \contentsline {subsection}{\numberline {2.5.2}Calculo do Jacobiano}{40}{subsection.2.5.2}%
 \contentsline {subsection}{\numberline {2.5.3}Fractais de Newton}{44}{subsection.2.5.3}%
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{57}{chapter*.73}%
+\contentsline {chapter}{\numberline {3}Problemas de Valor Inicial para Equações Diferenciais Ordinárias}{56}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Equações Diferenciais Ordinárias}{56}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Definição de Problema de Valor Inicial}{56}{section.3.2}%
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{59}{chapter*.73}%
