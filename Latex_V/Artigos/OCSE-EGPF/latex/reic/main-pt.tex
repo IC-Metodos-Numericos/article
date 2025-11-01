@@ -16,8 +16,11 @@
 
 % \usepackage{fontawesome} %%% incluido na classe. Desnecessário
 % chamá-lo aqui
-
-
+\usepackage{currfile} % opcional, para depuração
+\makeatletter
+\def\input@path{{./}{./anexos/}}
+\makeatother
+\usepackage{float}
 %%%% \usepackage{academicons}
 %%%% outro encrenqueiro que se tornou desnecessario. Deste typeface só
 %%%% se usava o glifo do orcid e o codigo interno bombava.

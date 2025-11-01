@@ -2,18 +2,30 @@
 \section{Introdução}
 \label{sec:intro}
 
-Observações iniciais do Prof. Ralha:
+Os computadores representam números reais usando a aritmética de ponto flutuante, que é uma aproximação finita e sistemática do conjunto continuo dos números reais (\cite{IEEE754_2019}). Embora essa representação seja eficiente e amplamente adotada, ela introduz erros numéricos inevitáveis devido à natureza discreta do armazenamento digital. Esses erros podem se manifestar de várias formas, como erros de arredondamento, cancelamento catastrófico, overflow e underflow, afetando a precisão e a confiabilidade dos cálculos computacionais.
+
+Esse trabalho tem como objetivo fazer uma revisão da norma da IEEE (IEEE 754) sobre a aritmética de ponto flutuante e explorar graficamente os efeitos da aritmética de ponto flutuante em cálculos numéricos. Através de visualizações e experimentos controlados, buscamos ilustrar como esses erros se manifestam em diferentes situações.
+
+
+Objetivos:
 \begin{itemize}
-    \item Este arquivo faz uso ``implícito"\ de texto em latim que é provido por um certo pacote---não vou citar o nome---que desenvolvedores de classes \LaTeX\ usam para facilitar testes. Vi que esse pacote não está incluido no preâmbulo deste documento. Ainda bem!
-    \item por gentileza, entendam que publicar em jornais científicos está relacionado a tipografia profissional. Então deixem este aspecto para o \LaTeX. Seria aconselhável a leitura de textos em typografia para que entendam que ``editoração de textos'' feita por produtos comerciais tipo eh ... vocês sabem quais! não é nem de perto algo que se aproxime da tipografia!
-    \item Por óbvio, deve-se sempre iniciar a criação de um arquivo \TeX\ pelo seu preâmbulo. Deve-se evitar \textit{tomar emprestado} templates de outras pessoas. Tenho observado que muitos ``usuários'' não observam este fato levando a casos em que o arquivo inclui o mesmo pacote duas, três e até quatro vezes.
+    \item Revisar os conceitos fundamentais da aritmética de ponto flutuante conforme definido pela norma IEEE 754.
+    \item Apresentar casos peculiares onde os erros de ponto flutuante se tornam evidentes.
+    \item Explorar graficamente os efeitos dos erros numéricos introduzidos pela aritmética de ponto flutuante em cálculos comuns.
+    \item Analisar como esses erros podem impactar a precisão e a confiabilidade dos resultados computacionais.
 \end{itemize}
 
+Contribuições principais:
+\begin{itemize}
+    \item Uma coleção de exemplos e gráficos que ilustram comportamentos típicos da aritmética de ponto flutuante.
+    \item Análises interpretativas que relacionam os efeitos observados com os princípios teóricos da norma IEEE 754.
+    \item Observações pedagógicas sobre como projetar experimentos numéricos robustos e interpretar resultados à luz dos erros de representação.
+\end{itemize}
+
+Organização do texto: na Seção~\ref{sec:fundamentos} revisamos conceitos fundamentais da representação em ponto flutuante; na Seção~\ref{sec:experimentos} apresentamos experimentos e visualizações; na Seção~\ref{sec:analise} discutimos implicações práticas e estratégias para mitigar erros; por fim, na Seção~\ref{sec:conclusao} sintetizamos os achados e sugerimos direções para trabalhos futuros.
+
 A classe \textsl{sbc2025} é projetada para trabalhar com os \textit{engines} pdftex e luatex. Dessa forma, deve-se compilar o documento 
-\begin{enumerate}
-    \item no Overleaf, ajustando no menu opção de compilação para \textbf{xelatex} ou \textbf{lualatex}.\footnote{Os engines são denominados xetex e luatex. Já os comandos de compilação são \textsl{xelatex} e \textsl{lualatex}.}
-    \item se compilando localmente, na sua IDE faça o ajuste do compilador. Se usuário raiz, no terminal de comando, digite \textsl{xelatex filename} ou \textsl{lualatex filename}. Não é necessário digitar a extensão \textsl{tex}.
-\end{enumerate}
+
 
 A classe \textsl{sbc2025} inclui internamente os seguintes pacotes:
 \begin{itemize}
@@ -29,3 +41,4 @@ A classe \textsl{sbc2025} inclui internamente os seguintes pacotes:
 
 Para a pergunta \textit{Por que não funciona com o \texttt{pdflatex}}?  A resposta é: \textbf{fontes!} Pdflatex usa um esquema de codificação de fontes complexo. 
 O fonte \texttt{academicons}\footnote{Do fonte em questão usa-se apenas o glifo associado ao Orchid.} não tem as definições necessárias para uso com o \texttt{pdflatex}. Enquanto isso não for realizado, \texttt{pdflatex} não pode ser usado. 
+
