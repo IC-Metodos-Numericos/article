@@ -220,6 +220,21 @@ Como por hipótese $|\varphi'(x)| < 1$ então $|C| < 1$, portanto, a convergênc
 \end{proof}
 \newpage
 
+% \subsection{Pseudocódigo do Método de Newton-Raphson}
+% \begin{algorithm}[H]
+%     \caption{Newton-Raphson para $f(x)=0$}
+%     \begin{algorithmic}[1]
+%         \Require chute inicial $x_0$, tolerância $\varepsilon$, máximo de iterações $N$
+%         \For{$k = 0$ to $N$}
+%             \State $x_{k+1} = x_k - \frac{f(x_k)}{f'(x_k)}$
+%             \If{$|x_{k+1} - x_k| < \varepsilon$}
+%                 \State \Return $x_{k+1}$
+%             \EndIf
+%         \EndFor
+%         \State \Return \text{falha de convergência}
+%     \end{algorithmic}
+% \end{algorithm}
+
 %--------------------------------------------------------------------
 \section{Método de Newton-Raphson Unidimensional}\label{sec:NR1d}
 
@@ -316,8 +331,28 @@ em $\xi$ obtemos $\frac{[f'(\xi)]^3f''(\xi)}{[f'(\xi)]^4}$, que é um $C$ conclu
 \end{align*}
 %\frac{f(x_k)}{f'(x_k)} &= e_k - \frac{f''(c_k)}{2f'(x_k)}e_k^2
 \end{proof}
-\EnzoR{Qual destes escolher?}
-\subsection{Casos Atípicos/ Peculiaridades / Singularidades }
+
+\subsection{Pseudocódigo do Método de Newton-Raphson}
+
+\begin{algorithm}[H]
+    \caption{Método de Newton-Raphson (simplicado)}
+    \label{alg:newtonraphson_simple}
+    \begin{algorithmic}[1]
+        \Require $x_0$ (chute), $\varepsilon$ (tolerância), $N$ (máx. iterações)
+        \State $k \gets 0$
+        \While{$k < N$}
+            \State $x_{k+1} \gets x_k - \frac{f(x_k)}{f'(x_k)}$
+            \If{$|x_{k+1} - x_k| < \varepsilon$}
+                \State \Return $x_{k+1}$
+            \EndIf
+            \State $k \gets k + 1$
+            \State $x_k \gets x_{k+1}$
+        \EndWhile
+        \State \Return \text{Falha de convergência}
+    \end{algorithmic}
+\end{algorithm}
+
+\subsection{Casos Atípicos}
 O Método de Newton é amplamente utilizado na prática devido à sua rapidez e precisão em condições ideais. Contudo, em algumas situações ele pode falhar ou convergir para raízes incorretas se essas condições não forem satisfeitas. Estes problemas geralmente estão associados a fatores como: pontos de máximo e mínimo, pontos de inflexão, multiplicidade da raiz e escolha inadequada do chute inicial.
 
 \subsubsection{Caso 1: Alta multiplicidade de raízes}
@@ -357,7 +392,7 @@ $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ \\
 44 & $x = 1.0$ & $f(x) = 0.0$ & $0.0$ \\
 \hline
 \end{tabular}
-\label{tab:ciladaNR}
+\label{tab:ciladaMultRaiz}
 \end{center}
 
 \subsubsection{Caso 2: Proximidade a extremos de função}
@@ -399,7 +434,7 @@ Iteração & Valor de $x_k$ & $f(x)$ & Erro $e_k$ \\
 11 & $x = 1.93332993606072678$ & $f(x) = 4.93835804267838796$ & $3.09293574056242671$ \\
 \hline
 \end{tabular}
-\label{tab:ciladaNR}
+\label{tab:ciladaMinMax_A}
 \end{center}
 
 Em casos extremos, na vizinhança de um ponto de máximo ou mínimo, a intercessão da reta tangente de uma iteração pode coincidir com a coordenada da abscissa da iteração anterior, fazendo com que a sequência não convirja.
@@ -434,7 +469,7 @@ $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ \\
 101 & $x = 0.00000000000000000$ & $f(x) = 2.00000000000000000$ & $2.09455148154232651$ \\
 \hline
 \end{tabular}
-\label{tab:ciladaNR}
+\label{tab:ciladaMinMax_B}
 \end{center}
 
 \subsubsection{Caso 3: Proximidade a Pontos de Inflexão}
@@ -465,7 +500,7 @@ Iteração & Valor de $x_k$ & $f(x)$ & Erro $e_k$ \\
 5 & $x = 8.67844942653632145$ & $f(x) = 1.45607432393228908$ & $8.67844942653632145$ \\
 \hline
 \end{tabular}
-\label{tab:ciladaNR}
+\label{tab:ciladaPontoInflexao}
 \end{center}
 
 \subsubsection{Caso 4: Derivada próxima de zero}
@@ -497,7 +532,7 @@ Iteração & Valor de $x_k$ & $f(x)$ \\
 6 & $x = -11.78097245096172507$ & $f(x) = -0.00000000000000010$ \\
 \hline
 \end{tabular}
-\label{tab:ciladaNR}
+\label{tab:ciladaNRDerivadaProximaZero}
 \end{center}
 Em resumo, para evitar os problemas apresentados — como convergência lenta, divergência ou oscilação — é fundamental analisar previamente o comportamento da função. Recomenda-se identificar regiões próximas a pontos de máximo, mínimo, inflexão, derivadas próximas de zero e raízes múltiplas. Além disso, a escolha do chute inicial $x_0$ deve ser feita de modo criterioso: o ponto deve estar suficientemente próximo da raiz desejada e em uma região onde a derivada não seja nula ou muito pequena, garantindo assim maior probabilidade de convergência rápida e correta do método.
 
@@ -810,6 +845,9 @@ A ideia básica para gerar um fractal de Newton é aplicar o método de Newton-R
     \label{fig:fractaisnr_unitroots20}
 \end{figure}
 
+
+\TODO{COLOCAR PolinomioS}
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{Imagens/nr2d_fractals/polinomials/nrfractal_polinomio.png}
@@ -821,19 +859,19 @@ A ideia básica para gerar um fractal de Newton é aplicar o método de Newton-R
     \centering
     \includegraphics[width=1\textwidth]{Imagens/nr2d_fractals/polinomials/nrfractal_polinomio2.png}
     \caption{Fractais de Newton - Polinomio ABCD.}
-    \label{fig:fractaisnr_polinomials1}
+    \label{fig:fractaisnr_polinomials2}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{Imagens/nr2d_fractals/polinomials/nrfractal_polinomio3.png}
     \caption{Fractais de Newton - Polinomio ABCD.}
-    \label{fig:fractaisnr_polinomials1}
+    \label{fig:fractaisnr_polinomials3}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{Imagens/nr2d_fractals/polinomials/nrfractal_polinomio4.png}
     \caption{Fractais de Newton - Polinomio ABCD.}
-    \label{fig:fractaisnr_polinomials1}
+    \label{fig:fractaisnr_polinomials4}
 \end{figure}
