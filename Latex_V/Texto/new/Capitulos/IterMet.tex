@@ -220,20 +220,74 @@ Como por hipótese $|\varphi'(x)| < 1$ então $|C| < 1$, portanto, a convergênc
 \end{proof}
 \newpage
 
-% \subsection{Pseudocódigo do Método de Newton-Raphson}
-% \begin{algorithm}[H]
-%     \caption{Newton-Raphson para $f(x)=0$}
-%     \begin{algorithmic}[1]
-%         \Require chute inicial $x_0$, tolerância $\varepsilon$, máximo de iterações $N$
-%         \For{$k = 0$ to $N$}
-%             \State $x_{k+1} = x_k - \frac{f(x_k)}{f'(x_k)}$
-%             \If{$|x_{k+1} - x_k| < \varepsilon$}
-%                 \State \Return $x_{k+1}$
-%             \EndIf
-%         \EndFor
-%         \State \Return \text{falha de convergência}
-%     \end{algorithmic}
-% \end{algorithm}
+\subsection{Implementações do Método do Ponto Fixo}
+
+\subsubsection{Imperativa}
+
+\begin{algorithm}[H]
+    \caption{Método do Ponto Fixo Iterativo}
+    \label{alg:pontofixo_imperativo}
+    \begin{algorithmic}[1]
+        \Procedure{Main}{}
+            \State $x_0 \gets 1.5$ \Comment{Chute inicial}
+            \State $\text{tol} \gets 10^{-6}$ \Comment{Tolerância}
+            \State $N \gets 100$ \Comment{Número máximo de iterações}
+            
+            \State Inicializar vetor $H$ de tamanho $N+1$ \Comment{Alocação dinâmica}
+            \State $x \gets x_0$
+            \State $H[0] \gets x_0$
+            
+            \For{$i \gets 0$ \textbf{to} $N$}
+                \State $x_{\text{next}} \gets \sin(x^2 + \cos(x))$ \Comment{Função $g(x)$}
+                \State $H[i+1] \gets x_{\text{next}}$ \Comment{Salva no histórico}
+                
+                \If{$|x_{\text{next}} - x| < \text{tol}$}
+                    \State \textbf{Imprimir} "Raiz: " $x_{\text{next}}$
+                    \State \textbf{Imprimir} "Iterações: " $i+1$
+                    \State \textbf{Imprimir} Histórico $H[0 \dots i+1]$
+                    \State \Return 0 \Comment{Sucesso}
+                \EndIf
+                
+                \State $x \gets x_{\text{next}}$ \Comment{Atualiza para próxima iteração}
+            \EndFor
+            
+            \State \textbf{Imprimir} "Falha na convergência"
+            \State Liberar memória de $H$
+            \State \Return 1
+        \EndProcedure
+    \end{algorithmic}
+\end{algorithm}
+
+\subsubsection{Funcional}
+
+\begin{algorithm}[H]
+    \caption{Método do Ponto Fixo Recursivo}
+    \label{alg:pontofixo_funcional}
+    \begin{algorithmic}[1]
+        \Function{g}{$x$}
+            \State \Return $\sin(x^2 + \cos(x))$
+        \EndFunction
+
+        \Procedure{FixedPoint}{$x_0, \text{tol}, \text{maxIters}$}
+            
+            \Function{Go}{$x, \text{iter}, \text{acc}$} \Comment{Função auxiliar recursiva}
+                \If{$\text{iter} \geq \text{maxIters}$}
+                    \State \Return $(x, \text{iter}, \text{acc})$ \Comment{Limite atingido}
+                \EndIf
+
+                \State $x_{\text{next}} \gets g(x)$
+                
+                \If{$|x_{\text{next}} - x| < \text{tol}$}
+                    \State \Return $(x_{\text{next}}, \text{iter} + 1, \text{acc} \cup [x_{\text{next}}])$ \Comment{Convergiu}
+                \Else
+                    \State \Return \Call{Go}{$x_{\text{next}}, \text{iter} + 1, \text{acc} \cup [x_{\text{next}}]$} \Comment{Recursão}
+                \EndIf
+            \EndFunction
+
+            \State \Return \Call{Go}{$x_0, 0, [x_0]$} \Comment{Chamada inicial com lista [x0]}
+        \EndProcedure
+    \end{algorithmic}
+\end{algorithm}
 
 %--------------------------------------------------------------------
 \section{Método de Newton-Raphson Unidimensional}\label{sec:NR1d}
@@ -332,23 +386,46 @@ em $\xi$ obtemos $\frac{[f'(\xi)]^3f''(\xi)}{[f'(\xi)]^4}$, que é um $C$ conclu
 %\frac{f(x_k)}{f'(x_k)} &= e_k - \frac{f''(c_k)}{2f'(x_k)}e_k^2
 \end{proof}
 
-\subsection{Pseudocódigo do Método de Newton-Raphson}
+\subsection{Implementações do Método de Newton-Raphson Unidimensional}
+
+\subsubsection{Imperativa}
 
 \begin{algorithm}[H]
-    \caption{Método de Newton-Raphson (simplicado)}
-    \label{alg:newtonraphson_simple}
+    \caption{Newton-Raphson Iterativo}
+    \label{alg:newton_imperativo}
     \begin{algorithmic}[1]
-        \Require $x_0$ (chute), $\varepsilon$ (tolerância), $N$ (máx. iterações)
-        \State $k \gets 0$
-        \While{$k < N$}
-            \State $x_{k+1} \gets x_k - \frac{f(x_k)}{f'(x_k)}$
-            \If{$|x_{k+1} - x_k| < \varepsilon$}
-                \State \Return $x_{k+1}$
-            \EndIf
-            \State $k \gets k + 1$
-            \State $x_k \gets x_{k+1}$
-        \EndWhile
-        \State \Return \text{Falha de convergência}
+        \Procedure{NewtonIter}{$f, f', x_0, \text{maxIter}$}
+            \State $x \gets x_0$ \Comment{Inicialização da variável}
+            \For{$i \gets 0$ \textbf{to} $\text{maxIter}$}
+                \State $fx \gets f(x)$
+                \State $dfx \gets f'(x)$
+                \State $x_{\text{next}} \gets x - \frac{fx}{dfx}$
+                \State $x \gets x_{\text{next}}$ \Comment{Atualiza o valor atual}
+            \EndFor
+            \State \Return $x$
+        \EndProcedure
+    \end{algorithmic}
+\end{algorithm}
+
+\subsubsection{Funcional}
+
+\begin{algorithm}[H]
+    \caption{Newton-Raphson Recursivo}
+    \label{alg:newton_funcional}
+    \begin{algorithmic}[1]
+        \Procedure{NewtonRecursive}{$f, f', x_0, \text{maxIter}$}
+            
+            \Function{Iterate}{$x, n$} \Comment{Função auxiliar (cláusula where)}
+                \If{$n = 0$}
+                    \State \Return $x$ \Comment{Caso base: fim das iterações}
+                \Else
+                    \State $x_{\text{next}} \gets x - \frac{f(x)}{f'(x)}$
+                    \State \Return \Call{Iterate}{$x_{\text{next}}, n - 1$} \Comment{Passo recursivo}
+                \EndIf
+            \EndFunction
+
+            \State \Return \Call{Iterate}{$x_0, \text{maxIter}$} \Comment{Chamada inicial}
+        \EndProcedure
     \end{algorithmic}
 \end{algorithm}
 

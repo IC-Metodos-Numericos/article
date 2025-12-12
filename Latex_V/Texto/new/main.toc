@@ -23,35 +23,33 @@
 \contentsline {section}{\numberline {2.2}Critério de Parada}{21}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Método do Ponto Fixo}{22}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Ordem de convergência}{24}{subsection.2.3.1}%
-\contentsline {section}{\numberline {2.4}Método de Newton-Raphson Unidimensional}{26}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Sequência Iterativa}{26}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Interpretação Geométrica}{27}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Convergência}{27}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Ordem de Convergência}{28}{subsection.2.4.4}%
-\contentsline {subsection}{\numberline {2.4.5}Pseudocódigo do Método de Newton-Raphson}{29}{subsection.2.4.5}%
-\contentsline {subsection}{\numberline {2.4.6}Casos Atípicos}{30}{subsection.2.4.6}%
-\contentsline {subsubsection}{Caso 1: Alta multiplicidade de raízes}{30}{section*.48}%
-\contentsline {subsubsection}{Caso 2: Proximidade a extremos de função}{32}{section*.50}%
-\contentsline {subsubsection}{Caso 3: Proximidade a Pontos de Inflexão}{36}{section*.53}%
-\contentsline {subsubsection}{Caso 4: Derivada próxima de zero}{38}{section*.55}%
-\contentsline {section}{\numberline {2.5}Método de Newton-Raphson N-dimensional}{39}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Definições}{40}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Calculo do Jacobiano}{41}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}Fractais de Newton}{45}{subsection.2.5.3}%
-\contentsline {chapter}{\numberline {3}Problemas de Valor Inicial para Equações Diferenciais Ordinárias}{57}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Equações Diferenciais Ordinárias}{57}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Definição de Problema de Valor Inicial}{58}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Métodos Numéricos para Resolver PVIs}{59}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Teorema de Existência e Unicidade}{59}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Boa Colocação do PVI}{59}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Método de Euler}{60}{subsection.3.3.3}%
-\contentsline {chapter}{\numberline {4}Comparação entre Paradigmas de Programação}{61}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Pseudocódigo de Métodos Numéricos}{62}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Método do Ponto Fixo}{62}{subsection.4.1.1}%
-\contentsline {subsubsection}{Imperativa}{62}{section*.72}%
-\contentsline {subsubsection}{Funcional}{63}{section*.73}%
-\contentsline {subsection}{\numberline {4.1.2}Método de Newton-Raphson Unidimensional}{64}{subsection.4.1.2}%
-\contentsline {subsubsection}{Imperativa}{64}{section*.74}%
-\contentsline {subsubsection}{Funcional}{64}{section*.75}%
-\contentsline {section}{\numberline {4.2}Comparação Entre Paradigmas}{64}{section.4.2}%
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{73}{chapter*.87}%
+\contentsline {subsection}{\numberline {2.3.2}Implementações do Método do Ponto Fixo}{26}{subsection.2.3.2}%
+\contentsline {subsubsection}{Imperativa}{26}{section*.41}%
+\contentsline {subsubsection}{Funcional}{27}{section*.42}%
+\contentsline {section}{\numberline {2.4}Método de Newton-Raphson Unidimensional}{27}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Sequência Iterativa}{28}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Interpretação Geométrica}{28}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Convergência}{29}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Ordem de Convergência}{29}{subsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.4.5}Implementações do Método de Newton-Raphson Unidimensional}{31}{subsection.2.4.5}%
+\contentsline {subsubsection}{Imperativa}{31}{section*.50}%
+\contentsline {subsubsection}{Funcional}{32}{section*.51}%
+\contentsline {subsection}{\numberline {2.4.6}Casos Atípicos}{32}{subsection.2.4.6}%
+\contentsline {subsubsection}{Caso 1: Alta multiplicidade de raízes}{32}{section*.52}%
+\contentsline {subsubsection}{Caso 2: Proximidade a extremos de função}{34}{section*.54}%
+\contentsline {subsubsection}{Caso 3: Proximidade a Pontos de Inflexão}{38}{section*.57}%
+\contentsline {subsubsection}{Caso 4: Derivada próxima de zero}{40}{section*.59}%
+\contentsline {section}{\numberline {2.5}Método de Newton-Raphson N-dimensional}{41}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Definições}{42}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Calculo do Jacobiano}{43}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Fractais de Newton}{47}{subsection.2.5.3}%
+\contentsline {chapter}{\numberline {3}Problemas de Valor Inicial para Equações Diferenciais Ordinárias}{59}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Equações Diferenciais Ordinárias}{59}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Definição de Problema de Valor Inicial}{60}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Métodos Numéricos para Resolver PVIs}{61}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Teorema de Existência e Unicidade}{61}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Boa Colocação do PVI}{61}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Método de Euler}{62}{subsection.3.3.3}%
+\contentsline {chapter}{\numberline {4}Comparação entre Paradigmas de Programação}{63}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Comparação Entre Paradigmas}{64}{section.4.1}%
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{77}{chapter*.88}%

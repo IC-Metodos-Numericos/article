@@ -727,6 +727,7 @@ INPUT .\Imagens\fixedPoint\interseções.png
 INPUT .\Imagens\fixedPoint\interseções.png
 INPUT .\Imagens\fixedPoint\interseções.png
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbxti10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
 INPUT .\Imagens\pitfalls\01\x_10-1.png
 INPUT .\Imagens\pitfalls\01\x_10-1.png
 INPUT .\Imagens\pitfalls\01\x_10-1.png
@@ -912,7 +913,6 @@ OUTPUT Capitulos\CompParadig.aux
 INPUT .\Capitulos\CompParadig.tex
 INPUT .\Capitulos\CompParadig.tex
 INPUT Capitulos\CompParadig.tex
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
 INPUT .\Imagens\paradComp\mpf\cpu\boxplot_cpu_mpf.png
 INPUT .\Imagens\paradComp\mpf\cpu\boxplot_cpu_mpf.png
 INPUT .\Imagens\paradComp\mpf\cpu\boxplot_cpu_mpf.png
@@ -1025,13 +1025,6 @@ INPUT .\Imagens\paradComp\nr\time\time_nr_violin_iter_vs_recursive.png
 INPUT .\Imagens\paradComp\nr\time\time_nr_violin_iter_vs_recursive.png
 INPUT .\Imagens\paradComp\nr\time\time_nr_violin_iter_vs_recursive.png
 INPUT .\Imagens\paradComp\nr\time\time_nr_violin_iter_vs_recursive.png
-INPUT .\Imagens\paradComp\nr\scatterMatrix_nr.png
-INPUT .\Imagens\paradComp\nr\scatterMatrix_nr.png
-INPUT .\Imagens\paradComp\nr\scatterMatrix_nr.png
-INPUT .\Imagens\paradComp\nr\scatterMatrix_nr.png
-INPUT .\Imagens\paradComp\nr\scatterMatrix_nr.png
-INPUT .\Imagens\paradComp\nr\scatterMatrix_nr.png
-INPUT .\Imagens\paradComp\nr\scatterMatrix_nr.png
 INPUT .\Imagens\paradComp\nr\stacked.png
 INPUT .\Imagens\paradComp\nr\stacked.png
 INPUT .\Imagens\paradComp\nr\stacked.png
@@ -1039,6 +1032,13 @@ INPUT .\Imagens\paradComp\nr\stacked.png
 INPUT .\Imagens\paradComp\nr\stacked.png
 INPUT .\Imagens\paradComp\nr\stacked.png
 INPUT .\Imagens\paradComp\nr\stacked.png
+INPUT .\Imagens\paradComp\nr\scatterMatrix_nr.png
+INPUT .\Imagens\paradComp\nr\scatterMatrix_nr.png
+INPUT .\Imagens\paradComp\nr\scatterMatrix_nr.png
+INPUT .\Imagens\paradComp\nr\scatterMatrix_nr.png
+INPUT .\Imagens\paradComp\nr\scatterMatrix_nr.png
+INPUT .\Imagens\paradComp\nr\scatterMatrix_nr.png
+INPUT .\Imagens\paradComp\nr\scatterMatrix_nr.png
 INPUT .\main.bbl
 INPUT .\main.bbl
 INPUT main.bbl
