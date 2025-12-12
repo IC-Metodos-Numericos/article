@@ -43,4 +43,5 @@
 \contentsline {subsection}{\numberline {3.3.1}Teorema de Existência e Unicidade}{58}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Boa Colocação do PVI}{58}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}Método de Euler}{59}{subsection.3.3.3}%
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{61}{chapter*.73}%
+\contentsline {chapter}{\numberline {4}Comparação entre Paradigmas de Programação}{60}{chapter.4}%
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{62}{chapter*.73}%
