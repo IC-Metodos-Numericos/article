@@ -7,13 +7,21 @@
 Padrões de Tags:
 
 % TODO: Revisar a introdução
+
 % FIXME: Fórmula incorreta
+
 % NOTE: Essa parte foi atualizada por Enzo
+
 % HACK: Gambiarra temporária
+
 % BUG: Comportamento inesperado
+
 % @EnzoR: Marca Enzo
+
 % @LucasM: Marca Lucas
+
 % @Daniel: Marca Daniel
+
 % @LuisD: Marca Luis
 
 ## 🧪 Article: Setup do Ambiente
@@ -79,3 +87,4 @@ latexmk -v
 Se aparecer a versão, tudo está certo. ✨
 
 >Se tiver dúvidas, fale com @Enzo 🧠
+
