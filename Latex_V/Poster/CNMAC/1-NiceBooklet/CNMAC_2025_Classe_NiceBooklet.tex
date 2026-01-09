@@ -1,0 +1,175 @@
+%------------------------------------------------------------------------------%
+\documentclass{pssbmac}
+
+%------------------------------------------------------------------------------%
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+%------------------------------------------------------------------------------%
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\usepackage{amsmath, amsfonts, amssymb, amsthm}
+%\usepackage{url}
+\usepackage{csquotes}
+% ref bibliográficas
+\usepackage[backend=biber, style=numeric-comp, maxnames=50]{biblatex}
+\addbibresource{refs.bib}
+\DeclareTextFontCommand{\emph}{\boldmath\bfseries}
+\DefineBibliographyStrings{brazil}{phdthesis = {Tese de doutorado}}
+\DefineBibliographyStrings{brazil}{mathesis = {Disserta\c{c}\~{a}o de mestrado}}
+\DefineBibliographyStrings{english}{mathesis = {Master dissertation}}
+
+%------------------------------------------------------------------------------%
+
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+%\usepackage[table,fixpdftex,hyperref]{xcolor}
+%
+%\usepackage{hyperref}
+%
+%\urlstyle{sf}
+%
+%\hypersetup{%
+%  colorlinks = false,
+%  linkcolor  = black,
+%  urlcolor   = black,
+%  citecolor  = black
+%}
+
+\renewcommand\fbox{\fcolorbox{lightgray}{white}}
+\setlength{\fboxsep}{0pt}
+
+\usepackage{subcaption}
+\usepackage[bottom]{footmisc}
+\usepackage[justification=centerlast]{caption}
+
+\setcounter{topnumber}   {4}
+\setcounter{bottomnumber}{4}
+\setcounter{totalnumber}{10}
+\renewcommand{\textfraction}     {0.15}
+\renewcommand{\topfraction}      {0.85}
+\renewcommand{\bottomfraction}   {0.70}
+\renewcommand{\floatpagefraction}{0.66}
+\setcounter   {dbltopnumber}           {2}
+\renewcommand*{\dbltopfraction}        {1}
+\renewcommand*{\dblfloatpagefraction}{0.9}
+\raggedbottom
+
+%------------------------------------------------------------------------------%
+\begin{document}
+
+\title{Classe \LaTeX{} para Criação de e-Books para o PROFMAT}
+
+\author{
+    {\large Luis A. D'Afonseca}\thanks{luis.dafonseca@cefetmg.com}\\
+    {\small CEFET-MG, Belo Horizonte, MG} \\
+}
+\criartitulo
+%------------------------------------------------------------------------------%
+
+\input{figura}
+
+\renewcommand{\baselinestretch}{0.97}
+
+\LaTeX{}~\cite{mittelbach2004latex} é a ferramenta mais utilizada para escrever
+textos matemáticos, devido, entre outros fatores, à sua qualidade tipográfica e
+separação entre conteúdo e formatação.
+Porém, ela é bastante intimidadora para principiantes.
+Provavelmente, pela necessidade de descrever o texto
+utilizando comandos sem ver imediatamente o resultado.
+Outra dificuldade é a enorme quantidade de comandos, pacotes e opções disponíveis,
+especialmente para a formatação do texto.
+
+Essa dificuldade se tornou especialmente evidente na orientação de
+dissertações para o PROFMAT. Nesse programa, os mestrandos precisam atuar como
+professores de matemática durante a realização do curso.
+Além disso, a matriz curricular prevê disciplinas em todos os semestres e
+também nas férias de verão.
+Essas características limitam significativamente o tempo que o discente pode
+dedicar para seu trabalho de conclusão de curso.
+
+Outra característica do PROFMAT é que os alunos devem criar um produto
+educacional. Não há restrição sobre o tipo de produto que pode ser
+criado, porém, os mais naturais são apostilas e textos paradidáticos.
+Como o público alvo desses produtos são alunos ou professores do Ensino
+Básico, a formatação e estilo típicos de uma dissertação de mestrado
+são pouco atraentes, podendo até mesmo ser intimidadores.
+Desejando facilitar a criação de apostilas e que elas fossem
+visualmente atraentes para os alunos do Ensino Básico,
+desenvolvi a classe \LaTeX{} \textit{NiceBooklet}~\cite{APOSTILA}.
+A Figura \ref{fig:capa} mostra a capa do manual de uso da classe,
+que foi escrito utilizando-a.
+
+As Figuras \ref{fig:pagina_teorema} e \ref{fig:pagina_exemplo}
+apresentam exemplos de textos escritos com a classe,
+onde podemos ver que a formatação destaca trechos importantes
+utilizando cores atraentes.
+A primeira imagem mostra um teorema (destacado em azul) e sua demonstração
+(marcada por uma linha cinza a esquerda). A segunda imagem
+mostra uma definição (também em azul) e um exemplo do seu uso em um exercício
+(destacado em amarelo).
+Outra característica gráfica é o uso de fontes grandes (14pt) para facilitar
+a leitura em formato digital.
+A classe inclui os pacotes necessários para escrever o texto em
+português, para os principais comandos matemáticos e inclusão de figuras.
+Escondendo assim essa complexidade do autor.
+Diversas tarefas são automatizadas pela classe, por exemplo:
+\begin{itemize}
+    \setlength\itemsep{0em}
+    \item a formatação da capa a partir do fornecimento de uma imagem;
+
+    \item a criação de \textit{links} de navegação no canto inferior direito de cada página,
+    que levam para o sumário e para os inícios do capítulo atual, anterior e posterior;
+
+    \item o deslocamento das respostas dos exercícios para um capítulo próprio
+    no final do texto, com \textit{links} levando para a resposta e retornando;
+
+    \item a criação de \textit{links} com QR code, utilizados para fornecer material
+    complementar \textit{online};
+
+    \item a criação de um índice remissivo.
+\end{itemize}
+
+A seguir apresento uma lista de dissertações que criaram apostilas
+utilizando a classe descrita neste trabalho:
+%
+A. L. A. Gomes criou um material abordando a Matemática dos
+investimentos financeiros
+\cite{ANDERSON_LUIS_DE_AVILA_GOMES:CEFET:2024};
+%
+P. S. F. Vieira escreveu uma apostila para apresentar o conceito de
+infinito para alunos do Ensino Médio
+\cite{PIERRE_FERMAT_VIEIRA:CEFET:2023};
+%
+V. P. de Jesus desenvolveu uma apostila sobre a aplicação da
+Matemática no cálculo de materiais na Construção Civil
+\cite{VILMAR_PEREIRA_DE_JESUS:CEFET:2022};
+%
+T. S. Reis criou um jogo de RPG (Role-Playing Game) para ser
+usado como ferramenta para o ensino de probabilidades
+\cite{TAMISSON_SANTOS_REIS:CEFET:2022};
+%
+E. B. L. Santos escreveu uma apostila para o ensino de noções de
+programação e métodos numéricos para o Ensino Médio
+\cite{Edson:CEFET:2024}.
+%
+Os e-Books desses trabalhos,
+a classe com sua documentação
+e arquivo de configuração para autocompletamento no TeXstudio
+estão disponíveis para download na página do autor~\cite{PAGINA_LAD}.
+
+%------------------------------------------------------------------------------%
+\vspace{-0.5\baselineskip}
+\section*{Agradecimentos}
+\vspace{-0.3\baselineskip}
+
+O autor agradece ao CEFET-MG e à FAPEMIG
+pelo apoio financeiro pela Chamada FAPEMIG 16/2024, Processo PCE-00114-25.
+
+%------------------------------------------------------------------------------%
+\vspace{-0.5\baselineskip}
+%\renewcommand{\baselinestretch}{0.9}
+\printbibliography
+\end{document}
+%------------------------------------------------------------------------------%

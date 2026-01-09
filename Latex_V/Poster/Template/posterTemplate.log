@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.7)  7 JAN 2026 20:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.7)  9 JAN 2026 18:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -924,7 +924,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: Hyperref support is turned off
 (caption)             because hyperref has stopped early.
 ))
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 44.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 42.
  (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
@@ -933,24 +933,24 @@ File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 ) (posterTemplate.aux)
 \openout1 = `posterTemplate.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1005,7 +1005,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 44.
+Package hyperref Info: Link coloring OFF on input line 42.
  (posterTemplate.out) (posterTemplate.out)
 \@outlinefile=\write5
 \openout5 = `posterTemplate.out'.
@@ -1023,131 +1023,118 @@ Dictionary: translator-numbers-dictionary, Language: English
 ) (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 44.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 42.
 LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 44.
+(Font)              `operators' in the math version `normal' on input line 42.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> T1/lmr/m/up on input line 44.
+(Font)                  OT1/lmr/m/n --> T1/lmr/m/up on input line 42.
 LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 44.
+(Font)              `operators' in the math version `bold' on input line 42.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> T1/lmr/m/up on input line 44.
+(Font)                  OT1/lmr/bx/n --> T1/lmr/m/up on input line 42.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  T1/lmr/m/up --> T1/lmr/b/up on input line 44.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 44.
+(Font)                  T1/lmr/m/up --> T1/lmr/b/up on input line 42.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> T1/lmr/b/up on input line 44.
+(Font)                  OT1/lmr/bx/n --> T1/lmr/b/up on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> T1/lmr/b/up on input line 44.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 44.
+(Font)                  OT1/lmr/bx/n --> T1/lmr/b/up on input line 42.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> T1/lmss/m/up on input line 44.
+(Font)                  OT1/lmss/m/n --> T1/lmss/m/up on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> T1/lmss/m/up on input line 44.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 44.
+(Font)                  OT1/lmss/bx/n --> T1/lmss/m/up on input line 42.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> T1/lmr/m/it on input line 44.
+(Font)                  OT1/lmr/m/it --> T1/lmr/m/it on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> T1/lmr/m/it on input line 44.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 44.
+(Font)                  OT1/lmr/bx/it --> T1/lmr/m/it on input line 42.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> T1/lmvtt/m/up on input line 44.
+(Font)                  OT1/lmtt/m/n --> T1/lmvtt/m/up on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> T1/lmvtt/m/up on input line 44.
+(Font)                  OT1/lmtt/m/n --> T1/lmvtt/m/up on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/lmss/m/up --> T1/lmss/b/up on input line 44.
+(Font)                  T1/lmss/m/up --> T1/lmss/b/up on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/lmr/m/it --> T1/lmr/b/it on input line 44.
+(Font)                  T1/lmr/m/it --> T1/lmr/b/it on input line 42.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  (posterTemplate.nav)
-LaTeX Font Info:    Calculating math sizes for size <15> on input line 44.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 44.
- (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
+Overfull \hbox (184.86841pt too wide) in paragraph at lines 42--42
+ [][][][][] 
+ []
+
+LaTeX Font Info:    Calculating math sizes for size <15> on input line 42.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 42.
+(C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
 LaTeX Font Warning: Font shape `T1/lmr/m/up' undefined
-(Font)              using `T1/lmr/m/n' instead on input line 44.
+(Font)              using `T1/lmr/m/n' instead on input line 42.
 
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 44.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 42.
 (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 44.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 42.
  (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <15> on input line 44.
+(Font)              <15> on input line 42.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.49995> on input line 44.
+(Font)              <10.49995> on input line 42.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.5> on input line 44.
+(Font)              <7.5> on input line 42.
 <logo.png, id=15, 512.3943pt x 506.6127pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 44.
-(pdftex.def)             Requested size: 185.66905pt x 183.57089pt.
-LaTeX Font Info:    Calculating math sizes for size <44.79> on input line 44.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <44.79> on input line 44.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <31.35284> on input line 44.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <22.39499> on input line 44.
-LaTeX Font Info:    Calculating math sizes for size <37.33> on input line 44.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <37.33> on input line 44.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <26.13087> on input line 44.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <18.665> on input line 44.
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 44.
+Package pdftex.def Info: logo.png  used on input line 42.
 (pdftex.def)             Requested size: 185.66905pt x 183.57089pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 283.
+Package pdftex.def Info: logo.png  used on input line 42.
 (pdftex.def)             Requested size: 185.66905pt x 183.57089pt.
+LaTeX Font Info:    Calculating math sizes for size <31.1> on input line 53.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <31.1> on input line 53.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <21.7699> on input line 53.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <15.55> on input line 53.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 283.
-(pdftex.def)             Requested size: 185.66905pt x 183.57089pt.
-LaTeX Font Info:    Calculating math sizes for size <31.1> on input line 283.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <31.1> on input line 283.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <21.7699> on input line 283.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <15.55> on input line 283.
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 283.
-(pdftex.def)             Requested size: 689.90616pt x 682.14285pt.
+Package pdftex.def Info: logo.png  used on input line 100.
+(pdftex.def)             Requested size: 1074.45947pt x 1062.372pt.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <25.93> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 283.
-LaTeX Font Info:    Trying to load font information for T1+lmvtt on input line 283.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 126.
+LaTeX Font Info:    Trying to load font information for T1+lmvtt on input line 140.
  (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmvtt.fd
 File: t1lmvtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Calculating math sizes for size <25.93> on input line 283.
+LaTeX Font Info:    Calculating math sizes for size <25.93> on input line 140.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <25.93> on input line 283.
+(Font)              <25.93> on input line 140.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <18.15091> on input line 283.
+(Font)              <18.15091> on input line 140.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12.965> on input line 283.
+(Font)              <12.965> on input line 140.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 283.
+Package pdftex.def Info: logo.png  used on input line 148.
 (pdftex.def)             Requested size: 185.66905pt x 183.57089pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 283.
+Package pdftex.def Info: logo.png  used on input line 148.
 (pdftex.def)             Requested size: 185.66905pt x 183.57089pt.
- [1{C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}
+
+Overfull \hbox (184.86841pt too wide) has occurred while \output is active
+ [][][][][] 
+ []
+
+[1{C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}
 
  <./logo.png>]
 \tf@nav=\write6
@@ -1172,17 +1159,17 @@ Package rerunfilecheck Info: File `posterTemplate.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29035 strings out of 467870
- 584653 string characters out of 5418356
- 1072741 words of memory out of 5000000
- 57295 multiletter control sequences out of 15000+600000
- 754286 words of font info for 197 fonts, out of 8000000 for 9000
+ 28958 strings out of 467870
+ 583222 string characters out of 5418356
+ 973929 words of memory out of 5000000
+ 57217 multiletter control sequences out of 15000+600000
+ 718822 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,18n,139p,515b,888s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/euex10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbo10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso17.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmvtt10.pfb>
-Output written on posterTemplate.pdf (1 page, 402273 bytes).
+Output written on posterTemplate.pdf (1 page, 412267 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
- 6 named destinations out of 1000 (max. 500000)
+ 80 PDF objects out of 1000 (max. 8388607)
+ 7 named destinations out of 1000 (max. 500000)
  54 words of extra memory for PDF output out of 10000 (max. 10000000)
 

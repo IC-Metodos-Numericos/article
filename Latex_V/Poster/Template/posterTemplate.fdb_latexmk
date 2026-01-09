@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1767827203.71119 "f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Poster/Template/posterTemplate.tex" "posterTemplate.pdf" "posterTemplate" 1767827205.96409 0
-  "C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1767827107 123198 3bbd8409905bfb5918bb33e6a0462096 ""
+["pdflatex"] 1767993116.02177 "f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Poster/Template/posterTemplate.tex" "posterTemplate.pdf" "posterTemplate" 1767993118.38645 0
+  "C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1767970887 261916 240d75d44ab8eb6766f7a1443dd2d60a ""
   "C:/Users/maria/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1767826614 13333527 383fc4e5d9917f6cfc4a190dd6451459 ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecss1095.tfm" 993062234 3188 1aa640cd974697c5d1d4a3c92172a829 ""
@@ -250,12 +250,12 @@
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "beamerthemesharelatex.sty" 1767816759 6265 52009dae4b978187dd907e9ee855d6ce ""
-  "f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Poster/Template/posterTemplate.tex" 1767827202 11295 be79be899c7b55a6e90b31c3e4777058 ""
+  "f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Poster/Template/posterTemplate.tex" 1767993112 4307 ca28d66bc4003c85c35b7ebef776db6c ""
   "logo.png" 1758619903 297267 89aa9fd8f4bb4cbc7756b01f25f9ddae ""
-  "posterTemplate.aux" 1767827205 1100 56a2ca49b7eb80b0db8ad71e02bb0d52 "pdflatex"
-  "posterTemplate.nav" 1767827205 307 9e520c26371a1250ff9fc1fe87f9c655 "pdflatex"
-  "posterTemplate.out" 1767827205 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "posterTemplate.tex" 1767827202 11295 be79be899c7b55a6e90b31c3e4777058 ""
+  "posterTemplate.aux" 1767993117 1028 9328bbb173c0eb54d1c36c993bd5cba5 "pdflatex"
+  "posterTemplate.nav" 1767993117 219 1021aa037c875ea5202b922df73c6b1e "pdflatex"
+  "posterTemplate.out" 1767993117 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "posterTemplate.tex" 1767993112 4307 ca28d66bc4003c85c35b7ebef776db6c ""
   (generated)
   "posterTemplate.aux"
   "posterTemplate.log"

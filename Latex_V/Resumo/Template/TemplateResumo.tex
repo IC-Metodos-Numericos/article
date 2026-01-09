@@ -4,10 +4,12 @@
 \usepackage[T1]{fontenc}
 \usepackage{amsmath,amssymb,latexsym, cite}
 \usepackage{color,graphicx}
-\usepackage[latin1]{inputenc}
-\usepackage[portuguese]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
 \usepackage{fancyhdr}
 \usepackage{setspace}
+\usepackage{multicol}
+
 \setstretch{1,15}
 
 
@@ -28,15 +30,6 @@
 \renewcommand{\theta}{{\vartheta}}
 
 \numberwithin{equation}{section}
-
-
-\newtheorem{theorem}{Teorema}[section]
-\newtheorem{lemma}[theorem]{Lema}
-\newtheorem{corollary}[theorem]{Corol�rio}
-\newtheorem{proposition}[theorem]{Proposi��o}
-\newtheorem{remark}[theorem]{Observa��o}
-\newtheorem{definition}[theorem]{Defini��o}
-\newtheorem{example}{Exemplo}
 
 \usepackage{titlesec}
 \titleformat{\section}
@@ -65,12 +58,12 @@
 \lfoot{
 \textit{\hrule \hfill 
 \\
-I Workshop Mineiro de Matem�tica Aplicada}
+I Workshop Mineiro de Matemática Aplicada}
 }
 \lhead{
- \textit{I Workshop de Ver�o do Doutorado Multic�ntrico em Matem�tica de Minas Gerais}
+ \textit{I Workshop de Verão do Doutorado Multicêntrico em Matemática de Minas Gerais}
  \rhead{
-  \textit{23 a 25 de Agosto de 2023}}}
+  \textit{03 a 05 de Fevereiro de 2026}}}
 
 
 \begin{document}
@@ -81,7 +74,7 @@ I Workshop Mineiro de Matem�tica Aplicada}
 \begin{spacing}{2.05}
 {\fontsize{20}{20}
 \bf
-T�tulo do Trabalho
+Explorando alguns efeitos dos erros de Ponto Flutuante
 }
 \end{spacing}
 \end{center}
@@ -89,37 +82,39 @@ T�tulo do Trabalho
 \begin{center}
 {\fontsize{14}{20}
 \bf
-Nome }
+E. R. L. D. Ribas\textsuperscript{\textdagger}, D. S. Pazini\textsuperscript{\textdaggerdbl}, L. A. D'Afonseca, L. M. Rocha }
 \bigskip
 
 
 {\fontsize{12}{20}
-Local de Trabalho \\
-e-mail
+Centro Federal de Educação Tecnológica de Minas Gerais (CEFET-MG) \\
+enzorochaleitedinizribas@gmail.com\textsuperscript{\textdagger}, danieldspazini3@gmail.com\textsuperscript{\textdaggerdbl}
 
 }
 \end{center}
 
 \vspace{10pt}
 
-{\fontsize{16}{20}
-\bf
-Resumo
-}
-\medskip
 
-Aqui voc� deve colocar o texto do seu resumo. O pdf gerado deve ter somente 1 p�gina.
+\subsection*{Resumo}
 
+A aritmética de ponto flutuante é o sistema adotado por computadores para que lidem com números reais utilizando uma notação compacta e eficaz. Ela permite representar números de grandezas diversas, que não podem ser armazenados com precisão, utilizando apenas números inteiros.No entanto, essa representação possui limitações, o que pode levar a erros de arredondamento e perda de precisão em cálculos numéricos. Esses erros podem se acumular em operações sucessivas, resultando em resultados imprecisos ou incorretos.
 
-\vspace{2cm}
+A perda de significância (ou cancelamento catastrófico) ocorre de modo mais evidente quando há grande diferença de ordem de grandeza entre os números envolvidos na operação. Por exemplo, ao somar um número muito grande com um número muito pequeno, o número pequeno pode ser "esquecido" devido à falta de precisão na representação de ponto flutuante. Isso pode levar a resultados imprecisos ou incorretos. 
 
+\begin{multicols}{2}
+\begin{center}
+  \includegraphics[height=3cm,width=8cm]{imagens/error2zoom} \\
+  Figura 1: Exemplo de figura.
+\end{center}
+\begin{center}
+  \includegraphics[height=3cm,width=8cm]{imagens/erro1}
+\\
+  Figura 2: Exemplo de figura.
+\end{center}
+\end{multicols}
 
-\begin{flushright} 
-{\bf 
+Falar sobre os graficos / erros acima ( erro de perda de significancia e erro de arredondamento)
 
-Agrade�a aqui as ag�ncias de fomento, caso houver.
-
-}
-\end{flushright} 
 \end{document} 
 
