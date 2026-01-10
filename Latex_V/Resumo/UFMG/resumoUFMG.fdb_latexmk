@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1768004526.92157 "f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Resumo/UFMG/resumoUFMG.tex" "resumoUFMG.pdf" "resumoUFMG" 1768004528.04095 0
+["pdflatex"] 1768086427.43789 "f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Resumo/UFMG/resumoUFMG.tex" "resumoUFMG.pdf" "resumoUFMG" 1768086428.54485 0
   "C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1767970887 261916 240d75d44ab8eb6766f7a1443dd2d60a ""
   "C:/Users/maria/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1767826614 13333527 383fc4e5d9917f6cfc4a190dd6451459 ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ec.enc" 1525740614 2457 aaabbccba4df2a7f7371410ee4e075a3 ""
@@ -11,6 +11,7 @@
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1233951854 908 2921f8a10601f252058503cc6570e581 ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1233951854 940 228d6584342e91276bf566bcf9716b83 ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmex10.tfm" 1136765053 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
+  "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi10.tfm" 1136765053 1528 abec98dbc43e172678c11b3b9031252a ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi12.tfm" 1136765053 1524 4414a8315f39513458b80dfc63bff03a ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi6.tfm" 1136765053 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi8.tfm" 1136765053 1520 eccf95517727cb11801f4f1aee3a21b4 ""
@@ -30,6 +31,10 @@
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/tfm/public/tex-gyre/ec-qtmri.tfm" 1254938640 11356 da1519f442d8a49b81c86cbaf25ef79f ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/tfm/public/tex-gyre/ts1-qtmb.tfm" 1254938640 1608 bde4475c6eb5aa292519d95aa26b6413 ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/tfm/public/tex-gyre/ts1-qtmr.tfm" 1254938640 1600 20cdf11dab97d5d39e847571f9314407 ""
+  "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247596667 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
+  "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
+  "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmb.pfb" 1254938640 131776 4be3e220f990dc716f91bb7965c09237 ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmr.pfb" 1254938640 133302 c4942f65edfb6dde8dac434e6a2388b0 ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmri.pfb" 1254938640 129669 8a9ef3a22a6054894318d5bed6d721d0 ""
@@ -79,11 +84,11 @@
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/tex/latex/tex-gyre/ts1qtm.fd" 1254938640 1160 de7b1cf70edab73c9f1704df2a9fdbbd ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/tex/latex/titlesec/titlesec.sty" 1736608268 48766 87a17a4ef312a39cd43896e34a679a56 ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/tex/latex/tools/multicol.sty" 1761901070 33142 efe8f4750fc02524935e7423b4bdef69 ""
-  "f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Resumo/UFMG/resumoUFMG.tex" 1768004526 3722 dd83f1e78c982095887f3bbfdca6c38e ""
+  "f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Resumo/UFMG/resumoUFMG.tex" 1768086426 4458 786dc2d6f9d5856c8df9d4b0e4e7a948 ""
   "imagens/erro1.png" 1767998844 148892 02227cb60619e5e32fc2864e9351cdea ""
   "imagens/error2zoom.png" 1767998819 75701 19bff2c662707ffd87c48cd3166f3e71 ""
-  "resumoUFMG.aux" 1768004527 172 b5bcff7ca0d2c19cea780fca67d80bd3 "pdflatex"
-  "resumoUFMG.tex" 1768004526 3722 dd83f1e78c982095887f3bbfdca6c38e ""
+  "resumoUFMG.aux" 1768086428 172 b5bcff7ca0d2c19cea780fca67d80bd3 "pdflatex"
+  "resumoUFMG.tex" 1768086426 4458 786dc2d6f9d5856c8df9d4b0e4e7a948 ""
   (generated)
   "resumoUFMG.aux"
   "resumoUFMG.log"
