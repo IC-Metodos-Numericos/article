@@ -158,6 +158,12 @@ INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-qtmr.tfm
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ts1-qtmr.tfm
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-qtmb.tfm
+INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
+INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy10.tfm
 INPUT .\imagens\erro1.png
 INPUT .\imagens\erro1.png
 INPUT .\imagens\erro1.png
@@ -171,12 +177,6 @@ INPUT .\imagens\error2zoom.png
 INPUT .\imagens\error2zoom.png
 INPUT .\imagens\error2zoom.png
 INPUT .\imagens\error2zoom.png
-INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
-INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
-INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
-INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy10.tfm
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-qtmri.tfm
 INPUT C:\Users\maria\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\tex-gyre\q-ec.enc

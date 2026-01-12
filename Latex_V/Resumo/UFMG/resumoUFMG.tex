@@ -98,9 +98,11 @@ enzorochaleitedinizribas@gmail.com\textsuperscript{\textdagger}, danieldspazini3
 \subsection*{Resumo}
 Este trabalho apresenta resultados de estudos realizados em um projeto de iniciação científica sobre implementação de métodos numéricos em diferentes paradigmas de programação.
 
-Um sistema de ponto flutuante é o método utilizado por computadores para para representar números reais utilizando uma notação compacta e eficaz. Este sistema permite representar números de grandezas diversas, que não podem ser armazenados com precisão, utilizando apenas números inteiros. No entanto, essa representação possui limitações, o que pode levar a erros ao fazer operações numéricas. Esses erros podem se acumular em operações sucessivas, resultando em resultados imprecisos ou incorretos.
+Um sistema de ponto flutuante é a maneira utilizada pelos computadores para representar números reais através de uma notação compacta e eficaz. Ele permite escrever números de grandezas diversas utilizando apenas números inteiros. No entanto, essa representação fica limitada ao adequar o número ao sistema adotado, causando erros que podem se acumular em operações sucessivas, produzindo resultados imprecisos ou incorretos.
 
-Um dos error comuns é conhecido como perda de significância (ou cancelamento catastrófico) que pode ser notada de modo mais evidente quando há grande uma diferença de ordem de grandeza entre os números envolvidos na operação. Por exemplo, ao somar um número muito grande com um número muito pequeno, o número pequeno pode ser parcialmente descartado durante a operação.
+Um erro comum é o da perda de significância (ou cancelamento catastrófico). Por  exemplo, a função $f(x) = x^{10} + 1 - x^{10}$, que matematicamente é igual a 1, pode apresentar resultados incorretos para valores grandes de $x$, como observado na Figura 1.
+
+Um outro erro é o erro de não cancelamento dos termos, que ocorre quando expressões matematicamente equivalentes são calculadas de maneiras diferentes, levando a resultados distintos. Este fenômeno é ilustrado na Figura 2, ao calcular as expressões equivalentes $(x-1)^{6}$ e $x^6-6x^5+15x^4-20x^3+15x^2-6x+1$.
 
 \begin{multicols}{2}
 \begin{center}
@@ -109,13 +111,9 @@ Um dos error comuns é conhecido como perda de significância (ou cancelamento c
 \end{center}
 \begin{center}
   \includegraphics[height=3cm,width=8cm]{imagens/error2zoom}\\
-  Figura 2: Polinômio calculado de maneiras diferentes.
+  Figura 2: Expressões equivalentes.
 \end{center}
 \end{multicols}
-
-A Figura 1 ilustra um fenômeno de perda de significância ao fazer o cálculo para valores muito grandes de $x$ na expressão $f(x) = x^{10} + 1 - x^{10}$, onde o resultado esperado é 1. No entanto, devido à perda de significância, o resultado apresenta erros significativos.
-
-Já a Figura 2 ilustra um fenômeno de erro de arredondamento, que ocorre quando um número não pode ser representado exatamente no sistema de ponto flutuante e é arredondado para o valor mais próximo possível. Esse erro pode se acumular em operações sucessivas, levando a resultados imprecisos. Um exemplo seria ao avaliar expressões matematicamente equivalentes, mas que são calculadas de maneiras diferentes, causando o não cancelamento de termos e levando a resultados distintos. 
 
 \end{document} 
 
