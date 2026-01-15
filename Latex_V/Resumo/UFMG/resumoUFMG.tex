@@ -64,12 +64,9 @@ I Workshop Mineiro de Matemática Aplicada}
  \textit{I Workshop de Verão do Doutorado Multicêntrico em Matemática de Minas Gerais}
  \rhead{
   \textit{03 a 05 de Fevereiro de 2026}}}
-
-
 \begin{document}
 %\pagestyle{empty}
 \pagenumbering{gobble}
-
 \begin{center}
 \begin{spacing}{2.05}
 {\fontsize{20}{20}
@@ -84,36 +81,29 @@ Explorando alguns efeitos dos erros de Ponto Flutuante
 \bf
 E. R. L. D. Ribas\textsuperscript{\textdagger}, D. S. Pazini\textsuperscript{\textdaggerdbl}, L. A. D'Afonseca, L. M. Rocha }
 \bigskip
-
-
 {\fontsize{12}{20}
 Centro Federal de Educação Tecnológica de Minas Gerais (CEFET-MG) \\
 enzorochaleitedinizribas@gmail.com\textsuperscript{\textdagger}, danieldspazini3@gmail.com\textsuperscript{\textdaggerdbl}
-
 }
 \end{center}
-
 \vspace{10pt}
-
 \subsection*{Resumo}
-Este trabalho apresenta resultados de estudos realizados em um projeto de iniciação científica sobre implementação de métodos numéricos em diferentes paradigmas de programação.
-
+Este trabalho apresenta resultados de estudos realizados em um projeto de iniciação científica.
 Um sistema de ponto flutuante é a maneira utilizada pelos computadores para representar números reais através de uma notação compacta e eficaz. Ele permite escrever números de grandezas diversas utilizando apenas números inteiros. No entanto, essa representação fica limitada ao adequar o número ao sistema adotado, causando erros que podem se acumular em operações sucessivas, produzindo resultados imprecisos ou incorretos.
 
-Um erro comum é o da perda de significância (ou cancelamento catastrófico). Por  exemplo, a função $f(x) = x^{10} + 1 - x^{10}$, que matematicamente é igual a 1, pode apresentar resultados incorretos para valores grandes de $x$, como observado na Figura 1.
-
-Um outro erro é o erro de não cancelamento dos termos, que ocorre quando expressões matematicamente equivalentes são calculadas de maneiras diferentes, levando a resultados distintos. Este fenômeno é ilustrado na Figura 2, ao calcular as expressões equivalentes $(x-1)^{6}$ e $x^6-6x^5+15x^4-20x^3+15x^2-6x+1$.
-
+Um erro comum é o da perda de significância (ou cancelamento catastrófico), que ocorre quando a subtração de dois números próximos resulta em um valor com menos dígitos significativos do que os números originais.
+Um exemplo desse comportamento é a função $f(x) = x^{10} + 1 - x^{10}$. Embora matematicamente o resultado é constante e igual a 1, a Figura 1 mostra que, para alguns valores grandes de $x$, o resultado computacional se afasta significativamente do valor esperado devido à perda de significância nas operações envolvidas.
 \begin{multicols}{2}
 \begin{center}
   \includegraphics[height=3cm,width=8cm]{imagens/erro1}
   Figura 1: Perda de significância.
 \end{center}
 \begin{center}
-  \includegraphics[height=3cm,width=8cm]{imagens/error2zoom}\\
+  \includegraphics[height=3cm,width=8cm]{imagens/error2zoomzoom}\\
   Figura 2: Expressões equivalentes.
 \end{center}
 \end{multicols}
+Um outro erro é o erro de não cancelamento adequado de termos em expressões matematicamente equivalentes. A Figura 2 apresenta a comparação entre os resultados obtidos ao calcular $(x-1)^{6}$ e sua forma expandida $x^6-6x^5+15x^4-20x^3+15x^2-6x+1$ mostrando que, apesar da equivalência analítica, as duas expressões produzem resultados diferentes quando avaliadas numericamente de maneiras distintas, Essa diferença, visível nos gráficos, decorre do acúmulo de erros de arredondamento e da instabilidade numérica associada à forma algébrica utilizada, destacando a importância da escolha da expressão matemática em implementações computacionais.
 
 \end{document} 
 
