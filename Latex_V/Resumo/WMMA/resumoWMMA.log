@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.7)  19 JAN 2026 12:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.7)  19 JAN 2026 12:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Resumo/UFMG/resumoUFMG.tex"
-(f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Resumo/UFMG/resumoUFMG.tex
+**"f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Resumo/UFMG/resumoWMMA.tex"
+(f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Resumo/UFMG/resumoWMMA.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
 (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -283,11 +283,11 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 ) (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count308
-) (resumoUFMG.aux
+) (resumoWMMA.aux
 Package babel Info: 'brazilian' activates 'portuges' shorthands.
 (babel)             Reported on input line 5.
 )
-\openout1 = `resumoUFMG.aux'.
+\openout1 = `resumoWMMA.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
 LaTeX Font Info:    ... okay on input line 67.
@@ -356,7 +356,7 @@ LaTeX Font Warning: Font shape `T1/qtm/m/sl' in size <10.95> not available
 
 [1{C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ec.enc}
 
-{C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc} <./imagens/erro1.png> <./imagens/error2zoomzoom.png>] (resumoUFMG.aux)
+{C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc} <./imagens/erro1.png> <./imagens/error2zoomzoom.png>] (resumoWMMA.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
@@ -371,7 +371,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  57i,11n,65p,813b,347s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmb.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmri.pfb>
-Output written on resumoUFMG.pdf (1 page, 493232 bytes).
+Output written on resumoWMMA.pdf (1 page, 493232 bytes).
 PDF statistics:
  64 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

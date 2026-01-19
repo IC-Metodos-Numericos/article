@@ -1,7 +1,7 @@
 PWD f:\Users\Enzo HD\Github\Repos\ic-metodos-numericos\article\Latex_V\Resumo\UFMG
 INPUT C:\Users\maria\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT f:\Users\Enzo HD\Github\Repos\ic-metodos-numericos\article\Latex_V\Resumo\UFMG\resumoUFMG.tex
-OUTPUT resumoUFMG.log
+INPUT f:\Users\Enzo HD\Github\Repos\ic-metodos-numericos\article\Latex_V\Resumo\UFMG\resumoWMMA.tex
+OUTPUT resumoWMMA.log
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\tex\latex\base\size11.clo
@@ -89,10 +89,10 @@ INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\tex\latex\titlesec\titlesec.s
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\tex\latex\titlesec\titlesec.sty
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT .\resumoUFMG.aux
-INPUT .\resumoUFMG.aux
-INPUT resumoUFMG.aux
-OUTPUT resumoUFMG.aux
+INPUT .\resumoWMMA.aux
+INPUT .\resumoWMMA.aux
+INPUT resumoWMMA.aux
+OUTPUT resumoWMMA.aux
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -167,7 +167,7 @@ INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\
 INPUT .\imagens\erro1.png
 INPUT .\imagens\erro1.png
 INPUT .\imagens\erro1.png
-OUTPUT resumoUFMG.pdf
+OUTPUT resumoWMMA.pdf
 INPUT .\imagens\erro1.png
 INPUT .\imagens\erro1.png
 INPUT .\imagens\erro1.png
@@ -181,7 +181,7 @@ INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\public\tex-gyre\ec-
 INPUT C:\Users\maria\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\tex-gyre\q-ec.enc
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\tex-gyre\q-ts1.enc
-INPUT resumoUFMG.aux
+INPUT resumoWMMA.aux
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
