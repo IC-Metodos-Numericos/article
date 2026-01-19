@@ -89,22 +89,28 @@ enzorochaleitedinizribas@gmail.com\textsuperscript{\textdagger}, danieldspazini3
 \end{center}
 \vspace{10pt}
 \subsection*{Resumo}
-Este trabalho apresenta resultados de estudos realizados em um projeto de iniciação científica.
-Um sistema de ponto flutuante é a maneira utilizada pelos computadores para representar números reais através de uma notação compacta e eficaz. Ele permite escrever números de grandezas diversas utilizando apenas números inteiros. No entanto, essa representação fica limitada ao adequar o número ao sistema adotado, causando erros que podem se acumular em operações sucessivas, produzindo resultados imprecisos ou incorretos.
+Este trabalho apresenta resultados de estudos realizados em um projeto de iniciação científica cujo objetivo é explorar graficamente alguns efeitos do cálculos realizados com ponto flutuante.
 
-Um erro comum é o da perda de significância (ou cancelamento catastrófico), que ocorre quando a subtração de dois números próximos resulta em um valor com menos dígitos significativos do que os números originais.
-Um exemplo desse comportamento é a função $f(x) = x^{10} + 1 - x^{10}$. Embora matematicamente o resultado é constante e igual a 1, a Figura 1 mostra que, para alguns valores grandes de $x$, o resultado computacional se afasta significativamente do valor esperado devido à perda de significância nas operações envolvidas.
+Um sistema de ponto flutuante é a maneira utilizada pelos computadores para representar números reais através de uma notação compacta e eficaz, padronizado pelo IEEE. Ele permite escrever números de grandezas diversas utilizando apenas números inteiros. No entanto, essa representação fica limitada ao adequar o número ao sistema adotado, causando erros que podem se acumular em operações sucessivas, produzindo resultados imprecisos ou incorretos.
+
+Um erro comum neste sistema é o da perda de significância, ou cancelamento catastrófico, que ocorre quando a subtração de dois números resulta em um valor com menos dígitos significativos do que os números originais.
+Um exemplo desse comportamento é a função $f(x) = x^{10} + 1 - x^{10}$. Embora para $x \in \mathbb{R}$ o resultado é igual a 1, ao efetuarmos os cálculos usando ponto flutuante, observamos o comportamento ilustrado no gráfico da Figura 1, em que o valor correto é exibido apenas até um certo valor de $x$. Após esse valor observamos um intervalo em que ocorre uma oscilação caótica no resultado da função. Posteriormente, observamos que a função assume o valor zero.
+
 \begin{multicols}{2}
 \begin{center}
-  \includegraphics[height=3cm,width=8cm]{imagens/erro1}
+  \includegraphics[height=3cm,width=7.5cm]{imagens/erro1}
   Figura 1: Perda de significância.
 \end{center}
 \begin{center}
-  \includegraphics[height=3cm,width=8cm]{imagens/error2zoomzoom}\\
+  \includegraphics[height=3cm,width=7.5cm]{imagens/error2zoomzoom}\\
   Figura 2: Expressões equivalentes.
 \end{center}
 \end{multicols}
-Um outro erro é o erro de não cancelamento adequado de termos em expressões matematicamente equivalentes. A Figura 2 apresenta a comparação entre os resultados obtidos ao calcular $(x-1)^{6}$ e sua forma expandida $x^6-6x^5+15x^4-20x^3+15x^2-6x+1$ mostrando que, apesar da equivalência analítica, as duas expressões produzem resultados diferentes quando avaliadas numericamente de maneiras distintas, Essa diferença, visível nos gráficos, decorre do acúmulo de erros de arredondamento e da instabilidade numérica associada à forma algébrica utilizada, destacando a importância da escolha da expressão matemática em implementações computacionais.
+\vspace{-0.5\baselineskip}
+
+Um outro erro é o não cancelamento adequado de termos em expressões matematicamente equivalentes. A Figura 2 apresenta a comparação entre os resultados obtidos ao calcular $p(x) = (x-1)^{6}$ e sua forma expandida $q(x) = x^6-6x^5+15x^4-20x^3+15x^2-6x+1$. Nesta figura, o gráfico de $p$ exibe os resultados obtidos pelo cálculo da expressão fatorada utilizando ponto flutuante obtendo a curva esperada. Entretanto, o gráfico da expressão expandida $q$, calculado no mesmo sistema de ponto flutuante, produz resultados caóticos. Note que, apesar de possivelmente surpreendente, esse fenômeno não invalida a utilidade do ponto flutuante, pois o erro observado é da ordem de $10^{-14}$.
+
+Os fenômenos observados nas figuras decorrem de erros de arredondamento inerentes ao sistema de ponto flutuante, destacando a importância da escolha das expressões matemáticas em implementações computacionais.
 
 \end{document} 
 
