@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1769105844.54649 "f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Poster/WMMA/poster_wmma/wmma.tex" "wmma.pdf" "wmma" 1769105845.34847 2
-  "C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1769105492 261916 240d75d44ab8eb6766f7a1443dd2d60a ""
+["pdflatex"] 1769460288.661 "f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Poster/WMMA/poster_wmma/wmma.tex" "wmma.pdf" "wmma" 1769460289.58967 0
+  "C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1769136120 261916 240d75d44ab8eb6766f7a1443dd2d60a ""
   "C:/Users/maria/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1769105487 13333528 ac686ffacc73593e2f24978542ba9c29 ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/helvetic/phvb8r.tfm" 1136783054 4484 b828043cbd581d289d955903c1339981 ""
@@ -69,14 +69,14 @@
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/t1phv.fd" 1585253778 1536 47067fbe7c3ffed1ede7aaa7b8549d7a ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/t1ppl.fd" 1585253778 817 5747d3f33ec2f7c4881c94e931a130b1 ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "a0poster.cls" 1769094236 6334 737c27ba47b1348fa692cef776ea908f ""
-  "f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Poster/WMMA/poster_wmma/wmma.tex" 1769105844 6429 66f7976013b41b00cb7403c914165f2c ""
-  "faixa.png" 1769094236 294424 ac1e3d063314c3eec93ce837ae1dfcf3 ""
-  "figura1.pdf" 1769094236 3667 596637c7fa1916e9fefbc1b9905375a8 ""
-  "figura2.pdf" 1769094236 7279 04cc68fcef5f9a8d435b056400a41c2e ""
-  "rodape_rede.png" 1769094236 270071 5b144d86ef1ab9b2720dbd8c49809ed7 ""
-  "wmma.aux" 1769105845 169 f0defdf652dca380c4deeffb4b63cfb0 "pdflatex"
-  "wmma.tex" 1769105844 6429 66f7976013b41b00cb7403c914165f2c ""
+  "a0poster.cls" 1769354799 6544 737c27ba47b1348fa692cef776ea908f ""
+  "f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Poster/WMMA/poster_wmma/wmma.tex" 1769460287 6741 75ba0dec6f0c71762e4c339b831c5355 ""
+  "faixa.png" 1769354799 294424 ac1e3d063314c3eec93ce837ae1dfcf3 ""
+  "figura1.pdf" 1769354799 3667 596637c7fa1916e9fefbc1b9905375a8 ""
+  "figura2.pdf" 1769354799 7279 04cc68fcef5f9a8d435b056400a41c2e ""
+  "rodape_rede.png" 1769354799 270071 5b144d86ef1ab9b2720dbd8c49809ed7 ""
+  "wmma.aux" 1769460289 169 f0defdf652dca380c4deeffb4b63cfb0 "pdflatex"
+  "wmma.tex" 1769460287 6741 75ba0dec6f0c71762e4c339b831c5355 ""
   (generated)
   "a0header.ps"
   "wmma.aux"

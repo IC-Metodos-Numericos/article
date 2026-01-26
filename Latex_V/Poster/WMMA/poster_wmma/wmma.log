@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.22)  22 JAN 2026 15:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.22)  26 JAN 2026 17:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -223,8 +223,10 @@ Package: eso-pic 2025/12/10 v3.0d eso-pic (RN)
 ) (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count301
+) (wmma.aux
+Package babel Info: 'brazil' activates 'portuges' shorthands.
+(babel)             Reported on input line 5.
 )
-No file wmma.aux.
 \openout1 = `wmma.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
@@ -241,7 +243,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
 LaTeX Font Info:    ... okay on input line 44.
-(C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+ (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count302
 \scratchdimen=\dimen167
@@ -260,72 +262,56 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package babel Info: 'brazil' activates 'portuges' shorthands.
-(babel)             Reported on input line 44.
 <faixa.png, id=1, 2276.505pt x 341.77687pt>
 File: faixa.png Graphic file (type png)
 <use faixa.png>
 Package pdftex.def Info: faixa.png  used on input line 53.
 (pdftex.def)             Requested size: 2276.46474pt x 341.4579pt.
-
-
-f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Poster/WMMA/poster_wmma/wmma.tex:67: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.67   }
-        
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 LaTeX Font Info:    Trying to load font information for U+msa on input line 67.
-(C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+ (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 67.
  (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 108.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 106.
  (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
-Overfull \hbox (10.93509pt too wide) in alignment at lines 125--129
+Overfull \hbox (10.93509pt too wide) in alignment at lines 123--127
  [][][] []
  []
 
 <figura1.pdf, id=2, 51.19125pt x 51.19125pt>
 File: figura1.pdf Graphic file (type pdf)
 <use figura1.pdf>
-Package pdftex.def Info: figura1.pdf  used on input line 161.
+Package pdftex.def Info: figura1.pdf  used on input line 159.
 (pdftex.def)             Requested size: 369.91158pt x 369.91158pt.
 
-Underfull \hbox (badness 1038) in paragraph at lines 169--169
+Underfull \hbox (badness 1038) in paragraph at lines 167--167
 \T1/phv/m/n/35.83 usando texto lo-rem ip-sum ape-nas para
  []
 
 <figura2.pdf, id=3, 710.655pt x 502.87875pt>
 File: figura2.pdf Graphic file (type pdf)
 <use figura2.pdf>
-Package pdftex.def Info: figura2.pdf  used on input line 174.
+Package pdftex.def Info: figura2.pdf  used on input line 172.
 (pdftex.def)             Requested size: 369.88972pt x 284.52603pt.
 
-Underfull \hbox (badness 1077) in paragraph at lines 237--237
+Underfull \hbox (badness 1077) in paragraph at lines 235--235
 \T1/ppl/m/n/43 [2] In-te-ger bi-ben-dum ip-sum quis
  []
 
 
-Overfull \hbox (12.70898pt too wide) in paragraph at lines 242--242
+Overfull \hbox (12.70898pt too wide) in paragraph at lines 240--240
  []\T1/ppl/b/n/43 AGRADECIMENTOS 
  []
 
 <rodape_rede.png, id=4, 2276.00313pt x 170.6375pt>
 File: rodape_rede.png Graphic file (type png)
 <use rodape_rede.png>
-Package pdftex.def Info: rodape_rede.png  used on input line 254.
+Package pdftex.def Info: rodape_rede.png  used on input line 252.
 (pdftex.def)             Requested size: 2276.44907pt x 170.7282pt.
 [1
 
@@ -341,15 +327,15 @@ L3 programming layer <2025-12-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4556 strings out of 467870
- 75532 string characters out of 5418355
- 508873 words of memory out of 5000000
- 33372 multiletter control sequences out of 15000+600000
+ 4559 strings out of 467870
+ 75660 string characters out of 5418355
+ 508809 words of memory out of 5000000
+ 33373 multiletter control sequences out of 15000+600000
  657725 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,12n,84p,347b,310s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on wmma.pdf (1 page, 627977 bytes).
+Output written on wmma.pdf (1 page, 628779 bytes).
 PDF statistics:
  59 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
