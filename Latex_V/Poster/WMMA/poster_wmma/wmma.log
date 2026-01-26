@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.22)  26 JAN 2026 17:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.22)  26 JAN 2026 19:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -275,43 +275,49 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 67.
  (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 106.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 101.
  (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
-Overfull \hbox (10.93509pt too wide) in alignment at lines 123--127
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <43> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 101.
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 124.
+ (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+)
+Overfull \hbox (10.93509pt too wide) in alignment at lines 141--145
  [][][] []
  []
 
 <figura1.pdf, id=2, 51.19125pt x 51.19125pt>
 File: figura1.pdf Graphic file (type pdf)
 <use figura1.pdf>
-Package pdftex.def Info: figura1.pdf  used on input line 159.
+Package pdftex.def Info: figura1.pdf  used on input line 177.
 (pdftex.def)             Requested size: 369.91158pt x 369.91158pt.
 
-Underfull \hbox (badness 1038) in paragraph at lines 167--167
+Underfull \hbox (badness 1038) in paragraph at lines 185--185
 \T1/phv/m/n/35.83 usando texto lo-rem ip-sum ape-nas para
  []
 
 <figura2.pdf, id=3, 710.655pt x 502.87875pt>
 File: figura2.pdf Graphic file (type pdf)
 <use figura2.pdf>
-Package pdftex.def Info: figura2.pdf  used on input line 172.
+Package pdftex.def Info: figura2.pdf  used on input line 190.
 (pdftex.def)             Requested size: 369.88972pt x 284.52603pt.
 
-Underfull \hbox (badness 1077) in paragraph at lines 235--235
+Underfull \hbox (badness 1077) in paragraph at lines 253--253
 \T1/ppl/m/n/43 [2] In-te-ger bi-ben-dum ip-sum quis
  []
 
 
-Overfull \hbox (12.70898pt too wide) in paragraph at lines 240--240
+Overfull \hbox (12.70898pt too wide) in paragraph at lines 258--258
  []\T1/ppl/b/n/43 AGRADECIMENTOS 
  []
 
 <rodape_rede.png, id=4, 2276.00313pt x 170.6375pt>
 File: rodape_rede.png Graphic file (type png)
 <use rodape_rede.png>
-Package pdftex.def Info: rodape_rede.png  used on input line 252.
+Package pdftex.def Info: rodape_rede.png  used on input line 270.
 (pdftex.def)             Requested size: 2276.44907pt x 170.7282pt.
 [1
 
@@ -320,24 +326,24 @@ Non-PDF special ignored!
 <special> header=./a0header.ps
 Non-PDF special ignored!
 <special> papersize=83.96cm,118.82cm
-{C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./rodape_rede.png (PNG copy)> <./faixa.png (PNG copy)> <./figura1.pdf> <./figura2.pdf>] (wmma.aux)
+{C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./rodape_rede.png (PNG copy)> <./faixa.png (PNG copy)>] [2 <./figura1.pdf> <./figura2.pdf>] (wmma.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4559 strings out of 467870
- 75660 string characters out of 5418355
- 508809 words of memory out of 5000000
- 33373 multiletter control sequences out of 15000+600000
- 657725 words of font info for 101 fonts, out of 8000000 for 9000
+ 4596 strings out of 467870
+ 76306 string characters out of 5418355
+ 511809 words of memory out of 5000000
+ 33403 multiletter control sequences out of 15000+600000
+ 661295 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,12n,84p,347b,310s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on wmma.pdf (1 page, 628779 bytes).
+ 72i,12n,84p,508b,379s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb>
+Output written on wmma.pdf (2 pages, 640942 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
+ 67 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -61,7 +61,7 @@
   \parbox{70cm}{
     \textcolor{Gray}{\rule[0cm]{70cm}{0.6cm}}\\[0.2cm]
     {\color{PetroleoEscuro}\Huge \bfseries \centering
-      TÍTULO DO TRABALHO\\[0.3cm]
+      Explorando alguns efeitos dos erros de Ponto Flutuante\\[0.3cm]
     }
     \textcolor{Gray}{\rule[0cm]{70cm}{0.6cm}}
   }
@@ -95,13 +95,31 @@
 
   \parbox{24cm}{
     {\LARGE\textsf{
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Sed eget urna sit amet lorem gravida dignissim. Suspendisse potenti.\\[0.8cm]
-      Curabitur et lacus nec urna placerat interdum non a augue. Integer
-      rutrum nisl non tincidunt ullamcorper, mi arcu aliquam arcu.\\[0.8cm]
-      Donec blandit magna ut laoreet sodales. Integer convallis dignissim lorem,
-      quis sollicitudin dui pharetra ut. Vestibulum ante ipsum primis in faucibus
-      orci luctus et ultrices posuere cubilia curae.
+      A \textit{aritmética de ponto flutuante} é o sistema adotado por computadores para que lidem com números reais utilizando uma notação compacta e eficaz. Essa técnica é utilizada para representar e manipular números reais de forma prática e eficiente. Ela permite representar números de grandezas diversas, que não podem ser armazenados com precisão, utilizando apenas números inteiros.
+      A aritmética de ponto flutuante é amplamente utilizada em diversas áreas, como computação científica, gráficos de computador, simulações numéricas e processamento de sinais. No entanto, é importante compreender suas limitações e os possíveis erros que podem ocorrer durante as operações aritméticas, a fim de garantir resultados precisos e confiáveis em cálculos numéricos.
+    }}
+  }
+   % ARITMETICA DE PF
+   % TODO - otimizar o espaço, talvez transformando a lista em texto.
+  \SectionHeader{Aritmética de Ponto Flutuante}
+  \parbox{24cm}{
+    {\LARGE\textsf{
+      Um sistema de ponto flutuante $F$ pode ser definido como
+      \[
+      F(\beta, t, L, U)\]
+      cuja representação normalizada de um número real N nesse sistema é dada por
+      \begin{equation}
+      N = \pm (d_{1}.d_{2} . . . d_{t})_\beta \times \beta^e 
+      \end{equation}
+      em que
+      \begin{itemize}
+        \item \( N \) é o número real;
+        \item \(\beta\) é a base que a máquina opera;
+        \item \( t \) é o número de dígitos na mantissa, tal que \( 0 \leq d_{j} \leq \beta-1 \), j = 1, ...,t, \(d_{1} \neq 0\);
+        \item \( L \) é o menor expoente inteiro;
+        \item \( U \) é o maior expoente inteiro;
+        \item \( e \) é o expoente inteiro no intervalo [\( L \),\( U \)].
+      \end{itemize}
     }}
   }
 
