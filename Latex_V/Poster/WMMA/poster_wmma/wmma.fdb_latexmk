@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1769539377.99182 "f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Poster/WMMA/poster_wmma/wmma.tex" "wmma.pdf" "wmma" 1769539378.90303 0
+["pdflatex"] 1769541161.78764 "f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Poster/WMMA/poster_wmma/wmma.tex" "wmma.pdf" "wmma" 1769541163.40156 0
   "C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1769465742 261916 240d75d44ab8eb6766f7a1443dd2d60a ""
   "C:/Users/maria/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1769105487 13333528 ac686ffacc73593e2f24978542ba9c29 ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -78,13 +78,15 @@
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/tex/latex/psnfss/ts1ppl.fd" 1585253778 653 35f1cf70bf09b6e2d22ee0902cfb1a8b ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "a0poster.cls" 1769354799 6544 737c27ba47b1348fa692cef776ea908f ""
-  "f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Poster/WMMA/poster_wmma/wmma.tex" 1769539377 8284 de92d67ccb4bc0d982d89bebd22ad7b3 ""
+  "f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Poster/WMMA/poster_wmma/wmma.tex" 1769541161 8892 883eaf3f7c4b0b7c49a77b97712a2a38 ""
   "faixa.png" 1769354799 294424 ac1e3d063314c3eec93ce837ae1dfcf3 ""
-  "figura1.pdf" 1769354799 3667 596637c7fa1916e9fefbc1b9905375a8 ""
-  "figura2.pdf" 1769354799 7279 04cc68fcef5f9a8d435b056400a41c2e ""
+  "images/NumError1_mplt.png" 1769457413 202021 68dc2910d2a142f6f0ea6d917349e036 ""
+  "images/NumError2_mplt.png" 1769457582 95699 d884c2d574bc86f1d75287e5c21c5d8c ""
+  "images/NumError3_doubleplt_mplt.png" 1769457478 68446 f7410f9178784363141eb841380feddd ""
+  "images/NumError4_mplt.png" 1769456942 45065 ac3ff5b10515a91b16d9706ba4facc89 ""
   "rodape_rede.png" 1769354799 270071 5b144d86ef1ab9b2720dbd8c49809ed7 ""
-  "wmma.aux" 1769539378 169 a61004e3b455f3036ba22fffbf3df86e "pdflatex"
-  "wmma.tex" 1769539377 8284 de92d67ccb4bc0d982d89bebd22ad7b3 ""
+  "wmma.aux" 1769541163 169 a61004e3b455f3036ba22fffbf3df86e "pdflatex"
+  "wmma.tex" 1769541161 8892 883eaf3f7c4b0b7c49a77b97712a2a38 ""
   (generated)
   "a0header.ps"
   "wmma.aux"

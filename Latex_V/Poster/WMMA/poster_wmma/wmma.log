@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.22)  27 JAN 2026 15:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.22)  27 JAN 2026 16:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -289,65 +289,75 @@ Overfull \hbox (10.93509pt too wide) in alignment at lines 142--146
  [][][] []
  []
 
-<figura1.pdf, id=2, 51.19125pt x 51.19125pt>
-File: figura1.pdf Graphic file (type pdf)
-<use figura1.pdf>
-Package pdftex.def Info: figura1.pdf  used on input line 179.
-(pdftex.def)             Requested size: 369.91158pt x 369.91158pt.
+<images/NumError1_mplt.png, id=2, 1076.823pt x 379.4175pt>
+File: images/NumError1_mplt.png Graphic file (type png)
+<use images/NumError1_mplt.png>
+Package pdftex.def Info: images/NumError1_mplt.png  used on input line 179.
+(pdftex.def)             Requested size: 646.01663pt x 227.62204pt.
 
 Underfull \hbox (badness 1038) in paragraph at lines 187--187
 \T1/phv/m/n/35.83 usando texto lo-rem ip-sum ape-nas para
  []
 
-<figura2.pdf, id=3, 710.655pt x 502.87875pt>
-File: figura2.pdf Graphic file (type pdf)
-<use figura2.pdf>
-Package pdftex.def Info: figura2.pdf  used on input line 192.
-(pdftex.def)             Requested size: 369.88972pt x 284.52603pt.
+<images/NumError2_mplt.png, id=4, 1067.4279pt x 390.258pt>
+File: images/NumError2_mplt.png Graphic file (type png)
+<use images/NumError2_mplt.png>
+Package pdftex.def Info: images/NumError2_mplt.png  used on input line 193.
+(pdftex.def)             Requested size: 622.59418pt x 227.62204pt.
+<images/NumError3_doubleplt_mplt.png, id=5, 1083.3273pt x 385.1991pt>
+File: images/NumError3_doubleplt_mplt.png Graphic file (type png)
+<use images/NumError3_doubleplt_mplt.png>
+Package pdftex.def Info: images/NumError3_doubleplt_mplt.png  used on input line 205.
+(pdftex.def)             Requested size: 640.16592pt x 227.62204pt.
+<images/NumError4_mplt.png, id=6, 1068.8733pt x 379.4175pt>
+File: images/NumError4_mplt.png Graphic file (type png)
+<use images/NumError4_mplt.png>
+Package pdftex.def Info: images/NumError4_mplt.png  used on input line 217.
+(pdftex.def)             Requested size: 641.24739pt x 227.62204pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--255
+Underfull \hbox (badness 10000) in paragraph at lines 280--280
 \T1/ppl/m/n/43 me-ri-cal Methods for En-gi-ne-ers.
  []
 
 
-Underfull \hbox (badness 7415) in paragraph at lines 255--255
+Underfull \hbox (badness 7415) in paragraph at lines 280--280
 \T1/ppl/m/n/43 McGraw-Hill In-ter-na-ti-o-nal Edi-ti-
  []
 
 
-Underfull \hbox (badness 2922) in paragraph at lines 255--255
+Underfull \hbox (badness 2922) in paragraph at lines 280--280
 \T1/ppl/m/n/43 Arith-me-tic. IEEE Std 754-2008,
  []
 
 
-Underfull \hbox (badness 2922) in paragraph at lines 255--255
+Underfull \hbox (badness 2922) in paragraph at lines 280--280
 \T1/ppl/m/n/43 Arith-me-tic. IEEE Std 754-2019,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--255
+Underfull \hbox (badness 10000) in paragraph at lines 280--280
 
  []
 
 
-Overfull \hbox (12.70898pt too wide) in paragraph at lines 260--260
+Overfull \hbox (12.70898pt too wide) in paragraph at lines 285--285
  []\T1/ppl/b/n/43 AGRADECIMENTOS 
  []
 
 
-Underfull \hbox (badness 3601) in paragraph at lines 269--269
+Underfull \hbox (badness 3601) in paragraph at lines 294--294
 \T1/phv/m/n/43 apoio ins-ti-tu-ci-o-nal dis-po-ni-bi-li-zada
  []
 
 
-Underfull \hbox (badness 1248) in paragraph at lines 269--269
+Underfull \hbox (badness 1248) in paragraph at lines 294--294
 \T1/phv/m/n/43 Agra-de-ce-mos aos ori-en-ta-do-res e
  []
 
-<rodape_rede.png, id=4, 2276.00313pt x 170.6375pt>
+<rodape_rede.png, id=7, 2276.00313pt x 170.6375pt>
 File: rodape_rede.png Graphic file (type png)
 <use rodape_rede.png>
-Package pdftex.def Info: rodape_rede.png  used on input line 273.
+Package pdftex.def Info: rodape_rede.png  used on input line 298.
 (pdftex.def)             Requested size: 2276.44907pt x 170.7282pt.
 [1
 
@@ -356,24 +366,24 @@ Non-PDF special ignored!
 <special> header=./a0header.ps
 Non-PDF special ignored!
 <special> papersize=83.96cm,118.82cm
-{C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./rodape_rede.png (PNG copy)> <./faixa.png (PNG copy)>] [2 <./figura1.pdf> <./figura2.pdf>] (wmma.aux)
+{C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./rodape_rede.png (PNG copy)> <./faixa.png (PNG copy)>] [2 <./images/NumError1_mplt.png> <./images/NumError2_mplt.png> <./images/NumError3_doubleplt_mplt.png> <./images/NumError4_mplt.png>] (wmma.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4597 strings out of 467870
- 76313 string characters out of 5418355
- 512809 words of memory out of 5000000
- 33404 multiletter control sequences out of 15000+600000
+ 4619 strings out of 467870
+ 77209 string characters out of 5418355
+ 514809 words of memory out of 5000000
+ 33426 multiletter control sequences out of 15000+600000
  661295 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,12n,84p,508b,379s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on wmma.pdf (2 pages, 643833 bytes).
+Output written on wmma.pdf (2 pages, 1181090 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
+ 66 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
