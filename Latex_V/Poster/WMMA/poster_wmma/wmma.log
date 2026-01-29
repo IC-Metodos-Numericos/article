@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.22)  29 JAN 2026 14:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.22)  29 JAN 2026 14:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -297,27 +297,17 @@ Package pdftex.def Info: images/NumError2_mplt.png  used on input line 145.
 <images/NumError3_doubleplt_mplt.png, id=5, 1083.3273pt x 385.1991pt>
 File: images/NumError3_doubleplt_mplt.png Graphic file (type png)
 <use images/NumError3_doubleplt_mplt.png>
-Package pdftex.def Info: images/NumError3_doubleplt_mplt.png  used on input line 176.
+Package pdftex.def Info: images/NumError3_doubleplt_mplt.png  used on input line 173.
 (pdftex.def)             Requested size: 720.18872pt x 256.0748pt.
 
-Overfull \hbox (14.91869pt too wide) in paragraph at lines 176--177
+Overfull \hbox (14.91869pt too wide) in paragraph at lines 173--174
  [] 
  []
 
-<images/NumError4_mplt.png, id=6, 1068.8733pt x 379.4175pt>
-File: images/NumError4_mplt.png Graphic file (type png)
-<use images/NumError4_mplt.png>
-Package pdftex.def Info: images/NumError4_mplt.png  used on input line 189.
-(pdftex.def)             Requested size: 721.40944pt x 256.0748pt.
-
-Overfull \hbox (16.1394pt too wide) in paragraph at lines 189--190
- [] 
- []
-
-<rodape_rede.png, id=7, 2276.00313pt x 170.6375pt>
+<rodape_rede.png, id=6, 2276.00313pt x 170.6375pt>
 File: rodape_rede.png Graphic file (type png)
 <use rodape_rede.png>
-Package pdftex.def Info: rodape_rede.png  used on input line 210.
+Package pdftex.def Info: rodape_rede.png  used on input line 207.
 (pdftex.def)             Requested size: 2276.44907pt x 170.7282pt.
 [1
 
@@ -326,24 +316,24 @@ Non-PDF special ignored!
 <special> header=./a0header.ps
 Non-PDF special ignored!
 <special> papersize=83.96cm,118.82cm
-{C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./rodape_rede.png (PNG copy)> <./faixa.png (PNG copy)> <./images/NumError1_mplt.png> <./images/NumError2_mplt.png> <./images/NumError3_doubleplt_mplt.png> <./images/NumError4_mplt.png>] (wmma.aux)
+{C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./rodape_rede.png (PNG copy)> <./faixa.png (PNG copy)> <./images/NumError1_mplt.png> <./images/NumError2_mplt.png> <./images/NumError3_doubleplt_mplt.png>] (wmma.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4565 strings out of 467870
- 76413 string characters out of 5418355
- 514809 words of memory out of 5000000
- 33377 multiletter control sequences out of 15000+600000
+ 4558 strings out of 467870
+ 76190 string characters out of 5418355
+ 513809 words of memory out of 5000000
+ 33370 multiletter control sequences out of 15000+600000
  654104 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  72i,12n,84p,1004b,313s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on wmma.pdf (1 page, 1167886 bytes).
+<C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on wmma.pdf (1 page, 1127419 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
+ 56 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

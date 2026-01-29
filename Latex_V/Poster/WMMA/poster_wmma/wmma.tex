@@ -115,7 +115,7 @@
    % METODOLOGIA
   \SectionHeader{METODOLOGIA}
   \parbox{24cm}{
-      Para investigar os efeitos dos erros de ponto flutuante, foram realizados experimentos computacionais utilizando diferentes configurações de precisão numérica. Utilizando a linguagem de programação Python junto a bibliotecas NumPy e Scipy para melhor confiabilidade das operações e outras bibliotecas gráficas como Matplotlib, seaborn, plotly, foram implementados algoritmos que reproduzem operações aritméticas em ponto flutuante com diferentes níveis de precisão (16, 32, 64 e 128 bits).
+      Para investigar os efeitos dos erros de ponto flutuante, foram realizados experimentos computacionais utilizando diferentes configurações de precisão numérica. Através da linguagem de programação Python junto a bibliotecas NumPy e Scipy para melhor confiabilidade das operações e outras bibliotecas gráficas como Matplotlib, seaborn, plotly, foram implementados algoritmos que reproduzem instabilidades em operações aritméticas.
   }
 \end{minipage}
 \hfill
@@ -125,7 +125,7 @@
   % RESULTADOS
   \SectionHeader{Fenômenos Observados}
   % ERRO 1
-  Um erro comum neste sistema é o da perda de significância, ou cancelamento catastrófico, que ocorre quando a subtração de dois números resulta em um valor com menos dígitos significativos do que os números originais. Um exemplo desse comportamento é a função $f(x) = x^{10} + 1 - x^{10}$. Embora para $x \in \mathbb{R}$ o resultado é igual a 1, ao efetuarmos os cálculos usando ponto flutuante, observamos o comportamento ilustrado no gráfico da Figura 1, em que o valor correto é exibido apenas até um certo valor de $x$. Após esse valor observamos um intervalo em que ocorre uma oscilação caótica no resultado da função. Posteriormente, observamos que a função assume o valor zero.
+  Um erro comum neste sistema é o da perda de significância, ou cancelamento catastrófico, que ocorre quando a subtração de dois números resulta em um valor com menos dígitos significativos do que os números originais. Para ilustrar isso consideramos a função $f(x) = x^{10} + 1 - x^{10}$. Embora para $x \in \mathbb{R}$ o resultado é igual a 1, ao efetuarmos os cálculos usando ponto flutuante, observamos o comportamento ilustrado no gráfico da Figura 1, em que o valor correto é exibido apenas até um certo valor de $x$. Após esse valor observamos um intervalo em que ocorre uma oscilação caótica no resultado da função. Posteriormente, observamos que a função assume o valor zero.
   % figura 1
   \begin{center}
     \includegraphics[height=9cm]{images/NumError1_mplt}
@@ -155,20 +155,17 @@
 \begin{minipage}[t]{0.31\textwidth}
   \raggedright\large
   % ERRO 3 DERIVADA NUMÉRICA
-  Um erro comum é o da Derivada Numérica. Utilizando Diferenças finitas para aproximar a derivada de uma função, ao diminuir o valor de \(h\), espera-se que a aproximação melhore. Mas devido aos erros de arredondamento em ponto flutuante, para h muito pequeno, o erro na aproximação começa a aumentar. A Figura 3 ilustra esse comportamento, mostrando o erro absoluto na aproximação da derivada da função \textit{f}.
+  Também observamos erros em expressões racionais onde o numerador e o denominador ficam pequenos simultaneamente.
+  Utilizando Diferenças finitas para aproximar a derivada de uma função, ao diminuir o valor de \(h\), espera-se que a aproximação melhore. Mas devido aos erros de arredondamento em ponto flutuante, para h muito pequeno, o erro na aproximação começa a se comportar de forma caótica. A Figura 3 ilustra esse fenômeno para a função $f(x) = \frac{x^{3}}{3} - 3x + 3$ cuja derivada é dada por $f'(x) = x^{2} - 3$. O valor aproximado da derivada é calculado por 
   {
-  \[
-      f(x) = \frac{x^{3}}{3} - 3x + 3 \quad
-      f'(x) = x^{2} - 3
-  \]
   \[
     \textit{$D_f(x,h)$} = \frac{\textit{f}(x+h) - f(x-h)}{2h}
   \]
   }
-  O erro é calculado como
+  A derivada numérica via expressão central é então comparada com o valor exato da derivada em \(x = 1\), e o erro é definido como
   {
   \[
-    \textit{Erro}(h) = |f'(x) - D_f(x,h)|
+    \textit{Erro}(h) = |f'(1) - D_f(1,h)|
   \]
   }    
   % figura 3
@@ -180,20 +177,20 @@
       \textbf{Figura 3:} Erro na Derivada Numérica calculada pelo método de Diferenças Finitas em 32 bits.
     }
   }
-  % ERRO 4
-  \vspace{1.5cm}
+  % % ERRO 4
+  % \vspace{1.5cm}
 
-  Outro exemplo de cancelamento catastrófico é a função $f(x) = \frac{(1+x)-1}{x}$.
-  % figura 4
-  \begin{center}
-    \includegraphics[height=9cm]{images/NumError4_mplt.png}
-  \end{center}
+  % Outro exemplo de cancelamento catastrófico é a função $f(x) = \frac{(1+x)-1}{x}$.
+  % % figura 4
+  % \begin{center}
+  %   \includegraphics[height=9cm]{images/NumError4_mplt.png}
+  % \end{center}
 
-  \parbox{24cm}{
-    {
-      \textbf{Figura 4:} Erro de cancelamento catastrófico em 64 bits.
-    }
-  }
+  % \parbox{24cm}{
+  %   {
+  %     \textbf{Figura 4:} Erro de cancelamento catastrófico em 64 bits.
+  %   }
+  % }
   \vspace{1.5cm}
   % REFER\^ENCIAS
   \SectionHeader{REFER\^ENCIAS}
