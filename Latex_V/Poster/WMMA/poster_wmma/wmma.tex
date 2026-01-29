@@ -92,17 +92,16 @@
   \raggedright\large
 
   % INTRODUCAO
-  \SectionHeader{INTRODU\c C\~AO}
+  \SectionHeader{Introdução}
 
   \parbox{24cm}{
     {
-      A \textit{aritmética de ponto flutuante} é o sistema adotado por computadores para que lidem com números reais utilizando uma notação compacta e eficaz. Essa técnica é utilizada para representar e manipular números reais de forma prática e eficiente. Ela permite representar números de grandezas diversas, que não podem ser armazenados com precisão, utilizando apenas números inteiros.
-      A aritmética de ponto flutuante é amplamente utilizada em diversas áreas, como computação científica, gráficos de computador, simulações numéricas e processamento de sinais. No entanto, é importante compreender suas limitações e os possíveis erros que podem ocorrer durante as operações aritméticas, a fim de garantir resultados precisos e confiáveis em cálculos numéricos.
+      A \textit{aritmética de ponto flutuante} é o sistema adotado por computadores para que lidem com números reais utilizando uma notação compacta e eficaz. Essa técnica é utilizada para representar e manipular números reais de forma prática e eficiente. Ela permite representar números de grandezas diversas, que não podem ser armazenados com precisão, utilizando apenas números inteiros. A aritmética de ponto flutuante é amplamente utilizada em diversas áreas, como computação científica, gráficos de computador, simulações numéricas e processamento de sinais. No entanto, é importante compreender suas limitações e os possíveis erros que podem ocorrer durante as operações aritméticas, a fim de garantir resultados precisos e confiáveis em cálculos numéricos. Os resultados a seguir são derivados de estudos realizados em um projeto de iniciação científica.
     }
   }
    % ARITMETICA DE PF
    % TODO - otimizar o espaço, talvez transformando a lista em texto.
-  \SectionHeader{Sistema de Ponto Flutuante}
+  \SectionHeader{Ponto Flutuante}
   \parbox{24cm}{
     {
       Um sistema de ponto flutuante $F$ pode ser definido como
@@ -123,28 +122,17 @@
       \end{itemize}
     }
   }
-
+  
   \vspace{1.5cm}
 
-  % % OBJETIVOS
-  % \SectionHeader{OBJETIVOS}
+   % METODOLOGIA
+  \SectionHeader{METODOLOGIA}
 
-  % \parbox{24cm}{
-  %   {\LARGE\textsf{
-  %     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  %     Proin sodales urna a vehicula dapibus. Cras tristique fermentum dolor a congue.
-  %   }}
-  % }
-
-  \vspace{1cm}
-
-  {\LARGE
-    \begin{eqnarray}
-      X(\xi_N) &=& \sum_{i=1}^N \sum_{j=1}^N (x_i - x_j)^2 +
-      \int_{\theta} f(\theta)\,d\theta.
-      \nonumber
-    \end{eqnarray}
+  \parbox{24cm}{
+      Para investigar os efeitos dos erros de ponto flutuante, foram realizados experimentos computacionais utilizando diferentes configurações de precisão numérica. Utilizando a linguagem de programação Python junto a bibliotecas NumPy e Scipy para melhor confiabilidade das operações e outras bibliotecas gráficas como Matplotlib, seaborn, plotly, foram implementados algoritmos que reproduzem operações aritméticas em ponto flutuante com diferentes níveis de precisão (16, 32, 64 e 128 bits).
   }
+
+
 
 \end{minipage}
 \hfill
@@ -152,18 +140,8 @@
 \begin{minipage}[t]{0.31\textwidth}
   \raggedright\large
 
-  % METODOLOGIA
-  \SectionHeader{METODOLOGIA}
-
-  \parbox{24cm}{
-      Para investigar os efeitos dos erros de ponto flutuante, foram realizados experimentos computacionais utilizando diferentes configurações de precisão numérica. Utilizando a linguagem de programação Python junto a bibliotecas NumPy e Scipy para melhor confiabilidade das operações e outras bibliotecas gráficas como Matplotlib, seaborn, plotly, foram implementados algoritmos que simulam operações aritméticas em ponto flutuante com diferentes níveis de precisão (simulando simples, dupla e quadrupla precisão). Foram analisados os resultados obtidos em termos de erros numéricos, estabilidade e desempenho computacional.
-  }
-
-  \vspace{1.5cm}
-
   % RESULTADOS
-  \SectionHeader{RESULTADOS}
-
+  \SectionHeader{Fenômenos Observados}
   % ERRO 1
   \vspace{1cm}
   Um erro comum neste sistema é o da perda de significância, ou cancelamento catastrófico, que ocorre quando a subtração de dois números resulta em um valor com menos dígitos significativos do que os números originais. Um exemplo desse comportamento é a função $f(x) = x^{10} + 1 - x^{10}$. Embora para $x \in \mathbb{R}$ o resultado é igual a 1, ao efetuarmos os cálculos usando ponto flutuante, observamos o comportamento ilustrado no gráfico da Figura 1, em que o valor correto é exibido apenas até um certo valor de $x$. Após esse valor observamos um intervalo em que ocorre uma oscilação caótica no resultado da função. Posteriormente, observamos que a função assume o valor zero.
@@ -173,9 +151,9 @@
   \end{center}
 
   \parbox{24cm}{
-    {\textsf{
-      \textbf{Figura 1:} Perda de significância.
-    }}
+    {
+      \textbf{Figura 1:} Perda de significância em precisão de 32 bits.
+    }
   }
 
   \vspace{1.8cm}
@@ -183,30 +161,26 @@
   % ERRO 1
   Um outro erro é o não cancelamento adequado de termos em expressões matematicamente equivalentes. A Figura 2 apresenta a comparação entre os resultados obtidos ao calcular $p(x) = (x-1)^{6}$ e sua forma expandida $q(x) = x^6-6x^5+15x^4-20x^3+15x^2-6x+1$. Nesta figura, o gráfico de $p$ exibe os resultados obtidos pelo cálculo da expressão fatorada utilizando ponto flutuante obtendo a curva esperada. Entretanto, o gráfico da expressão expandida $q$, calculado no mesmo sistema de ponto flutuante, produz resultados caóticos. Note que, apesar de possivelmente surpreendente, esse fenômeno não invalida a utilidade do ponto flutuante, pois o erro observado é da ordem de $10^{-14}$.
   
-  % % figura 2
-  % \begin{center}
-  %   \includegraphics[height=9cm]{images/NumError2_mplt}
-  % \end{center}
+  % figura 2
+  \begin{center}
+    \includegraphics[height=9cm]{images/NumError2_mplt}
+  \end{center}
 
-  % \parbox{24cm}{
-  %   {\Large\textsf{
-  %     \textbf{Figura 2:} Expressões equivalentes.
-  %   }}
-  % }
+  \parbox{24cm}{
+    {
+      \textbf{Figura 2:} Expressões equivalentes.
+    }
+  }
 \end{minipage}
 \hfill
 % -------------------- COLUNA 3 ----------------------
 \begin{minipage}[t]{0.31\textwidth}
   \raggedright\large
-
-
-  
-
   % ERRO 3 DERIVADA NUMERICA
   \vspace{1.8cm}
 
   Um erro comum é o da Derivada Numérica. Utilizando Diferenças finitas para aproximar a derivada de uma função, ao diminuir o valor de \(h\), espera-se que a aproximação melhore. Mas devido aos erros de arredondamento em ponto flutuante, para h muito pequeno, o erro na aproximação começa a aumentar. A Figura 3 ilustra esse comportamento, mostrando o erro absoluto na aproximação da derivada da função \textit{f}.
-  {\LARGE
+  {
   \[
       f(x) = \frac{x^{3}}{3} - 3x + 3 \quad
       f'(x) = x^{2} - 3
@@ -216,7 +190,7 @@
   \]
   }
   O erro é calculado como
-  {\LARGE
+  {
   \[
     \textit{Erro}(h) = |f'(x) - D_f(x,h)|
   \]
@@ -229,10 +203,9 @@
   \end{center}
 
   \parbox{24cm}{
-    {\textsf{
-      \textbf{Figura 3:} Outra legenda ilustrativa descrevendo uma varia\c c\~ao
-      em duas condi\c c\~oes gen\'ericas.
-    }}
+    {
+      \textbf{Figura 3:} Erro na Derivada Numérica calculada pelo método de Diferenças Finitas em 32 bits.
+    }
   }
 
   % ERRO 4
@@ -244,25 +217,12 @@
   \end{center}
 
   \parbox{24cm}{
-    {\textsf{
-      \textbf{Figura 4:} Outra legenda ilustrativa descrevendo uma varia\c c\~ao
-      em duas condi\c c\~oes gen\'ericas.
-    }}
+    {
+      \textbf{Figura 4:} Erro de cancelamento catastrófico em 64 bits.
+    }
   }
 
   \vspace{2cm}
-
-  % CONCLUS\~AO
-  \SectionHeader{CONCLUS\~AO}
-
-  \parbox{24cm}{
-    {\textsf{
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Vestibulum aliquam augue et convallis accumsan. Sed vitae
-      tortor nec sapien volutpat venenatis. Integer congue nisi
-      sed magna aliquet, vel faucibus est malesuada.
-    }}
-  }
 
   \vspace{1.5cm}
 
@@ -272,24 +232,26 @@
   \parbox{24cm}{
     {
       [1] Chapra, S. C., Canale, R. P. Numerical Methods for Engineers. McGraw-Hill International Editions, 1985. \\[0.5cm]
-      [2] IEEE Standard for Floating-Point Arithmetic. IEEE Std 754-2008, 2008. \\[0.5cm]
-      [3] IEE Standard for Floating-Point Arithmetic. IEEE Std 754-2019, 2019. \\[0.5cm]
+      [2] IEE Standard for Floating-Point Arithmetic. IEEE Std 754-2019, 2019. \\[0.5cm]
+      [3] Faires J. D., Burden R. L. Numerical Analysis. 7th Edition. Brooks/Cole, 2001.\\[0.5cm]
+      [4] Ruggiero, M. A. G., Lopes, V. L. R. Cálculo Numérico: Aspectos Teóricos e Computacionais. 2th Edition. Pearson. 2010.\\
+
     }
   }
 
   \vspace{1.5cm}
 
-  % AGRADECIMENTOS
-  \SectionHeader{AGRADECIMENTOS}
+  % % AGRADECIMENTOS
+  % \SectionHeader{AGRADECIMENTOS}
 
-  \parbox{24cm}{
-    {
-      Agradecemos ao CEFET-MG pelo apoio institucional disponibilizada para a realiza\c c\~ao deste trabalho.
-      Agradecemos aos orientadores e colegas do grupo de pesquisa
-      em M\'etodos Num\'ericos por suas contribui\c c\~es e
-      discuss\~oes enriquecedoras.
-    }
-  }
+  % \parbox{24cm}{
+  %   {
+  %     Agradecemos ao CEFET-MG pelo apoio institucional disponibilizada para a realiza\c c\~ao deste trabalho.
+  %     Agradecemos aos orientadores e colegas do grupo de pesquisa
+  %     em M\'etodos Num\'ericos por suas contribui\c c\~es e
+  %     discuss\~oes enriquecedoras.
+  %   }
+  % }
 
 \end{minipage}
 
