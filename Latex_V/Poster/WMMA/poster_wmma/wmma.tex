@@ -86,7 +86,9 @@
   \SectionHeader{Introdução}
   \parbox{24cm}{
     {
-      A \textit{aritmética de ponto flutuante} é o sistema adotado por computadores para que lidem com números reais utilizando uma notação compacta e eficaz. Essa técnica é utilizada para representar e manipular números reais de forma prática e eficiente. Ela permite representar números de grandezas diversas, que não podem ser armazenados com precisão, utilizando apenas números inteiros. A aritmética de ponto flutuante é amplamente utilizada em diversas áreas, como computação científica, gráficos de computador, simulações numéricas e processamento de sinais. No entanto, é importante compreender suas limitações e os possíveis erros que podem ocorrer durante as operações aritméticas, a fim de garantir resultados precisos e confiáveis em cálculos numéricos. Os resultados a seguir são derivados de estudos realizados em um projeto de iniciação científica.
+      A \textit{aritmética de ponto flutuante} é o sistema adotado por computadores para que lidem com números reais utilizando uma notação compacta e eficaz. Essa técnica é utilizada para representar e manipular números reais de forma prática e eficiente. Ela permite representar números de grandezas diversas, que não podem ser armazenados com precisão, utilizando apenas números inteiros. 
+      
+      A aritmética de ponto flutuante é amplamente utilizada em diversas áreas, como computação científica, gráficos de computador, simulações numéricas e processamento de sinais. No entanto, é importante compreender suas limitações e os possíveis erros que podem ocorrer durante as operações aritméticas, a fim de garantir resultados precisos e confiáveis em cálculos numéricos. Os resultados a seguir são derivados de estudos realizados em um projeto de iniciação científica.
     }
   }
    % ARITMETICA DE PF
@@ -111,9 +113,9 @@
       \end{itemize}
     }
   }
-  \vspace{1.5cm}
+  \vspace{1cm}
    % METODOLOGIA
-  \SectionHeader{METODOLOGIA}
+  \SectionHeader{Metodologia}
   \parbox{24cm}{
       Para investigar os efeitos dos erros de ponto flutuante, foram realizados experimentos computacionais utilizando diferentes configurações de precisão numérica. Através da linguagem de programação Python junto a bibliotecas NumPy e Scipy para melhor confiabilidade das operações e outras bibliotecas gráficas como Matplotlib, seaborn, plotly, foram implementados algoritmos que reproduzem instabilidades em operações aritméticas.
   }
@@ -125,7 +127,12 @@
   % RESULTADOS
   \SectionHeader{Fenômenos Observados}
   % ERRO 1
-  Um erro comum neste sistema é o da perda de significância, ou cancelamento catastrófico, que ocorre quando a subtração de dois números resulta em um valor com menos dígitos significativos do que os números originais. Para ilustrar isso consideramos a função $f(x) = x^{10} + 1 - x^{10}$. Embora para $x \in \mathbb{R}$ o resultado é igual a 1, ao efetuarmos os cálculos usando ponto flutuante, observamos o comportamento ilustrado no gráfico da Figura 1, em que o valor correto é exibido apenas até um certo valor de $x$. Após esse valor observamos um intervalo em que ocorre uma oscilação caótica no resultado da função. Posteriormente, observamos que a função assume o valor zero.
+  
+  \parbox{24cm}{
+  Um erro comum neste sistema é o da perda de significância, ou cancelamento catastrófico, que ocorre quando a subtração de dois números resulta em um valor com menos dígitos significativos do que os números originais. Para ilustrar isso consideramos duas situações.
+  
+  Na Figura 1, a função $f(x) = x^{10} + 1 - x^{10}$, embora para $x \in \mathbb{R}$ o resultado seja igual a 1, ao efetuarmos os cálculos usando ponto flutuante, observamos um comportamento inesperado em que o valor correto é exibido apenas até um certo valor de $x$. Após esse valor observamos um intervalo em que ocorre uma oscilação caótica no resultado da função e, em seguida, observamos que a função assume o valor zero.
+  }
   % figura 1
   \begin{center}
     \includegraphics[height=9cm]{images/NumError1_mplt}
@@ -135,10 +142,38 @@
       \textbf{Figura 1:} Perda de significância em precisão de 32 bits.
     }
   }
-  
-  \vspace{1.5cm}
-  % ERRO 2
-  Um outro erro é o não cancelamento adequado de termos em expressões matematicamente equivalentes. A Figura 2 apresenta a comparação entre os resultados obtidos ao calcular $p(x) = (x-1)^{6}$ e sua forma expandida $q(x) = x^6-6x^5+15x^4-20x^3+15x^2-6x+1$. Nesta figura, o gráfico de $p$ exibe os resultados obtidos pelo cálculo da expressão fatorada utilizando ponto flutuante obtendo a curva esperada. Entretanto, o gráfico da expressão expandida $q$, calculado no mesmo sistema de ponto flutuante, produz resultados caóticos. Note que, apesar de possivelmente surpreendente, esse fenômeno não invalida a utilidade do ponto flutuante, pois o erro observado é da ordem de $10^{-14}$.
+  \vspace{1cm}
+
+  % % ERRO 2
+  \parbox{24cm}{
+    Já na Figura 2, consideramos a função $f(x) = \frac{(1+x)-1}{x}$, que matematicamente é igual a 1 para todo \(x \neq 0\). Contudo, ao calcular essa função utilizando ponto flutuante de 64 bits, para valores de $x$ muito pequenos, também observamos um comportamento caótico.
+  % ERRO 1
+  }
+  % figura 4
+  \begin{center}
+    \includegraphics[height=9cm]{images/NumError4_mplt.png}
+  \end{center}
+
+  \parbox{24cm}{
+    {
+      \textbf{Figura 2:} Erro de cancelamento catastrófico em 64 bits.
+    }
+  }
+
+  \vspace{1cm}
+   \parbox{24cm}
+    {
+      % ERRO 2
+      Entretanto, o gráfico da expressão expandida $q$, calculado no mesmo sistema de ponto flutuante, produz resultados caóticos.
+      Um outro erro é o não cancelamento adequado de termos em expressões matematicamente equivalentes. A Figura 3 apresenta a comparação entre os resultados obtidos ao calcular $p(x) = (x-1)^{6}$ e sua forma expandida $q(x) = x^6-6x^5+15x^4-20x^3+15x^2-6x+1$. Nesta figura, o gráfico de $p$ exibe os resultados obtidos pelo cálculo da expressão fatorada utilizando ponto flutuante obtendo a curva esperada. 
+      Note que, apesar de possivelmente surpreendente, esse fenômeno não invalida a utilidade do ponto flutuante, pois o erro observado é da ordem de $10^{-14}$.
+    }
+
+\end{minipage}
+\hfill
+% -------------------- COLUNA 3 ----------------------
+\begin{minipage}[t]{0.31\textwidth}
+  \raggedright\large
   \vspace{1cm}
   % figura 2
   \begin{center}
@@ -146,54 +181,41 @@
   \end{center}
   \parbox{24cm}{
     {
-      \textbf{Figura 2:} Expressões equivalentes.
+      \textbf{Figura 3:} Expressões equivalentes.
     }
   }
-\end{minipage}
-\hfill
-% -------------------- COLUNA 3 ----------------------
-\begin{minipage}[t]{0.31\textwidth}
-  \raggedright\large
+  \vspace{1cm}
+
   % ERRO 3 DERIVADA NUMÉRICA
+  
+  \parbox{24cm}{
   Também observamos erros em expressões racionais onde o numerador e o denominador ficam pequenos simultaneamente.
-  Utilizando Diferenças finitas para aproximar a derivada de uma função, ao diminuir o valor de \(h\), espera-se que a aproximação melhore. Mas devido aos erros de arredondamento em ponto flutuante, para h muito pequeno, o erro na aproximação começa a se comportar de forma caótica. A Figura 3 ilustra esse fenômeno para a função $f(x) = \frac{x^{3}}{3} - 3x + 3$ cuja derivada é dada por $f'(x) = x^{2} - 3$. O valor aproximado da derivada é calculado por 
+  Utilizando Diferenças finitas para aproximar a derivada de uma função, ao diminuir o valor de \(h\), espera-se que a aproximação melhore. Mas devido aos erros de arredondamento em ponto flutuante, para h muito pequeno, o erro na aproximação começa a se comportar de forma caótica. A Figura 4 ilustra esse fenômeno para a função $f(x) = \frac{x^{3}}{3} - 3x + 3$ cuja derivada é dada por $f'(x) = x^{2} - 3$. O valor aproximado da derivada é calculado por 
   {
   \[
     \textit{$D_f(x,h)$} = \frac{\textit{f}(x+h) - f(x-h)}{2h}
   \]
   }
-  A derivada numérica via expressão central é então comparada com o valor exato da derivada em \(x = 1\), e o erro é definido como
+  A derivada numérica via diferença central é então comparada com o valor exato da derivada em \(x = 1\), e o erro é definido como
   {
   \[
     \textit{Erro}(h) = |f'(1) - D_f(1,h)|
   \]
-  }    
-  % figura 3
+  } 
+  }   
+  % figura 4
   \begin{center}
     \includegraphics[height=9cm]{images/NumError3_doubleplt_mplt.png}
   \end{center}
   \parbox{24cm}{
     {
-      \textbf{Figura 3:} Erro na Derivada Numérica calculada pelo método de Diferenças Finitas em 32 bits.
+      \textbf{Figura 4:} Erro na Derivada Numérica calculada pelo método de Diferenças Finitas em 32 bits.
     }
   }
-  % % ERRO 4
-  % \vspace{1.5cm}
-
-  % Outro exemplo de cancelamento catastrófico é a função $f(x) = \frac{(1+x)-1}{x}$.
-  % % figura 4
-  % \begin{center}
-  %   \includegraphics[height=9cm]{images/NumError4_mplt.png}
-  % \end{center}
-
-  % \parbox{24cm}{
-  %   {
-  %     \textbf{Figura 4:} Erro de cancelamento catastrófico em 64 bits.
-  %   }
-  % }
-  \vspace{1.5cm}
+  
+  \vspace{1cm}
   % REFER\^ENCIAS
-  \SectionHeader{REFER\^ENCIAS}
+  \SectionHeader{Referências}
   \parbox{24cm}{
     {
       [1] Chapra, S. C., Canale, R. P. Numerical Methods for Engineers. McGraw-Hill International Editions, 1985. \\[0.5cm]
