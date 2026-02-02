@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.22)  30 JAN 2026 15:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.22)  1 FEB 2026 15:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -44,29 +44,6 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 \big@size=\dimen150
 )) (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\palatino.sty
 Package: palatino 2020/03/25 PSNFSS-v9.3 (SPQR) 
-) (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/graphics\epsfig.sty
-Package: epsfig 2024/01/14 v1.7b (e)psfig emulation (SPQR)
- (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
-Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
-Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks17
-) (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
-Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
-Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 106.
- (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
-))
-\Gin@req@height=\dimen151
-\Gin@req@width=\dimen152
-)
-\epsfxsize=\dimen153
-\epsfysize=\dimen154
 ) (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+ppl on input line 116.
@@ -74,8 +51,8 @@ LaTeX Font Info:    Trying to load font information for T1+ppl on input line 116
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )) (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
-\inpenc@prehook=\toks18
-\inpenc@posthook=\toks19
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
 ) (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
 Package: babel 2025/12/11 v25.17 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
 \babel@savecnt=\count287
@@ -86,7 +63,7 @@ LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line
 LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2074.
 LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2076.
 LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2101.
-\U@D=\dimen155
+\U@D=\dimen151
 \l@unhyphenated=\language79
  (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
@@ -122,7 +99,9 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package xcolor Warning: Package option `usenames' is obsolete and ignored on input line 265.
 
 Package xcolor Info: Driver file: pdftex.def on input line 274.
-(C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+(C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+) (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -143,11 +122,11 @@ For additional information on amsmath, use the `?' option.
 Package: amstext 2024/11/17 v2.01 AMS text
  (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks20
-\ex@=\dimen156
+\@emptytoks=\toks19
+\ex@=\dimen152
 )) (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen157
+\pmbraise@=\dimen153
 ) (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
@@ -168,7 +147,7 @@ LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
 LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen158
+\big@size=\dimen154
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
 \macc@depth=\count294
@@ -181,34 +160,34 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \dotsspace@=\muskip17
 \c@parentequation=\count296
 \dspbrk@lvl=\count297
-\tag@help=\toks21
+\tag@help=\toks20
 \row@=\count298
 \column@=\count299
 \maxfields@=\count300
-\andhelp@=\toks22
-\eqnshift@=\dimen159
-\alignsep@=\dimen160
-\tagshift@=\dimen161
-\tagwidth@=\dimen162
-\totwidth@=\dimen163
-\lineht@=\dimen164
-\@envbody=\toks23
+\andhelp@=\toks21
+\eqnshift@=\dimen155
+\alignsep@=\dimen156
+\tagshift@=\dimen157
+\tagwidth@=\dimen158
+\totwidth@=\dimen159
+\lineht@=\dimen160
+\@envbody=\toks22
 \multlinegap=\skip52
 \multlinetaggap=\skip53
-\mathdisplay@stack=\toks24
+\mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
 ) (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks25
-\thm@bodyfont=\toks26
-\thm@headfont=\toks27
-\thm@notefont=\toks28
-\thm@headpunct=\toks29
+\thm@style=\toks24
+\thm@bodyfont=\toks25
+\thm@headfont=\toks26
+\thm@notefont=\toks27
+\thm@headpunct=\toks28
 \thm@preskip=\skip54
 \thm@postskip=\skip55
 \thm@headsep=\skip56
-\dth@everypar=\toks30
+\dth@everypar=\toks29
 ) (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
@@ -216,10 +195,26 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+) (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks30
+) (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+)
+\Gin@req@height=\dimen161
+\Gin@req@width=\dimen162
 ) (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
 Package: eso-pic 2025/12/10 v3.0d eso-pic (RN)
-\ESO@tempdima=\dimen165
-\ESO@tempdimb=\dimen166
+\ESO@tempdima=\dimen163
+\ESO@tempdimb=\dimen164
 ) (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count301
@@ -229,30 +224,30 @@ Package babel Info: 'brazil' activates 'portuges' shorthands.
 )
 \openout1 = `wmma.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
  (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count302
-\scratchdimen=\dimen167
+\scratchdimen=\dimen165
 \scratchbox=\box55
 \nofMPsegments=\count303
 \nofMParguments=\count304
 \everyMPshowfont=\toks31
 \MPscratchCnt=\count305
-\MPscratchDim=\dimen168
+\MPscratchDim=\dimen166
 \MPnumerator=\count306
 \makeMPintoPDFobject=\count307
 \everyMPtoPDFconversion=\toks32
@@ -265,85 +260,70 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 <faixa.png, id=1, 2276.505pt x 341.77687pt>
 File: faixa.png Graphic file (type png)
 <use faixa.png>
-Package pdftex.def Info: faixa.png  used on input line 48.
+Package pdftex.def Info: faixa.png  used on input line 47.
 (pdftex.def)             Requested size: 2276.46474pt x 341.4579pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 61.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 60.
  (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 61.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 60.
  (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 115.
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 114.
  (C:\Users\maria\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-<images/NumError1_mplt.png, id=2, 1076.823pt x 379.4175pt>
-File: images/NumError1_mplt.png Graphic file (type png)
-<use images/NumError1_mplt.png>
-Package pdftex.def Info: images/NumError1_mplt.png  used on input line 138.
-(pdftex.def)             Requested size: 726.77487pt x 256.0748pt.
-
-Overfull \hbox (21.50484pt too wide) in paragraph at lines 138--139
- [] 
- []
-
-<images/NumError4_mplt.png, id=4, 1068.8733pt x 379.4175pt>
-File: images/NumError4_mplt.png Graphic file (type png)
-<use images/NumError4_mplt.png>
-Package pdftex.def Info: images/NumError4_mplt.png  used on input line 154.
-(pdftex.def)             Requested size: 721.40944pt x 256.0748pt.
-
-Overfull \hbox (16.1394pt too wide) in paragraph at lines 154--155
- [] 
- []
-
-<images/NumError2_mplt.png, id=5, 1067.4279pt x 390.258pt>
-File: images/NumError2_mplt.png Graphic file (type png)
-<use images/NumError2_mplt.png>
-Package pdftex.def Info: images/NumError2_mplt.png  used on input line 180.
-(pdftex.def)             Requested size: 700.41641pt x 256.0748pt.
-<images/NumError3_doubleplt_mplt.png, id=6, 1083.3273pt x 385.1991pt>
-File: images/NumError3_doubleplt_mplt.png Graphic file (type png)
-<use images/NumError3_doubleplt_mplt.png>
-Package pdftex.def Info: images/NumError3_doubleplt_mplt.png  used on input line 208.
-(pdftex.def)             Requested size: 720.18872pt x 256.0748pt.
-
-Overfull \hbox (14.91869pt too wide) in paragraph at lines 208--209
- [] 
- []
-
-<rodape_rede.png, id=7, 2276.00313pt x 170.6375pt>
+<images/NumError1_mplt.pdf, id=2, 664.10101pt x 296.86069pt>
+File: images/NumError1_mplt.pdf Graphic file (type pdf)
+<use images/NumError1_mplt.pdf>
+Package pdftex.def Info: images/NumError1_mplt.pdf  used on input line 137.
+(pdftex.def)             Requested size: 664.0994pt x 296.85995pt.
+<images/NumError4_mplt.pdf, id=3, 656.11806pt x 296.86069pt>
+File: images/NumError4_mplt.pdf Graphic file (type pdf)
+<use images/NumError4_mplt.pdf>
+Package pdftex.def Info: images/NumError4_mplt.pdf  used on input line 153.
+(pdftex.def)             Requested size: 656.11646pt x 296.85995pt.
+<images/NumError2_mplt.pdf, id=4, 654.51833pt x 307.49416pt>
+File: images/NumError2_mplt.pdf Graphic file (type pdf)
+<use images/NumError2_mplt.pdf>
+Package pdftex.def Info: images/NumError2_mplt.pdf  used on input line 179.
+(pdftex.def)             Requested size: 654.51674pt x 307.4934pt.
+<images/NumError3_mplt.pdf, id=5, 669.85689pt x 301.33835pt>
+File: images/NumError3_mplt.pdf Graphic file (type pdf)
+<use images/NumError3_mplt.pdf>
+Package pdftex.def Info: images/NumError3_mplt.pdf  used on input line 207.
+(pdftex.def)             Requested size: 669.85526pt x 301.33762pt.
+<rodape_rede.png, id=6, 2276.00313pt x 170.6375pt>
 File: rodape_rede.png Graphic file (type png)
 <use rodape_rede.png>
-Package pdftex.def Info: rodape_rede.png  used on input line 229.
+Package pdftex.def Info: rodape_rede.png  used on input line 228.
 (pdftex.def)             Requested size: 2276.44907pt x 170.7282pt.
-[1
+ [1
 
 
 Non-PDF special ignored!
 <special> header=./a0header.ps
 Non-PDF special ignored!
 <special> papersize=83.96cm,118.82cm
-{C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./rodape_rede.png (PNG copy)> <./faixa.png (PNG copy)> <./images/NumError1_mplt.png> <./images/NumError4_mplt.png> <./images/NumError2_mplt.png> <./images/NumError3_doubleplt_mplt.png>] (wmma.aux)
+{C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./rodape_rede.png (PNG copy)> <./faixa.png (PNG copy)> <./images/NumError1_mplt.pdf> <./images/NumError4_mplt.pdf> <./images/NumError2_mplt.pdf> <./images/NumError3_mplt.pdf>] (wmma.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4565 strings out of 467870
- 76413 string characters out of 5418355
- 517809 words of memory out of 5000000
- 33377 multiletter control sequences out of 15000+600000
+ 4518 strings out of 467870
+ 75552 string characters out of 5418355
+ 517385 words of memory out of 5000000
+ 33333 multiletter control sequences out of 15000+600000
  654104 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,12n,84p,605b,313s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,12n,84p,605b,313s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on wmma.pdf (1 page, 1176833 bytes).
+Output written on wmma.pdf (1 page, 701731 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
+ 85 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
