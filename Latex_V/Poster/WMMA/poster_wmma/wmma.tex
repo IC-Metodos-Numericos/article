@@ -138,14 +138,14 @@
   \end{center}
   \parbox{24cm}{
     {
-      \textbf{Figura 1:} Perda de significância com de 32 bits.
+      \textbf{Figura 1:} Gráfico de $f(x)$ com precisão de 32 bits.
     }
   }
   \vspace{1cm}
 
   % % ERRO 2
   \parbox{24cm}{
-    Já na Figura 2, consideramos a função $f(x) = \frac{(1+x)-1}{x}$, que matematicamente é igual a 1 para todo \(x \neq 0\). Contudo, ao calcular essa função utilizando ponto flutuante, para valores de $x$ muito pequenos, também observamos um comportamento oscilatório.
+    Já na Figura 2, consideramos a função $g(x) = \frac{(1+x)-1}{x}$, que matematicamente é igual a 1 para todo \(x \neq 0\). Contudo, ao calcular essa função utilizando ponto flutuante, para valores de $x$ muito pequenos, também observamos um comportamento oscilatório.
   % ERRO 1
   }
   % figura 4
@@ -155,7 +155,7 @@
 
   \parbox{24cm}{
     {
-      \textbf{Figura 2:} Erro de cancelamento catastrófico com precisão de 64 bits.
+      \textbf{Figura 2:} Gráfico de $g(x)$ com precisão de 64 bits.
     }
   }
 
@@ -179,7 +179,7 @@
   \end{center}
   \parbox{24cm}{
     {
-    \textbf{Figura 3:} Gráfico das funções p e q com precisão de 64 bits.
+    \textbf{Figura 3:} Gráfico das curvas $p(x)$ e $q(x)$ com precisão de 64 bits.
     }
   }
   \vspace{1cm}
@@ -188,19 +188,25 @@
   
   \parbox{24cm}{
   Também observamos erros em expressões racionais onde o numerador e o denominador ficam pequenos simultaneamente.
-  Utilizando Diferenças finitas para aproximar a derivada de uma função, ao diminuir o valor de \(h\), espera-se que a aproximação melhore. Mas devido aos erros de arredondamento em ponto flutuante, para h muito pequeno, o erro na aproximação começa a se comportar de forma caótica. A Figura 4 ilustra esse fenômeno para a função $f(x) = \frac{x^{3}}{3} - 3x + 3$ cuja derivada é dada por $f'(x) = x^{2} - 3$. O valor aproximado da derivada é calculado pelo quociente 
+  Utilizando Diferenças finitas para aproximar a derivada de uma função $z(x)$ pelo quociente
   }
   {
   \[
-    \textit{$D_f(x,h)$} = \frac{\textit{f}(x+h) - f(x-h)}{2h}
+    \textit{$D_z(x,h)$} = \frac{\textit{z}(x+h) - z(x-h)}{2h},
   \]
   }
+  \parbox{24cm}{
+  espera-se que, ao diminuir o valor de \(h\), a aproximação melhore. Mas devido aos erros de arredondamento em ponto flutuante, para h muito pequeno, o erro na aproximação começa a se comportar de forma caótica. A Figura 4 ilustra esse fenômeno para a função $z(x) = \frac{x^{3}}{3} - 3x + 3$ cuja derivada é dada por $z'(x) = x^{2} - 3$.
+  }
+  
+  \vspace{0.5cm}
+
   \parbox{24cm}{
   A derivada numérica via diferença central é então comparada com o valor exato da derivada em \(x = 1\), e o erro é definido como
   }
   {
   \[
-    \textit{Erro}(h) = |f'(1) - D_f(1,h)|
+    \textit{E}(h) = |z'(1) - D_z(1,h)|.
   \]
   }    
   % figura 4
@@ -209,7 +215,7 @@
   \end{center}
   \parbox{24cm}{
     {
-      \textbf{Figura 4:} Erro de aproximação da Derivada em 32 bits.
+      \textbf{Figura 4:} Gráfico de $\textit{E}(h)$ com precisão de 32 bits.
     }
   }
   
