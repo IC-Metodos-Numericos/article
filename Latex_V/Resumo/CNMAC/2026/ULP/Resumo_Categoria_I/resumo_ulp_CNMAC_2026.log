@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.22)  6 MAR 2026 13:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.22)  7 MAR 2026 13:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Resumo/CNMAC/2026/ULP/Resumo_Categoria_I/poster_ulp_CNMAC_2026.tex"
-(f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Resumo/CNMAC/2026/ULP/Resumo_Categoria_I/poster_ulp_CNMAC_2026.tex
+**"f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Resumo/CNMAC/2026/ULP/Resumo_Categoria_I/resumo_ulp_CNMAC_2026.tex"
+(f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Resumo/CNMAC/2026/ULP/Resumo_Categoria_I/resumo_ulp_CNMAC_2026.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
 (pssbmac.cls
@@ -478,7 +478,7 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'brazil'.
- (poster_ulp_CNMAC_2026.aux
+ (resumo_ulp_CNMAC_2026.aux
 Package babel Info: 'brazil' activates 'portuges' shorthands.
 (babel)             Reported on input line 6.
 
@@ -492,7 +492,7 @@ LaTeX Warning: Label `figura01' multiply defined.
 LaTeX Warning: Label `figura01' multiply defined.
 
 )
-\openout1 = `poster_ulp_CNMAC_2026.aux'.
+\openout1 = `resumo_ulp_CNMAC_2026.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
 LaTeX Font Info:    ... okay on input line 55.
@@ -544,12 +544,12 @@ File: brazilian.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout3 = `poster_ulp_CNMAC_2026.bcf'.
+\openout3 = `resumo_ulp_CNMAC_2026.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'poster_ulp_CNMAC_2026.bbl' not found.
+Package biblatex Info: ... file 'resumo_ulp_CNMAC_2026.bbl' not found.
 
-No file poster_ulp_CNMAC_2026.bbl.
+No file resumo_ulp_CNMAC_2026.bbl.
 Package biblatex Info: Reference section=0 on input line 55.
 Package biblatex Info: Reference segment=0 on input line 55.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 69.
@@ -564,11 +564,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--69
 
  []
 
-<ex_fig.jpg, id=1, 193.36455pt x 72.5117pt>
-File: ex_fig.jpg Graphic file (type jpg)
-<use ex_fig.jpg>
-Package pdftex.def Info: ex_fig.jpg  used on input line 115.
-(pdftex.def)             Requested size: 160.04674pt x 60.0187pt.
 
 Overfull \hbox (2.22168pt too wide) has occurred while \output is active
 $[]$ 
@@ -576,52 +571,56 @@ $[]$
 
 [1{C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
-]
+] [2]
+<ex_fig.jpg, id=25, 193.36455pt x 72.5117pt>
 File: ex_fig.jpg Graphic file (type jpg)
 <use ex_fig.jpg>
-Package pdftex.def Info: ex_fig.jpg  used on input line 124.
+Package pdftex.def Info: ex_fig.jpg  used on input line 194.
 (pdftex.def)             Requested size: 160.04674pt x 60.0187pt.
 File: ex_fig.jpg Graphic file (type jpg)
 <use ex_fig.jpg>
-Package pdftex.def Info: ex_fig.jpg  used on input line 133.
+Package pdftex.def Info: ex_fig.jpg  used on input line 203.
 (pdftex.def)             Requested size: 160.04674pt x 60.0187pt.
 File: ex_fig.jpg Graphic file (type jpg)
 <use ex_fig.jpg>
-Package pdftex.def Info: ex_fig.jpg  used on input line 142.
+Package pdftex.def Info: ex_fig.jpg  used on input line 212.
 (pdftex.def)             Requested size: 160.04674pt x 60.0187pt.
+File: ex_fig.jpg Graphic file (type jpg)
+<use ex_fig.jpg>
+Package pdftex.def Info: ex_fig.jpg  used on input line 221.
+(pdftex.def)             Requested size: 160.04674pt x 60.0187pt.
+ [3 <./ex_fig.jpg>]
+
+LaTeX Warning: Citation 'Boldrini' on page 4 undefined on input line 226.
 
 
-LaTeX Warning: Citation 'Boldrini' on page 2 undefined on input line 147.
+LaTeX Warning: Citation 'Contiero' on page 4 undefined on input line 226.
 
 
-LaTeX Warning: Citation 'Contiero' on page 2 undefined on input line 147.
+LaTeX Warning: Citation 'Cuminato' on page 4 undefined on input line 226.
 
 
-LaTeX Warning: Citation 'Cuminato' on page 2 undefined on input line 147.
+LaTeX Warning: Citation 'daSilva' on page 4 undefined on input line 226.
 
 
-LaTeX Warning: Citation 'daSilva' on page 2 undefined on input line 147.
+LaTeX Warning: Citation 'Diniz' on page 4 undefined on input line 226.
 
 
-LaTeX Warning: Citation 'Diniz' on page 2 undefined on input line 147.
+LaTeX Warning: Citation 'Mallet' on page 4 undefined on input line 226.
 
 
-LaTeX Warning: Citation 'Mallet' on page 2 undefined on input line 147.
+LaTeX Warning: Citation 'Gomes' on page 4 undefined on input line 226.
 
 
-LaTeX Warning: Citation 'Gomes' on page 2 undefined on input line 147.
+LaTeX Warning: Citation 'Santos' on page 4 undefined on input line 226.
 
 
-LaTeX Warning: Citation 'Santos' on page 2 undefined on input line 147.
+LaTeX Warning: Citation 'CNMAC' on page 4 undefined on input line 226.
 
 
-LaTeX Warning: Citation 'CNMAC' on page 2 undefined on input line 147.
+LaTeX Warning: Empty bibliography on input line 233.
 
-[2 <./ex_fig.jpg>]
-
-LaTeX Warning: Empty bibliography on input line 154.
-
-[3] (poster_ulp_CNMAC_2026.aux)
+[4] (resumo_ulp_CNMAC_2026.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
@@ -635,25 +634,25 @@ LaTeX Warning: There were multiply-defined labels.
 
 
 Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                poster_ulp_CNMAC_2026
+(biblatex)                resumo_ulp_CNMAC_2026
 (biblatex)                and rerun LaTeX afterwards.
 
-Package logreq Info: Writing requests to 'poster_ulp_CNMAC_2026.run.xml'.
-\openout1 = `poster_ulp_CNMAC_2026.run.xml'.
+Package logreq Info: Writing requests to 'resumo_ulp_CNMAC_2026.run.xml'.
+\openout1 = `resumo_ulp_CNMAC_2026.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 13122 strings out of 467870
- 240599 string characters out of 5418355
- 1098662 words of memory out of 5000000
- 41850 multiletter control sequences out of 15000+600000
- 640472 words of font info for 71 fonts, out of 8000000 for 9000
+ 13130 strings out of 467870
+ 240682 string characters out of 5418355
+ 1099712 words of memory out of 5000000
+ 41855 multiletter control sequences out of 15000+600000
+ 642612 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,8n,66p,1430b,1651s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on poster_ulp_CNMAC_2026.pdf (3 pages, 321415 bytes).
+ 63i,9n,66p,1430b,1651s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on resumo_ulp_CNMAC_2026.pdf (4 pages, 339350 bytes).
 PDF statistics:
- 320 PDF objects out of 1000 (max. 8388607)
+ 337 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

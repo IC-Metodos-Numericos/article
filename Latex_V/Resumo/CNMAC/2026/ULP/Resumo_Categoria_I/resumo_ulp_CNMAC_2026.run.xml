@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="1">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>poster_ulp_CNMAC_2026.bcf</file>
+      <file>resumo_ulp_CNMAC_2026.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>poster_ulp_CNMAC_2026.bbl</file>
+      <file>resumo_ulp_CNMAC_2026.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -66,19 +66,19 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>poster_ulp_CNMAC_2026</infile>
+      <infile>resumo_ulp_CNMAC_2026</infile>
     </cmdline>
     <input>
-      <file>poster_ulp_CNMAC_2026.bcf</file>
+      <file>resumo_ulp_CNMAC_2026.bcf</file>
     </input>
     <output>
-      <file>poster_ulp_CNMAC_2026.bbl</file>
+      <file>resumo_ulp_CNMAC_2026.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>poster_ulp_CNMAC_2026.bbl</file>
+      <file>resumo_ulp_CNMAC_2026.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>poster_ulp_CNMAC_2026.bcf</file>
+      <file>resumo_ulp_CNMAC_2026.bcf</file>
     </requires>
     <requires type="editable">
       <file>refs.bib</file>

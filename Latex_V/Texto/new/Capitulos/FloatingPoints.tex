@@ -469,6 +469,124 @@ Em $x \in [8_{10} , 10_{10}]$ ulp ($x$) = 2.
 
 Para definir para qual PF $x$ o número real $x$ será aproximado, existem várias estratégias, como o truncamento e o arredondamento. A escolha da estratégia de aproximação pode afetar o valor de ulp($x$). Por exemplo, se $x = 9{,}6_{10}$, no sistema $F(\beta = 2, t = 3, L = 3 , U = 5)$, o valor de ulp($x$) é 2. Se usarmos truncamento, $X = 8_{10}$ e o erro absoluto é $|x - X| = 1{,}6_{10}$, ou seja, $0{,}8 \times ulp(x)$. Se usarmos arredondamento, $X = 10_{10}$ e o erro absoluto é $|x - X| = 0{,}4_{10}$, ou seja, $0{,}2 \times ulp(x)$.
 
+
+INICIO TEXTO PROVISORIO
+
+
+Um sistema de ponto flutuante pode ser definido da seguinte forma:
+\begin{equation}
+\mathbb{F}(\beta, t, L, U) = \{0\} \cup \{\pm d_1.d_2d_3 \ldots d_t \times \beta^e : d_1 \neq 0, d_i \in \{0, 1, \ldots, \beta-1\}, e = L, L+1, \ldots, U\},
+\end{equation}
+onde $\beta$ é a base, $t$ é o número de dígitos significativos, $L$ é o menor expoente e $U$ é o maior expoente. 
+
+O IEEE-754 é um padrão para a representação de números em ponto flutuante em sistemas computacionais, que define formatos de precisão simples (32 bits) e dupla (64 bits). Ele especifica como os números devem ser representados, incluindo a forma como os bits são alocados para o sinal, o expoente e a mantissa. O padrão também define regras para arredondamento, tratamento de casos especiais (como infinito e NaN) e operações aritméticas.
+
+O número representado em ponto flutuante é então calculado como:
+\begin{equation}
+x = (-1)^s \times (1 + \sum_{i=1}^{t-1} (d_i \times \beta^{-i})) \times \beta^e,
+\end{equation}
+onde $s$ é o bit de sinal, $d_i$ são os dígitos significativos e $e$ é o expoente.
+
+O sistema para 64 bits é definido por $\beta = 2$, $t = 53$, $L = -1022$ e $U = 1023$. O sistema para 32 bits é definido por $\beta = 2$, $t = 24$, $L = -126$ e $U = 127$.
+
+No sistema de precisão dupla (64 bits), o número é representado por um bit de sinal, 11 bits para o expoente e 52 bits para a mantissa. No sistema de precisão simples (32 bits), o número é representado por um bit de sinal, 8 bits para o expoente e 23 bits para a mantissa.
+
+\begin{equation}
+x = (-1)^s \times (1.\textit{f}) \times 2^{e - \text{bias}},
+\end{equation}
+
+Os expoentes $e$ são armazenados em um formato de bias (ou excesso), onde o valor real do expoente é obtido subtraindo-se um valor de bias do valor armazenado. Para o sistema de 64 bits, o bias é 1023, e para o sistema de 32 bits, o bias é 127. Assim o valor real do expoente $e$ é calculado como:
+\begin{equation}
+e = E - \text{bias},
+\label{eq:expoente}
+\end{equation}
+onde $E$ é o valor armazenado para o expoente.
+
+Por exemplo, considere o número $5.5^{23}$. Para representá-lo em ponto flutuante de precisão dupla, primeiro precisamos determinar o expoente binário do número. Isso pode ser feito observando entre quais potências de 2 o valor se encontra.
+
+Calculando uma aproximação do número, temos:
+\begin{equation}
+5.5^{23} \approx 8.18545 \times 10^{16}.
+\end{equation}
+
+Agora comparamos com potências de 2 próximas:
+\begin{equation}
+2^{56} = 72057594037927936
+\end{equation}
+
+\begin{equation}
+2^{57} = 144115188075855872
+\end{equation}
+
+Como
+\begin{equation}
+2^{56} < 5.5^{23} < 2^{57},
+\end{equation}
+
+o número pode ser escrito na forma normalizada em base 2:
+\begin{equation}
+5.5^{23} = (1.f) \times 2^{56}.
+\end{equation}
+
+Assim, o expoente real é
+\begin{equation}
+e = 56.
+\end{equation}
+
+Em precisão dupla, o expoente armazenado utiliza um \textit{bias} de 1023, portanto:
+\begin{equation}
+E = e + 1023 = 56 + 1023 = 1079.
+\end{equation}
+
+Agora calculamos a mantissa normalizando o número:
+\begin{equation}
+1.f = \frac{5.5^{23}}{2^{56}}
+\end{equation}
+
+\begin{equation}
+1.f \approx \frac{8.18545 \times 10^{16}}{72057594037927936} \approx 1.135905
+\end{equation}
+
+Logo,
+\begin{equation}
+f \approx 0.135905.
+\end{equation}
+
+Portanto, a representação normalizada aproximada do número é:
+\begin{equation}
+5.5^{23} \approx (-1)^0 \times (1.135905) \times 2^{56}.
+\end{equation}
+
+O erro de ponto flutuante pode ser definido como a diferença entre o valor real e o valor representado em ponto flutuante. 
+
+\begin{equation}
+Erro = \left|\bar{x} - x\right|,
+\end{equation}
+
+A ULP é a menor diferença entre dois números representáveis em ponto flutuante, ou seja, a distância entre um número e o próximo número representável. Pela natureza discreta do sistema de ponto flutuante, a ULP é uma medida importante para avaliar a precisão dos cálculos realizados com ponto flutuante. A ULP pode ser definida como:
+\begin{equation}
+ULP(x) = \beta^{e - t + 1},
+\label{eq:ulp}
+\end{equation}
+
+Vamos analisar o número $5.5^{23}$.
+
+O número $5.5^{23}$ é um número muito grande, e quando representado em ponto flutuante, ele pode ser aproximado para um valor próximo a $1.0 \times 10^{16}$.
+
+A ULP para o número $5.5^{23}$ pode ser calculada como:
+\begin{equation}
+ULP(5.5^{23}) = \beta^{e - t + 1},
+\end{equation}
+
+
+
+onde $e$ é o expoente do número $5.5^{23}$ e $t$ é o número de dígitos significativos.
+
+
+
+FIM TEXTO PROVISORIO
+
+
 \TODO{Adidicionar gráfico ilustrando as ulps}
 
 
