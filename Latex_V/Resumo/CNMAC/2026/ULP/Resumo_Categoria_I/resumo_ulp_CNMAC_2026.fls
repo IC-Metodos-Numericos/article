@@ -183,12 +183,11 @@ INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm060
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1000.tfm
 OUTPUT resumo_ulp_CNMAC_2026.pdf
 INPUT C:\Users\maria\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT .\ex_fig.jpg
-INPUT .\ex_fig.jpg
-INPUT .\ex_fig.jpg
-INPUT .\ex_fig.jpg
-INPUT .\ex_fig.jpg
-INPUT .\ex_fig.jpg
+INPUT .\images\NumError1_mplt.pdf
+INPUT .\images\NumError1_mplt.pdf
+INPUT .\images\NumError1_mplt.pdf
+INPUT .\images\NumError1_mplt.pdf
+INPUT .\images\NumError1_mplt.pdf
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecsl1000.tfm
 INPUT resumo_ulp_CNMAC_2026.aux
 INPUT resumo_ulp_CNMAC_2026.run.xml

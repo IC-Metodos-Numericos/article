@@ -67,68 +67,42 @@
 }
 \criartitulo
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TEXTO
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Este trabalho apresenta resultados de estudos realizados em um projeto de iniciação científica cujo objetivo é explorar graficamente alguns efeitos do cálculos realizados com ponto flutuante e das Unidades de Última Posição (Units of Last Place - ULP).
 
-Um sistema de ponto flutuante é a maneira utilizada pelos computadores para representar números reais através de uma notação compacta e eficaz, padronizado pelo IEEE-754. Ele permite escrever números de grandezas diversas utilizando apenas números inteiros. No entanto, essa representação fica limitada ao adequar o número ao sistema adotado, causando erros que podem se acumular em operações sucessivas, produzindo resultados imprecisos ou incorretos.
+Um sistema de ponto flutuante é a maneira utilizada pelos computadores para representar números reais através de uma notação compacta e eficaz. Ele permite escrever números de grandezas diversas utilizando apenas números inteiros. No entanto, essa representação fica limitada ao adequar o número ao sistema adotado, causando erros que podem se acumular em operações sucessivas, produzindo resultados imprecisos ou incorretos.
 
-Um sistema de ponto flutuante pode ser definido da seguinte forma:
-\begin{equation}
-\mathbb{F}(\beta, t, L, U) = \{0\} \cup \{\pm d_1.d_2d_3 \ldots d_t \times \beta^e : d_1 \neq 0, d_i \in \{0, 1, \ldots, \beta-1\}, e = L, L+1, \ldots, U\},
-\end{equation}
-onde $\beta$ é a base, $t$ é o número de dígitos significativos, $L$ é o menor expoente e $U$ é o maior expoente. 
+O \cite{IEEE754} é um padrão para a representação de números em ponto flutuante em sistemas computacionais, que define formatos de precisão simples (32 bits) e dupla (64 bits). Ele especifica como os números devem ser representados, incluindo a forma como os bits são alocados para o sinal, o expoente e a mantissa.
 
-O IEEE-754 é um padrão para a representação de números em ponto flutuante em sistemas computacionais, que define formatos de precisão simples (32 bits) e dupla (64 bits). Ele especifica como os números devem ser representados, incluindo a forma como os bits são alocados para o sinal, o expoente e a mantissa. O padrão também define regras para arredondamento, tratamento de casos especiais (como infinito e NaN) e operações aritméticas.
-
-O número representado em ponto flutuante é então calculado como:
+O número representado em ponto flutuante em computadores é então calculado como:
 \begin{equation}
 x = (-1)^s \times (1 + \sum_{i=1}^{t-1} (d_i \times \beta^{-i})) \times \beta^e,
 \end{equation}
-onde $s$ é o bit de sinal, $d_i$ são os dígitos significativos e $e$ é o expoente.
+onde $s$ é o bit de sinal, $d_i$ são os dígitos significativos, $e$ é o expoente, $\beta$ é a base e $t$ é o número de dígitos significativos. O expoente é armazenado com um viés, ou seja, o valor real do expoente é calculado como $e = E - bias$, onde $E$ é o valor armazenado e $bias$ é um valor constante que depende do formato utilizado.
 
 O sistema para 64 bits é definido por $\beta = 2$, $t = 53$, $L = -1022$ e $U = 1023$. O sistema para 32 bits é definido por $\beta = 2$, $t = 24$, $L = -126$ e $U = 127$.
 
-A ULP é a menor diferença entre dois números representáveis em ponto flutuante, ou seja, a distância entre um número e o próximo número representável, \cite{muller2005}.
-A natureza discreta do sistema de ponto flutuante junto a limitação de casas decimais da mantissa impactam na precisão de um sistema de ponto flutuante. O conjunto de números se torna mais esparso quanto mais distante o número for de zero. A ULP se torna uma é uma medida relativa importante para avaliar a precisão dos cálculos realizados com ponto flutuante, podendo ser calculada como:
+A Unit of Last Place (ULP) é a menor diferença entre dois números representáveis em ponto flutuante, ou seja, a distância entre um número e o próximo número representável, \cite{muller2005}.
+A natureza discreta do sistema de ponto flutuante junto a limitação de casas decimais da mantissa impactam na precisão de um sistema de ponto flutuante. O conjunto de números se torna mais esparso quanto mais distante o número for de zero, aumentando o erro relativo. Dessa forma a ULP se torna uma medida relativa importante para avaliar a precisão dos cálculos realizados com ponto flutuante, podendo ser calculada como:
 \begin{equation}
 ULP(x) = \beta^{e_x - t + 1},
 \label{eq:ulp}
 \end{equation}
-O erro de ponto flutuante pode ser definido como a diferença entre o valor real e o valor representado em ponto flutuante. 
-\begin{equation}
-Erro(x) = \left|\bar{x} - x\right|,
-\end{equation}
-Também é possível expressar o erro em termos de ULP, como:
-\begin{equation}
-\frac{Erro(x)}{ULP(x)} = k,
-\end{equation}
-onde $k$ é um número que representa o número de ULPs de erro.
 
-Este trabalho apresenta uma análise visual de alguns erros de ponto flutuante em experimentos computacionais e como a ULP pode ser relacionada a esses erros.
-
-ERRO 1 \emph{Deve-se indicar/referências a fonte, mesmo quando de autoria própria.} Consulte a Figura \ref{figura01}.
+Um erro comum neste sistema é o da perda de significância, ou cancelamento catastrófico, que ocorre quando a subtração de dois números resulta em um valor com menos dígitos significativos do que os números originais.
+Um exemplo desse comportamento é a função $f(x) = x^{10} + l - x^{10}$. Embora para $x \in \mathbb{R}$ o resultado é igual a $l$, ao efetuarmos os cálculos usando ponto flutuante, observamos o comportamento ilustrado no gráfico da \ref{fig:numError1}, em que o valor correto é exibido apenas até um certo valor de $x$. Após esse valor observamos um intervalo em que ocorre uma oscilação caótica no resultado da função. Posteriormente, observamos que a função assume o valor zero.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=.375\textwidth]{ex_fig}
-\caption{ {\small Exemplo de imagem. Fonte: indicar.}}
-\label{figura01}
+\includegraphics[width=1\textwidth]{images/NumError1_mplt}
+\caption{ {\small Cancelamento Catastrófico. Fonte: Autor.}}
+\label{fig:numError1}
 \end{figure}
 
-Vamos analisar o número $5.5^{23}$.
+Essa oscilação é conjecturada a ser relacionada diretamente com a $ULP(x)$ no intervalo em que ela ocorre.
 
-O número $5.5^{23}$ é um número muito grande, e quando representado em ponto flutuante, ele pode ser aproximado para um valor próximo a $1.0 \times 10^{16}$.
-
-A ULP para o número $5.5^{23}$ pode ser calculada como:
-\begin{equation}
-ULP(5.5^{23}) = \beta^{e - t + 1},
-\end{equation}
-
-onde $e$ é o expoente do número $5.5^{23}$ e $t$ é o número de dígitos significativos.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % REFS BIBLIOGRÁFICAS
