@@ -8,13 +8,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % POR FAVOR, ESCOLHA CONFORME O CASO
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage[brazil]{babel} % texto em Português
+\usepackage[brazilian]{babel} % texto em Português
 %\usepackage[english]{babel} % texto em Inglês
 
 %\usepackage[latin1]{inputenc} % acentuação em Português ISO-8859-1
 \usepackage[utf8]{inputenc} % acentuação em Português UTF-8
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% POR FAVOR, NÃO ALTERAR
@@ -93,85 +92,32 @@ onde $s$ é o bit de sinal, $d_i$ são os dígitos significativos e $e$ é o exp
 
 O sistema para 64 bits é definido por $\beta = 2$, $t = 53$, $L = -1022$ e $U = 1023$. O sistema para 32 bits é definido por $\beta = 2$, $t = 24$, $L = -126$ e $U = 127$.
 
-No sistema de precisão dupla (64 bits), o número é representado por um bit de sinal, 11 bits para o expoente e 52 bits para a mantissa. No sistema de precisão simples (32 bits), o número é representado por um bit de sinal, 8 bits para o expoente e 23 bits para a mantissa.
-
+A ULP é a menor diferença entre dois números representáveis em ponto flutuante, ou seja, a distância entre um número e o próximo número representável, \cite{muller2005}.
+A natureza discreta do sistema de ponto flutuante junto a limitação de casas decimais da mantissa impactam na precisão de um sistema de ponto flutuante. O conjunto de números se torna mais esparso quanto mais distante o número for de zero. A ULP se torna uma é uma medida relativa importante para avaliar a precisão dos cálculos realizados com ponto flutuante, podendo ser calculada como:
 \begin{equation}
-x = (-1)^s \times (1.\textit{f}) \times 2^{e - \text{bias}},
-\end{equation}
-
-Os expoentes $e$ são armazenados em um formato de bias (ou excesso), onde o valor real do expoente é obtido subtraindo-se um valor de bias do valor armazenado. Para o sistema de 64 bits, o bias é 1023, e para o sistema de 32 bits, o bias é 127. Assim o valor real do expoente $e$ é calculado como:
-\begin{equation}
-e = E - \text{bias},
-\label{eq:expoente}
-\end{equation}
-onde $E$ é o valor armazenado para o expoente.
-
-Por exemplo, considere o número $5.5^{23}$. Para representá-lo em ponto flutuante de precisão dupla, primeiro precisamos determinar o expoente binário do número. Isso pode ser feito observando entre quais potências de 2 o valor se encontra.
-
-Calculando uma aproximação do número, temos:
-\begin{equation}
-5.5^{23} \approx 8.18545 \times 10^{16}.
-\end{equation}
-
-Agora comparamos com potências de 2 próximas:
-\begin{equation}
-2^{56} = 72057594037927936
-\end{equation}
-
-\begin{equation}
-2^{57} = 144115188075855872
-\end{equation}
-
-Como
-\begin{equation}
-2^{56} < 5.5^{23} < 2^{57},
-\end{equation}
-
-o número pode ser escrito na forma normalizada em base 2:
-\begin{equation}
-5.5^{23} = (1.f) \times 2^{56}.
-\end{equation}
-
-Assim, o expoente real é
-\begin{equation}
-e = 56.
-\end{equation}
-
-Em precisão dupla, o expoente armazenado utiliza um \textit{bias} de 1023, portanto:
-\begin{equation}
-E = e + 1023 = 56 + 1023 = 1079.
-\end{equation}
-
-Agora calculamos a mantissa normalizando o número:
-\begin{equation}
-1.f = \frac{5.5^{23}}{2^{56}}
-\end{equation}
-
-\begin{equation}
-1.f \approx \frac{8.18545 \times 10^{16}}{72057594037927936} \approx 1.135905
-\end{equation}
-
-Logo,
-\begin{equation}
-f \approx 0.135905.
-\end{equation}
-
-Portanto, a representação normalizada aproximada do número é:
-\begin{equation}
-5.5^{23} \approx (-1)^0 \times (1.135905) \times 2^{56}.
-\end{equation}
-
-O erro de ponto flutuante pode ser definido como a diferença entre o valor real e o valor representado em ponto flutuante. 
-
-\begin{equation}
-Erro = \left|\bar{x} - x\right|,
-\end{equation}
-
-A ULP é a menor diferença entre dois números representáveis em ponto flutuante, ou seja, a distância entre um número e o próximo número representável. Pela natureza discreta do sistema de ponto flutuante, a ULP é uma medida importante para avaliar a precisão dos cálculos realizados com ponto flutuante. A ULP pode ser definida como:
-\begin{equation}
-ULP(x) = \beta^{e - t + 1},
+ULP(x) = \beta^{e_x - t + 1},
 \label{eq:ulp}
 \end{equation}
+O erro de ponto flutuante pode ser definido como a diferença entre o valor real e o valor representado em ponto flutuante. 
+\begin{equation}
+Erro(x) = \left|\bar{x} - x\right|,
+\end{equation}
+Também é possível expressar o erro em termos de ULP, como:
+\begin{equation}
+\frac{Erro(x)}{ULP(x)} = k,
+\end{equation}
+onde $k$ é um número que representa o número de ULPs de erro.
+
+Este trabalho apresenta uma análise visual de alguns erros de ponto flutuante em experimentos computacionais e como a ULP pode ser relacionada a esses erros.
+
+ERRO 1 \emph{Deve-se indicar/referências a fonte, mesmo quando de autoria própria.} Consulte a Figura \ref{figura01}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.375\textwidth]{ex_fig}
+\caption{ {\small Exemplo de imagem. Fonte: indicar.}}
+\label{figura01}
+\end{figure}
 
 Vamos analisar o número $5.5^{23}$.
 
@@ -182,54 +128,13 @@ A ULP para o número $5.5^{23}$ pode ser calculada como:
 ULP(5.5^{23}) = \beta^{e - t + 1},
 \end{equation}
 
-
-
 onde $e$ é o expoente do número $5.5^{23}$ e $t$ é o número de dígitos significativos.
-
-
-ERRO 1 \emph{Deve-se indicar/referências a fonte, mesmo quando de autoria própria.} Consulte a Figura \ref{figura01}.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=.375\textwidth]{ex_fig}
-\caption{ {\small Exemplo de imagem. Fonte: indicar.}}
-\label{figura01}
-\end{figure}
-
-ERRO 1 \emph{Deve-se indicar/referências a fonte, mesmo quando de autoria própria.} Consulte a Figura \ref{figura01}.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=.375\textwidth]{ex_fig}
-\caption{ {\small Exemplo de imagem. Fonte: indicar.}}
-\label{figura01}
-\end{figure}
-
-ERRO 1 \emph{Deve-se indicar/referências a fonte, mesmo quando de autoria própria.} Consulte a Figura \ref{figura01}.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=.375\textwidth]{ex_fig}
-\caption{ {\small Exemplo de imagem. Fonte: indicar.}}
-\label{figura01}
-\end{figure}
-
-GRAFICO ULP \emph{Deve-se indicar/referências a fonte, mesmo quando de autoria própria.} Consulte a Figura \ref{figura01}.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=.375\textwidth]{ex_fig}
-\caption{ {\small Exemplo de imagem. Fonte: indicar.}}
-\label{figura01}
-\end{figure}
-
-As referências bibliográficas devem ser inseridas conforme especificado neste padrão, as quais serão automaticamente geradas em ordem alfabética pelo sobrenome do primeiro autor. Este \textit{template} fornece suporte para a inserção de referências bibliográficas com o Bib\LaTeX{}. Os dados de cada referência do trabalho devem ser adicionados no arquivo \verb+refs.bib+ e a indicação da referência no texto deve ser inserida com o comando \verb+\cite+. Seguem alguns exemplos de referências: livro \cite{Boldrini}, artigos publicados em periódicos \cite{Contiero,Cuminato}, capítulo de livro \cite{daSilva}, dissertação de mestrado \cite{Diniz}, tese de doutorado \cite{Mallet}, livro publicado dentro de uma série \cite{Gomes}, trabalho publicado em anais de eventos \cite{Santos}, {\it website} e outros \cite{CNMAC}. Por padrão, os nomes de todos os autores da obra citada aparecem na bibliografia. Para obras com mais de três autores, é também possível indicar apenas o nome do primeiro autor, seguido da expressão et al. Para implementar essa alternativa, basta remover ``\verb+,maxnames=50+'' do comando correspondente do código-fonte. Sempre que disponível forneça o DOI, ISBN ou ISSN, conforme o caso.
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % REFS BIBLIOGRÁFICAS
 % POR FAVOR, NÃO ALTERAR
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\nocite{*}
 \printbibliography
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

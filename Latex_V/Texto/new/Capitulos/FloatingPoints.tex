@@ -473,6 +473,50 @@ Para definir para qual PF $x$ o número real $x$ será aproximado, existem vári
 INICIO TEXTO PROVISORIO
 
 
+\textbf{What is an ULP?} ULP stands for \textit{Unit in the Last Place}. 
+The original (now obsolete) definition from 1960 was the following:
+
+\begin{equation}
+\mathrm{ulp}(x)
+\end{equation}
+
+is the gap between the two floating-point numbers nearest to $x$, 
+even if $x$ is one of them.
+
+The term ``ulp'' was coined to characterize the accuracy of implementations 
+of run-time mathematical library functions on the IBM 7090 and IBM 7094. 
+At the time (around 1960), these implementations were neither as accurate 
+nor as fast as they should have been. By 1964, most of their deficiencies 
+had been corrected through contributions to SHARE (the organized users of 
+IBM mainframes), especially through the work of Hirondo Kuki at the 
+University of Chicago.
+
+From time to time, well-intentioned attempts to speed up mathematical 
+libraries introduced inaccuracies so severe that Fred Gustavson at 
+IBM Yorktown Heights coined the term ``GULP'' (\textit{Giga-Ulp}) to 
+describe them. 
+
+Today, there is little justification for a mathematical library less 
+accurate than the freely distributed mathematical library \texttt{fdlibm}, 
+promulgated by Sun Microsystems and largely developed by graduates of the 
+University of California at Berkeley. These developers were also responsible 
+for the mathematical libraries distributed with the 4.3 BSD Berkeley UNIX 
+systems during the 1980s.
+
+With the adoption of the IEEE Standard 754, infinities and NaNs became 
+ubiquitous, which required a refinement of the definition of an ulp:
+
+\begin{equation}
+\mathrm{ulp}(x)
+\end{equation}
+
+is the gap between the two \textit{finite} floating-point numbers nearest 
+to $x$, even if $x$ is one of them. In particular,
+
+\begin{equation}
+\mathrm{ulp}(\mathrm{NaN}) = \mathrm{NaN}.
+\end{equation}
+
 Um sistema de ponto flutuante pode ser definido da seguinte forma:
 \begin{equation}
 \mathbb{F}(\beta, t, L, U) = \{0\} \cup \{\pm d_1.d_2d_3 \ldots d_t \times \beta^e : d_1 \neq 0, d_i \in \{0, 1, \ldots, \beta-1\}, e = L, L+1, \ldots, U\},
