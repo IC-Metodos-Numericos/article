@@ -1,6 +1,6 @@
-PWD f:\Users\Enzo HD\Github\Repos\ic-metodos-numericos\article\Latex_V\Resumo\CNMAC\2026\ULP\Resumo_Categoria_I
+PWD F:\Users\Enzo HD\Github\Repos\ic-metodos-numericos\article\Latex_V\Resumo\CNMAC\2026\ULP\Resumo_Categoria_I
 INPUT C:\Users\maria\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT f:\Users\Enzo HD\Github\Repos\ic-metodos-numericos\article\Latex_V\Resumo\CNMAC\2026\ULP\Resumo_Categoria_I\resumo_ulp_CNMAC_2026.tex
+INPUT resumo_ulp_CNMAC_2026.tex
 OUTPUT resumo_ulp_CNMAC_2026.log
 INPUT .\pssbmac.cls
 INPUT pssbmac.cls
@@ -148,6 +148,11 @@ INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\brazil
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\brazilian.lbx
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\brazilian.lbx
 OUTPUT resumo_ulp_CNMAC_2026.bcf
+INPUT resumo_ulp_CNMAC_2026.bbl
+INPUT .\resumo_ulp_CNMAC_2026.bbl
+INPUT .\resumo_ulp_CNMAC_2026.bbl
+INPUT .\resumo_ulp_CNMAC_2026.bbl
+INPUT resumo_ulp_CNMAC_2026.bbl
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1728.tfm
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1200.tfm
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
@@ -180,7 +185,6 @@ INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0600.tfm
-INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1000.tfm
 INPUT .\images\ulp.png
 INPUT .\images\ulp.png
 INPUT .\images\ulp.png
@@ -195,6 +199,7 @@ INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy9.tfm
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex9.tfm
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1000.tfm
 INPUT C:\Users\maria\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT .\images\errors1.png
 INPUT .\images\errors1.png
@@ -234,9 +239,13 @@ INPUT .\images\ulp_and_errors2.png
 INPUT .\images\ulp_and_errors2.png
 INPUT .\images\ulp_and_errors2.png
 INPUT .\images\ulp_and_errors2.png
+INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1440.tfm
+INPUT C:\Users\maria\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1440.tfm
 INPUT resumo_ulp_CNMAC_2026.aux
 INPUT resumo_ulp_CNMAC_2026.run.xml
 OUTPUT resumo_ulp_CNMAC_2026.run.xml
+INPUT C:\Users\maria\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
+INPUT C:\Users\maria\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
 INPUT C:\Users\maria\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
 INPUT C:\Users\maria\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
 INPUT C:\Users\maria\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0600.pk

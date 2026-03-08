@@ -1,14 +1,16 @@
 # Fdb version 4
-["biber resumo_ulp_CNMAC_2026"] 0 "resumo_ulp_CNMAC_2026.bcf" "resumo_ulp_CNMAC_2026.bbl" "resumo_ulp_CNMAC_2026" 1772927989.15128 0
+["biber resumo_ulp_CNMAC_2026"] 1772929506.61076 "resumo_ulp_CNMAC_2026.bcf" "resumo_ulp_CNMAC_2026.bbl" "resumo_ulp_CNMAC_2026" 1772929529.0322 0
   "refs.bib" 1772916697 491 42d983d7d7c66aceb5ac5935c923634a ""
-  "resumo_ulp_CNMAC_2026.bcf" 0 -1 0 "pdflatex"
+  "resumo_ulp_CNMAC_2026.bcf" 1772929528 108945 b0be7ab35e621caea013971e701927c8 "pdflatex"
   (generated)
   "resumo_ulp_CNMAC_2026.bbl"
   "resumo_ulp_CNMAC_2026.blg"
   (rewritten before read)
-["pdflatex"] 1772927987.18542 "f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Resumo/CNMAC/2026/ULP/Resumo_Categoria_I/resumo_ulp_CNMAC_2026.tex" "resumo_ulp_CNMAC_2026.pdf" "resumo_ulp_CNMAC_2026" 1772927989.15236 0
+["pdflatex"] 1772929526.6491 "./resumo_ulp_CNMAC_2026.tex" "resumo_ulp_CNMAC_2026.pdf" "resumo_ulp_CNMAC_2026" 1772929529.03322 0
+  "./resumo_ulp_CNMAC_2026.tex" 1772929227 7988 e7c619c10aaca8ffb7aca1f5bf40fc8d ""
   "C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1772909448 262767 f9dafed0b55ef52f2ae378bf29f3dd91 ""
   "C:/Users/maria/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk" 1772795381 25420 746191151763896be552beab8f19e9a7 ""
+  "C:/Users/maria/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk" 1772795368 40136 7d5557518bdd034319d2441e5c5cc6be ""
   "C:/Users/maria/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0600.pk" 1772795373 14880 b392c1401a4443686b8792efba946107 ""
   "C:/Users/maria/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0700.pk" 1772795377 17000 35a7904c776b881032d60e9312a638be ""
   "C:/Users/maria/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0800.pk" 1772795371 19080 44c5b9c33d1562552bb5af8b55491f2e ""
@@ -18,12 +20,14 @@
   "C:/Users/maria/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1728.pk" 1772795380 42516 10c24886646f992cc0f6c8ba4cbc30ea ""
   "C:/Users/maria/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1769105487 13333528 ac686ffacc73593e2f24978542ba9c29 ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecbx1000.tfm" 993061956 3200 328792ff19833a39406f06fa0555a6dc ""
+  "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecbx1440.tfm" 993061960 3196 0b37fa3083e15c57cfa8c4ff52f2807a ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm0600.tfm" 993062116 3160 116e21835795bb29209ae8bb4682382f ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm0700.tfm" 993062116 3168 c739b83da3134ef1007979877c1089cf ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm0800.tfm" 993062118 3152 11ecf5aad6aacf00ff18f394ab23a8b5 ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm0900.tfm" 993062120 3156 6d4f5755d77638125f6f89de4f3bb757 ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm1000.tfm" 993062122 3148 7e594c8240c71e432203f65ab5f95a51 ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm1200.tfm" 993062126 3152 4850ff0163852b7fab34bd55e1197f28 ""
+  "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm1440.tfm" 993062128 3168 3bd7b08ba4330af81521911744311212 ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm1728.tfm" 993062128 3168 11457c8185ce67fb79662ba8b03d6db1 ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecsl1000.tfm" 993062192 3372 8bafd4fa1c46df00fc8030740806e3ce ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -118,7 +122,6 @@
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/tex/latex/logreq/logreq.sty" 1280941015 6187 b27afc771af565d3a9ff1ca7d16d0d46 ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/tex/latex/tools/indentfirst.sty" 1761901070 1618 30b01152766afcef2ed8f904cfdd3cc6 ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Resumo/CNMAC/2026/ULP/Resumo_Categoria_I/resumo_ulp_CNMAC_2026.tex" 1772927984 7988 dfbbe7daee187c37de7adf3b7f92f0dc ""
   "images/NumError1_mplt.pdf" 1772915081 11535 15d318c26a2544302e94e296050ae4c6 ""
   "images/errors1.png" 1772925233 86575 355eab7408a85d07afb8e4dff6ca9e22 ""
   "images/errors_and_ulp3.png" 1772926115 95736 e732fb59265d6eec9c1f1ebd0b9deaa7 ""
@@ -126,10 +129,10 @@
   "images/ulp_and_errors.png" 1772925209 86011 c2b076394729fe48373406a36175f2f9 ""
   "images/ulp_and_errors2.png" 1772925216 73966 94b739d72069326244ab56aa6803589b ""
   "pssbmac.cls" 1770839392 2431 3cf42240875eea1d7d24eea652ebdb04 ""
-  "resumo_ulp_CNMAC_2026.aux" 1772927988 1807 8bdbe2a97742642f773450f9d4782bf6 "pdflatex"
-  "resumo_ulp_CNMAC_2026.bbl" 0 -1 0 "biber resumo_ulp_CNMAC_2026"
-  "resumo_ulp_CNMAC_2026.run.xml" 1772927988 2461 6668ce8af705522acc700fc3a4470673 "pdflatex"
-  "resumo_ulp_CNMAC_2026.tex" 1772927984 7988 dfbbe7daee187c37de7adf3b7f92f0dc ""
+  "resumo_ulp_CNMAC_2026.aux" 1772929528 2031 4fa11584f38f88b64ab2eed7e40ed125 "pdflatex"
+  "resumo_ulp_CNMAC_2026.bbl" 1772929509 3160 738d09a202e59824cc0f51530ef63582 "biber resumo_ulp_CNMAC_2026"
+  "resumo_ulp_CNMAC_2026.run.xml" 1772929528 2461 38599150d978b84184b381ed33f99868 "pdflatex"
+  "resumo_ulp_CNMAC_2026.tex" 1772929227 7988 e7c619c10aaca8ffb7aca1f5bf40fc8d ""
   (generated)
   "resumo_ulp_CNMAC_2026.aux"
   "resumo_ulp_CNMAC_2026.bcf"

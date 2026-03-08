@@ -1,4 +1,105 @@
 {
+  "latex-workshop.latex.tools": [
+    {
+      "name": "pdflatex",
+      "command": "pdflatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "biber",
+      "command": "biber",
+      "args": [
+        "%DOCFILE%"
+      ]
+    },
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "-bibtex-",
+        "%DOC%"
+      ]
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "pdflatex -> biber -> pdflatex x2",
+      "tools": [
+        "pdflatex",
+        "biber",
+        "pdflatex",
+        "pdflatex"
+      ]
+    },
+    {
+      "name": "latexmk",
+      "tools": [
+        "latexmk"
+      ]
+    }
+  ],
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.cpp": "default"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "lldb.suppressUpdateNotifications": true,
+  "git.openRepositoryInParentFolders": "always",
+  "redhat.telemetry.enabled": true,
+  "explorer.confirmDelete": false,
+  "python.defaultInterpreterPath": "C:\\Users\\maria\\AppData\\Local\\Microsoft\\WindowsApps\\python3.7.exe",
+  "workbench.colorTheme": "Bearded Theme Oceanic Reversed",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false,
+    "c": false,
+    "latex": true
+  },
+  "git.autofetch": true,
+  "haskell.manageHLS": "GHCup",
+  "explorer.confirmDragAndDrop": false,
+  "editor.pasteAs.preferences": [],
+  "markdown-preview-enhanced.mermaidTheme": "dark",
+  "markdown-preview-enhanced.revealjsTheme": "moon.css",
+  "markdown-preview-enhanced.wikiLinkTargetFileNameChangeCase": "camelCase",
+  "markdown-pdf.breaks": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "workbench.settings.applyToAllProfiles": [
+    "editor.wordWrap"
+  ],
+  "editor.wordWrap": "on",
+  "settingsSync.ignoredExtensions": [],
+  "explorer.confirmPasteNative": false,
+  "remote.SSH.remotePlatform": {
+    "KitanaDebian": "linux",
+    "sandbox.464xyj.csb": "linux"
+  },
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "csharp.format.enable": true,
+  "csharp.referencesCodeLens.enabled": true,
+  "csharp.testsCodeLens.enabled": false,
+  "files.exclude": {
+    "**/*.meta": true,
+    "**/Library": true,
+    "**/Temp": true
+  },
+  "omnisharp.useModernNet": true,
+  "omnisharp.enableRoslynAnalyzers": true,
   "todohighlight.keywords": [
     {
       "text": "TODO",
@@ -12,7 +113,7 @@
     },
     {
       "text": "NOTE",
-        "color": "#00ff26",
+      "color": "#00ff26",
       "backgroundColor": "#00842650"
     },
     {
@@ -48,30 +149,9 @@
   ],
   "latex-workshop.latex.autoBuild.run": "onFileChange",
   "latex-workshop.view.pdf.viewer": "tab",
-  "latex-workshop.latex.recipes": [
-    {
-      "name": "latexmk 🔁",
-      "tools": ["latexmk"]
-    }
-  ],
-  "latex-workshop.latex.tools": [
-    {
-      "name": "latexmk",
-      "command": "latexmk",
-      "args": [
-        "-synctex=1",
-        "-interaction=nonstopmode",
-        "-file-line-error",
-        "-pdf",
-        "-bibtex-",
-        "%DOC%"
-      ]
-    }
-  ],
   "latex-workshop.synctex.afterBuild.enabled": true,
   "latex-workshop.message.update.show": false,
-
   "terminal.integrated.env.windows": {
-  "PATH": "C:\\Strawberry\\perl\\bin;${env:PATH}"
-}
+    "PATH": "C:\\Strawberry\\perl\\bin;${env:PATH}"
+  }
 }

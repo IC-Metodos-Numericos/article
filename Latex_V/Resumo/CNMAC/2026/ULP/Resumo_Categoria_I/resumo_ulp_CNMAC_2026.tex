@@ -72,7 +72,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Este trabalho apresenta resultados de estudos realizados em um projeto de iniciação científica cujo objetivo é explorar graficamente alguns efeitos do cálculos realizados com ponto flutuante e das Unidades de Última Posição (Units of Last Place - ULP).
 
-Um Sistema de Ponto Flutuante (SPF) é a técnica utilizada para aproximar números reais pelos computadores através de representações binárias compactas. O padrão definido pelo \cite{IEEE754} formaliza essa arquitetura, alocando bits para sinal, expoente e mantissa em precisões simples (32 bits) e dupla (64 bits), como representado na equação \ref{eq:spf}. A natureza discreta e finita do conjunto dos reais, essa abordagem introduz erros de representação intrínsecos que, ao se propagarem e acumularem em operações aritméticas sucessivas, podem comprometer severamente a exatidão numérica do sistema.
+Um Sistema de Ponto Flutuante (SPF) é a técnica utilizada para aproximar números reais pelos computadores através de representações binárias compactas. O padrão definido por ~\cite{IEEE754} formaliza essa arquitetura, alocando bits para sinal, expoente e mantissa em precisões simples (32 bits) e dupla (64 bits), como representado na equação \ref{eq:spf}. A natureza discreta e finita do conjunto dos reais, essa abordagem introduz erros de representação intrínsecos que, ao se propagarem e acumularem em operações aritméticas sucessivas, podem comprometer severamente a exatidão numérica do sistema.
 
 O número representado em ponto flutuante em computadores é então calculado como:
 
@@ -83,7 +83,7 @@ x = (-1)^s \times (1 + \sum_{i=1}^{t-1} (d_i \times \beta^{-i})) \times \beta^e,
 \end{equation}
 onde $s$ é o bit de sinal, $d_i$ são os dígitos significativos, $e$ é o expoente, $\beta$ é a base e $t$ é o número de dígitos significativos. O expoente é armazenado com um viés, ou seja, o valor real do expoente é calculado como $e = E - bias$, onde $E$ é o valor armazenado e $bias$ é um valor constante que depende do formato  utilizado. O sistema para 64 bits, utilizado na maioria dos computadores atuais, é definido por $\beta = 2$, $t = 53$, $L = -1022$ e $U = 1023$.
 
-A Unit of Last Place (ULP) é a menor diferença entre dois números representáveis em ponto flutuante, ou seja, a distância entre um número e o próximo número representável, \cite{muller2005}.
+A Unit of Last Place (ULP) é a menor diferença entre dois números representáveis em ponto flutuante, ou seja, a distância entre um número e o próximo número representável ~\cite{muller2005}.
 O conjunto de números se torna mais esparso quanto mais distante o número for de zero, aumentando o erro relativo. Dessa forma a ULP se torna uma medida relativa importante para avaliar a precisão dos cálculos realizados com ponto flutuante, podendo ser calculada como:
 \begin{equation}
 ULP(x) = \beta^{e_x - t + 1},
@@ -136,13 +136,6 @@ TINHA ESSAS IMAGENS ABAIXO TAMBÉM, MAS PREFERI AS OUTRAS
 \includegraphics[width=.5\textwidth]{images/ulp_and_errors2.png}
 \caption{ {\small Ulp Lado a lado com a função $f(x)$. Fonte: Autor.}}
 \label{fig:ulp_f}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=.5\textwidth]{images/ulp_and_errors2.png}
-\caption{ {\small $Ulp(x)$ sobreposto com a função $f(x)$. Fonte: Autor.}}
-\label{fig:ulp_f_overlapped}
 \end{figure}
 
 
