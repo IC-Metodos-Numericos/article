@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.22)  7 MAR 2026 20:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.22)  7 MAR 2026 20:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -476,10 +476,6 @@ Package csquotes Info: Redefining alias 'default' -> 'brazilian'.
  (resumo_ulp_CNMAC_2026.aux
 Package babel Info: 'brazilian' activates 'portuges' shorthands.
 (babel)             Reported on input line 10.
-
-
-LaTeX Warning: Label `fig:ulp_f' multiply defined.
-
 )
 \openout1 = `resumo_ulp_CNMAC_2026.aux'.
 
@@ -545,16 +541,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--68
  []
 
 
-LaTeX Warning: Citation 'IEEE754' on page 1 undefined on input line 77.
+LaTeX Warning: Citation 'IEEE754' on page 1 undefined on input line 75.
 
 
-LaTeX Warning: Citation 'muller2005' on page 1 undefined on input line 87.
+LaTeX Warning: Citation 'muller2005' on page 1 undefined on input line 86.
 
 <images/ulp.png, id=1, 1069.596pt x 379.4175pt>
 File: images/ulp.png Graphic file (type png)
 <use images/ulp.png>
-Package pdftex.def Info: images/ulp.png  used on input line 96.
+Package pdftex.def Info: images/ulp.png  used on input line 95.
 (pdftex.def)             Requested size: 341.43436pt x 121.11502pt.
+
+Underfull \vbox (badness 1303) has occurred while \output is active []
+
 
 Overfull \hbox (2.22168pt too wide) has occurred while \output is active
 $[]$ 
@@ -563,44 +562,44 @@ $[]$
 [1{C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 ]
-<images/NumError1_mplt.pdf, id=23, 664.10101pt x 296.86069pt>
-File: images/NumError1_mplt.pdf Graphic file (type pdf)
-<use images/NumError1_mplt.pdf>
-Package pdftex.def Info: images/NumError1_mplt.pdf  used on input line 106.
-(pdftex.def)             Requested size: 341.43436pt x 152.6245pt.
-<images/errors1.png, id=24, 1063.8144pt x 379.4175pt>
+<images/errors1.png, id=23, 1063.8144pt x 379.4175pt>
 File: images/errors1.png Graphic file (type png)
 <use images/errors1.png>
-Package pdftex.def Info: images/errors1.png  used on input line 113.
-(pdftex.def)             Requested size: 341.43436pt x 121.77502pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2 <./images/ulp.png> <./images/NumError1_mplt.pdf>]
-<images/errors_and_ulp3.png, id=41, 1725.8076pt x 631.6398pt>
+Package pdftex.def Info: images/errors1.png  used on input line 107.
+(pdftex.def)             Requested size: 256.0774pt x 91.33415pt.
+<images/errors_and_ulp3.png, id=24, 1725.8076pt x 631.6398pt>
 File: images/errors_and_ulp3.png Graphic file (type png)
 <use images/errors_and_ulp3.png>
-Package pdftex.def Info: images/errors_and_ulp3.png  used on input line 120.
-(pdftex.def)             Requested size: 426.79134pt x 156.20363pt.
-<images/ulp_and_errors.png, id=42, 1528.5105pt x 646.8165pt>
+Package pdftex.def Info: images/errors_and_ulp3.png  used on input line 118.
+(pdftex.def)             Requested size: 341.43436pt x 124.95712pt.
+<images/NumError1_mplt.pdf, id=25, 664.10101pt x 296.86069pt>
+File: images/NumError1_mplt.pdf Graphic file (type pdf)
+<use images/NumError1_mplt.pdf>
+Package pdftex.def Info: images/NumError1_mplt.pdf  used on input line 128.
+(pdftex.def)             Requested size: 341.43436pt x 152.6245pt.
+
+Underfull \vbox (badness 1308) has occurred while \output is active []
+
+ [2 <./images/ulp.png> <./images/errors1.png> <./images/errors_and_ulp3.png>]
+<images/ulp_and_errors.png, id=36, 1528.5105pt x 646.8165pt>
 File: images/ulp_and_errors.png Graphic file (type png)
 <use images/ulp_and_errors.png>
-Package pdftex.def Info: images/ulp_and_errors.png  used on input line 128.
+Package pdftex.def Info: images/ulp_and_errors.png  used on input line 135.
 (pdftex.def)             Requested size: 213.39566pt x 90.29707pt.
-<images/ulp_and_errors2.png, id=43, 1528.5105pt x 646.8165pt>
-File: images/ulp_and_errors2.png Graphic file (type png)
-<use images/ulp_and_errors2.png>
-Package pdftex.def Info: images/ulp_and_errors2.png  used on input line 129.
-(pdftex.def)             Requested size: 213.39566pt x 90.29707pt.
+<images/ulp_and_errors2.png, id=37, 1528.5105pt x 646.8165pt>
 File: images/ulp_and_errors2.png Graphic file (type png)
 <use images/ulp_and_errors2.png>
 Package pdftex.def Info: images/ulp_and_errors2.png  used on input line 136.
 (pdftex.def)             Requested size: 213.39566pt x 90.29707pt.
- [3 <./images/errors1.png> <./images/errors_and_ulp3.png> <./images/ulp_and_errors.png> <./images/ulp_and_errors2.png>]
+File: images/ulp_and_errors2.png Graphic file (type png)
+<use images/ulp_and_errors2.png>
+Package pdftex.def Info: images/ulp_and_errors2.png  used on input line 143.
+(pdftex.def)             Requested size: 213.39566pt x 90.29707pt.
 
-LaTeX Warning: Empty bibliography on input line 148.
 
-[4] (resumo_ulp_CNMAC_2026.aux)
+LaTeX Warning: Empty bibliography on input line 155.
+
+[3 <./images/NumError1_mplt.pdf> <./images/ulp_and_errors.png> <./images/ulp_and_errors2.png>] (resumo_ulp_CNMAC_2026.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
@@ -608,9 +607,6 @@ L3 programming layer <2025-12-24>
 
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
 
 
 Package biblatex Warning: Please (re)run Biber on the file:
@@ -622,17 +618,17 @@ Package logreq Info: Writing requests to 'resumo_ulp_CNMAC_2026.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 13151 strings out of 467870
- 241501 string characters out of 5418355
- 1085759 words of memory out of 5000000
- 41882 multiletter control sequences out of 15000+600000
+ 13153 strings out of 467870
+ 241524 string characters out of 5418355
+ 1085766 words of memory out of 5000000
+ 41884 multiletter control sequences out of 15000+600000
  641018 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,8n,66p,820b,1653s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 63i,9n,66p,820b,1653s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on resumo_ulp_CNMAC_2026.pdf (4 pages, 551659 bytes).
+Output written on resumo_ulp_CNMAC_2026.pdf (3 pages, 550757 bytes).
 PDF statistics:
- 342 PDF objects out of 1000 (max. 8388607)
+ 339 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

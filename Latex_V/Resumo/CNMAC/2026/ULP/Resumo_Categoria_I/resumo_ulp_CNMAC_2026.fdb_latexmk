@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber resumo_ulp_CNMAC_2026"] 0 "resumo_ulp_CNMAC_2026.bcf" "resumo_ulp_CNMAC_2026.bbl" "resumo_ulp_CNMAC_2026" 1772926542.86224 0
+["biber resumo_ulp_CNMAC_2026"] 0 "resumo_ulp_CNMAC_2026.bcf" "resumo_ulp_CNMAC_2026.bbl" "resumo_ulp_CNMAC_2026" 1772927989.15128 0
   "refs.bib" 1772916697 491 42d983d7d7c66aceb5ac5935c923634a ""
   "resumo_ulp_CNMAC_2026.bcf" 0 -1 0 "pdflatex"
   (generated)
   "resumo_ulp_CNMAC_2026.bbl"
   "resumo_ulp_CNMAC_2026.blg"
   (rewritten before read)
-["pdflatex"] 1772926540.85994 "f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Resumo/CNMAC/2026/ULP/Resumo_Categoria_I/resumo_ulp_CNMAC_2026.tex" "resumo_ulp_CNMAC_2026.pdf" "resumo_ulp_CNMAC_2026" 1772926542.8634 0
+["pdflatex"] 1772927987.18542 "f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Resumo/CNMAC/2026/ULP/Resumo_Categoria_I/resumo_ulp_CNMAC_2026.tex" "resumo_ulp_CNMAC_2026.pdf" "resumo_ulp_CNMAC_2026" 1772927989.15236 0
   "C:/Users/maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1772909448 262767 f9dafed0b55ef52f2ae378bf29f3dd91 ""
   "C:/Users/maria/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk" 1772795381 25420 746191151763896be552beab8f19e9a7 ""
   "C:/Users/maria/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0600.pk" 1772795373 14880 b392c1401a4443686b8792efba946107 ""
@@ -118,7 +118,7 @@
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/tex/latex/logreq/logreq.sty" 1280941015 6187 b27afc771af565d3a9ff1ca7d16d0d46 ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/tex/latex/tools/indentfirst.sty" 1761901070 1618 30b01152766afcef2ed8f904cfdd3cc6 ""
   "C:/Users/maria/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Resumo/CNMAC/2026/ULP/Resumo_Categoria_I/resumo_ulp_CNMAC_2026.tex" 1772926538 8174 12dc1108171007108e10121964e05a45 ""
+  "f:/Users/Enzo HD/Github/Repos/ic-metodos-numericos/article/Latex_V/Resumo/CNMAC/2026/ULP/Resumo_Categoria_I/resumo_ulp_CNMAC_2026.tex" 1772927984 7988 dfbbe7daee187c37de7adf3b7f92f0dc ""
   "images/NumError1_mplt.pdf" 1772915081 11535 15d318c26a2544302e94e296050ae4c6 ""
   "images/errors1.png" 1772925233 86575 355eab7408a85d07afb8e4dff6ca9e22 ""
   "images/errors_and_ulp3.png" 1772926115 95736 e732fb59265d6eec9c1f1ebd0b9deaa7 ""
@@ -126,10 +126,10 @@
   "images/ulp_and_errors.png" 1772925209 86011 c2b076394729fe48373406a36175f2f9 ""
   "images/ulp_and_errors2.png" 1772925216 73966 94b739d72069326244ab56aa6803589b ""
   "pssbmac.cls" 1770839392 2431 3cf42240875eea1d7d24eea652ebdb04 ""
-  "resumo_ulp_CNMAC_2026.aux" 1772926542 1761 ce9a1f4fdff5f3fcc3d8a016e3411cc4 "pdflatex"
+  "resumo_ulp_CNMAC_2026.aux" 1772927988 1807 8bdbe2a97742642f773450f9d4782bf6 "pdflatex"
   "resumo_ulp_CNMAC_2026.bbl" 0 -1 0 "biber resumo_ulp_CNMAC_2026"
-  "resumo_ulp_CNMAC_2026.run.xml" 1772926542 2461 6668ce8af705522acc700fc3a4470673 "pdflatex"
-  "resumo_ulp_CNMAC_2026.tex" 1772926538 8174 12dc1108171007108e10121964e05a45 ""
+  "resumo_ulp_CNMAC_2026.run.xml" 1772927988 2461 6668ce8af705522acc700fc3a4470673 "pdflatex"
+  "resumo_ulp_CNMAC_2026.tex" 1772927984 7988 dfbbe7daee187c37de7adf3b7f92f0dc ""
   (generated)
   "resumo_ulp_CNMAC_2026.aux"
   "resumo_ulp_CNMAC_2026.bcf"
