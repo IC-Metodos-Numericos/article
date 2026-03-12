@@ -41,13 +41,13 @@
   >
 ]>
 <requests version="1.0">
-  <internal package="biblatex" priority="9" active="1">
+  <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>resumo.bcf</file>
+      <file>resumoProgCNMAC2026.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>resumo.bbl</file>
+      <file>resumoProgCNMAC2026.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -62,23 +62,23 @@
       <file>brazil.lbx</file>
     </requires>
   </internal>
-  <external package="biblatex" priority="5" active="1">
+  <external package="biblatex" priority="5" active="0">
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>resumo</infile>
+      <infile>resumoProgCNMAC2026</infile>
     </cmdline>
     <input>
-      <file>resumo.bcf</file>
+      <file>resumoProgCNMAC2026.bcf</file>
     </input>
     <output>
-      <file>resumo.bbl</file>
+      <file>resumoProgCNMAC2026.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>resumo.bbl</file>
+      <file>resumoProgCNMAC2026.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>resumo.bcf</file>
+      <file>resumoProgCNMAC2026.bcf</file>
     </requires>
     <requires type="editable">
       <file>refs.bib</file>

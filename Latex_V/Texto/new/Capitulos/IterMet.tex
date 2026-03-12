@@ -13,14 +13,14 @@ Ao longo do capítulo, reservaremos o símbolo $\xi$ para representar raízes de
 Nos métodos que trataremos nesse capítulo, para garantir a convergência da sequência iterativa, é necessário que o primeiro termo esteja suficientemente próximo da raiz e, desse modo, faz-se necessário restringir as funções a intervalos que contenham raízes. Quando as funções envolvidas são contínuas, o resultado a seguir garante a existência de raízes em um intervalo [a,b] desde que as imagens dos extremos tenham sinais opostos.
 
 \begin{prop}\label{c_tvi}%[Corolário do Teorema do Valor Intermediário]
-Seja $f(x)$ uma função contínua no intervalo $[a, b]$. Se $f(a)f(b) < 0$, então há pelo menos uma raiz $\xi \in (a,b)$. Se, além disso, existir $f'(x)$ e $f'(x)$ preservar o sinal em $(a,b)$, então a raiz é única.
+Seja $f$ uma função contínua no intervalo $[a, b]$. Se $f(a)f(b) < 0$, então há pelo menos uma raiz $\xi \in (a,b)$. Se, além disso, existir $f'$ e $f'(x)$ preservar o sinal em $(a,b)$, então a raiz é única.
 \end{prop} %para todo d entre f(a) e f(b) existe ao menos um f(c) = d %então para f(a) > 0 e f(b) < 0, existe pelo menos um f(c) = 0
 Por exemplo, considere a função $f(x) = x^3 - 9x + 3$. Utilizando a Proposição~\ref{c_tvi}, observamos que
 \begin{itemize}
     \item $f(0)f(1) = -15 < 0$, portanto há raiz no intervalo (0, 1);
     \item $f(2)f(3) = -21 < 0$, portanto há raiz no intervalo (2, 3).
 \end{itemize}
-Além disso, a derivada de $f(x)$ é $f'(x) = 3x^2 - 9$, cujas raízes são $\pm \sqrt{3}$, então nos intervalos (-$\infty$, -$\sqrt{3}$), (-$\sqrt{3}$, $\sqrt{3}$) e ($\sqrt{3}$, $\infty$) o sinal da derivada é preservado. Portanto, nos intervalos $(0, 1)$ e $(2, 3)$ há apenas uma raiz.
+Além disso, a derivada de $f$ é $f'(x) = 3x^2 - 9$, cujas raízes são $\pm \sqrt{3}$, então nos intervalos (-$\infty$, -$\sqrt{3}$), (-$\sqrt{3}$, $\sqrt{3}$) e ($\sqrt{3}$, $\infty$) o sinal da derivada é preservado. Portanto, nos intervalos $(0, 1)$ e $(2, 3)$ há apenas uma raiz.
 
 \begin{figure}[h]
     \centering
@@ -31,7 +31,7 @@ Além disso, a derivada de $f(x)$ é $f'(x) = 3x^2 - 9$, cujas raízes são $\pm
 
 \newpage
 
-Outra forma de localizar raízes de uma dada função $f(x)$ é escrevê-la como a diferença entre as funções $g(x)-h(x)$, pois se $f(\xi) = 0$ temos que $g(\xi) - h(\xi) = 0$ ou, equivalentemente, $g(\xi) = h(\xi)$. Graficamente, $\xi$ é a abscissa do ponto de interseção entre as funções g(x) e h(x).
+Outra forma de localizar raízes de uma dada função $f$ é escrevê-la como a diferença entre as funções $g$ e $h$, pois se $f(\xi) = 0$ temos que $g(\xi) - h(\xi) = 0$ ou, equivalentemente, $g(\xi) = h(\xi)$. Graficamente, $\xi$ é a abscissa do ponto de interseção entre as funções $g$ e $h$.
 
 Da mesma função, podemos obter, por exemplo, as interseções entre $x$ e $x^3 - 8x + 3$
 \begin{figure}[h]
@@ -43,7 +43,7 @@ Da mesma função, podemos obter, por exemplo, as interseções entre $x$ e $x^3
 
 \section{Critério de Parada}
 \FIXME{Completar}
-\DanielP{gráficos estilo Vera}
+\DanielP{gráficos estilo Vera} %ponto de acumulação, iterações vs. raiz desconhecida (por isso é numérico afinal). Já vale adiantar que no MPF (e por conseguinte em NR) $|varphi(x)| < 1$ {foda-se? não é f}
 O processo é repetido até que a diferença entre duas iterações consecutivas seja inferior a uma tolerância pré-estabelecida %seja vertical (entre o valor da função e o eixo x) ou horizontal (entre o valor da sequência e $\xi$).
 ou até que um número máximo de iterações seja atingido.
 
@@ -57,11 +57,12 @@ ou até que um número máximo de iterações seja atingido.
 \section{Método do Ponto Fixo}
 
 O método do ponto fixo \emph{é um método iterativo} que %parte da ideia de que as interseções de duas curvas construídas a partir de uma função f(x) revelam suas raízes para então construir uma função $\varphi(x)$ e buscar suas interseções com a reta identidade, que 
-transforma o problema de buscar as raízes de uma função $f(x)$ no problema de encontrar os pontos fixos de uma outra função $\varphi(x)$, denominada de \textbf{função de iteração de ponto fixo}. 
-A partir dessa função de iteração, uma sequência é construída recursivamente começando em um valor inicial $x_0$ que convergirá para a raiz $\xi$ de $f(x)$, desde que sejam observadas certas condições sob a função $\varphi(x)$ e o dado inicial $x_0$.
+transforma o problema de buscar as raízes de uma função $f$ no problema de encontrar os pontos fixos de uma outra função $\varphi$, denominada de \textbf{função de iteração de ponto fixo}. 
+A partir dessa função de iteração, uma sequência é construída recursivamente começando em um valor inicial $x_0$ que convergirá para a raiz $\xi$ de $f$, desde que sejam observadas certas condições sob a função $\varphi$ e o dado inicial $x_0$.
 
 %Após localizar um intervalo que contenha uma raiz pelos métodos expostos,
-O primeiro passo é gerar funções de iteração $\varphi$ para $f(x)$, o que pode ser feito isolando $x$ na equação $f(x) = 0$. Por exemplo, manipulando a função $x^3 -9x + 3$  da seguinte forma 
+O primeiro passo é gerar funções de iteração $\varphi$ para $f$, o que pode ser feito isolando $x$ na equação $f(x) = 0$. Por exemplo, manipulando a função $x^3 -9x + 3$  da seguinte forma
+%nesse caso g(x) = x^3 - 8x + 3 e h(x) = x, sendo g(x) - h(x) = 0, temos pelo 2º método de localização de raízes que g(x) = h(x) então a abscissa do ponto de interseção entre g e h é a raiz da função original. Chamaremos eventualmente g(x) de varphi(x), e por essa manipulação g(x) = x, cumprindo a proposição 2.3.1.
 \begin{equation*}
     x^3 - 8x + 3 = x 
 \end{equation*} 
@@ -97,7 +98,7 @@ em que $A(x) = \frac{1}{9}$. Nesse caso, pode-se observar que A($\xi) \neq 0$.
 O resultado a seguir relaciona a raiz de uma função com pontos fixos de uma função de iteração associada a essa função. 
 
 \begin{prop}
-Seja $\xi$ uma raiz de uma função $f(x)$ e seja $\varphi(x)$ uma função de iteração associada a $f(x)$. Então, $f(\xi) = 0$ se, e somente se, $\varphi(\xi) = \xi$.
+Seja $\xi$ uma raiz de uma função $f$ e seja $\varphi$ uma função de iteração associada a $f$. Então, $f(\xi) = 0$ se, e somente se, $\varphi(\xi) = \xi$.
 \end{prop}
 
 %Provando primeiramente que a raiz da função é ponto fixo da função de iteração, $f(\xi) = 0 \Rightarrow \varphi(\xi) = \xi$. Começa-se calculando a função de iteração para a raiz $\xi$, isto é, $\varphi(\xi)$, obtendo então, pela forma geral, a raiz somada ao produto da função A pela função original $ \xi + A(\xi)f(\xi)$. Dado que $\xi$ é raiz de f(x), o valor da função calculado em $\xi$ é 0, portanto se tem $\xi + A(\xi) \cdot 0$; o que anula o produto com a função A, $\xi + 0$. Com isso, concluí-se que a função de iteração calculada na raíz é de fato igual a $\xi$.
@@ -117,9 +118,9 @@ Seja $\xi$ uma raiz de uma função $f(x)$ e seja $\varphi(x)$ uma função de i
 Sob condições a respeito da função de iteração, sua derivada e o dado inicial, a convergência da sequência iterativa é garantida, como pode-se observar a seguir.
 %Enfim é importante verificar se a função de iteração de ponto fixo respeita as condições para convergência.
 \begin{teo} \textbf{Convergência da Sequência Iterativa} \label{teoMPF}\\
-    Seja $\xi$ uma raiz de f(x), isolada num intervalo I centrado nessa raiz. Considere uma função de iteração $\varphi(x)$ associada a f(x). Sob as seguintes hipóteses:
+    Seja $\xi$ uma raiz de f, isolada num intervalo I centrado nessa raiz. Considere uma função de iteração $\varphi$ associada a $f$. Sob as seguintes hipóteses:
     \begin{itemize}
-        \item[i)] $\varphi(x)$ e $\varphi'(x)$ são contínuas em I,
+        \item[i)] $\varphi$ e $\varphi'$ são contínuas em I,
         \item [ii)] $|\varphi'(x)| \leq M < 1$ em I,
         \item [iii)] $x_0 \in I$,
     \end{itemize}
@@ -135,14 +136,14 @@ Como $x_{k+1} = \varphi(x_k)$, subtraindo $\xi$ de ambos os lados da igualdade e
     \begin{equation}\label{tvm}
         \varphi(x_k) - \varphi(\xi) = \varphi'(c_k) (x_k - \xi)
     \end{equation}
-    com $c_k$ entre $x_k$ e $\xi$. Então, substituindo (\ref{tvm}) em (\ref{difIt}), temos
+    com $c_k$ entre $x_k$ e $\xi$. Então, substituindo (\ref{tvm}) em (\ref{difIt}) temos %, aplicando o módulo em ambos os lados da igualdade,
     \begin{align}\label{des}
         %x_{k+1} - \xi &= (x_k - \xi) \ \varphi'(c_k) \\
         |x_{k+1} - \xi| &= |(x_k - \xi) \ \varphi'(c_k)| \nonumber \\
         &= |x_k - \xi| \ |\varphi'(c_k)| \\
         &< |x_k - \xi| \nonumber
-    \end{align}
-    uma vez que $|\varphi'(x)| < 1$. Como $x_0 \in I$, podemos concluir que $x_k \in I$ para todo $k$ já que, por (\ref{des}), $|x_k - \xi| < |x_0 - \xi|$. 
+    \end{align} %pela hipótese ii
+    uma vez que $|\varphi'(x)| < 1$. Como $x_0 \in I$, podemos concluir que $x_k \in I$ para todo $k$ já que, por (\ref{des}), $|x_k - \xi| < |x_0 - \xi|$. %parte mais importante da prova quiçá (que na real é o que vamos passar o resto da prova formalizando).
 
     Na sequência, provaremos que $x_k$ converge para a raiz $\xi$. Vamos começar mostrando que 
     \begin{equation}\label{lab2}
@@ -299,7 +300,7 @@ Como por hipótese $|\varphi'(x)| < 1$ então $|C| < 1$, portanto, a convergênc
 \EnzoR{escolhendo a func de iter}
 
 O método de Newton é um caso particular do \textbf{Método do Ponto Fixo} amplamente utilizado para encontrar raízes %\EnzoR{seria raízes complexas, não?} 
-reais de funções não lineares, cuja ordem de convergência é pelo menos quadrática. A função de iteração específica para este método produz uma sequência em que cada termo $x_{k+1}$ corresponde, geometricamente, à \textbf{interseção da reta tangente} a $f(x)$ no ponto $(x_k, f(x_k))$ com o eixo x. 
+reais de funções não lineares, cuja ordem de convergência é pelo menos quadrática. A função de iteração específica para este método produz uma sequência em que cada termo $x_{k+1}$ corresponde, geometricamente, à \textbf{interseção da reta tangente} a $f$ no ponto $(x_k, f(x_k))$ com o eixo x. 
 
 \subsection{Sequência Iterativa} 
 \DanielP{Talvez mudar o nome}
@@ -310,12 +311,12 @@ Aplicando a derivada na forma geral de $\varphi$ pela regra da cadeia obtemos $\
     \varphi(x) = x - \frac{f(x)}{f'(x)}.
 \end{equation}
 
-Dada uma função \(f(x)\), o processo parte de uma estimativa inicial \(x_0\) e aplica a seguinte fórmula iterativa, a partir da escolha da derivada em (\ref{it})
+Dada uma função \(f\), o processo parte de uma estimativa inicial \(x_0\) e aplica a seguinte fórmula iterativa, a partir da escolha da derivada em (\ref{it})
 \begin{equation} \label{nr}
     x_{k+1} = x_k - \frac{f(x_k)}{f'(x_k)},
 \end{equation}
 onde \(f'(x_k)\) é a derivada da função \(f\) avaliada em \(x_k\).
-Para que o método convirja para a raiz correta, é necessário que \(f(x)\) seja continuamente diferenciável em uma vizinhança da raiz e que \(f'(x) \neq 0\) nessa região. Além disso, a escolha adequada do ponto inicial \(x_0\) é crucial para garantir a convergência do método.
+Para que o método convirja para a raiz correta, é necessário que \(f\) seja continuamente diferenciável em uma vizinhança da raiz e que \(f'(x) \neq 0\) nessa região. Além disso, a escolha adequada do ponto inicial \(x_0\) é crucial para garantir a convergência do método.
 
 \subsection{Interpretação Geométrica}
 \DanielP{ficou paia o alinhamento em}
@@ -332,7 +333,7 @@ O método de Newton-Raphson apresenta convergência local quadrática sob certas
 \]
 para algum $C > 0$ e $k$ suficientemente grande. Assim, a cada iteração, o número de dígitos corretos aproximadamente dobra, caracterizando convergência quadrática.
 \begin{teo} \label{teoNR}
-    Sejam $f(x)$, $f'(x)$ e $f''(x)$ contínuas num intervalo $I$ que contém a raiz $\xi$ de $f$, supondo $f'(\xi) \neq 0$. Então, existe um intervalo $\overline{I} \subset I$, contendo a raiz $\xi$, tal que $x_0 \in \overline{I}$, a sequência ${x_k}$ gerada pela função de iteração $\varphi(x) = x - \frac{f(x_k)}{f'(x_k)}$ convergirá para a raiz.
+    Sejam $f$, $f'$ e $f''$ contínuas num intervalo $I$ que contém a raiz $\xi$ de $f$, supondo $f'(\xi) \neq 0$. Então, existe um intervalo $\overline{I} \subset I$, contendo a raiz $\xi$, tal que $x_0 \in \overline{I}$, a sequência ${x_k}$ gerada pela função de iteração $\varphi(x) = x - \frac{f(x_k)}{f'(x_k)}$ convergirá para a raiz.
 \end{teo}
 \begin{proof}
     Sendo o método de Newton-Raphson um caso particular do MPF, basta provar que para $\varphi(x) = x - \frac{f(x)}{f'(x)}$ as hipóteses do Teorema \ref{teoMPF} são satisfeitas. 
@@ -341,9 +342,9 @@ para algum $C > 0$ e $k$ suficientemente grande. Assim, a cada iteração, o nú
     \begin{equation} \label{dphiNR}
         \varphi'(x) = \frac{f(x)f''(x)}{[f'(x)]^2}.
     \end{equation}
-    Como $f'(\xi) \neq 0$ e $f'(x)$ é contínua em I, é possível obter $I_1 \subset I$ tal que $f'(x) \neq 0$ no intervalo $I_1$. Assim, a função $f$ e suas derivadas primeira e segunda são contínuas em $I_1$ e, consequentemente, a função de iteração e sua derivada também.
+    Como $f'(\xi) \neq 0$ e $f'$ é contínua em I, é possível obter $I_1 \subset I$ tal que $f'(x) \neq 0$ no intervalo $I_1$. Assim, a função $f$ e suas derivadas primeira e segunda são contínuas em $I_1$ e, consequentemente, a função de iteração e sua derivada também.
     
-     Uma vez que a $\varphi'(x)$ é contínua em $I_1$ e $\varphi'(\xi) = 0$, é possível escolher $I_2 \subset I_1$ de modo que $|\varphi'(x)| < 1$ em $I_2$ tendo $\xi$ como centro do novo intervalo.
+     Uma vez que a $\varphi'$ é contínua em $I_1$ e $\varphi'(\xi) = 0$, é possível escolher $I_2 \subset I_1$ de modo que $|\varphi'(x)| < 1$ em $I_2$ tendo $\xi$ como centro do novo intervalo.
 
     Por fim, tomando, $\overline{I} = I_2$, satisfazem-se as hipóteses do Teorema \ref{teoMPF}.
 \end{proof}
@@ -358,7 +359,7 @@ No MPF espera-se uma ordem de convergência ao menos linear, entretanto ao escol
 \begin{equation} \label{eMNR}
     e_{k+1} = e_k - \frac{f(x_k)}{f'(x_k)} 
 \end{equation}
-O polinômio de Taylor de grau 2 para $f(x)$ centrado em $x_k$ é
+O polinômio de Taylor de grau 2 para $f$ centrado em $x_k$ é
 \begin{equation*}
     f(x) = f(x_k) + f'(x_k)(x - x_k) + \frac{f''(c_k)}{2}(x-x_k)^2
 \end{equation*}
