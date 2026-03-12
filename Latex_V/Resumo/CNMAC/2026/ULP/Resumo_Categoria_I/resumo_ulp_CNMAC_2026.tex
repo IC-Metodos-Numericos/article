@@ -71,34 +71,34 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{-.5cm}
 Este trabalho apresenta resultados de estudos realizados em um projeto de
-iniciação científica cujo objetivo é explorar graficamente alguns efeitos do
+iniciação científica e tem como objetivo explorar graficamente alguns efeitos do
 cálculos realizados com ponto flutuante e das Unidades de Última Posição (Units
 of Last Place - ULP).
 
-Um Sistema de Ponto Flutuante (SPF) é a técnica utilizada para aproximar
+Um Sistema de Ponto Flutuante (SPF) é a maneira utilizada para aproximar
 números reais pelos computadores através de representações binárias compactas.
-O padrão definido por ~\cite{IEEE754} formaliza essa arquitetura, alocando bits
-para sinal, expoente e mantissa em precisões simples (32 bits) e dupla (64
-bits), como representado na equação \ref{eq:spf}. A natureza discreta e finita
-do conjunto dos reais, essa abordagem introduz erros de representação
-intrínsecos que, ao se propagarem e acumularem em operações aritméticas
-sucessivas, podem comprometer severamente a exatidão numérica do sistema.
+Devido a sua natureza discreta e finita dessa representação, erros de
+representação são intrínsecos, que propagam-se em operações aritméticas
+sucessivas, se acumulando e podendo comprometer severamente a exatidão numérica
+do sistema.
 
-O número representado em ponto flutuante em computadores é então calculado
-como:
-
-\vspace{-.3cm}
+Um número representado em ponto flutuante em computadores é então calculado
+como: \vspace{-.3cm}
 \begin{equation}
     x = (-1)^s \times (1 + \sum_{i=1}^{t-1} (d_i \times \beta^{-i})) \times \beta^e,
     \label{eq:spf}
 \end{equation}
-onde $s$ é o bit de sinal, $d_i$ são os dígitos significativos, $e$ é o expoente, $\beta$ é a base e $t$ é o número de dígitos significativos. O expoente é armazenado com um viés, ou seja, o valor real do expoente é calculado como $e = E - bias$, onde $E$ é o valor armazenado e $bias$ é um valor constante que depende do formato  utilizado. O sistema para 64 bits, utilizado na maioria dos computadores atuais, é definido por $\beta = 2$, $t = 53$, $L = -1022$ e $U = 1023$.
+onde $s$ é o bit de sinal, $d_i$ são os dígitos significativos, $e$ é o expoente, $\beta$ é a base e $t$ é o número de dígitos significativos. O expoente é armazenado com um viés, ou seja, o valor real do expoente é calculado como $e = E - bias$, onde $E$ é o valor armazenado e $bias$ é um valor constante que depende do formato de precisão utilizado. O sistema para 64 bits, utilizado na maioria dos computadores atuais, é definido por $\beta = 2$, $t = 53$, $L = -1022$ e $U = 1023$.
+
+O padrão definido por ~\cite{IEEE754} formaliza essa arquitetura, alocando bits
+para sinal, expoente e mantissa em precisões simples (32 bits) e dupla (64
+bits), como representado na equação \ref{eq:spf}.
 
 A Unit of Last Place (ULP) é a menor diferença entre dois números
 representáveis em ponto flutuante, ou seja, a distância entre um número e o
 próximo número representável ~\cite{muller2005}. O conjunto de números se torna
 mais esparso quanto mais distante o número for de zero, aumentando o erro
-relativo. Dessa forma a ULP se torna uma medida relativa importante para
+relativo. Dessa forma, a ULP se torna uma medida relativa importante para
 avaliar a precisão dos cálculos realizados com ponto flutuante, podendo ser
 calculada como:
 \begin{equation}
@@ -113,10 +113,9 @@ calculada como:
     \label{fig:ulp}
 \end{figure}
 \vspace{-.3cm}
-Um erro comum em SPF's é o da perda de significância, ou cancelamento catastrófico, que ocorre quando é realizada uma operação com dois números de grandeza muito diferente ou muito próximos, resultando em um valor com menos dígitos significativos do que os números originais, devido ao alinhamento de mantissa.
-Um exemplo desse comportamento é observado na função $f(x) = x^{10} + l - x^{10}$. Embora para $x \in \mathbb{R}$ o resultado é igual a $l$, ao efetuarmos os cálculos usando ponto flutuante,o gráfico da figura \ref{fig:erros1} ilustra que o valor correto é exibido apenas até um certo valor de $x$.
+Um erro comum em SPF's é o da perda de significância, ou cancelamento catastrófico, que ocorre quando é realizada uma operação com dois números muito próximos ou de grandezas muito diferentes, resultando em um valor com menos dígitos significativos do que os números originais, devido ao alinhamento de mantissa.
+Um exemplo desse comportamento é observado na função $f(x) = x^{23} + l - x^{23}$. Embora para $x \in \mathbb{R}$ o resultado é igual a $l$, ao efetuarmos os cálculos usando ponto flutuante,o gráfico da figura \ref{fig:erros1} ilustra que o valor correto é exibido apenas até um certo valor de $x$.
 % Após esse valor observamos um intervalo em que ocorre uma oscilação caótica no resultado da função. Posteriormente, observamos que a função assume o valor zero.
-\vspace{-.5cm}
 
 \begin{figure}[H]
     \centering
