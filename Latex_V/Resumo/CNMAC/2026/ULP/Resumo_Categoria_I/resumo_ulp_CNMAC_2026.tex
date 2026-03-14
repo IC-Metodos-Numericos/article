@@ -50,95 +50,129 @@
 \DefineBibliographyStrings{english}{mathesis = {Master dissertation}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\setcounter{topnumber}   {4}
+\setcounter{bottomnumber}{4}
+\setcounter{totalnumber}{10}
+\DeclareMathOperator{\ulp}{ULP}
+
+\renewcommand{\textfraction}     {0.15}
+\renewcommand{\topfraction}      {0.85}
+\renewcommand{\bottomfraction}   {0.70}
+\renewcommand{\floatpagefraction}{0.66}
+
+\setcounter   {dbltopnumber}           {2}
+\renewcommand*{\dbltopfraction}        {1}
+\renewcommand*{\dblfloatpagefraction}{0.9}
+
+\usepackage{icomma}
+
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TÍTULO E AUTORAS(ES)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title{Análise visual de alguns erros de ponto flutuante e de Units of Last Place em experimentos computacionais}
+\title{Análise Visual de Alguns Erros de Ponto Flutuante e de \textit{Units of Last Place} em Experimentos Computacionais}
 
 \author{
-{\large Ribas, E. R. L. D.}\thanks{enzorochaeleitedinizribas@gmail.com}\\
-{\large D'Afonseca, L. A.}\thanks{autor3@email}  \\
-{\large Rocha, L. M.}\thanks{autor3@email}  \\
-{\small DM/CEFET-MG, Belo Horizonte, MG} \\
+{\large Ribas, E. R. L. D.}\thanks{enzorochaeleitedinizribas@gmail.com}\, ,
+{\large D'Afonseca, L. A.}\thanks{luis.dafonseca@gmail.com}\, ,
+{\large Rocha, L. M.}\thanks{lucasmartinsrocha@gmail.com}  \\
+{\small CEFET-MG, Belo Horizonte, MG} \\
 }
 \criartitulo
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % TEXTO
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace{-.5cm}
+
 Este trabalho apresenta resultados de estudos realizados em um projeto de
-iniciação científica e tem como objetivo explorar graficamente alguns efeitos do
-cálculos realizados com ponto flutuante e das Unidades de Última Posição (Units
-of Last Place - ULP).
+iniciação científica e tem como objetivo explorar graficamente alguns efeitos
+do cálculos realizados com ponto flutuante e das Unidades de Última Posição
+(\textit{Units of Last Place}).
 
 Um Sistema de Ponto Flutuante (SPF) é a maneira utilizada para aproximar
 números reais pelos computadores através de representações binárias compactas.
-Devido a sua natureza discreta e finita dessa representação, erros de
-representação são intrínsecos, que propagam-se em operações aritméticas
-sucessivas, se acumulando e podendo comprometer severamente a exatidão numérica
-do sistema.
-
-Um número representado em ponto flutuante em computadores é então calculado
-como: \vspace{-.3cm}
+Devido à natureza discreta e finita dos SPF's, erros de representação são
+intrínsecos e propagam-se em operações aritméticas sucessivas, se acumulando e
+podendo comprometer severamente a exatidão numérica do sistema. Um número
+representado em ponto flutuante em computadores é então calculado como
 \begin{equation}
-    x = (-1)^s \times (1 + \sum_{i=1}^{t-1} (d_i \times \beta^{-i})) \times \beta^e,
+    x =
+    \left(-1\right)^s
+    \times
+    \left(1 + \sum_{i=1}^{t-1}
+    \left(d_i \times \beta^{-i}\right)
+    \right)
+    \times
+    \beta^p,
     \label{eq:spf}
 \end{equation}
-onde $s$ é o bit de sinal, $d_i$ são os dígitos significativos, $e$ é o expoente, $\beta$ é a base e $t$ é o número de dígitos significativos. O expoente é armazenado com um viés, ou seja, o valor real do expoente é calculado como $e = E - bias$, onde $E$ é o valor armazenado e $bias$ é um valor constante que depende do formato de precisão utilizado. O sistema para 64 bits, utilizado na maioria dos computadores atuais, é definido por $\beta = 2$, $t = 53$, $L = -1022$ e $U = 1023$.
+onde $s$ é o \textit{bit} de sinal, $d_i$ são os dígitos significativos, $p$ é o expoente, $\beta$ é a base e $t$ é o número de dígitos significativos. O expoente é armazenado com um viés (\textit{bias}), ou seja, o valor real do expoente é calculado como $P = p + \textit{bias} $, onde $P$ é o valor armazenado e \textit{bias} é um valor constante que depende do formato de precisão utilizado. O sistema para 64 \textit{bits}, utilizado na maioria dos computadores atuais, é definido por $\beta = 2$, $t = 53$, $L = -1022$, $U = 1023$ e $\textit{bias} = 127$.
 
-O padrão definido por ~\cite{IEEE754} formaliza essa arquitetura, alocando bits
-para sinal, expoente e mantissa em precisões simples (32 bits) e dupla (64
-bits), como representado na equação \ref{eq:spf}.
+O padrão definido pela IEEE-754~\cite{IEEE754} formaliza essa arquitetura,
+alocando \textit{bits} para sinal, expoente e mantissa em precisões simples (32
+\textit{bits}) e dupla (64 \textit{bits}), como representado na
+equação~\eqref{eq:spf}.
 
-A Unit of Last Place (ULP) é a menor diferença entre dois números
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.8\linewidth]{images/ulp2}
+    \vspace{-.5cm}
+    \caption{ {\small Gráfico da Função $\ulp(x^{23})$ num SPF IEEE de 64 \text{bits}. Fonte: Autor.}}~\label{fig:ulp}
+    \vspace{-.5cm}
+\end{figure}
+
+A \textit{Unit of Last Place (ULP)} é a menor diferença entre dois números
 representáveis em ponto flutuante, ou seja, a distância entre um número e o
-próximo número representável ~\cite{muller2005}. O conjunto de números se torna
-mais esparso quanto mais distante o número for de zero, aumentando o erro
-relativo. Dessa forma, a ULP se torna uma medida relativa importante para
+próximo número representável~\cite{muller2005,kahan2004}. O conjunto de números
+se torna mais esparso quanto mais distante o número for de zero, aumentando o
+erro relativo. Dessa forma, a ULP se torna uma medida relativa importante para
 avaliar a precisão dos cálculos realizados com ponto flutuante, podendo ser
-calculada como:
+calculada como
 \begin{equation}
-    ULP(x) = \beta^{e_x - t + 1},
+    \ulp(x) = \beta^{p - t + 1},
     \label{eq:ulp}
 \end{equation}
-\vspace{-.9cm}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=.5\textwidth]{images/ulp.png}
-    \caption{ {\small Gráfico da Função $ULP(x^{23})$. Fonte: Autor.}}
-    \label{fig:ulp}
-\end{figure}
-\vspace{-.3cm}
-Um erro comum em SPF's é o da perda de significância, ou cancelamento catastrófico, que ocorre quando é realizada uma operação com dois números muito próximos ou de grandezas muito diferentes, resultando em um valor com menos dígitos significativos do que os números originais, devido ao alinhamento de mantissa.
-Um exemplo desse comportamento é observado na função $f(x) = x^{23} + l - x^{23}$. Embora para $x \in \mathbb{R}$ o resultado é igual a $l$, ao efetuarmos os cálculos usando ponto flutuante,o gráfico da figura \ref{fig:erros1} ilustra que o valor correto é exibido apenas até um certo valor de $x$.
-% Após esse valor observamos um intervalo em que ocorre uma oscilação caótica no resultado da função. Posteriormente, observamos que a função assume o valor zero.
+
+Um erro comum em SPF's é o da perda de significância, ou cancelamento
+catastrófico, que ocorre quando é realizada uma operação com dois números muito
+próximos ou de grandezas muito diferentes, resultando em um valor com menos
+dígitos significativos do que os números originais, devido ao alinhamento de
+mantissa. Um exemplo desse comportamento é observado na função $f(x) = x^{23} +
+    1 - x^{23}$, que é igual a $1$. Porém, ao avaliar $f$ usando ponto flutuante,
+obtemos o gráfico da Figura~\ref{fig:erros1}, em que o valor correto é exibido
+apenas até $x$ próximo de $4,9$. A partir de aproximadamente $x = 5,1$, a
+função assume o valor zero. Isso ocorre, pois o valor $x^{23}$ é muito maior
+que $1$, o que resulta na perda de significância, produzindo $x^{23} + 1 =
+    x^{23}$.
+
+Entre $4,9$ e $5,1$ observamos a ocorrência de uma oscilação caótica
+relacionada com o valor da $\ulp(x^{23})$, que é 2. Para realizar a soma
+$x^{23} + 1$, o SPF precisa representar os dois números na mesma potência.
+Porém, o valor do expoente necessário para representar $x^{23}$ está associado
+à uma ULP igual a 2, em que o número 1 não pode ser representado e precisa ser
+arredondado. Esse arredondamento faz com que $x^{23} + 1$ seja igual a $x^{23}$
+ou $x^{23} + 2$, produzindo a oscilação observada.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{images/errors1.png}
-    \caption{ {\small Cancelamento Catastrófico para $l$ variando de 1 a 32 com passo 2. Fonte: Autor.}}
+    \includegraphics[width=.8\linewidth]{images/erro1}
+    \vspace{-.5cm}
+    \caption{ {\small Resultado da avaliação da função $f(x) = x^{23} +
+                    1 - x^{23}$ num SPF IEEE de 64 \text{bits}. Fonte: Autor.}}
     \label{fig:erros1}
 \end{figure}
 
-\vspace{-.5cm}
-Essa oscilação é conjecturada a ser diretamente relacionada com a $ULP(x)$ no intervalo em que ela ocorre. Como ilustrado na figura \ref{fig:erros_ulp}, a função $f(x)$ e a $ULP(x)$ se tornam próximas no intervalo em que ocorre a oscilação, sugerindo que o erro relativo da função $f(x)$ é da está associado diretamente a $ULP(x)$ nesse intervalo.
-\vspace{-.3cm}
+O fenômeno observado destaca a importância do conhecimento sobre o sistema
+utilizado por máquinas ao realizar cálculos que necessitam de precisão, como os
+comumente utilizados por métodos númericos (vide~\cite{ruggiero1998calculo}).
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{images/errors_and_ulp3.png}
-    \caption{ {\small Cancelamento Catastrófico comparado com a ULP. Fonte: Autor.}}
-    \label{fig:erros_ulp}
-\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % REFS BIBLIOGRÁFICAS
 % POR FAVOR, NÃO ALTERAR
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\nocite{*}
+% \nocite{*}
 \printbibliography
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
