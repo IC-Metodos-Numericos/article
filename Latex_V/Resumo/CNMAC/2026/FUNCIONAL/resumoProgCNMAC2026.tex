@@ -58,7 +58,7 @@
 % TÍTULO E AUTORAS(ES)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title{Instruções para Submissão de Resumos para o CNMAC}
+\title{Uma comparação do paradigma funcional e iterativo na programação de Métodos Numéricos}
 
 \author{
 {\large Pazini, D. S.}\thanks{danieldspazini3@gmail.com}\\
@@ -74,37 +74,33 @@
 % TEXTO
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Este é o padrão (formato \LaTeX{} apenas) para a submissão de trabalhos da Categoria 1 do CNMAC, destinados à divulgação de pesquisas em andamento, com resultados preliminares, e pesquisas em nível de \emph{Iniciação Científica}. {Nesta categoria, os trabalhos devem ser submetidos em Português ou Inglês, em forma de resumo de, no máximo, duas páginas, incluindo-se as referências bibliográficas.} Os \emph{trabalhos submetidos} que \emph{não estiverem de acordo com o formato} apresentado por esse padrão \emph{serão rejeitados} pelo Comitê Editorial do evento, sem análise do mérito científico.
+Este trabalho mostra como a programação em uma linguagem funcional, como Haskell, é muito mais natural para matemáticos que no paradigma imperativo, tomando C de exemplo, comparando a implementação do método de Newton-Raphson para busca de zeros de funções reais em ambas abordagens.
 
-Equações inseridas no resumo devem ser enumeradas sequencialmente e à direita no texto, por exemplo
+O método de Newton-Raphson é um caso particular do método do ponto fixo, que substitui o problema de encontrar zeros de uma função $f$ pela procura dos pontos fixos de uma outra função $\varphi$ chamada \textit{função de iteração de ponto fixo} construída a partir desta isolando $x$ na equação $f(x) = 0$, o que pode ser obtido de várias formas, sendo no método trabalhado o caso no qual 
+
 \begin{equation}
-\frac{\partial u}{\partial t}-\Delta u = f, \quad  \mathrm{em} \; \Omega. \label{Calor}
+    \varphi(x) = x - \frac{f(x)}{f'(x)}\label{mnr}
 \end{equation}
-Consulte o arquivo \verb!.tex! para mais detalhes sobre o código-fonte gerador da equação \eqref{Calor}.
 
-Tendo em vista tratar-se de um resumo, sugere-se evitar a inserção de seções, tabelas e figuras. Caso necessária, a inserção de tabela deve ser feita com o ambiente \verb!table!, sendo enumerada, disposta horizontalmente centralizada, próxima de sua referência no texto, e a legenda imediatamente acima dela. Por exemplo, consulte a Tabela \ref{tabela01}.
-\begin{table}[H]
-\caption{ {\small Categorias dos trabalhos.}}
-\centering
-\begin{tabular}{ccc}
-\hline
-Categoria do trabalho  & Número de páginas & Tipo do trabalho\\ \hline
-1          & 2  & $A$, $B$ e $C$    \\
-2          & entre 5 e 7  & apenas $C$ \\
-\hline
-\end{tabular}\label{tabela01}
-\end{table}
-
-A inserção de figura deve ser feita com o ambiente \verb!figure!, ela deve estar enumerada, disposta horizontalmente centralizada, próxima de sua referência no texto, e legenda imediatamente abaixo dela. \emph{Deve-se indicar/referências a fonte, mesmo quando de autoria própria.} Consulte a Figura \ref{figura01}.
+sendo usada tal função para construção de uma sequência iterativa onde $x_k = \varphi(x_{k-1})$.~\cite{Vera}
 
 \begin{figure}[H]
-\centering
-\includegraphics[width=.375\textwidth]{ex_fig}
-\caption{ {\small Exemplo de imagem. Fonte: indicar.}}
-\label{figura01}
+    \centering
+    \includegraphics[width=.75\textwidth]{images/haskell.png}
+    \caption{ {\small Implementação do Método de Newthon-Raphson em Haskell. Fonte: Autor.}}
+    \label{fig:haskell}
 \end{figure}
 
-Bib\LaTeX{}. \verb+refs.bib+ \verb+\cite+. Seguem alguns exemplos de referências: livros ~\cite{Chapra}, ~\cite{Faires}, ~\cite{Vera}, e outros ~\cite{CNMAC}. Sempre que disponível forneça o DOI, ISBN ou ISSN, conforme o caso.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.75\textwidth]{images/c.png}
+    \caption{ {\small Implementação do Método de Newthon-Raphson em C. Fonte: Autor.}}
+    \label{fig:c}
+\end{figure}
+
+É possível perceber a concisão e clareza do paradigma funcional, que inclusive recebe esse nome por ser baseado no conceito de funções matemáticas, o que explica a concisão e clareza perceptíveis no Haskell em comparação com o C. 
+
+Em programação funcional, em distinção da imperativa, = não é um sinal de atribuição mas uma definição de uma função com seus elementos do dominío tendo valor fixo na avaliação. Além disso, a natureza recursiva do método iterativo de Newton-Raphson é ideal para programação funcional que utiliza de recursões para avaliação ao invés de iterações e sequenciamento, o que permite ficar explícita a sua forma matemática e iterativa.
 
 \section*{Agradecimentos}
 Lucas pela paciência, bom humor e orientação; Enzo por ser um dupla excepcional; D'Afonseca pelo amparo matemático e pela bolsa; a família por me proporcionar a possibilidade de chegar até aqui; a Deus; a minha querida Jaque por toda motivação.
